@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220602145001">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__body">
+				<a href="home.html" class="header__logo">
+					<img src="img/header/logo.svg" alt="Logo">
+					<div class="header__title">Aster News</div>
+				</a>
+				<div class="header__news">
+					<div class="header__news-wrapper">
+						<form action="#" class="header__search search">
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Search for news..." class="search__input">
+							<button type="submit" class="search__button"><img src="img/header/search.svg" alt="search icon"></button>
+						</form>
+						<div class="header__see-more"><a href="#" class="header__link"><span class="header__see-more-text">Latest news
+									on </span><span class="covid">Covid-19</span></a></div>
+					</div>
+				</div>
+				<div data-spollers class="header__profile profile">
+					<div data-spoller class="profile__body spollers__title">
+						<img src="img/header/user.svg" alt="user icon">
+						<div class="profile__text">My Profile</div>
+					</div>
+					<div class="spollers__body">Spoiler content</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__body">
+				<div class="page__side-panel side-panel">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<div class="side-panel__body">
+						<div class="side-panel__main-pages main-pages-panel">
+							<div class="side-panel__block side-panel__block_active">
+								<a href="home.html" class="main-pages-panel__page main-pages-panel__page_active">
+									<img src="img/side-panel/pages/home.svg" alt="Home icon">
+									<h2 class="side-panel__block-title">Top Stories</h2>
+								</a>
+							</div>
+							<div class="side-panel__block">
+								<a href="#" class="main-pages-panel__page">
+									<img src="img/side-panel/pages/globe.svg" alt="Globe icon">
+									<h2 class="side-panel__block-title">Around the World</h2>
+								</a>
+							</div>
+							<div class="side-panel__block">
+								<a href="#" class="main-pages-panel__page">
+									<img src="img/side-panel/pages/briefcase.svg" alt="Briefcase icon">
+									<h2 class="side-panel__block-title">Business</h2>
+								</a>
+							</div>
+							<div class="side-panel__block">
+								<a href="#" class="main-pages-panel__page">
+									<img src="img/side-panel/pages/activity.svg" alt="Activity icon">
+									<h2 class="side-panel__block-title">Health</h2>
+								</a>
+							</div>
+						</div>
+						<div class="side-panel__covid side-panel__block">
+							<a href="#" class="main-pages-panel__page">
+								<img src="img/side-panel/shield.svg" alt="Shield icon">
+								<h2 class="side-panel__block-title">Covid 19</h2>
+							</a>
+						</div>
+						<div class="side-panel__actions actions-panel">
+							<div class="actions-panel__action side-panel__block">
+								<a href="#" class="main-pages-panel__page">
+									<img src="img/side-panel/actions/play-circle.svg" alt="Play circle icon">
+									<h2 class="side-panel__block-title">Entertainment</h2>
+								</a>
+							</div>
+							<div class="actions-panel__action side-panel__block">
+								<a href="#" class="main-pages-panel__page">
+									<img src="img/side-panel/actions/award.svg" alt="Award icon">
+									<h2 class="side-panel__block-title">Sports</h2>
+								</a>
+							</div>
+							<div class="actions-panel__action side-panel__block">
+								<a href="#" class="main-pages-panel__page">
+									<img src="img/side-panel/actions/message-circle.svg" alt="Message circle icon">
+									<h2 class="side-panel__block-title">Discussion</h2>
+								</a>
+							</div>
+							<div class="actions-panel__action side-panel__block">
+								<a href="#" class="main-pages-panel__page">
+									<img src="img/side-panel/actions/bell.svg" alt="Bell icon">
+									<h2 class="side-panel__block-title">Notification</h2>
+								</a>
+							</div>
+							<div class="actions-panel__action side-panel__block">
+								<a href="#" class="main-pages-panel__page">
+									<img src="img/side-panel/actions/settings.svg" alt="Settings icon">
+									<h2 class="side-panel__block-title">News Feed Settings</h2>
+								</a>
+							</div>
+						</div>
+						<div class="side-panel__subscribe-card subscribe-card-panel">
+							<h3 class="subscribe-card-panel__title">Subscribe to Premium</h3>
+							<div class="subscribe-card-panel__action">
+								<div class="subscribe-card-panel__price"><span>$8</span>/m</div>
+								<a href="#" class="subscribe-card-panel__link">Upgrade</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- <div class="header__menu menu">
+	<nav class="menu__body">
+		<ul class="menu__list">
+			<li class="menu__item"><a href="" class="menu__link"></a></li>
+		</ul>
+	</nav>
+</div> -->
+				<div class="page__main main">
+					<section class="main__stories stories-main">
+						<div class="stories-main__container">
+							<h2 class="stories-main__title">Top Stories for you</h2>
+							<div class="stories-main__categories categories-stories">
+								<ul class="categories-stories__list">
+									<li><button class="categories-stories__category categories-stories__category_active">All</button>
+									</li>
+									<li><button class="categories-stories__category">Android</button></li>
+									<li><button class="categories-stories__category">Cricket</button></li>
+									<li><button class="categories-stories__category">iPhone</button></li>
+									<li><button class="categories-stories__category">Google</button></li>
+									<li><button class="categories-stories__category">Nano Technology</button></li>
+									<li><button class="categories-stories__category">Mental Health</button></li>
+								</ul>
+								<button class="categories-stories__more-button"><span></span></button>
+							</div>
+							<div class="stories-main__posts posts">
+								<div class="posts post post_first">
+									<a href="post-view.html" class="post__content">
+										<div class="post__header">
+											<div class="post__main-content post__main-content_1">
+												<div class="post__title">Samsung Galaxy F22 launched in India: Price, features, other details
+												</div>
+												<div class="post__text">Samsung Galaxy F22 has been launched in India. The new smartphone has
+													been priced in the mid-range segment. The new smartphone is powered by a MediaTek chipset and
+													features a high refresh rate AMOLED display.
+												</div>
+												<div class="post__footer">
+													<div class="post__creation">
+														<div class="post__creator">Sport Biz</div>
+														<div class="post__time">42 mins ago</div>
+													</div>
+													<div class="post__buttons">
+														<button class="post__share post__button" type="button">Share</button>
+														<button class="post__read-later post__button" type="button">Read Later</button>
+													</div>
+												</div>
+											</div>
+											<div class=" post__image"><picture><source srcset="img/main/iphones.webp" type="image/webp"><img src="img/main/iphones.jpg" alt="Iphones"></picture>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="posts post">
+									<a href="post-view.html" class="post__content">
+										<div class="post__header">
+											<div class="post__main-content post__main-content_2">
+												<div class="post__title">Battlegrounds Mobile India iOS release date</div>
+												<div class="post__text">The reason behind their disappointment is that iPhone users have
+													been..
+												</div>
+											</div>
+											<div class="post__image"><picture><source srcset="img/main/battlegrounds.webp" type="image/webp"><img src="img/main/battlegrounds.jpg" alt="Battlegrounds"></picture></div>
+										</div>
+										<div data-da=".post__main-content_2,1240" class="post__footer">
+											<div class="post__creation">
+												<div class="post__creator">Sport Biz</div>
+												<div class="post__time">42 mins ago</div>
+											</div>
+											<div class="post__buttons">
+												<button class="post__share post__button" type="button">Share</button>
+												<button class="post__read-later post__button" type="button">Read Later</button>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="posts post">
+									<a href="post-view.html" class="post__content">
+										<div class="post__header">
+											<div class="post__main-content post__main-content_3">
+												<div class="post__title">Instagram working on ‘Exclusive Stories’ for subscribers</div>
+												<div class="post__text">Instagram could be jumping on the paid subscription..
+												</div>
+											</div>
+											<div class="post__image"><picture><source srcset="img/main/instagram.webp" type="image/webp"><img src="img/main/instagram.jpg" alt="Instagram"></picture></div>
+										</div>
+										<div class="post__footer" data-da=".post__main-content_3,1240">
+											<div class="post__creation">
+												<div class="post__creator">The Mint</div>
+												<div class="post__time">52 mins ago</div>
+											</div>
+											<div class="post__buttons">
+												<button class="post__share post__button" type="button">Share</button>
+												<button class="post__read-later post__button" type="button">Read Later</button>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="posts post">
+									<a href="post-view.html" class="post__content _without-photo">
+										<div class="post__header">
+											<div class="post__main-content post__main-content_4">
+												<div class="post__title">Petrol, diesel prices - July 6: Fuel prices unchanged after touching
+													record high</div>
+												<div class="post__text">The price of petrol remained unchanged on July 6 after reaching a new
+													record high on the previous day, according to a price notification by state-owned..
+												</div>
+											</div>
+											<div class="post__image"><img src="" alt=""></div>
+										</div>
+										<div data-da=".post__main-content_4,1240" class="post__footer">
+											<div class="post__creation">
+												<div class="post__creator">Radar 52</div>
+												<div class="post__time">1 hour ago</div>
+											</div>
+											<div class="post__buttons">
+												<button class="post__share post__button" type="button">Share</button>
+												<button class="post__read-later post__button" type="button">Read Later</button>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="posts post">
+									<a href="post-view.html" class="post__content">
+										<div class="post__header">
+											<div class="post__main-content post__main-content_5">
+												<div class="post__title">Android smartphone users alert! Remove these 9 apps now</div>
+												<div class="post__text">Stealer trojans were spread as harmless software..
+												</div>
+											</div>
+											<div class="post__image"><picture><source srcset="img/main/computer.webp" type="image/webp"><img src="img/main/computer.jpg" alt="Computer"></picture></div>
+										</div>
+										<div class="post__footer" data-da=".post__main-content_5, 1240">
+											<div class="post__creation">
+												<div class="post__creator">Live Mint</div>
+												<div class="post__time">2 hours ago</div>
+											</div>
+											<div class="post__buttons">
+												<button class="post__share post__button" type="button">Share</button>
+												<button class="post__read-later post__button" type="button">Read Later</button>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="posts post">
+									<a href="post-view.html" class="post__content">
+										<div class="post__header">
+											<div class="post__main-content post__main-content_6">
+												<div class="post__title">How to install Windows 11 on almost any unsupported PC
+												</div>
+												<div class="post__text">Microsoft is allowing some unsupported computers..
+												</div>
+											</div>
+											<div class="post__image"><picture><source srcset="img/main/win11.webp" type="image/webp"><img src="img/main/win11.jpg" alt="Windows 11"></picture></div>
+										</div>
+										<div class="post__footer" data-da=".post__main-content_6, 1240">
+											<div class="post__creation">
+												<div class="post__creator">Tech Mint</div>
+												<div class="post__time">3 hours ago</div>
+											</div>
+											<div class="post__buttons">
+												<button class="post__share post__button" type="button">Share</button>
+												<button class="post__read-later post__button" type="button">Read Later</button>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="posts post">
+									<a href="post-view.html" class="post__content">
+										<div class="post__header">
+											<div class="post__main-content post__main-content_7">
+												<div class="post__title">This charging feature from Android phones may come to iPhone 13</div>
+												<div class="post__text">You will always find a set of people who will say that..
+												</div>
+											</div>
+											<div class="post__image"><picture><source srcset="img/main/phones.webp" type="image/webp"><img src="img/main/phones.jpg" alt="Phones"></picture></div>
+										</div>
+										<div class="post__footer" data-da=".post__main-content_7,1240">
+											<div class="post__creation">
+												<div class="post__creator">Live Mint</div>
+												<div class="post__time">5 hours ago</div>
+											</div>
+											<div class="post__buttons">
+												<button class="post__share post__button" type="button">Share</button>
+												<button class="post__read-later post__button" type="button">Read Later</button>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="stories-main__creators creators-stories">
+								<div class="creators-stories__slider swiper">
+									<div class="creators-stories__header">
+										<h3 class="creators-stories__title">Creators you should follow</h3>
+										<div class="creators-stories__buttons">
+											<div class="creators-stories__prev"><img src="img/main/creators/arrow-left.svg" alt="prev button"></div>
+											<div class="creators-stories__next"><img src="img/main/creators/arrow-right.svg" alt="next button"></div>
+										</div>
+									</div>
+									<div class="creators-stories__wrapper swiper-wrapper">
+										<div class="creators-stories__slide swiper-slide">
+											<div class="creators-stories__creator creator">
+												<picture><source srcset="img/main/creators/Shan-Teylor.webp" type="image/webp"><img src="img/main/creators/Shan-Teylor.jpg" class="creator__photo" alt="Creator's photo"></picture>
+												<h4 class="creator__name">Shan Teylor</h4>
+												<div class="creator__work">Tech Mint</div>
+												<button type="button" class="creator__follow">Follow</button>
+											</div>
+										</div>
+										<div class="creators-stories__slide swiper-slide">
+											<div class="creators-stories__creator creator">
+												<picture><source srcset="img/main/creators/Mary-Angela.webp" type="image/webp"><img src="img/main/creators/Mary-Angela.jpg" class="creator__photo" alt="Creator's photo"></picture>
+												<h4 class="creator__name">Mary Angela</h4>
+												<div class="creator__work">Live Mint</div>
+												<button type="button" class="creator__follow">Follow</button>
+											</div>
+										</div>
+										<div class="creators-stories__slide swiper-slide">
+											<div class="creators-stories__creator creator">
+												<picture><source srcset="img/main/creators/Kyon-Cho-Chi.webp" type="image/webp"><img src="img/main/creators/Kyon-Cho-Chi.jpg" class="creator__photo" alt="Creator's photo"></picture>
+												<h4 class="creator__name">Kyon Cho Chi</h4>
+												<div class="creator__work">Bizz Daily</div>
+												<button type="button" class="creator__follow">Follow</button>
+											</div>
+										</div>
+										<div class="creators-stories__slide swiper-slide">
+											<div class="creators-stories__creator creator">
+												<picture><source srcset="img/main/creators/Paul-Livingstone.webp" type="image/webp"><img src="img/main/creators/Paul-Livingstone.jpg" class="creator__photo" alt="Creator's photo"></picture>
+												<h4 class="creator__name">Paul Livingstone</h4>
+												<div class="creator__work">Sport Biz</div>
+												<button type="button" class="creator__follow">Follow</button>
+											</div>
+										</div>
+										<div class="creators-stories__slide swiper-slide">
+											<div class="creators-stories__creator creator">
+												<picture><source srcset="img/main/creators/Sara-Jay.webp" type="image/webp"><img src="img/main/creators/Sara-Jay.jpg" class="creator__photo" alt="Creator's photo"></picture>
+												<h4 class="creator__name">Sara Jay</h4>
+												<div class="creator__work">Radar 52</div>
+												<button type="button" class="creator__follow">Follow</button>
+											</div>
+										</div>
+										<div class="creators-stories__slide swiper-slide">
+											<div class="creators-stories__creator creator">
+												<picture><source srcset="img/main/creators/Shan-Teylor.webp" type="image/webp"><img src="img/main/creators/Shan-Teylor.jpg" class="creator__photo" alt="Creator's photo"></picture>
+												<h4 class="creator__name">Shan Teylor</h4>
+												<div class="creator__work">Tech Mint</div>
+												<button type="button" class="creator__follow">Follow</button>
+											</div>
+										</div>
+										<div class="creators-stories__slide swiper-slide">
+											<div class="creators-stories__creator creator">
+												<picture><source srcset="img/main/creators/Shan-Teylor.webp" type="image/webp"><img src="img/main/creators/Shan-Teylor.jpg" class="creator__photo" alt="Creator's photo"></picture>
+												<h4 class="creator__name">Shan Teylor</h4>
+												<div class="creator__work">Tech Mint</div>
+												<button type="button" class="creator__follow">Follow</button>
+											</div>
+										</div>
+										<div class="creators-stories__slide swiper-slide">
+											<div class="creators-stories__creator creator">
+												<picture><source srcset="img/main/creators/Shan-Teylor.webp" type="image/webp"><img src="img/main/creators/Shan-Teylor.jpg" class="creator__photo" alt="Creator's photo"></picture>
+												<h4 class="creator__name">Shan Teylor</h4>
+												<div class="creator__work">Tech Mint</div>
+												<button type="button" class="creator__follow">Follow</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="stories-main__show-more" data-showmore="size">
+								<div class="stories-main__posts posts posts_second" data-showmore-content="420">
+									<div class="posts post">
+										<a href="post-view.html" class="post__content">
+											<div class="post__header">
+												<div class="post__main-content post__main-content_8">
+													<div class="post__title">INDvENG Tests to be played in front of crowd
+													</div>
+													<div class="post__text">The 5-Test series between India & England is set to be played in front
+														of packed..
+													</div>
+												</div>
+												<div class="post__image"><picture><source srcset="img/main/sportsmen.webp" type="image/webp"><img src="img/main/sportsmen.jpg" alt="Sportsmen"></picture></div>
+											</div>
+											<div data-da=".post__main-content_8,1240" class="post__footer">
+												<div class="post__creation">
+													<div class="post__creator">Sport Biz</div>
+													<div class="post__time">7 hours ago</div>
+												</div>
+												<div class="post__buttons">
+													<button class="post__share post__button" type="button">Share</button>
+													<button class="post__read-later post__button" type="button">Read Later</button>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="posts post">
+										<a href="post-view.html" class="post__content">
+											<div class="post__header">
+												<div class="post__main-content post__main-content_9">
+													<div class="post__title">The 10 Coolest Wearable Tech Gadgets Of 2021 (So Far)</div>
+													<div class="post__text">Driven by demand for connected earbuds and a..
+													</div>
+												</div>
+												<div class="post__image"><picture><source srcset="img/main/smart-watch.webp" type="image/webp"><img src="img/main/smart-watch.jpg" alt="Smart watch"></picture></div>
+											</div>
+											<div data-da=".post__main-content_9,1240" class="post__footer">
+												<div class="post__creation">
+													<div class="post__creator">The Mint</div>
+													<div class="post__time">7 hours ago</div>
+												</div>
+												<div class="post__buttons">
+													<button class="post__share post__button" type="button">Share</button>
+													<button class="post__read-later post__button" type="button">Read Later</button>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="posts post">
+										<a href="post-view.html" class="post__content _without-photo">
+											<div class="post__header">
+												<div class="post__main-content post__main-content_10">
+													<div class="post__title">Biden's cold response to Afghanistan's collapse to have far
+														consequences
+													</div>
+													<div class="post__text">When US President Joe Biden chose in April to withdraw all American
+														forces from Afghanistan by September, we were among those who judged..
+													</div>
+												</div>
+												<div class="post__image"><img src="" alt=""></div>
+											</div>
+											<div data-da=".post__main-content_10,1240" class="post__footer">
+												<div class="post__creation">
+													<div class="post__creator">Radar 52</div>
+													<div class="post__time">8 hours ago</div>
+												</div>
+												<div class="post__buttons">
+													<button class="post__share post__button" type="button">Share</button>
+													<button class="post__read-later post__button" type="button">Read Later</button>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="posts post">
+										<a href="post-view.html" class="post__content">
+											<div class="post__header">
+												<div class="post__main-content post__main-content_11">
+													<div class="post__title">Hardik Pandya 'is bowling and it is a very good sign' - Suryakumar
+													</div>
+													<div class="post__text">I think that the team management and Hardik..
+													</div>
+												</div>
+												<div class="post__image"><picture><source srcset="img/main/footballer.webp" type="image/webp"><img src="img/main/footballer.jpg" alt="Footballer"></picture></div>
+											</div>
+											<div data-da=".post__main-content_11, 1240" class="post__footer">
+												<div class="post__creation">
+													<div class="post__creator">Cric Mint</div>
+													<div class="post__time">9 hours ago</div>
+												</div>
+												<div class="post__buttons">
+													<button class="post__share post__button" type="button">Share</button>
+													<button class="post__read-later post__button" type="button">Read Later</button>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="posts post">
+										<a href="post-view.html" class="post__content">
+											<div class="post__header">
+												<div class="post__main-content post__main-content_12">
+													<div class="post__title">INDvENG Tests to be played in front of crowd
+													</div>
+													<div class="post__text">The 5-Test series between India & England is set to be played in front
+														of packed..
+													</div>
+												</div>
+												<div class="post__image"><picture><source srcset="img/main/sportsmen.webp" type="image/webp"><img src="img/main/sportsmen.jpg" alt="Sportsmen"></picture></div>
+											</div>
+											<div data-da=".post__main-content_12,1240" class="post__footer">
+												<div class="post__creation">
+													<div class="post__creator">Sport Biz</div>
+													<div class="post__time">7 hours ago</div>
+												</div>
+												<div class="post__buttons">
+													<button class="post__share post__button" type="button">Share</button>
+													<button class="post__read-later post__button" type="button">Read Later</button>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="posts post">
+										<a href="post-view.html" class="post__content">
+											<div class="post__header">
+												<div class="post__main-content post__main-content_13">
+													<div class="post__title">The 10 Coolest Wearable Tech Gadgets Of 2021 (So Far)</div>
+													<div class="post__text">Driven by demand for connected earbuds and a..
+													</div>
+												</div>
+												<div class="post__image"><picture><source srcset="img/main/smart-watch.webp" type="image/webp"><img src="img/main/smart-watch.jpg" alt="Smart watch"></picture></div>
+											</div>
+											<div data-da=".post__main-content_13,1240" class="post__footer">
+												<div class="post__creation">
+													<div class="post__creator">The Mint</div>
+													<div class="post__time">7 hours ago</div>
+												</div>
+												<div class="post__buttons">
+													<button class="post__share post__button" type="button">Share</button>
+													<button class="post__read-later post__button" type="button">Read Later</button>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="posts post">
+										<a href="post-view.html" class="post__content _without-photo">
+											<div class="post__header">
+												<div class="post__main-content post__main-content_14">
+													<div class="post__title">Biden's cold response to Afghanistan's collapse to have far
+														consequences
+													</div>
+													<div class="post__text">When US President Joe Biden chose in April to withdraw all American
+														forces from Afghanistan by September, we were among those who judged..
+													</div>
+												</div>
+												<div class="post__image"><img src="" alt=""></div>
+											</div>
+											<div data-da=".post__main-content_14,1240" class="post__footer">
+												<div class="post__creation">
+													<div class="post__creator">Radar 52</div>
+													<div class="post__time">8 hours ago</div>
+												</div>
+												<div class="post__buttons">
+													<button class="post__share post__button" type="button">Share</button>
+													<button class="post__read-later post__button" type="button">Read Later</button>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="posts post">
+										<a href="post-view.html" class="post__content">
+											<div class="post__header">
+												<div class="post__main-content post__main-content_15">
+													<div class="post__title">Hardik Pandya 'is bowling and it is a very good sign' - Suryakumar
+													</div>
+													<div class="post__text">I think that the team management and Hardik..
+													</div>
+												</div>
+												<div class="post__image"><picture><source srcset="img/main/footballer.webp" type="image/webp"><img src="img/main/footballer.jpg" alt="Footballer"></picture></div>
+											</div>
+											<div data-da=".post__main-content_15, 1240" class="post__footer">
+												<div class="post__creation">
+													<div class="post__creator">Cric Mint</div>
+													<div class="post__time">9 hours ago</div>
+												</div>
+												<div class="post__buttons">
+													<button class="post__share post__button" type="button">Share</button>
+													<button class="post__read-later post__button" type="button">Read Later</button>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="stories-main__btn-wrapper"><button type="button" data-showmore-button class="stories-main__button">Show
+										More</button></div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="page__interactions interactions">
+					<div class="interactions__body">
+						<div class="interactions__weather weather" id="weather">
+
+						</div>
+						<div class="interactions__writer writer">
+							<h3 class="writer__header">Become a Story Writer</h3>
+							<div class="writer__footer">
+								<p class="writer__text">Contribute stories and start earning.</p>
+								<a href="#" class="writer__link">Know More</a>
+							</div>
+						</div>
+						<div class="interactions__quick-bytes quick-bytes">
+							<div class="quick-bytes__slider swiper-quick-bytes swiper">
+								<div class="quick-bytes__header">
+									<h3 class="quick-bytes__title">Quick Bytes</h3>
+									<div class="swiper-quick-bytes__buttons">
+										<div class="swiper-quick-bytes__prev"></div>
+										<div class="swiper-quick-bytes__next"></div>
+									</div>
+								</div>
+								<div class="quick-bytes__wrapper swiper-wrapper">
+									<div class="quick-bytes__slide swiper-slide">
+										<div class="quick-bytes__body">
+											<p class="quick-bytes__text">The price of petrol remained unchanged on July 6 after reaching a new record
+												high on the previous day, according to a price notification by state-owned fuel retailers. The diesel
+												price remained stable for the second consecutive day.
+											</p>
+											<p class="quick-bytes__text">The increase on July 5, 35th in two months, took the petrol price in Delhi
+												closer to Rs 100 per litre-mark. The petrol price in the national capital soared to Rs 99.9 a litre and
+												diesel was priced at Rs 89.4 per litre, according to Bharat Petroleum's price listing.</p>
+										</div>
+									</div>
+									<div class="quick-bytes__slide swiper-slide">
+										<div class="quick-bytes__body">
+											<p class="quick-bytes__text">The price of petrol remained unchanged on July 6 after reaching a new record
+												high on the previous day, according to a price notification by state-owned fuel retailers. The diesel
+												price remained stable for the second consecutive day.
+											</p>
+											<p class="quick-bytes__text">The increase on July 5, 35th in two months, took the petrol price in Delhi
+												closer to Rs 100 per litre-mark. The petrol price in the national capital soared to Rs 99.9 a litre and
+												diesel was priced at Rs 89.4 per litre, according to Bharat Petroleum's price listing.</p>
+										</div>
+									</div>
+									<div class="quick-bytes__slide swiper-slide">
+										<div class="quick-bytes__body">
+											<p class="quick-bytes__text">The price of petrol remained unchanged on July 6 after reaching a new record
+												high on the previous day, according to a price notification by state-owned fuel retailers. The diesel
+												price remained stable for the second consecutive day.
+											</p>
+											<p class="quick-bytes__text">The increase on July 5, 35th in two months, took the petrol price in Delhi
+												closer to Rs 100 per litre-mark. The petrol price in the national capital soared to Rs 99.9 a litre and
+												diesel was priced at Rs 89.4 per litre, according to Bharat Petroleum's price listing.</p>
+										</div>
+									</div>
+									<div class="quick-bytes__slide swiper-slide">
+										<div class="quick-bytes__body">
+											<p class="quick-bytes__text">The price of petrol remained unchanged on July 6 after reaching a new record
+												high on the previous day, according to a price notification by state-owned fuel retailers. The diesel
+												price remained stable for the second consecutive day.
+											</p>
+											<p class="quick-bytes__text">The increase on July 5, 35th in two months, took the petrol price in Delhi
+												closer to Rs 100 per litre-mark. The petrol price in the national capital soared to Rs 99.9 a litre and
+												diesel was priced at Rs 89.4 per litre, according to Bharat Petroleum's price listing.</p>
+										</div>
+									</div>
+									<div class="quick-bytes__slide swiper-slide">
+										<div class="quick-bytes__body">
+											<p class="quick-bytes__text">The price of petrol remained unchanged on July 6 after reaching a new record
+												high on the previous day, according to a price notification by state-owned fuel retailers. The diesel
+												price remained stable for the second consecutive day.
+											</p>
+											<p class="quick-bytes__text">The increase on July 5, 35th in two months, took the petrol price in Delhi
+												closer to Rs 100 per litre-mark. The petrol price in the national capital soared to Rs 99.9 a litre and
+												diesel was priced at Rs 89.4 per litre, according to Bharat Petroleum's price listing.</p>
+										</div>
+									</div>
+									<div class="quick-bytes__slide swiper-slide">
+										<div class="quick-bytes__body">
+											<p class="quick-bytes__text">The price of petrol remained unchanged on July 6 after reaching a new record
+												high on the previous day, according to a price notification by state-owned fuel retailers. The diesel
+												price remained stable for the second consecutive day.
+											</p>
+											<p class="quick-bytes__text">The increase on July 5, 35th in two months, took the petrol price in Delhi
+												closer to Rs 100 per litre-mark. The petrol price in the national capital soared to Rs 99.9 a litre and
+												diesel was priced at Rs 89.4 per litre, according to Bharat Petroleum's price listing.</p>
+										</div>
+									</div>
+									<div class="quick-bytes__slide swiper-slide">
+										<div class="quick-bytes__body">
+											<p class="quick-bytes__text">The price of petrol remained unchanged on July 6 after reaching a new record
+												high on the previous day, according to a price notification by state-owned fuel retailers. The diesel
+												price remained stable for the second consecutive day.
+											</p>
+											<p class="quick-bytes__text">The increase on July 5, 35th in two months, took the petrol price in Delhi
+												closer to Rs 100 per litre-mark. The petrol price in the national capital soared to Rs 99.9 a litre and
+												diesel was priced at Rs 89.4 per litre, according to Bharat Petroleum's price listing.</p>
+										</div>
+									</div>
+									<div class="quick-bytes__slide swiper-slide">
+										<div class="quick-bytes__body">
+											<p class="quick-bytes__text">The price of petrol remained unchanged on July 6 after reaching a new record
+												high on the previous day, according to a price notification by state-owned fuel retailers. The diesel
+												price remained stable for the second consecutive day.
+											</p>
+											<p class="quick-bytes__text">The increase on July 5, 35th in two months, took the petrol price in Delhi
+												closer to Rs 100 per litre-mark. The petrol price in the national capital soared to Rs 99.9 a litre and
+												diesel was priced at Rs 89.4 per litre, according to Bharat Petroleum's price listing.</p>
+										</div>
+									</div>
+									<div class="quick-bytes__slide swiper-slide">
+										<div class="quick-bytes__body">
+											<p class="quick-bytes__text">The price of petrol remained unchanged on July 6 after reaching a new record
+												high on the previous day, according to a price notification by state-owned fuel retailers. The diesel
+												price remained stable for the second consecutive day.
+											</p>
+											<p class="quick-bytes__text">The increase on July 5, 35th in two months, took the petrol price in Delhi
+												closer to Rs 100 per litre-mark. The petrol price in the national capital soared to Rs 99.9 a litre and
+												diesel was priced at Rs 89.4 per litre, according to Bharat Petroleum's price listing.</p>
+										</div>
+									</div>
+									<div class="quick-bytes__slide swiper-slide">
+										<div class="quick-bytes__body">
+											<p class="quick-bytes__text">The price of petrol remained unchanged on July 6 after reaching a new record
+												high on the previous day, according to a price notification by state-owned fuel retailers. The diesel
+												price remained stable for the second consecutive day.
+											</p>
+											<p class="quick-bytes__text">The increase on July 5, 35th in two months, took the petrol price in Delhi
+												closer to Rs 100 per litre-mark. The petrol price in the national capital soared to Rs 99.9 a litre and
+												diesel was priced at Rs 89.4 per litre, according to Bharat Petroleum's price listing.</p>
+										</div>
+									</div>
+									<div class="quick-bytes__slide swiper-slide">
+										<div class="quick-bytes__body">
+											<p class="quick-bytes__text">The price of petrol remained unchanged on July 6 after reaching a new record
+												high on the previous day, according to a price notification by state-owned fuel retailers. The diesel
+												price remained stable for the second consecutive day.
+											</p>
+											<p class="quick-bytes__text">The increase on July 5, 35th in two months, took the petrol price in Delhi
+												closer to Rs 100 per litre-mark. The petrol price in the national capital soared to Rs 99.9 a litre and
+												diesel was priced at Rs 89.4 per litre, according to Bharat Petroleum's price listing.</p>
+										</div>
+									</div>
+									<div class="quick-bytes__slide swiper-slide">
+										<div class="quick-bytes__body">
+											<p class="quick-bytes__text">The price of petrol remained unchanged on July 6 after reaching a new record
+												high on the previous day, according to a price notification by state-owned fuel retailers. The diesel
+												price remained stable for the second consecutive day.
+											</p>
+											<p class="quick-bytes__text">The increase on July 5, 35th in two months, took the petrol price in Delhi
+												closer to Rs 100 per litre-mark. The petrol price in the national capital soared to Rs 99.9 a litre and
+												diesel was priced at Rs 89.4 per litre, according to Bharat Petroleum's price listing.</p>
+										</div>
+									</div>
+									<div class="quick-bytes__slide swiper-slide">
+										<div class="quick-bytes__body">
+											<p class="quick-bytes__text">The price of petrol remained unchanged on July 6 after reaching a new record
+												high on the previous day, according to a price notification by state-owned fuel retailers. The diesel
+												price remained stable for the second consecutive day.
+											</p>
+											<p class="quick-bytes__text">The increase on July 5, 35th in two months, took the petrol price in Delhi
+												closer to Rs 100 per litre-mark. The petrol price in the national capital soared to Rs 99.9 a litre and
+												diesel was priced at Rs 89.4 per litre, according to Bharat Petroleum's price listing.</p>
+										</div>
+									</div>
+									<div class="quick-bytes__slide swiper-slide">
+										<div class="quick-bytes__body">
+											<p class="quick-bytes__text">The price of petrol remained unchanged on July 6 after reaching a new record
+												high on the previous day, according to a price notification by state-owned fuel retailers. The diesel
+												price remained stable for the second consecutive day.
+											</p>
+											<p class="quick-bytes__text">The increase on July 5, 35th in two months, took the petrol price in Delhi
+												closer to Rs 100 per litre-mark. The petrol price in the national capital soared to Rs 99.9 a litre and
+												diesel was priced at Rs 89.4 per litre, according to Bharat Petroleum's price listing.</p>
+										</div>
+									</div>
+									<div class="quick-bytes__slide swiper-slide">
+										<div class="quick-bytes__body">
+											<p class="quick-bytes__text">The price of petrol remained unchanged on July 6 after reaching a new record
+												high on the previous day, according to a price notification by state-owned fuel retailers. The diesel
+												price remained stable for the second consecutive day.
+											</p>
+											<p class="quick-bytes__text">The increase on July 5, 35th in two months, took the petrol price in Delhi
+												closer to Rs 100 per litre-mark. The petrol price in the national capital soared to Rs 99.9 a litre and
+												diesel was priced at Rs 89.4 per litre, according to Bharat Petroleum's price listing.</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-quick-bytes__pagination"></div>
+							</div>
+						</div>
+						<div class="interactions__newsletter newsletter">
+							<h3 class="newsletter__title">Subscribe to our newsletter</h3>
+							<form data-dev action="#">
+								<input data-required="email" autocomplete="off" type="text" name="form[]" placeholder="Enter Email" class="newsletter__input _email">
+								<button type="submit" class="newsletter__button">Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__body">
+				<div class="footer__copyright">
+					© Aster News, 2022
+				</div>
+				<div class="footer__links">
+					<a href="#" class="footer__link">Privacy Policy</a>
+					<a href="#" class="footer__link">Terms of Service</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20220602145001"></script>
+</body>
+
+</html>

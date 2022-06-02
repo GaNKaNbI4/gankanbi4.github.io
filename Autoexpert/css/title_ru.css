@@ -1,0 +1,150 @@
+.page__line {
+  margin: -350px 0 0 0;
+}
+@media(max-width: 1160px) {
+  .page__line {
+    margin: -330px 0 0 0;
+  }
+}
+@media(max-width: 1020px) {
+  .page__line {
+    margin: -310px 0 0 0;
+  }
+}
+@media(max-width: 950px) {
+  .page__line {
+    margin: -290px 0 0 0;
+  }
+}
+@media(max-width: 865px) {
+  .page__line {
+    margin: -270px 0 0 0;
+  }
+}
+@media(max-width: 750px) {
+  .page__line {
+    margin: -250px 0 0 0;
+  }
+}
+@media(max-width: 620px) {
+  .page__line {
+    margin: -230px 0 0 0;
+  }
+}
+@media(max-width: 498px) {
+  .page__line {
+    margin: -220px 0 0 0;
+  }
+}
+@media(max-width: 426px) {
+  .page__line {
+    margin: -210px 0 0 0;
+  }
+}
+@media(max-width: 374px) {
+  .page__line {
+    margin: -200px 0 0 0;
+  }
+}
+
+.line__body {
+  padding-bottom: 25px;
+  overflow: hidden;
+  height: 350px;
+}
+
+.line__title {
+  font-size: 94px;
+  height: 220px;
+  max-width: 1140px;
+  transition: all 1.5s ease 0s;
+}
+@media(max-width: 1160px) {
+  .line__body {
+    height: 330px;
+  }
+  .line__title {
+    height: 200px;
+    padding-top: 10px;
+    font-size: 82px;
+  }
+}
+
+@media(max-width: 1020px) {
+  .line__body {
+    height: 310px;
+  }
+  .line__title {
+    height: 180px;
+    font-size: 76px;
+  }
+}
+
+@media(max-width: 950px) {
+  .line__body {
+    height: 290px;
+  }
+  .line__title {
+    height: 160px;
+    font-size: 70px;
+  }
+}
+
+@media(max-width: 865px) {
+  .line__body {
+    height: 270px;
+  }
+  .line__title {
+    height: 140px;
+    font-size: 60px;
+  }
+}
+
+@media(max-width: 750px) {
+  .line__body {
+    height: 250px;
+  }
+  .line__title {
+    height: 120px;
+    font-size: 50px;
+  }
+}
+
+@media(max-width: 620px) {
+  .line__body {
+    height: 230px;
+  }
+  .line__title {
+    height: 100px;
+    font-size: 40px;
+  }
+}
+@media(max-width: 498px) {
+  .line__body {
+    height: 220px;
+  }
+  .line__title {
+    height: 90px;
+    font-size: 35px;
+  }
+}
+
+@media(max-width: 426px) {
+  .line__body {
+    height: 210px;
+  }
+  .line__title {
+    height: 80px;
+    font-size: 30px;
+  }
+}
+
+@media(max-width: 374px) {
+  .line__body {
+    height: 200px;
+  }
+  .line__title {
+    height: 70px;
+    font-size: 26px;
+  }
+}
