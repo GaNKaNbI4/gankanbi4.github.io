@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<title>Get Your Bonus!</title>
+	<style>
+		@font-face {
+			font-family: 'RotondaC';
+			src: url('/wheeler/RotondaC-Bold.eot');
+			src: local('RotondaC Bold'), local('RotondaC-Bold'),
+				url('/wheeler/RotondaC-Bold.eot?#iefix') format('embedded-opentype'),
+				url('/wheeler/RotondaC-Bold.woff') format('woff'),
+				url('/wheeler/RotondaC-Bold.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'RotondaC';
+			src: url('/wheeler/RotondaC-Bold.eot');
+			src: local('RotondaC Bold'), local('RotondaC-Bold'),
+				url('/wheeler/RotondaC-Bold.eot?#iefix') format('embedded-opentype'),
+				url('/wheeler/RotondaC-Bold.woff') format('woff'),
+				url('/wheeler/RotondaC-Bold.ttf') format('truetype');
+			font-weight: bold;
+			font-style: normal;
+		}
+
+		.icon {
+			border-radius: 20px;
+			max-width: 30%;
+			margin: 0 auto 10px;
+			max-height: 70px;
+		}
+
+		/*.button {
+            max-width:50%;
+            margin: 30px auto 0;
+            -webkit-filter: drop-shadow(1px 1px 10px #ffffff9c);
+            filter: drop-shadow(1px 1px 10px #ffffff61);
+            animation: mymove 2s infinite;
+        } */
+		h2 {
+			/*margin-top:30px;*/
+			color: #fff;
+			font-size: 36px;
+			font-weight: bold;
+			margin-bottom: 50px;
+			text-shadow: 0px 0px 5px #000000;
+		}
+
+		.text {
+			margin-top: 0px;
+			color: #fff;
+			margin-bottom: 50px;
+			text-shadow: 0px 0px 5px #000000;
+			max-width: 80%;
+			padding: 6px;
+			font-size: 18px;
+			border-radius: 10px;
+			text-align: center;
+		}
+
+		@-webkit-keyframes mymove {
+			50% {
+				-webkit-filter: drop-shadow(4px 4px 20px #ffffff9c);
+				filter: drop-shadow(5px 5px 20px #ffffff61);
+			}
+		}
+
+		@keyframes mymove {
+			50% {
+				-webkit-filter: drop-shadow(4px 4px 20px #ffffff9c);
+				filter: drop-shadow(4px 4px 20px #ffffff61);
+			}
+		}
+	</style>
+
+
+
+	<script type="text/javascript" src="./Winwheel.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"></script>
+</head>
+
+<body onload="init()">
+
+
+	<div class="modal" tabindex="-1" id="popup_1">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content" style="background:none;border: 0;">
+				<div class="modal-body text-center">
+					<h1>Сongratulations!</h1>
+					<p class="prize1"></p>
+					<button class="store button" onclick="respin();">Respin</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal" tabindex="-1" id="popup_2">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content" style="background:none;border: 0;">
+				<div class="modal-body text-center">
+					<h1>Сongratulations!</h1>
+					<p class="prize2"></p>
+					<a class="store button" href="{offer_link}" />Install</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="d-flex flex-column min-vh-100  align-items-center">
+		<img class="icon" style="max-width:300px;margin-top:30px;" src="./logo.png" alt="" />
+
+
+		<h2>Get your Bonus!</h2>
+
+
+
+
+		<div id="canvasContainer">
+			<canvas id="canvas" width="800" height=800" data-responsiveMinWidth="180" data-responsiveScaleHeight="true"
+				data-responsiveMargin="50">
+				<p style="{color: white}" align="center">Sorry, your browser doesn't support wheel. Please try Google Chrome.
+				</p>
+			</canvas>
+			<!--<img id="prizePointer" src="./basic_pointer.png" alt="V" />-->
+			<img id="prizeBG" src="./wheel.png" alt="V" />
+		</div>
+
+
+
+		<div class="wrap">
+			<button class="gold button" onClick="startSpin(91);" href="#" />SPIN</button>
+		</div>
+		<!--<a href="/link_log.php" class="btn" >
+            <img class="button" src="pre2/button.png?v=4"/>
+        </a> -->
+	</div>
+	<style>
+		.modal-body {
+			background: transparent url(./winner.png) center center/contain no-repeat !important;
+		}
+
+		.modal-body h1 {
+			font-size: 34px;
+			color: #FFFF33;
+			text-transform: uppercase;
+		}
+
+		.modal-body p {
+			color: #fff;
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+
+		body {
+
+			background: url(./bg.jpg) no-repeat center center #000;
+			background-size: cover;
+
+			font-weight: bold;
+		}
+
+		.wrap {
+			padding-left: 30px;
+			width: 100%;
+		}
+
+		.store {
+			background: url(./store.png) center center/cover no-repeat !important;
+			width: 200px !important;
+			height: 58px !important;
+			font-size: 25px !important;
+			color: #000 !important;
+			text-transform: uppercase;
+			line-height: 58px !important;
+			margin-bottom: 0px !important;
+			padding: 0px !important;
+		}
+
+		.button {
+			align-self: center;
+			border: solid 1px transparent;
+			padding: 3px;
+			width: 300px;
+			border-radius: 15px;
+			font-weight: bold;
+			cursor: pointer;
+			margin: 0px auto 20px;
+			display: block;
+			color: #fff;
+			text-transform: uppercase;
+			text-decoration: none;
+			text-align: center;
+			line-height: 45px;
+			padding: 20px;
+			font-size: 35px;
+			padding-right: 41px;
+			height: 99px;
+			background: url('./button.png') center -72%/100% no-repeat;
+		}
+
+		.button:hover {
+			color: #fff;
+		}
+
+		.button.gold {
+			/* box-shadow: inset 0 0 0 1px #eedc00, inset 0 1px 2px rgb(255 255 255 / 50%), inset 0 -1px 2px rgb(0 0 0 / 50%);
+        background: conic-gradient(#edc800, #e3b600, #f3cf00, #ffe800, #ffe900, #ffeb00, #ffe000, #ebc500, #e0b100, #f1cc00, #fcdc00, #ffe500, #fad900, #eec200, #e7b900, #f7d300, #ffe800, #ffe300, #f5d100, #e6b900, #e3b600, #f4d000, #ffe400, #ebc600, #e3b600, #f6d500, #ffe900, #ffe90a, #edc800) content-box, linear-gradient(#f6d600, #f6d600) padding-box, radial-gradient(rgba(120, 120, 120, 0.9), rgba(120, 120, 120, 0) 70%) 50% bottom/80% 0.46875em no-repeat border-box;
+       */
+
+		}
+
+		#canvasContainer {
+			position: relative;
+			width: 808px;
+			margin-top: 65px;
+		}
+
+		#canvas {
+			z-index: 1;
+		}
+
+		#prizePointer {
+			position: absolute;
+			left: calc(50% - 30px);
+			top: -30px;
+			z-index: 10;
+		}
+
+		#prizeBG {
+			position: absolute;
+			left: calc(50% - 396px);
+			top: 2px;
+			z-index: 5;
+			width: 98%;
+			height: 99%;
+		}
+
+		@media screen and (max-width: 900px) {
+			#canvasContainer {
+				width: 350px;
+			}
+
+			#prizePointer {
+				left: calc(50% - 22.5px);
+				top: -20px;
+				max-width: 45px;
+			}
+
+			body {
+				font-family: RotondaC;
+			}
+
+			@font-face {
+				font-family: 'RotondaC';
+				src: url('./RotondaC-Bold.eot');
+				src: local('RotondaC Bold'), local('RotondaC-Bold'),
+					url('RotondaC-Bold.eot?#iefix') format('embedded-opentype'),
+					url('RotondaC-Bold.woff') format('woff') font-weight: normal;
+				font-style: normal;
+			}
+
+			@font-face {
+				font-family: 'RotondaC';
+				src: url('./RotondaC-Bold.eot');
+				src: local('RotondaC Bold'), local('RotondaC-Bold'),
+					url('RotondaC-Bold.eot?#iefix') format('embedded-opentype'),
+					url('RotondaC-Bold.woff') format('woff') font-weight: bold;
+				font-style: normal;
+			}
+
+			#prizeBG {
+				height: auto;
+				left: calc(50% - 172px);
+			}
+
+			#canvas {
+				max-width: 350px;
+				min-width: 350px;
+			}
+
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="./ua-parser.min.js"></script>
+	<script>
+		// Create new wheel object specifying the parameters at creation time.
+		let theWheel = new Winwheel({
+			'numSegments': 12,         // Specify number of segments.
+			'outerRadius': 400,       // Set outer radius so wheel fits inside the background.
+			'drawMode': 'image',   // drawMode must be set to image.
+			'drawText': true,      // Need to set this true if want code-drawn text on image wheels.
+			'textFontSize': 40,        // Set text options as desired.
+			'textAlignment': 'outer',
+			'textMargin': 115,
+			'responsive': false,
+			'textFontFamily': 'RotondaC',
+			'textFillStyle': 'white',
+			'textFontWeight': 600,
+			'scaleFactor': 1,
+			'segments':                // Define segments.
+				[{ "text": "400$" }, { "text": "200$" }, { "text": "100FS" }, { "text": "50FS" }, { "text": "300$" }, { "text": "150FS" }, { "text": "100$" }, { "text": "400$" }, { "text": "200$" }, { "text": "150FS" }, { "text": "100FS" }, { "text": "50FS" }, { "text": "" }, { "text": "" }, { "text": "" }, { "text": "" }],
+			'animation':                   // Specify the animation to use.
+			{
+				'type': 'spinToStop',
+				'duration': 5,     // Duration in seconds.
+				'spins': 9,     // Number of complete spins.
+				'callbackFinished': alertPrize
+			}/*,
+                'pointerGuide' :        // Turn pointer guide on.
+                {
+                    'display'     : true,
+                    'strokeStyle' : 'red',
+                    'lineWidth'   : 3
+                } */
+		});
+
+		theWheel.segments[1].textFillStyle = '#fff';
+		theWheel.segments[1].textFontFamily = 'RotondaC';
+		theWheel.segments[1].textFontWeight = 600;
+		theWheel.segments[2].textFillStyle = '#000';
+		theWheel.segments[3].textFillStyle = '#fff';
+		theWheel.segments[4].textFillStyle = '#000';
+		theWheel.segments[5].textFillStyle = '#fff';
+		theWheel.segments[6].textFillStyle = '#000';
+		theWheel.segments[7].textFillStyle = '#fff';
+		theWheel.segments[8].textFillStyle = '#000';
+		theWheel.segments[9].textFillStyle = '#fff';
+		theWheel.segments[10].textFillStyle = '#000';
+		theWheel.segments[11].textFillStyle = '#fff';
+		theWheel.segments[12].textFillStyle = '#000';
+
+		// Create new image object in memory.
+		let loadedImg = new Image();
+
+		function init() {
+			/* loadedImg.onload = function()
+				{  */
+			theWheel.wheelImage = loadedImg;    // Make wheelImage equal the loaded image object.
+			theWheel.draw();                    // Also call draw function to render the wheel.
+			//}
+			//myCanvas.draw();
+		}
+		// Create callback to execute once the image has finished loading.
+
+
+		// Set the image source, once complete this will trigger the onLoad callback (above).
+		loadedImg.src = "./wheel2.png";
+
+
+
+		// Vars used by the code in this page to do power controls.
+		let wheelPower = 0;
+		let wheelSpinning = false;
+
+		// -------------------------------------------------------
+		// Function to handle the onClick on the power buttons.
+		// -------------------------------------------------------
+		function powerSelected(powerLevel) {
+			// Ensure that power can't be changed while wheel is spinning.
+			if (wheelSpinning == false) {
+				// Reset all to grey incase this is not the first time the user has selected the power.
+				document.getElementById('pw1').className = "";
+				document.getElementById('pw2').className = "";
+				document.getElementById('pw3').className = "";
+
+				// Now light up all cells below-and-including the one selected by changing the class.
+				if (powerLevel >= 1) {
+					document.getElementById('pw1').className = "pw1";
+				}
+
+				if (powerLevel >= 2) {
+					document.getElementById('pw2').className = "pw2";
+				}
+
+				if (powerLevel >= 3) {
+					document.getElementById('pw3').className = "pw3";
+				}
+
+				// Set wheelPower var used when spin button is clicked.
+				wheelPower = powerLevel;
+			}
+		}
+
+		var spinCount = 0;
+		// -------------------------------------------------------
+		// Click handler for spin button.
+		// -------------------------------------------------------
+		function startSpin(stopAngle) {
+			// Ensure that spinning can't be clicked again while already running.
+			if (wheelSpinning == false) {
+				// Based on the power level selected adjust the number of spins for the wheel, the more times is has
+				// to rotate with the duration of the animation the quicker the wheel spins.
+
+				theWheel.animation.spins = 4;
+
+				// Begin the spin animation by calling startAnimation on the wheel object.
+				let stopAt = (stopAngle + Math.floor((Math.random() * 28)));
+				theWheel.animation.stopAngle = stopAt;
+				theWheel.startAnimation();
+
+				// Set to true so that power can't be changed and spin button re-enabled during
+				// the current animation. The user will have to reset before spinning again.
+				wheelSpinning = true;
+
+				spinCount += 1;
+			}
+		}
+		function respin() {
+			$('#popup_1').modal('hide');
+			resetWheel();
+			startSpin(91);
+		}
+		// -------------------------------------------------------
+		// Function for reset button.
+		// -------------------------------------------------------
+		function resetWheel() {
+			theWheel.stopAnimation(false);  // Stop the animation, false as param so does not call callback function.
+			theWheel.rotationAngle = 0;     // Re-set the wheel angle to 0 degrees.
+			theWheel.draw();                // Call draw to render changes to the wheel.
+
+
+			wheelSpinning = false;          // Reset to false to power buttons and spin can be clicked again.
+		}
+
+		// -------------------------------------------------------
+		// Called when the spin animation has finished by the callback feature of the wheel because I specified callback in the parameters.
+		// note the indicated segment is passed in as a parmeter as 99% of the time you will want to know this to inform the user of their prize.
+		// -------------------------------------------------------
+		var prize1, prize2;
+		function alertPrize(indicatedSegment) {
+			// Do basic alert of the segment text. You would probably want to do something more interesting with this information.
+			// + indicatedSegment.text
+			var text1, text2;
+			if (spinCount == 1) {
+				// prize1 = "Respin and get {bonus} + new bonus!".replace(/\{bonus\}/g, indicatedSegment.text);
+				prize1 = indicatedSegment.text;
+				text1 = `Respin and get ${prize1} + new bonus!`;
+				$('.prize1').html(text1);
+				$('#popup_1').modal('show');
+			}
+			if (spinCount == 2) {
+				prize2 = indicatedSegment.text;
+				text2 = `Install and get ${prize1} + ${prize2}!`;
+				$('.prize2').html(text2);
+				$('#popup_2').modal('show');
+			}
+		}
+	</script>
+	<script>
+		$(document).ready(function () {
+
+			/*setTimeout(function(){
+					$('.btn').click();
+			
+			}, 1000);  */
+
+			/*const ua = new UAParser;
+			const urlParams = new URLSearchParams(window.location.search);
+			$.ajax({
+							type: 'get',
+							url:'/ua.php',
+							data: 'type=installer&action=store&device='+ua.getBrowser().name+'&utm_source='+urlParams.get('utm_source')+'&utm_medium='+urlParams.get('utm_medium')+'&utm_campaign='+urlParams.get('utm_campaign')+'&utm_term='+urlParams.get('utm_term')+'&utm_content='+urlParams.get('utm_content'),
+							dataType: 'json',
+							processData: true,
+							success: function(result) {
+									tid = result.tid;
+							}
+			});  */
+
+			/*$(document).on('click', 'a', function(e) {
+			
+					$.ajax({
+							type: 'get',
+							url:'/ua.php',
+							data: 'type=installer&action=install&device='+ua.getBrowser().name+'&utm_source='+urlParams.get('utm_source')+'&utm_medium='+urlParams.get('utm_medium')+'&utm_campaign='+urlParams.get('utm_campaign')+'&utm_term='+urlParams.get('utm_term')+'&utm_content='+urlParams.get('utm_content'),
+							dataType: 'json',
+							processData: true,
+							success: function(result) {
+									$.ajax({
+									type: 'post',
+									url:'/one.php?type=set_tid',
+									data: 'tid='+result.tid,
+									dataType: 'json'
+									});
+			
+							window.location.replace("/link_log.php");
+			
+							}
+					});
+			
+			});   */
+
+
+		});
+	</script>
+</body>
+
+</html>
