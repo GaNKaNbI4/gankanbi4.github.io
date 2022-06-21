@@ -161,7 +161,9 @@ body {
 	margin: 0 2rem;
 	color: #333;
 	font-family: Lyon, Georgia, serif;
-	margin-bottom: 5rem
+	margin-bottom: 5rem;
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 body#homepage {
@@ -550,7 +552,7 @@ div.sublinks a:last-child {
 
 main#home div.cover {
 	margin: 4em 0;
-	position: relative
+	position: relative;
 }
 
 main#home div.cover img {
@@ -662,7 +664,7 @@ main#home blockquote a {
 	}
 
 	footer {
-		max-width: 43rem;
+		/* max-width: 43rem; */
 		margin: 0 auto;
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
 		text-align: center;
@@ -781,6 +783,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+	position: relative;
 }
 
 .shadow {
@@ -800,15 +803,47 @@ body {
 	user-select: none;
 	left: -100%;
 	width: 215%;
-	height: 500px;
+	height: 40vw;
 }
 
 @media (max-width: 900px) {
 	#flipbook {
 		left: 15px;
 		width: 85%;
+		height: 55vw;
 	}
 }
+
+.flipbook-next,
+.flipbook-prev {
+	display: none;
+}
+
+@media (max-width: 600px) {
+	#flipbook {
+		height: 100vw;
+	}
+
+	.flipbook-next,
+	.flipbook-prev {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 15%;
+		height: 100%;
+		top: 0;
+		z-index: 3;
+	}
+
+	.flipbook-prev {
+		left: 0;
+	}
+
+	.flipbook-next {
+		right: 5%;
+	}
+}
+
 
 .hard {
 	color: white;
@@ -884,7 +919,13 @@ body {
 }
 
 .footer {
-	position: absolute;
 	bottom: 0px;
-	width: 100%;
+	flex: 0 0 100%;
+	padding: 20px 0;
+}
+
+@media (max-width: 600px) {
+	.footer {
+		padding-top: 0;
+	}
 }

@@ -86,45 +86,61 @@ if(windowSize.matches) {
 	$("#flipbook").turn('display', 'single');
 }
 
-document.addEventListener('click', (e) => {
-	e.preventDefault();
-	if (e.target.classList.contains('_chapter-one')) {
-		$("#flipbook").turn('page', 3);
-	}
-	if (e.target.classList.contains('_chapter-two')) {
-		$("#flipbook").turn('page', 4);
-	}
-	if (e.target.classList.contains('_chapter-three')) {
-		$("#flipbook").turn('page', 5);
-	}
-	if (e.target.classList.contains('_chapter-four')) {
-		$("#flipbook").turn('page', 6);
-	}
-	if (e.target.classList.contains('_chapter-five')) {
-		$("#flipbook").turn('page', 7);
-	}
-	if (e.target.classList.contains('_chapter-six')) {
-		$("#flipbook").turn('page', 8);
-	}
-	if (e.target.classList.contains('_chapter-seven')) {
-		$("#flipbook").turn('page', 9);
-	}
-	if (e.target.classList.contains('_chapter-eight')) {
-		$("#flipbook").turn('page', 10);
-	}
-	if (e.target.classList.contains('_chapter-nine')) {
-		$("#flipbook").turn('page', 11);
-	}
-	if (e.target.classList.contains('_chapter-ten')) {
-		$("#flipbook").turn('page', 12);
-	}
-	if (e.target.classList.contains('_chapter-eleven')) {
-		$("#flipbook").turn('page', 13);
-	}
-	if (e.target.classList.contains('_chapter-twelve')) {
-		$("#flipbook").turn('page', 14);
-	}
-	if (e.target.classList.contains('_chapter-thirteen')) {
-		$("#flipbook").turn('page', 15);
-	}
-})
+$(".flipbook-prev").click(() => {
+	$("#flipbook").turn('previous');
+});
+$(".flipbook-next").click(() => {
+	$("#flipbook").turn('next');
+});
+
+$(document).ready(function() {
+  $("a.scrollto").click(function(e) {
+    var elementClick = $(this).attr("href")
+		if ($(e.target).hasClass('_chapter-one')) {
+			$("#flipbook").turn('page', 3);
+		}
+		if ($(e.target).hasClass('_chapter-two')) {
+			$("#flipbook").turn('page', 4);
+		}
+		if ($(e.target).hasClass('_chapter-three')) {
+			$("#flipbook").turn('page', 5);
+		}
+		if ($(e.target).hasClass('_chapter-four')) {
+			$("#flipbook").turn('page', 6);
+		}
+		if ($(e.target).hasClass('_chapter-five')) {
+			$("#flipbook").turn('page', 7);
+		}
+		if ($(e.target).hasClass('_chapter-six')) {
+			$("#flipbook").turn('page', 8);
+		}
+		if ($(e.target).hasClass('_chapter-seven')) {
+			$("#flipbook").turn('page', 9);
+		}
+		if ($(e.target).hasClass('_chapter-eight')) {
+			$("#flipbook").turn('page', 10);
+		}
+		if ($(e.target).hasClass('_chapter-nine')) {
+			$("#flipbook").turn('page', 11);
+		}
+		if ($(e.target).hasClass('_chapter-ten')) {
+			$("#flipbook").turn('page', 12);
+		}
+		if ($(e.target).hasClass('_chapter-eleven')) {
+			$("#flipbook").turn('page', 13);
+		}
+		if ($(e.target).hasClass('_chapter-twelve')) {
+			$("#flipbook").turn('page', 14);
+		}
+		if ($(e.target).hasClass('_chapter-thirteen')) {
+			$("#flipbook").turn('page', 15);
+		}
+
+    var destination = $(elementClick).offset().top - 30;
+    jQuery("html:not(:animated),body:not(:animated)").animate({
+      scrollTop: destination
+    }, 800);
+
+    return false;
+  });
+});
