@@ -719,6 +719,12 @@ main#home blockquote a {
 	}
 }
 
+@media (max-width: 900px) {
+	.menu-items {
+		width: 100%;
+	}
+}
+
 @media (min-width: 1200px) {
 	body:not(#homepage) {
 		margin-left: calc(50vw - 5rem);
@@ -799,8 +805,8 @@ body {
 
 @media (max-width: 900px) {
 	#flipbook {
-		left: 0;
-		width: 100%;
+		left: 15px;
+		width: 85%;
 	}
 }
 
