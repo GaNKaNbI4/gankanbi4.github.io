@@ -120,7 +120,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
+	content: "";
 	content: none;
 }
 
@@ -129,19 +129,18 @@ table {
 	border-spacing: 0;
 }
 
-
 *,
 *:before,
 *:after {
-	box-sizing: border-box
+	box-sizing: border-box;
 }
 
 ::-moz-selection {
-	background: #FFF29E
+	background: #fff29e;
 }
 
 ::selection {
-	background: #FFF29E
+	background: #fff29e;
 }
 
 html {
@@ -151,7 +150,7 @@ html {
 	-o-font-feature-settings: "kern" 1, "onum" 1;
 	-webkit-font-feature-settings: "kern" 1, "onum" 1;
 	font-feature-settings: "kern" 1, "onum" 1;
-	font-kerning: normal
+	font-kerning: normal;
 }
 
 body {
@@ -169,12 +168,12 @@ body {
 body#homepage {
 	background: url("texture.jpg") #dfdfdf repeat;
 	background-size: 100px 100px;
-	background-blend-mode: multiply
+	background-blend-mode: multiply;
 }
 
 body#homepage footer {
 	border-top: none;
-	margin: 0 auto
+	margin: 0 auto;
 }
 
 div.leadimg {
@@ -182,7 +181,7 @@ div.leadimg {
 	background-size: 100px 100px;
 	margin: -2rem -2rem 2rem;
 	height: calc(100vh - 8.5rem);
-	min-height: 300px
+	min-height: 300px;
 }
 
 div.leadimg img {
@@ -190,18 +189,18 @@ div.leadimg img {
 	padding: 5vh;
 	width: 100%;
 	height: 100%;
-	object-fit: scale-down
+	object-fit: scale-down;
 }
 
 footer {
 	text-align: center;
-	padding: 0.5rem 1rem 0
+	padding: 0.5rem 1rem 0;
 }
 
 header,
 footer,
 main#home {
-	font-family: 'PitchWeb', Courier, monospace
+	font-family: "PitchWeb", Courier, monospace;
 }
 
 a {
@@ -210,15 +209,15 @@ a {
 	background-image: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.25) 50%);
 	background-position: 0px 100%;
 	background-repeat: repeat-x;
-	background-size: 2px 2px
+	background-size: 2px 2px;
 }
 
 a:hover {
-	color: #b95b23
+	color: #b95b23;
 }
 
 em {
-	font-style: italic
+	font-style: italic;
 }
 
 article {
@@ -243,12 +242,12 @@ article h3 {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	letter-spacing: 0.001em;
-	word-spacing: 0.005em
+	word-spacing: 0.005em;
 }
 
 article h2 {
 	margin: 4rem auto;
-	color: #b95b23
+	color: #b95b23;
 }
 
 article h2 span {
@@ -257,45 +256,45 @@ article h2 span {
 	font-family: Courier, monospace;
 	font-size: 1rem;
 	-webkit-font-smoothing: subpixel-antialiased;
-	-moz-osx-font-smoothing: auto
+	-moz-osx-font-smoothing: auto;
 }
 
 article h3 {
-	margin-bottom: 0
+	margin-bottom: 0;
 }
 
-article>p+p {
-	text-indent: 1.5em
+article > p + p {
+	text-indent: 1.5em;
 }
 
 p.block {
 	text-indent: 0;
 	margin-top: 2rem;
-	margin-bottom: 2rem
+	margin-bottom: 2rem;
 }
 
 p.caption {
 	font-family: Courier, monospace;
 	font-size: 1rem;
 	-webkit-font-smoothing: subpixel-antialiased;
-	-moz-osx-font-smoothing: auto
+	-moz-osx-font-smoothing: auto;
 }
 
 p.backers {
-	text-align: center
+	text-align: center;
 }
 
 article img {
-	width: 100%
+	width: 100%;
 }
 
 article img:first-child {
-	mix-blend-mode: multiply
+	mix-blend-mode: multiply;
 }
 
 article blockquote {
 	margin: 4rem auto;
-	font-style: italic
+	font-style: italic;
 }
 
 article blockquote cite {
@@ -303,7 +302,7 @@ article blockquote cite {
 	font-style: normal;
 	text-transform: uppercase;
 	font-size: 80%;
-	letter-spacing: 0.05em
+	letter-spacing: 0.05em;
 }
 
 article ul {
@@ -313,21 +312,21 @@ article ul {
 	font-family: Courier, monospace;
 	font-size: 1rem;
 	-webkit-font-smoothing: subpixel-antialiased;
-	-moz-osx-font-smoothing: auto
+	-moz-osx-font-smoothing: auto;
 }
 
 article ul li {
-	padding-left: 1rem
+	padding-left: 1rem;
 }
 
-article h3+ul {
-	margin-top: 1rem
+article h3 + ul {
+	margin-top: 1rem;
 }
 
 img.art {
 	display: block;
 	width: calc(100% - 2rem);
-	margin: 4rem 1rem
+	margin: 4rem 1rem;
 }
 
 p.forward {
@@ -335,28 +334,28 @@ p.forward {
 	margin: 5rem auto 3rem;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	padding-top: 3rem;
-	text-indent: 0
+	text-indent: 0;
 }
 
 a.nextchap {
 	display: block;
 	background-image: none;
-	text-align: center
+	text-align: center;
 }
 
 a.nextchap img {
 	max-width: 3rem;
 	text-indent: 0;
-	transition: all 0.2s ease
+	transition: all 0.2s ease;
 }
 
 a.nextchap:hover img {
-	margin-left: 1rem
+	margin-left: 1rem;
 }
 
 a.nextchap em,
 a.nextchap span {
-	display: block
+	display: block;
 }
 
 a.nextchap span {
@@ -364,7 +363,7 @@ a.nextchap span {
 	font-size: 1rem;
 	-webkit-font-smoothing: subpixel-antialiased;
 	-moz-osx-font-smoothing: auto;
-	text-indent: 0
+	text-indent: 0;
 }
 
 a.buy {
@@ -381,13 +380,13 @@ a.buy {
 	border-radius: 50%;
 	position: fixed;
 	right: 1.5rem;
-	bottom: 1.5rem
+	bottom: 1.5rem;
 }
 
 a.buy:hover {
 	background-image: none;
 	background-color: #b95b23;
-	-webkit-animation: rotation 2s infinite linear
+	-webkit-animation: rotation 2s infinite linear;
 }
 
 header {
@@ -395,7 +394,7 @@ header {
 	padding: 1.5rem 1rem;
 	text-align: center;
 	background-color: white;
-	z-index: 100
+	z-index: 100;
 }
 
 header h1,
@@ -403,25 +402,25 @@ header h2 {
 	font-size: 1rem;
 	font-weight: normal;
 	display: inline;
-	margin: 0
+	margin: 0;
 }
 
 header a {
-	background-image: none
+	background-image: none;
 }
 
 header h1 {
-	text-transform: uppercase
+	text-transform: uppercase;
 }
 
 header h2 {
-	display: none
+	display: none;
 }
 
-nav>a {
+nav > a {
 	font-family: Courier, monospace;
 	-webkit-font-smoothing: subpixel-antialiased;
-	-moz-osx-font-smoothing: auto
+	-moz-osx-font-smoothing: auto;
 }
 
 .menu-button {
@@ -430,39 +429,39 @@ nav>a {
 	height: 40px;
 	top: 20px;
 	left: 46px;
-	position: absolute
+	position: absolute;
 }
 
 .menu-button:hover {
-	cursor: pointer
+	cursor: pointer;
 }
 
 .menu-button:before,
 .menu-button:after {
-	content: '';
+	content: "";
 	width: 21px;
 	height: 1px;
 	background: #333;
 	display: block;
 	position: absolute;
 	left: 5px;
-	transition: all .2s ease-in-out
+	transition: all 0.2s ease-in-out;
 }
 
 .menu-button:before {
-	top: 13px
+	top: 13px;
 }
 
 .menu-button:after {
-	top: 22px
+	top: 22px;
 }
 
 .menu-button-open:before {
-	transform: rotate(45deg) translate(3px, 3px)
+	transform: rotate(45deg) translate(3px, 3px);
 }
 
 .menu-button-open:after {
-	transform: rotate(-45deg) translate(4px, -3px)
+	transform: rotate(-45deg) translate(4px, -3px);
 }
 
 nav {
@@ -471,7 +470,7 @@ nav {
 	margin: 4rem 0;
 	padding: 3rem;
 	border-top: 1px solid #eee;
-	border-bottom: 1px solid #eee
+	border-bottom: 1px solid #eee;
 }
 
 @media (max-width: 1160px) {
@@ -485,35 +484,35 @@ nav h3 {
 	font-size: 1rem;
 	text-transform: uppercase;
 	-webkit-font-smoothing: subpixel-antialiased;
-	-moz-osx-font-smoothing: auto
+	-moz-osx-font-smoothing: auto;
 }
 
 nav h3:after {
-	content: '';
+	content: "";
 	display: block;
 	width: 4rem;
 	border-bottom: 1px solid #ddd;
-	margin: 2rem auto
+	margin: 2rem auto;
 }
 
 .toc li {
-	margin: 2.5rem 1rem
+	margin: 2.5rem 1rem;
 }
 
 .toc a {
 	font-size: 1.25rem;
-	background-image: none
+	background-image: none;
 }
 
 .toc a span {
 	display: block;
 	font-size: 1rem;
 	font-family: Courier, monospace;
-	color: rgba(0, 0, 0, 0.5)
+	color: rgba(0, 0, 0, 0.5);
 }
 
 div.sublinks {
-	padding-bottom: 3rem
+	padding-bottom: 3rem;
 }
 
 div.sublinks a {
@@ -521,32 +520,32 @@ div.sublinks a {
 	-webkit-font-smoothing: subpixel-antialiased;
 	-moz-osx-font-smoothing: auto;
 	display: inline-block;
-	margin-right: 1.5em
+	margin-right: 1.5em;
 }
 
 div.sublinks a:last-child {
-	margin-right: 0
+	margin-right: 0;
 }
 
 @-webkit-keyframes rotation {
 	from {
-		-webkit-transform: rotate(0deg)
+		-webkit-transform: rotate(0deg);
 	}
 
 	to {
-		-webkit-transform: rotate(359deg)
+		-webkit-transform: rotate(359deg);
 	}
 }
 
 @keyframes menu-item-animation {
 	0% {
 		transform: translate(-300px, 0px);
-		opacity: 0
+		opacity: 0;
 	}
 
 	100% {
 		transform: translate(0px, 0px);
-		opacity: 1
+		opacity: 1;
 	}
 }
 
@@ -562,7 +561,8 @@ main#home div.cover img {
 	margin: auto;
 	border-radius: 2px 1px 1px 2px;
 	mix-blend-mode: normal;
-	box-shadow: 0 0 10px 0 rgba(40, 42, 47, 0.1), -10px 10px 24px 10px rgba(40, 42, 47, 0.05), -30px 40px 30px 0 rgba(40, 42, 47, 0.1), -10px 10px 10px -5px rgba(40, 42, 47, 0.1)
+	box-shadow: 0 0 10px 0 rgba(40, 42, 47, 0.1), -10px 10px 24px 10px rgba(40, 42, 47, 0.05),
+		-30px 40px 30px 0 rgba(40, 42, 47, 0.1), -10px 10px 10px -5px rgba(40, 42, 47, 0.1);
 }
 
 main#home blockquote {
@@ -570,50 +570,50 @@ main#home blockquote {
 	margin: 2rem auto;
 	max-width: 25em;
 	flex: 0 0 50%;
-	font-style: normal
+	font-style: normal;
 }
 
 main#home blockquote a {
-	text-transform: uppercase
+	text-transform: uppercase;
 }
 
 @media (max-width: 800px) {
 	body {
-		margin: 0
+		margin: 0;
 	}
 }
 
 @media (min-width: 500px) {
 	header h2 {
-		display: inline
+		display: inline;
 	}
 
 	header h2:before {
-		content: ' · '
+		content: " · ";
 	}
 }
 
 @media (min-width: 900px) and (max-height: 600px) {
 	header h2 {
-		display: none
+		display: none;
 	}
 }
 
 @media (min-width: 900px) {
 	html {
-		margin-left: 4.5rem
+		margin-left: 4.5rem;
 	}
 
 	div.leadimg {
 		margin-left: -4.5rem;
-		height: calc(100vh - 6rem)
+		height: calc(100vh - 6rem);
 	}
 
 	a.buy {
 		right: 2rem;
 		top: 2rem;
 		width: 5em;
-		height: 5em
+		height: 5em;
 	}
 
 	header {
@@ -624,10 +624,10 @@ main#home blockquote a {
 		display: flex;
 		align-items: center;
 		width: 7rem;
-		border-right: 1px solid #eee
+		border-right: 1px solid #eee;
 	}
 
-	header>div {
+	header > div {
 		transform: rotate(90deg);
 		transform-origin: top left;
 		position: absolute;
@@ -635,12 +635,12 @@ main#home blockquote a {
 		top: calc(50vh - 12rem);
 		line-height: 1;
 		width: 24rem;
-		height: 2em
+		height: 2em;
 	}
 
 	.menu-button {
 		display: block;
-		margin-left: 2px
+		margin-left: 2px;
 	}
 
 	.menu-items {
@@ -651,16 +651,16 @@ main#home blockquote a {
 		margin: 0;
 		max-width: 300px;
 		z-index: 4;
-		transition: all .3s ease-in-out;
+		transition: all 0.3s ease-in-out;
 		border-right: 1px solid #f0f0f0;
 		border-top: none;
 		border-bottom: none;
-		overflow-y: auto
+		overflow-y: auto;
 	}
 
 	.menu-items-open {
 		left: 5rem;
-		transition: all .3s ease-in-out
+		transition: all 0.3s ease-in-out;
 	}
 
 	footer {
@@ -668,17 +668,18 @@ main#home blockquote a {
 		margin: 0 auto;
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
 		text-align: center;
-		padding: 4rem 1rem 0
+		padding: 4rem 1rem 0;
 	}
 
 	body#homepage {
-		margin-bottom: 0
+		margin-bottom: 0;
+		overflow: hidden;
 	}
 
 	body#homepage footer {
 		margin-top: 0;
 		margin-bottom: 0;
-		padding-top: 0
+		padding-top: 0;
 	}
 
 	main#home {
@@ -693,18 +694,18 @@ main#home blockquote a {
 
 	main#home blockquote {
 		/* width: 25%; */
-		padding: 0 1rem
+		padding: 0 1rem;
 	}
 
 	main#home blockquote:first-child {
-		order: 1
+		order: 1;
 	}
 
 	main#home div.cover {
 		width: calc(40% + 4rem);
 		flex: 0 0 50%;
 		order: 2;
-		padding: 0 2rem
+		padding: 0 2rem;
 	}
 
 	main#home div.cover img {
@@ -713,11 +714,11 @@ main#home blockquote a {
 		width: auto;
 		max-width: 28vw;
 		max-height: calc(100vh - 12rem);
-		object-fit: contain
+		object-fit: contain;
 	}
 
 	main#home blockquote:last-child {
-		order: 3
+		order: 3;
 	}
 }
 
@@ -730,7 +731,7 @@ main#home blockquote a {
 @media (min-width: 1200px) {
 	body:not(#homepage) {
 		margin-left: calc(50vw - 5rem);
-		padding: 4rem 2rem 0
+		padding: 4rem 2rem 0;
 	}
 
 	div.leadimg {
@@ -743,7 +744,7 @@ main#home blockquote a {
 		height: 100vh;
 		margin: 0;
 		width: calc(50vw - 5rem);
-		background-color: #fff
+		background-color: #fff;
 	}
 
 	div.leadimg img {
@@ -751,27 +752,27 @@ main#home blockquote a {
 		padding: 2rem;
 		width: 100%;
 		height: 100vh;
-		object-fit: scale-down
+		object-fit: scale-down;
 	}
 
 	footer {
 		margin: 4rem 2rem 0;
 		border-top: 1px solid rgba(0, 0, 0, 0.1);
 		text-align: center;
-		padding: 4rem 1rem 0
+		padding: 4rem 1rem 0;
 	}
 
 	main#home div.cover {
 		/* width: calc(50% + 4rem); */
 		flex: 0 0 50%;
 		order: 2;
-		padding: 0 2rem
+		padding: 0 2rem;
 	}
 
 	main#home div.cover img {
 		max-width: 38vw;
 		max-height: calc(100vh - 12rem);
-		object-fit: contain
+		object-fit: contain;
 	}
 }
 
@@ -804,7 +805,6 @@ body {
 	left: -100%;
 	width: 215%;
 	height: 40vw;
-	overflow: hidden;
 }
 
 @media (max-width: 900px) {
@@ -827,7 +827,7 @@ body {
 
 	.flipbook-next,
 	.flipbook-prev {
-		content: '';
+		content: "";
 		display: block;
 		position: absolute;
 		width: 15%;
@@ -844,7 +844,6 @@ body {
 		right: 5%;
 	}
 }
-
 
 .hard {
 	color: white;
