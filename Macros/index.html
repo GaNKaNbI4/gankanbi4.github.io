@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220705194128">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<div class="header__logo">
+						<a href="#"><picture><source data-srcset="img/logo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/logo.png" alt="logo"></picture></a>
+						<h2>CLOUD</br>MACRO</h2>
+					</div>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">Инструкция</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">FAQ</a></li>
+							<li class="menu__item">
+								<div class="menu__register">
+									<a href="#" class="menu__register-item" data-popup="#popup_auth">Авторизация</a>
+									<a href="#" class="menu__register-item" data-popup="#popup_registration">Регистрация</a>
+								</div>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div class="language-switcher">
+			<a href="#" class="language-switcher__lang"><picture><source srcset="data:image.webp;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAmVBMVEViZsViZMJiYrf9gnL8eWrlYkjgYkjZYkj8/PujwPybvPz4+PetraBEgfo+fvo3efkydfkqcvj8Y2T8UlL8Q0P8MzP9k4Hz8/Lu7u4DdPj9/VrKysI9fPoDc/EAZ7z7IiLHYkjp6ekCcOTk5OIASbfY/v21takAJrT5Dg6sYkjc3Nn94t2RkYD+y8KeYkjs/v7l5fz0dF22YkjWvcOLAAAAgElEQVR4AR2KNULFQBgGZ5J13KGGKvc/Cw1uPe62eb9+Jr1EUBFHSgxxjP2Eca6AfUSfVlUfBvm1Ui1bqafctqMndNkXpb01h5TLx4b6TIXgwOCHfjv+/Pz+5vPRw7txGWT2h6yO0/GaYltIp5PT1dEpLNPL/SdWjYjAAZtvRPgHJX4Xio+DSrkAAAAASUVORK5CYII=" alt="EN"></picture></a>
+			<div class="language-switcher__lang"><picture><source srcset="data:image.webp;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAdVBMVEX19f/u7vjm5/H+/v75+fng4Ove3ulFRfyysv6cnP6QkPmIiPh/f/YAAOYAAP1ycv5QUP06OvkxMfcoKPcgIPYUFPS0AADdaYzTRG/RPGnOM2LKLFzIIVPCEUZ7AAD0AQH7YGH3ODj0JyfzERDgAAD4TU3pAABIfLuPAAAAT0lEQVR4AQXBAQqDMAAAsZytyHzA/v9LYRS7JIAQMkBb0ATsgLoKInnHvIrHrdRaBzxupTDxuFUifUsp4R3zU4iwzmOyT1ibBtP2u3C+wB+SHBB5JNY7DAAAAABJRU5ErkJggg==" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAdVBMVEX19f/u7vjm5/H+/v75+fng4Ove3ulFRfyysv6cnP6QkPmIiPh/f/YAAOYAAP1ycv5QUP06OvkxMfcoKPcgIPYUFPS0AADdaYzTRG/RPGnOM2LKLFzIIVPCEUZ7AAD0AQH7YGH3ODj0JyfzERDgAAD4TU3pAABIfLuPAAAAT0lEQVR4AQXBAQqDMAAAsZytyHzA/v9LYRS7JIAQMkBb0ATsgLoKInnHvIrHrdRaBzxupTDxuFUifUsp4R3zU4iwzmOyT1ibBtP2u3C+wB+SHBB5JNY7DAAAAABJRU5ErkJggg==" alt="RU"></picture></div>
+		</div>
+		<main class="page">
+			<section class="page__main-block main-block">
+				<div class="main-block__container">
+					<div class="main-block__body">
+						<p class="main-block__subtitle">ИГРАЙ БЕЗ ОТДАЧИ</p>
+						<div class="main-block__title">
+							<h1>ПОПРОБУЙ БЕСПЛАТНО 24 ЧАСА!</h1>
+							<div>ПОПРОБУЙ БЕСПЛАТНО 24 ЧАСА!</div>
+						</div>
+						<p class="main-block__subtitle">БЕЗ РИСКА БЫТЬ ЗАБАНЕНЫМ</p>
+						<p class="main-block__text">Приватные макросы помогут вам в идеальном контроле оружия без каких либо внедрений в код игры</p>
+						<a href="#" class="main-block__link">ПРИОБРЕСТИ</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__why-we why-we">
+				<div class="why-we__container">
+					<h2 class="why-we__title _section-title">ПОЧЕМУ ИМЕННО МЫ?</h2>
+					<div class="why-we__body">
+						<div class="why-we__item item-why-we">
+							<div class="item-why-we__content">
+								<picture><source data-srcset="img/why-we/aim.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/why-we/aim.png" alt="Aim icon"></picture>
+								<h3 class="item-why-we__name">Точность</h3>
+								<p class="item-why-we__describe">Наши макросы работают на любых мышках и доведены до киберспортивной точности
+								</p>
+							</div>
+						</div>
+						<div class="why-we__item item-why-we">
+							<div class="item-why-we__content">
+								<picture><source data-srcset="img/why-we/lock.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/why-we/lock.png" alt="Lock icon"></picture>
+								<h3 class="item-why-we__name">Без блокировки</h3>
+								<p class="item-why-we__describe">Наш макрос использует технологии ИИ и взаимодействует с вашей мышью, мы не лезем в код игры, что гарантирует безопасность вашего аккаунта</p>
+							</div>
+						</div>
+						<div class="why-we__item item-why-we">
+							<div class="item-why-we__content">
+								<picture><source data-srcset="img/why-we/updates.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/why-we/updates.png" alt="Updates icon"></picture>
+								<h3 class="item-why-we__name">Обновления</h3>
+								<p class="item-why-we__describe">Наша команда следит за обновлениями в игре и своевременно вносит правки в работу макроса</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__prices prices-page">
+				<div class="prices-page__container">
+					<h2 class="prices-page__title _section-title">ЦЕНЫ НА ПОДПИСКИ</h2>
+					<div class="prices-page__body">
+						<div class="prices-page__item item-prices-page">
+							<div class="item-prices-page__content">
+								<h3 class="item-prices-page__name">TEST</h3>
+								<ul class="item-prices-page__list">
+									<li class="item-prices-page__list-item">Введите промокод в программе: TEST24 </li>
+								</ul>
+								<div class="item-prices-page__buy-info">
+									<p class="item-prices-page__price">0$</p>
+									<div class="item-prices-page__time-block">
+										<div class="item-prices-page__buy-cover">
+											<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+												<path d="M489.579,254.766c-12.942-16.932-30.829-29.887-50.839-36.933c-0.828-48.454-40.501-87.618-89.148-87.618
+		 c-7.618,0-15.213,0.993-22.647,2.958c-12.102-15.076-27.37-27.615-44.441-36.457c-19.642-10.173-40.881-15.331-63.127-15.331
+		 c-74.705,0-135.736,59.676-137.931,133.859C33.885,227.82,0,271.349,0,321.107c0,60.383,49.125,109.508,109.508,109.508h292.983
+		 C462.875,430.615,512,381.49,512,321.107C512,296.896,504.246,273.956,489.579,254.766z M402.491,415.061H109.508
+		 c-51.806,0-93.953-42.147-93.953-93.953c0-44.549,31.647-83.274,75.248-92.079l6.342-1.281l-0.106-6.47
+		 c-0.008-0.465-0.036-0.923-0.069-1.38c-0.012-0.173-0.031-0.344-0.031-0.52c0-67.512,54.925-122.437,122.436-122.437
+		 c39.135,0,75.005,18.162,98.411,49.828l3.349,4.53l5.348-1.769c7.542-2.494,15.317-3.759,23.108-3.759
+		 c40.587,0,73.606,33.019,73.606,73.607c0,0.645-0.05,1.382-0.103,2.164c-0.034,0.505-0.067,1.011-0.093,1.518l-0.303,6.145
+		 l5.911,1.709c19.171,5.544,36.435,17.369,48.61,33.297c12.577,16.453,19.224,36.127,19.224,56.895
+		 C496.445,372.913,454.297,415.061,402.491,415.061z" />
+												<path d="M135.62,193.401h15.555c0-26.66,21.69-48.35,48.351-48.35v-15.555C164.289,129.495,135.62,158.163,135.62,193.401z" />
+											</svg>
+										</div>
+										<p>1 день</p>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="item-prices-page__link">СКАЧАТЬ МАКРОС</a>
+
+						</div>
+						<div class="prices-page__item item-prices-page">
+							<div class="item-prices-page__content">
+								<h3 class="item-prices-page__name">LIGHT</h3>
+								<ul class="item-prices-page__list">
+									<li class="item-prices-page__list-item">Подойдет для любой мыши</li>
+									<li class="item-prices-page__list-item">Автоматическое определение оружия для всех типов</li>
+									<li class="item-prices-page__list-item">Киберспортивная точность</li>
+								</ul>
+								<div class="item-prices-page__buy-info">
+									<p class="item-prices-page__price">1$</p>
+									<div class="item-prices-page__time-block">
+										<div class="item-prices-page__buy-cover">
+											<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+												<path d="M489.579,254.766c-12.942-16.932-30.829-29.887-50.839-36.933c-0.828-48.454-40.501-87.618-89.148-87.618
+		 c-7.618,0-15.213,0.993-22.647,2.958c-12.102-15.076-27.37-27.615-44.441-36.457c-19.642-10.173-40.881-15.331-63.127-15.331
+		 c-74.705,0-135.736,59.676-137.931,133.859C33.885,227.82,0,271.349,0,321.107c0,60.383,49.125,109.508,109.508,109.508h292.983
+		 C462.875,430.615,512,381.49,512,321.107C512,296.896,504.246,273.956,489.579,254.766z M402.491,415.061H109.508
+		 c-51.806,0-93.953-42.147-93.953-93.953c0-44.549,31.647-83.274,75.248-92.079l6.342-1.281l-0.106-6.47
+		 c-0.008-0.465-0.036-0.923-0.069-1.38c-0.012-0.173-0.031-0.344-0.031-0.52c0-67.512,54.925-122.437,122.436-122.437
+		 c39.135,0,75.005,18.162,98.411,49.828l3.349,4.53l5.348-1.769c7.542-2.494,15.317-3.759,23.108-3.759
+		 c40.587,0,73.606,33.019,73.606,73.607c0,0.645-0.05,1.382-0.103,2.164c-0.034,0.505-0.067,1.011-0.093,1.518l-0.303,6.145
+		 l5.911,1.709c19.171,5.544,36.435,17.369,48.61,33.297c12.577,16.453,19.224,36.127,19.224,56.895
+		 C496.445,372.913,454.297,415.061,402.491,415.061z" />
+												<path d="M135.62,193.401h15.555c0-26.66,21.69-48.35,48.351-48.35v-15.555C164.289,129.495,135.62,158.163,135.62,193.401z" />
+											</svg>
+										</div>
+										<p>7 дней</p>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="item-prices-page__link" data-popup="#popup_payment">КУПИТЬ</a>
+						</div>
+						<div class="prices-page__item item-prices-page">
+							<div class="item-prices-page__content">
+								<h3 class="item-prices-page__name">NORMAL</h3>
+								<ul class="item-prices-page__list">
+									<li class="item-prices-page__list-item">Подойдет для любой мыши</li>
+									<li class="item-prices-page__list-item">Автоматическое определение оружия для всех типов</li>
+									<li class="item-prices-page__list-item">Киберспортивная точность</li>
+								</ul>
+								<div class="item-prices-page__buy-info">
+									<p class="item-prices-page__price"><span>5$</span>2$</p>
+									<div class="item-prices-page__time-block">
+										<div class="item-prices-page__buy-cover">
+											<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+												<path d="M489.579,254.766c-12.942-16.932-30.829-29.887-50.839-36.933c-0.828-48.454-40.501-87.618-89.148-87.618
+		 c-7.618,0-15.213,0.993-22.647,2.958c-12.102-15.076-27.37-27.615-44.441-36.457c-19.642-10.173-40.881-15.331-63.127-15.331
+		 c-74.705,0-135.736,59.676-137.931,133.859C33.885,227.82,0,271.349,0,321.107c0,60.383,49.125,109.508,109.508,109.508h292.983
+		 C462.875,430.615,512,381.49,512,321.107C512,296.896,504.246,273.956,489.579,254.766z M402.491,415.061H109.508
+		 c-51.806,0-93.953-42.147-93.953-93.953c0-44.549,31.647-83.274,75.248-92.079l6.342-1.281l-0.106-6.47
+		 c-0.008-0.465-0.036-0.923-0.069-1.38c-0.012-0.173-0.031-0.344-0.031-0.52c0-67.512,54.925-122.437,122.436-122.437
+		 c39.135,0,75.005,18.162,98.411,49.828l3.349,4.53l5.348-1.769c7.542-2.494,15.317-3.759,23.108-3.759
+		 c40.587,0,73.606,33.019,73.606,73.607c0,0.645-0.05,1.382-0.103,2.164c-0.034,0.505-0.067,1.011-0.093,1.518l-0.303,6.145
+		 l5.911,1.709c19.171,5.544,36.435,17.369,48.61,33.297c12.577,16.453,19.224,36.127,19.224,56.895
+		 C496.445,372.913,454.297,415.061,402.491,415.061z" />
+												<path d="M135.62,193.401h15.555c0-26.66,21.69-48.35,48.351-48.35v-15.555C164.289,129.495,135.62,158.163,135.62,193.401z" />
+											</svg>
+										</div>
+										<p>14 дней</p>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="item-prices-page__link" data-popup="#popup_payment">КУПИТЬ</a>
+						</div>
+						<div class="prices-page__item item-prices-page">
+							<div class="item-prices-page__content">
+								<h3 class="item-prices-page__name">BASE</h3>
+								<ul class="item-prices-page__list">
+									<li class="item-prices-page__list-item">Подойдет для любой мыши</li>
+									<li class="item-prices-page__list-item">Автоматическое определение оружия для всех типов</li>
+									<li class="item-prices-page__list-item">Киберспортивная точность</li>
+								</ul>
+								<div class="item-prices-page__buy-info">
+									<p class="item-prices-page__price"><span>5$</span>2$</p>
+									<div class="item-prices-page__time-block">
+										<div class="item-prices-page__buy-cover">
+											<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+												<path d="M489.579,254.766c-12.942-16.932-30.829-29.887-50.839-36.933c-0.828-48.454-40.501-87.618-89.148-87.618
+		 c-7.618,0-15.213,0.993-22.647,2.958c-12.102-15.076-27.37-27.615-44.441-36.457c-19.642-10.173-40.881-15.331-63.127-15.331
+		 c-74.705,0-135.736,59.676-137.931,133.859C33.885,227.82,0,271.349,0,321.107c0,60.383,49.125,109.508,109.508,109.508h292.983
+		 C462.875,430.615,512,381.49,512,321.107C512,296.896,504.246,273.956,489.579,254.766z M402.491,415.061H109.508
+		 c-51.806,0-93.953-42.147-93.953-93.953c0-44.549,31.647-83.274,75.248-92.079l6.342-1.281l-0.106-6.47
+		 c-0.008-0.465-0.036-0.923-0.069-1.38c-0.012-0.173-0.031-0.344-0.031-0.52c0-67.512,54.925-122.437,122.436-122.437
+		 c39.135,0,75.005,18.162,98.411,49.828l3.349,4.53l5.348-1.769c7.542-2.494,15.317-3.759,23.108-3.759
+		 c40.587,0,73.606,33.019,73.606,73.607c0,0.645-0.05,1.382-0.103,2.164c-0.034,0.505-0.067,1.011-0.093,1.518l-0.303,6.145
+		 l5.911,1.709c19.171,5.544,36.435,17.369,48.61,33.297c12.577,16.453,19.224,36.127,19.224,56.895
+		 C496.445,372.913,454.297,415.061,402.491,415.061z" />
+												<path d="M135.62,193.401h15.555c0-26.66,21.69-48.35,48.351-48.35v-15.555C164.289,129.495,135.62,158.163,135.62,193.401z" />
+											</svg>
+										</div>
+										<p>30 дней</p>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="item-prices-page__link" data-popup="#popup_payment">КУПИТЬ</a>
+						</div>
+						<div class="prices-page__item item-prices-page">
+							<div class="item-prices-page__content">
+								<h3 class="item-prices-page__name">HEAVY</h3>
+								<ul class="item-prices-page__list">
+									<li class="item-prices-page__list-item">Подойдет для любой мыши</li>
+									<li class="item-prices-page__list-item">Автоматическое определение оружия для всех типов</li>
+									<li class="item-prices-page__list-item">Киберспортивная точность</li>
+								</ul>
+								<div class="item-prices-page__buy-info">
+									<p class="item-prices-page__price"><span>5$</span>2$</p>
+									<div class="item-prices-page__time-block">
+										<div class="item-prices-page__buy-cover">
+											<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+												<path d="M489.579,254.766c-12.942-16.932-30.829-29.887-50.839-36.933c-0.828-48.454-40.501-87.618-89.148-87.618
+		 c-7.618,0-15.213,0.993-22.647,2.958c-12.102-15.076-27.37-27.615-44.441-36.457c-19.642-10.173-40.881-15.331-63.127-15.331
+		 c-74.705,0-135.736,59.676-137.931,133.859C33.885,227.82,0,271.349,0,321.107c0,60.383,49.125,109.508,109.508,109.508h292.983
+		 C462.875,430.615,512,381.49,512,321.107C512,296.896,504.246,273.956,489.579,254.766z M402.491,415.061H109.508
+		 c-51.806,0-93.953-42.147-93.953-93.953c0-44.549,31.647-83.274,75.248-92.079l6.342-1.281l-0.106-6.47
+		 c-0.008-0.465-0.036-0.923-0.069-1.38c-0.012-0.173-0.031-0.344-0.031-0.52c0-67.512,54.925-122.437,122.436-122.437
+		 c39.135,0,75.005,18.162,98.411,49.828l3.349,4.53l5.348-1.769c7.542-2.494,15.317-3.759,23.108-3.759
+		 c40.587,0,73.606,33.019,73.606,73.607c0,0.645-0.05,1.382-0.103,2.164c-0.034,0.505-0.067,1.011-0.093,1.518l-0.303,6.145
+		 l5.911,1.709c19.171,5.544,36.435,17.369,48.61,33.297c12.577,16.453,19.224,36.127,19.224,56.895
+		 C496.445,372.913,454.297,415.061,402.491,415.061z" />
+												<path d="M135.62,193.401h15.555c0-26.66,21.69-48.35,48.351-48.35v-15.555C164.289,129.495,135.62,158.163,135.62,193.401z" />
+											</svg>
+										</div>
+										<p>60 дней</p>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="item-prices-page__link" data-popup="#popup_payment">КУПИТЬ</a>
+						</div>
+						<div class="prices-page__item item-prices-page">
+							<div class="item-prices-page__content">
+								<h3 class="item-prices-page__name">MYTHIC</h3>
+								<ul class="item-prices-page__list">
+									<li class="item-prices-page__list-item">Подойдет для любой мыши</li>
+									<li class="item-prices-page__list-item">Автоматическое определение оружия для всех типов</li>
+									<li class="item-prices-page__list-item">Киберспортивная точность</li>
+								</ul>
+								<div class="item-prices-page__buy-info">
+									<p class="item-prices-page__price"><span>5$</span>2$</p>
+									<div class="item-prices-page__time-block">
+										<div class="item-prices-page__buy-cover">
+											<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+												<path d="M489.579,254.766c-12.942-16.932-30.829-29.887-50.839-36.933c-0.828-48.454-40.501-87.618-89.148-87.618
+		 c-7.618,0-15.213,0.993-22.647,2.958c-12.102-15.076-27.37-27.615-44.441-36.457c-19.642-10.173-40.881-15.331-63.127-15.331
+		 c-74.705,0-135.736,59.676-137.931,133.859C33.885,227.82,0,271.349,0,321.107c0,60.383,49.125,109.508,109.508,109.508h292.983
+		 C462.875,430.615,512,381.49,512,321.107C512,296.896,504.246,273.956,489.579,254.766z M402.491,415.061H109.508
+		 c-51.806,0-93.953-42.147-93.953-93.953c0-44.549,31.647-83.274,75.248-92.079l6.342-1.281l-0.106-6.47
+		 c-0.008-0.465-0.036-0.923-0.069-1.38c-0.012-0.173-0.031-0.344-0.031-0.52c0-67.512,54.925-122.437,122.436-122.437
+		 c39.135,0,75.005,18.162,98.411,49.828l3.349,4.53l5.348-1.769c7.542-2.494,15.317-3.759,23.108-3.759
+		 c40.587,0,73.606,33.019,73.606,73.607c0,0.645-0.05,1.382-0.103,2.164c-0.034,0.505-0.067,1.011-0.093,1.518l-0.303,6.145
+		 l5.911,1.709c19.171,5.544,36.435,17.369,48.61,33.297c12.577,16.453,19.224,36.127,19.224,56.895
+		 C496.445,372.913,454.297,415.061,402.491,415.061z" />
+												<path d="M135.62,193.401h15.555c0-26.66,21.69-48.35,48.351-48.35v-15.555C164.289,129.495,135.62,158.163,135.62,193.401z" />
+											</svg>
+										</div>
+										<p>30 дней</p>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="item-prices-page__link" data-popup="#popup_payment">КУПИТЬ</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__video-block video-block">
+				<div class="video-block__container">
+					<h2 class="video-block__title _section-title">ВИДЕО CLOUD MACRO</h2>
+					<div class="video-block__wrapper">
+						<div class="video-block__body">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/usdMuOpWbu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+						</div>
+					</div>
+					<div class="video-block__more-videos">
+						<p class="video-block__text">Больше видео на нашем YouTube</p>
+						<div class="video-block__link-wrapper"><a href="#" class="video-block__link">
+								<p>Посмотреть</p>
+							</a></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="page__weapon-accuracy weapon-accuracy">
+				<div class="weapon-accuracy__container">
+					<h2 class="weapon-accuracy__title _section-title">Точность оружия</h2>
+					<div class="weapon-accuracy__body">
+						<div class="weapon-accuracy__category category-weapon-accuracy">
+							<h3 class="category-weapon-accuracy__title">Легкое Оружие</h3>
+							<div class="category-weapon-accuracy__block">
+								<div class="category-weapon-accuracy__item weapon-category weapon-category_light">
+									<div class="weapon-category__image-ibg_contain"><picture><source data-srcset="img/weapon-accuracy/light/Alternator.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/weapon-accuracy/light/Alternator.png" alt="Alternator"></picture></div>
+									<h4 class="weapon-category__name">Название: <span>Alternator</span></h4>
+									<div class="weapon-category__percent">
+										<p>97%</p>
+									</div>
+								</div>
+								<div class="category-weapon-accuracy__item weapon-category weapon-category_light">
+									<div class="weapon-category__image-ibg_contain"><picture><source data-srcset="img/weapon-accuracy/light/R-99.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/weapon-accuracy/light/R-99.png" alt="R-99"></picture></div>
+									<h4 class="weapon-category__name">Название: <span>R-99</span></h4>
+									<div class="weapon-category__percent">
+										<p>97%</p>
+									</div>
+								</div>
+								<div class="category-weapon-accuracy__item weapon-category weapon-category_light">
+									<div class="weapon-category__image-ibg_contain"><picture><source data-srcset="img/weapon-accuracy/light/R-301.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/weapon-accuracy/light/R-301.png" alt="R-301"></picture></div>
+									<h4 class="weapon-category__name">Название: <span>R-301</span></h4>
+									<div class="weapon-category__percent">
+										<p>97%</p>
+									</div>
+								</div>
+								<div class="category-weapon-accuracy__item weapon-category weapon-category_light">
+									<div class="weapon-category__image-ibg_contain"><picture><source data-srcset="img/weapon-accuracy/light/RE-45.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/weapon-accuracy/light/RE-45.png" alt="RE-45"></picture></div>
+									<h4 class="weapon-category__name">Название: <span>RE-45</span></h4>
+									<div class="weapon-category__percent">
+										<p>97%</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="weapon-accuracy__category category-weapon-accuracy">
+							<h3 class="category-weapon-accuracy__title">Тяжелое Оружие</h3>
+							<div class="category-weapon-accuracy__block">
+								<div class="category-weapon-accuracy__item weapon-category weapon-category_heavy">
+									<div class="weapon-category__image-ibg_contain"><picture><source data-srcset="img/weapon-accuracy/heavy/Flatline.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/weapon-accuracy/heavy/Flatline.png" alt="Flatline"></picture></div>
+									<h4 class="weapon-category__name">Название: <span>Flatline</span></h4>
+									<div class="weapon-category__percent">
+										<p>97%</p>
+									</div>
+								</div>
+								<div class="category-weapon-accuracy__item weapon-category weapon-category_heavy">
+									<div class="weapon-category__image-ibg_contain"><picture><source data-srcset="img/weapon-accuracy/heavy/C.A.R.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/weapon-accuracy/heavy/C.A.R.png" alt="C.A.R."></picture></div>
+									<h4 class="weapon-category__name">Название: <span>C.A.R.</span></h4>
+									<div class="weapon-category__percent">
+										<p>97%</p>
+									</div>
+								</div>
+								<div class="category-weapon-accuracy__item weapon-category weapon-category_heavy">
+									<div class="weapon-category__image-ibg_contain"><picture><source data-srcset="img/weapon-accuracy/heavy/Hemlok.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/weapon-accuracy/heavy/Hemlok.png" alt="Hemlok"></picture></div>
+									<h4 class="weapon-category__name">Название: <span>Hemlok</span></h4>
+									<div class="weapon-category__percent">
+										<p>97%</p>
+									</div>
+								</div>
+								<div class="category-weapon-accuracy__item weapon-category weapon-category_heavy">
+									<div class="weapon-category__image-ibg_contain"><picture><source data-srcset="img/weapon-accuracy/heavy/Prowler.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/weapon-accuracy/heavy/Prowler.png" alt="Prowler"></picture></div>
+									<h4 class="weapon-category__name">Название: <span>Prowler</span></h4>
+									<div class="weapon-category__percent">
+										<p>97%</p>
+									</div>
+								</div>
+								<div class="category-weapon-accuracy__item weapon-category weapon-category_heavy">
+									<div class="weapon-category__image-ibg_contain"><picture><source data-srcset="img/weapon-accuracy/heavy/Rampage.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/weapon-accuracy/heavy/Rampage.png" alt="Rampage"></picture></div>
+									<h4 class="weapon-category__name">Название: <span>Rampage</span></h4>
+									<div class="weapon-category__percent">
+										<p>97%</p>
+									</div>
+								</div>
+								<div class="category-weapon-accuracy__item weapon-category weapon-category_heavy">
+									<div class="weapon-category__image-ibg_contain"><picture><source data-srcset="img/weapon-accuracy/heavy/Spitfire.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/weapon-accuracy/heavy/Spitfire.png" alt="Spitfire"></picture></div>
+									<h4 class="weapon-category__name">Название: <span>Spitfire</span></h4>
+									<div class="weapon-category__percent">
+										<p>97%</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="weapon-accuracy__category category-weapon-accuracy">
+							<h3 class="category-weapon-accuracy__title">Энергетическое Оружие</h3>
+							<div class="category-weapon-accuracy__block">
+								<div class="category-weapon-accuracy__item weapon-category weapon-category_energy">
+									<div class="weapon-category__image-ibg_contain"><picture><source data-srcset="img/weapon-accuracy/energy/Devotion.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/weapon-accuracy/energy/Devotion.png" alt="Devotion"></picture></div>
+									<h4 class="weapon-category__name">Название: <span>Devotion</span></h4>
+									<div class="weapon-category__percent">
+										<p>97%</p>
+									</div>
+								</div>
+								<div class="category-weapon-accuracy__item weapon-category weapon-category_energy">
+									<div class="weapon-category__image-ibg_contain"><picture><source data-srcset="img/weapon-accuracy/energy/HAVOC.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/weapon-accuracy/energy/HAVOC.png" alt="HAVOC"></picture></div>
+									<h4 class="weapon-category__name">Название: <span>HAVOC</span></h4>
+									<div class="weapon-category__percent">
+										<p>97%</p>
+									</div>
+								</div>
+								<div class="category-weapon-accuracy__item weapon-category weapon-category_energy">
+									<div class="weapon-category__image-ibg_contain"><picture><source data-srcset="img/weapon-accuracy/energy/L-STAR.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/weapon-accuracy/energy/L-STAR.png" alt="L-STAR"></picture></div>
+									<h4 class="weapon-category__name">Название: <span>L-STAR</span></h4>
+									<div class="weapon-category__percent">
+										<p>97%</p>
+									</div>
+								</div>
+								<div class="category-weapon-accuracy__item weapon-category weapon-category_energy">
+									<div class="weapon-category__image-ibg_contain"><picture><source data-srcset="img/weapon-accuracy/energy/Volt.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/weapon-accuracy/energy/Volt.png" alt="Volt"></picture></div>
+									<h4 class="weapon-category__name">Название: <span>Volt</span></h4>
+									<div class="weapon-category__percent">
+										<p>97%</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<p class="footer__copyright">&copy Copyright 2022</p>
+			</div>
+		</footer>
+	</div>
+	<div id="popup_registration" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="94.926px" height="94.926px" viewBox="0 0 94.926 94.926" style="enable-background:new 0 0 94.926 94.926;" xml:space="preserve">
+						<path d="M55.931,47.463L94.306,9.09c0.826-0.827,0.826-2.167,0-2.994L88.833,0.62C88.436,0.224,87.896,0,87.335,0
+		c-0.562,0-1.101,0.224-1.498,0.62L47.463,38.994L9.089,0.62c-0.795-0.795-2.202-0.794-2.995,0L0.622,6.096
+		c-0.827,0.827-0.827,2.167,0,2.994l38.374,38.373L0.622,85.836c-0.827,0.827-0.827,2.167,0,2.994l5.473,5.476
+		c0.397,0.396,0.936,0.62,1.498,0.62s1.1-0.224,1.497-0.62l38.374-38.374l38.374,38.374c0.397,0.396,0.937,0.62,1.498,0.62
+		s1.101-0.224,1.498-0.62l5.473-5.476c0.826-0.827,0.826-2.167,0-2.994L55.931,47.463z" />
+					</svg>
+				</button>
+				<div class="popup__body">
+					<p class="popup__text">Добро пожаловать в наше дружное сообщество!</p>
+					<form action="#" class="popup__form">
+						<input data-required="email" autocomplete="off" type="email" name="email" placeholder="Введите ваш e-mail" class="popup__input">
+						<input autocomplete="off" data-required type="password" name="pass" placeholder="Придумайте пароль" class="popup__input">
+						<input autocomplete="off" data-required type="text" name="code" placeholder="Введите код" class="popup__input">
+						<button type="submit" class="popup__button popup__reg-button">Отправить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup_auth" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="94.926px" height="94.926px" viewBox="0 0 94.926 94.926" style="enable-background:new 0 0 94.926 94.926;" xml:space="preserve">
+						<path d="M55.931,47.463L94.306,9.09c0.826-0.827,0.826-2.167,0-2.994L88.833,0.62C88.436,0.224,87.896,0,87.335,0
+	c-0.562,0-1.101,0.224-1.498,0.62L47.463,38.994L9.089,0.62c-0.795-0.795-2.202-0.794-2.995,0L0.622,6.096
+	c-0.827,0.827-0.827,2.167,0,2.994l38.374,38.373L0.622,85.836c-0.827,0.827-0.827,2.167,0,2.994l5.473,5.476
+	c0.397,0.396,0.936,0.62,1.498,0.62s1.1-0.224,1.497-0.62l38.374-38.374l38.374,38.374c0.397,0.396,0.937,0.62,1.498,0.62
+	s1.101-0.224,1.498-0.62l5.473-5.476c0.826-0.827,0.826-2.167,0-2.994L55.931,47.463z" />
+					</svg></button>
+				<div class="popup__body">
+					<p class="popup__text">Вход в кабинет</p>
+					<form action="#" method="" class="popup__form">
+						<input autocomplete="off" type="email" data-required="email" name="email" placeholder="Введите ваш e-mail" class="popup__input">
+						<input autocomplete="off" type="password" data-required name="pass" placeholder="Введите пароль" class="popup__input">
+						<div class="popup__forgot-pass"><button type="button" data-popup="#popup_forgot-password">Забыл пароль</button></div>
+						<button type="submit" class="popup__button">Войти</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup_forgot-password" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="94.926px" height="94.926px" viewBox="0 0 94.926 94.926" style="enable-background:new 0 0 94.926 94.926;" xml:space="preserve">
+						<path d="M55.931,47.463L94.306,9.09c0.826-0.827,0.826-2.167,0-2.994L88.833,0.62C88.436,0.224,87.896,0,87.335,0
+	c-0.562,0-1.101,0.224-1.498,0.62L47.463,38.994L9.089,0.62c-0.795-0.795-2.202-0.794-2.995,0L0.622,6.096
+	c-0.827,0.827-0.827,2.167,0,2.994l38.374,38.373L0.622,85.836c-0.827,0.827-0.827,2.167,0,2.994l5.473,5.476
+	c0.397,0.396,0.936,0.62,1.498,0.62s1.1-0.224,1.497-0.62l38.374-38.374l38.374,38.374c0.397,0.396,0.937,0.62,1.498,0.62
+	s1.101-0.224,1.498-0.62l5.473-5.476c0.826-0.827,0.826-2.167,0-2.994L55.931,47.463z" />
+					</svg></button>
+				<div class="popup__body">
+					<p class="popup__text">Введите email</p>
+					<form action="#" method="" class="popup__form">
+						<input autocomplete="off" data-required="email" type="email" name="email" placeholder="Введите ваш e-mail" class="popup__input">
+						<button type="submit" class="popup__button">Продолжить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup_payment" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="94.926px" height="94.926px" viewBox="0 0 94.926 94.926" style="enable-background:new 0 0 94.926 94.926;" xml:space="preserve">
+						<path d="M55.931,47.463L94.306,9.09c0.826-0.827,0.826-2.167,0-2.994L88.833,0.62C88.436,0.224,87.896,0,87.335,0
+	c-0.562,0-1.101,0.224-1.498,0.62L47.463,38.994L9.089,0.62c-0.795-0.795-2.202-0.794-2.995,0L0.622,6.096
+	c-0.827,0.827-0.827,2.167,0,2.994l38.374,38.373L0.622,85.836c-0.827,0.827-0.827,2.167,0,2.994l5.473,5.476
+	c0.397,0.396,0.936,0.62,1.498,0.62s1.1-0.224,1.497-0.62l38.374-38.374l38.374,38.374c0.397,0.396,0.937,0.62,1.498,0.62
+	s1.101-0.224,1.498-0.62l5.473-5.476c0.826-0.827,0.826-2.167,0-2.994L55.931,47.463z" />
+					</svg></button>
+				<div class="popup__body">
+					<p class="popup__text">Выберите способ оплаты</p>
+					<div class="popup__payment-block payment-block">
+						<h4 class="payment-block__title">Методы оплаты для Украины</h4>
+						<div class="payment-block__payments">
+							<div class="payment-block__payment-method">
+								<div class="payment-block__image-ibg_contain"><picture><source data-srcset="img/payments/visa-mastercard.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/payments/visa-mastercard.png" alt="Visa/Mastercard"></picture></div>
+							</div>
+							<div class="payment-block__payment-method">
+								<div class="payment-block__image-ibg_contain"><picture><source data-srcset="img/payments/visa-mastercard.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/payments/visa-mastercard.png" alt="Visa/Mastercard"></picture></div>
+							</div>
+							<div class="payment-block__payment-method">
+								<div class="payment-block__image-ibg_contain"><picture><source data-srcset="img/payments/visa-mastercard.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/payments/visa-mastercard.png" alt="Visa/Mastercard"></picture></div>
+							</div>
+							<div class="payment-block__payment-method">
+								<div class="payment-block__image-ibg_contain"><picture><source data-srcset="img/payments/visa-mastercard.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/payments/visa-mastercard.png" alt="Visa/Mastercard"></picture></div>
+							</div>
+						</div>
+					</div>
+					<div class="popup__payment-block payment-block">
+						<h4 class="payment-block__title">Методы оплаты для Европы/США</h4>
+						<div class="payment-block__payments">
+							<div class="payment-block__payment-method">
+								<div class="payment-block__image-ibg_contain"><picture><source data-srcset="img/payments/visa-mastercard.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/payments/visa-mastercard.png" alt="Visa/Mastercard"></picture></div>
+							</div>
+							<div class="payment-block__payment-method">
+								<div class="payment-block__image-ibg_contain"><picture><source data-srcset="img/payments/visa-mastercard.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/payments/visa-mastercard.png" alt="Visa/Mastercard"></picture></div>
+							</div>
+							<div class="payment-block__payment-method">
+								<div class="payment-block__image-ibg_contain"><picture><source data-srcset="img/payments/visa-mastercard.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/payments/visa-mastercard.png" alt="Visa/Mastercard"></picture></div>
+							</div>
+							<div class="payment-block__payment-method">
+								<div class="payment-block__image-ibg_contain"><picture><source data-srcset="img/payments/visa-mastercard.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/payments/visa-mastercard.png" alt="Visa/Mastercard"></picture></div>
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="popup__button">Продолжить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220705194128"></script>
+</body>
+
+</html>
