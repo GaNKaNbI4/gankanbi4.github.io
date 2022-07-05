@@ -1338,7 +1338,7 @@ body::after {
 
 @media (max-width: 84.375em) {
   .no-webp .main-block{
-    background: url("../img/main-block/bacc_cut.jpg") 0 0/cover no-repeat; }
+    background: url("../img/main-block/bacc_cut.jpg") 100% 0/cover no-repeat; }
 }
 
 @media (max-width: 66.875em) {
@@ -1637,5 +1637,5 @@ body::after {
 
 @media (max-width: 84.375em){
 
-  .webp .main-block{ background: url(../img/main-block/bacc_cut.webp) 0 0/cover no-repeat; }
+  .webp .main-block{ background: url(../img/main-block/bacc_cut.webp) 100% 0/cover no-repeat; }
 }
