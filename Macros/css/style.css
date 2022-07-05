@@ -817,9 +817,6 @@ body::after {
 .item-why-we__content img {
   height: 5.625rem;
   width: 5.625rem;
-}
-
-.item-why-we__content img:not(:last-child) {
   margin-bottom: 1.875rem;
 }
 
