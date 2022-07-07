@@ -614,6 +614,7 @@
             autoHeight: false
         }) {
             const formFields = document.querySelectorAll("input[placeholder],textarea[placeholder]");
+            console.log(document.querySelectorAll("input[placeholder],textarea[placeholder]"));
             if (formFields.length) formFields.forEach((formField => {
                 if (!formField.hasAttribute("data-placeholder-nohide")) formField.dataset.placeholder = formField.placeholder;
             }));
@@ -2417,17 +2418,45 @@
             gradients: true,
             acceleration: true
         });
+        $("#flipbook").bind("end", (function(event, page, pageObject) {
+            console.log(page);
+            if (6 == page.next || 7 == page.next) {
+                formFieldsInit({
+                    viewPass: false,
+                    autoHeight: false
+                });
+                formSubmit();
+                let radios = document.querySelectorAll('input[type="radio"]');
+                let chooseField = document.querySelector(".flipbook-form__inputname_tel-email");
+                radios.forEach((radio => {
+                    radio.addEventListener("click", (e => {
+                        if ("o_1" == e.target.id) {
+                            document.querySelector("#o_2").checked = false;
+                            if (chooseField.classList.contains("_email")) chooseField.classList.remove("_email");
+                            chooseField.classList.add("_tel");
+                        } else if ("o_2" == e.target.id) {
+                            document.querySelector("#o_1").checked = false;
+                            if (chooseField.classList.contains("_tel")) chooseField.classList.remove("_tel");
+                            chooseField.classList.add("_email");
+                        }
+                    }));
+                }));
+            }
+        }));
         $(window).on("resize", (() => {
             let makeBookWidth, makeBookHeight;
-            if (window.matchMedia("(max-width: 360px)").matches) {
-                makeBookWidth = .8 * $(window).width();
+            if (window.matchMedia("(max-width: 350px)").matches) {
+                makeBookWidth = .9 * $(window).width();
+                makeBookHeight = 1.6 * $(window).width();
+            } else if (window.matchMedia("(max-width: 400px)").matches) {
+                makeBookWidth = .9 * $(window).width();
                 makeBookHeight = 1.5 * $(window).width();
             } else if (window.matchMedia("(max-width: 480px)").matches) {
-                makeBookWidth = .8 * $(window).width();
+                makeBookWidth = .9 * $(window).width();
                 makeBookHeight = 1.3 * $(window).width();
             } else if (window.matchMedia("(max-width: 600px)").matches) {
-                makeBookWidth = .8 * $(window).width();
-                makeBookHeight = $(window).width();
+                makeBookWidth = .9 * $(window).width();
+                makeBookHeight = 1.15 * $(window).width();
             } else if (window.matchMedia("(max-width: 900px)").matches) {
                 makeBookWidth = .8 * $(window).width();
                 makeBookHeight = .78 * $(window).width();
@@ -2446,11 +2475,8 @@
         function changeDisplay(e) {
             if (e.matches) $("#flipbook").turn("display", "single"); else $("#flipbook").turn("display", "double");
         }
-        $(".flipbook-prev").click((() => {
-            $("#flipbook").turn("previous");
-        }));
-        $(".flipbook-next").click((() => {
-            $("#flipbook").turn("next");
+        $(".header__order").click((() => {
+            $("#flipbook").turn("page", 7);
         }));
         document.addEventListener("touchstart", handleTouchStart, false);
         document.addEventListener("touchmove", handleTouchMove, false);
@@ -2470,13 +2496,15 @@
             var yUp = evt.touches[0].clientY;
             var xDiff = xDown - xUp;
             var yDiff = yDown - yUp;
-            if (Math.abs(xDiff) > Math.abs(yDiff)) if (xDiff > 0) $("#flipbook").turn("next"); else $("#flipbook").turn("previous"); else if (yDiff > 0) ;
+            if (Math.abs(xDiff) > Math.abs(yDiff)) {
+                if (window.matchMedia("(max-width: 1200px)").matches) if (xDiff > 0) $("#flipbook").turn("next"); else $("#flipbook").turn("previous");
+            } else if (yDiff > 0) ;
             xDown = null;
             yDown = null;
         }
         if (document.querySelector("#flipbook").addEventListener) if ("onwheel" in document) document.querySelector("#flipbook").addEventListener("wheel", onWheel); else if ("onmousewheel" in document) document.querySelector("#flipbook").addEventListener("mousewheel", onWheel); else document.querySelector("#flipbook").addEventListener("MozMousePixelScroll", onWheel); else document.querySelector("#flipbook").attachEvent("onmousewheel", onWheel);
         function onWheel(e) {
-            if (e.deltaY > 0) $("#flipbook").turn("next"); else $("#flipbook").turn("previous");
+            if (window.matchMedia("(min-width: 1200px)").matches) if (e.deltaY > 0) $("#flipbook").turn("next"); else $("#flipbook").turn("previous");
         }
         $(document).ready((function() {
             $("a.scrollto").click((function(e) {
@@ -2505,10 +2533,5 @@
                 return false;
             }));
         }));
-        formFieldsInit({
-            viewPass: false,
-            autoHeight: false
-        });
-        formSubmit();
     })();
 })();

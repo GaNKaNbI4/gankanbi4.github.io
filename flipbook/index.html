@@ -5,13 +5,13 @@
 	<meta charset="UTF-8">
 	<title>WEB</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="css/style.css?_v=20220706191605" rel="stylesheet">
+	<link href="css/style.css?_v=20220707224652" rel="stylesheet">
 </head>
 
 <body id="homepage">
 	<header>
 		<div>
-			<a href="/">
+			<a href="#cover" class="header__order scrollto">
 				<h1>ЗАМОВИТИ</h1>
 				<h2>ЗАМОВИТИ</h2>
 			</a>
@@ -30,12 +30,12 @@
 			<div class="cover" id="cover">
 				<!-- partial:index.partial.html -->
 				<div id="flipbook" class="flipbook">
-					<div class="hard"> <picture><source srcset="img/1.webp" type="image/webp"><img src="img/1.png"></picture> </div>
+					<div class="hard"> <picture><source srcset="img/1.webp" type="image/webp"><img src="img/1.png"></picture></div>
 					<div class="hard"></div>
 					<div class="pages"> TEST </div>
 					<div class="pages"> TEXT TEXT TEXT TEXT TEXT TXET sdsdadadadadsdasdasdasd</div>
 					<div class="pages2"></div>
-					<div class="pages"> <picture><source srcset="img/1.webp" type="image/webp"><img src="img/1.png"></picture> </div>
+					<div class="pages"> <picture><source srcset="img/1.webp" type="image/webp"><img src="img/1.png" alt=""></picture></div>
 					<div class="pages">
 						<form action="#" class="flipbook-form">
 							<select name="select" data-class-modif="form">
@@ -46,34 +46,55 @@
 								<option value="5">Презентація</option>
 								<option value="6">Доповідь</option>
 							</select>
+							<label for="topic">Тема роботи</label>
+							<input id="topic" data-required autocomplete="off" type="text" name="topic" placeholder="Введіть тему" class="flipbook-form__input">
 							<div class="flipbook-form__block">
-								<input data-required autocomplete="off" type="text" name="subject" placeholder="Предмет" class="flipbook-form__input">
-								<input data-required autocomplete="off" type="text" name="topic" placeholder="Тема" class="flipbook-form__input">
+								<div class="flipbook-form__inputname">
+									<label for="date">Термін</label>
+									<input data-required id="date" autocomplete="off" type="text" name="date" placeholder="дд.мм.рррр" data-datepicker class="flipbook-form__input" readonly>
+								</div>
+								<div class="flipbook-form__inputname">
+									<label for="name">Ім'я</label>
+									<input data-required id="name" autocomplete="off" type="text" name="name" placeholder="Ім`я" class="flipbook-form__input">
+								</div>
 							</div>
 							<div class="flipbook-form__block">
-								<input data-required autocomplete="off" type="text" name="number of pages" placeholder="Сторінки" class="flipbook-form__input">
-								<input data-required autocomplete="off" type="text" name="date" placeholder="Термін" data-datepicker class="flipbook-form__input" readonly>
+								<div class="flipbook-form__inputname">
+									<label style="display: block; white-space: nowrap; margin-bottom: 10px">Оберіть спосіб зв'язку</label>
+									<div class="flipbook-form__radio-block">
+										<div class="options">
+											<div class="options__item">
+												<input id="o_1" class="options__input" checked type="radio" value="1" name="tel">
+												<label for="o_1" class="options__label"><span class="options__text">Телефон</span></label>
+											</div>
+											<div class="options__item">
+												<input id="o_2" class="options__input" type="radio" value="2" name="email">
+												<label for="o_2" class="options__label"><span class="options__text">Email</span></label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="flipbook-form__inputname flipbook-form__inputname_tel-email">
+									<input data-required autocomplete="off" type="text" name="Contact" placeholder="+38 0XX XXX XX XX" class="flipbook-form__input _tel">
+									<input data-required="email" autocomplete="off" type="email" name="Contact" placeholder="E-mail" class="flipbook-form__input _email">
+								</div>
+
 							</div>
-							<div class="flipbook-form__block">
-								<input data-required autocomplete="off" type="text" name="Name" placeholder="Ім`я" class="flipbook-form__input">
-								<input data-required autocomplete="off" type="text" name="Contact" placeholder="Контакт (телефон/e-mail/тощо)" class="flipbook-form__input">
-							</div>
-							<textarea data-required name="comment" id="" class="flipbook-form__textarea" placeholder="Коментар"></textarea>
 							<button type="submit" class="flipbook-form__button">Замовити</button>
 						</form>
 					</div>
-					<div class="pages"> Page 6</div>
-					<div class="pages"> Page 7 </div>
+					<div class="pages"> <picture><source srcset="img/8.webp" type="image/webp"><img src="img/8.png" alt=""></picture></div>
+					<div class="pages"> <picture><source srcset="img/9.webp" type="image/webp"><img src="img/9.png" alt=""></picture></div>
 					<div class="pages"> Page 8 </div>
 					<div class="pages"> Page 9 </div>
-					<div class="pages"> Page 10 </div>
+					<div class="pages"> Page 10</div>
 					<div class="pages"> Page 11 </div>
 					<div class="pages"> Page 12 </div>
 					<div class="pages"> Page 13 </div>
 					<div class="hard"></div>
 				</div>
-				<div class="flipbook-prev"></div>
-				<div class="flipbook-next"></div>
+				<!-- <div class="flipbook-prev"></div>
+					<div class="flipbook-next"></div> -->
 			</div>
 		</main>
 	</article>
@@ -167,8 +188,8 @@
 	<footer class="footer">
 		By <a href="https://t.me/KuroKame">Valentyn </a> · License <a href=>20.06.2022</a>
 	</footer>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js?_v=20220706191605'></script>
-	<script src="js/app.min.js?_v=20220706191605"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js?_v=20220707224652'></script>
+	<script src="js/app.min.js?_v=20220707224652"></script>
 </body>
 
 </html>
