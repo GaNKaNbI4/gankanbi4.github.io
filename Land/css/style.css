@@ -421,11 +421,7 @@ h6 {
 }
 
 .no-webp .games-home{
-  background: url("../img/home/games-home/Background-elements.jpg") center/cover no-repeat; }
-
-.games-home {
-  background-color: #001357;
-}
+  background: #001357 url("../img/home/games-home/Background-elements.jpg") center/cover no-repeat; }
 
 @supports (padding-top: clamp( 1.875rem , 0.9338235294rem  +  4.7058823529vw , 4.375rem )) {
   .games-home {
@@ -1273,7 +1269,7 @@ h6 {
 
 .webp .main-home{ background: url(../img/home/main-home/banner.webp) center/cover no-repeat; }
 
-.webp .games-home{ background: url(../img/home/games-home/Background-elements.webp) center/cover no-repeat; }
+.webp .games-home{ background: #001357 url(../img/home/games-home/Background-elements.webp) center/cover no-repeat; }
 
 .webp .proposition-home{ background: #040028 url(../img/home/proposition-home/cover.webp) 0 0/auto 100% no-repeat; }
 
