@@ -796,6 +796,7 @@ html {
           font-feature-settings: "kern" 1, "onum" 1;
   -webkit-font-kerning: normal;
   font-kerning: normal;
+  overflow: hidden;
 }
 
 body {
@@ -806,8 +807,7 @@ body {
   color: #333;
   font-family: Lyon, Georgia, serif;
   margin-bottom: 5rem;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 body#homepage {
@@ -1238,8 +1238,8 @@ main#home blockquote {
   margin-top: 2rem;
   max-width: 25em;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+      -ms-flex: 0 0 35%;
+          flex: 0 0 35%;
   font-style: normal;
 }
 
@@ -1248,7 +1248,7 @@ main#home blockquote a {
 }
 
 main#home div.cover img {
-  width: 70%;
+  width: 100%;
 }
 
 body {
@@ -1284,9 +1284,11 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  left: -100%;
+  -webkit-transform: translate(-54%, 0);
+      -ms-transform: translate(-54%, 0);
+          transform: translate(-54%, 0);
   width: 66.11vw;
-  height: 45vw;
+  height: 46.7468293042vw;
 }
 
 .hard {
@@ -1420,6 +1422,7 @@ body {
 .flipbook-form__inputname_tel-email {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  position: relative;
 }
 
 .flipbook-form__inputname_tel-email ._email {
@@ -1717,6 +1720,13 @@ body {
   }
 }
 
+@media (max-width: 1600px) {
+  #flipbook {
+    width: 75vw;
+    height: 53.033008589vw;
+  }
+}
+
 @media (max-width: 1250px) {
   .flipbook-form {
     width: 85%;
@@ -1729,12 +1739,6 @@ body {
   }
 }
 
-@media (max-width: 1140px) {
-  #flipbook {
-    height: 52vw;
-  }
-}
-
 @media (max-width: 900px) {
   article {
     margin-top: 2rem;
@@ -1742,6 +1746,7 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
+    height: 75vh;
   }
 
   header {
@@ -1795,9 +1800,12 @@ body {
   }
 
   #flipbook {
-    left: 15px;
-    width: 80vw;
-    height: 78vw;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 90vw;
+    height: 63.6396103068vw;
   }
 }
 
@@ -1820,32 +1828,39 @@ body {
     margin: 1em 0;
   }
 
+  article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 100%;
+  }
+
   #flipbook {
-    width: 90vw;
-    height: 115vw;
+    width: 85vw;
+    height: 120.2081528017vw;
   }
 
-  .flipbook-next,
-  .flipbook-prev {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 15%;
-    height: 100%;
-    top: 0;
-    z-index: 3;
+  main#home blockquote {
+    line-height: 1.25;
+    font-size: 0.875rem;
   }
 
-  .flipbook-prev {
-    left: 0;
-  }
-
-  .flipbook-next {
-    right: 5%;
+  body#homepage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
   .footer {
     padding-top: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 100%;
   }
 
   .txt {
@@ -1859,48 +1874,20 @@ body {
   }
 }
 
-@media (max-width: 30em) {
-  main#home div.cover img {
-    width: 92%;
-  }
-}
-
 @media (max-width: 480px) {
   #flipbook {
     width: 90vw;
-    height: 130vw;
-  }
-}
-
-@media (max-width: 400px) {
-  #flipbook {
-    width: 90vw;
-    height: 150vw;
-  }
-}
-
-@media (max-width: 350px) {
-  #flipbook {
-    width: 90vw;
-    height: 160vw;
-  }
-}
-
-@media (max-width: 78.125em) {
-  article blockquote {
-    padding: 0 6.25rem;
-  }
-}
-
-@media (max-width: 56.25em) {
-  main#home div.cover img {
-    width: 80%;
+    height: 127.2792206136vw;
   }
 }
 
 @media (max-width: 37.5em) {
   header {
     padding: 0.625rem 1rem;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    width: 100%;
   }
 }
 

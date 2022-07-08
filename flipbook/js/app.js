@@ -2445,27 +2445,21 @@
         }));
         $(window).on("resize", (() => {
             let makeBookWidth, makeBookHeight;
-            if (window.matchMedia("(max-width: 350px)").matches) {
+            if (window.matchMedia("(max-width: 480px)").matches) {
                 makeBookWidth = .9 * $(window).width();
-                makeBookHeight = 1.6 * $(window).width();
-            } else if (window.matchMedia("(max-width: 400px)").matches) {
-                makeBookWidth = .9 * $(window).width();
-                makeBookHeight = 1.5 * $(window).width();
-            } else if (window.matchMedia("(max-width: 480px)").matches) {
-                makeBookWidth = .9 * $(window).width();
-                makeBookHeight = 1.3 * $(window).width();
+                makeBookHeight = makeBookWidth * Math.sqrt(2);
             } else if (window.matchMedia("(max-width: 600px)").matches) {
-                makeBookWidth = .9 * $(window).width();
-                makeBookHeight = 1.15 * $(window).width();
+                makeBookWidth = .85 * $(window).width();
+                makeBookHeight = makeBookWidth * Math.sqrt(2);
             } else if (window.matchMedia("(max-width: 900px)").matches) {
-                makeBookWidth = .8 * $(window).width();
-                makeBookHeight = .78 * $(window).width();
-            } else if (window.matchMedia("(max-width: 1140px)").matches) {
-                makeBookWidth = .6611 * $(window).width();
-                makeBookHeight = .52 * $(window).width();
+                makeBookWidth = .9 * $(window).width();
+                makeBookHeight = makeBookWidth / 2 * Math.sqrt(2);
+            } else if (window.matchMedia("(max-width: 1600px)").matches) {
+                makeBookWidth = .75 * $(window).width();
+                makeBookHeight = makeBookWidth / 2 * Math.sqrt(2);
             } else {
                 makeBookWidth = .6611 * $(window).width();
-                makeBookHeight = .45 * $(window).width();
+                makeBookHeight = makeBookWidth / 2 * Math.sqrt(2);
             }
             $("#flipbook").turn("size", makeBookWidth, makeBookHeight);
         }));
@@ -2512,7 +2506,7 @@
                     $(".menu-button").removeClass("menu-button-open");
                     $(".menu-items").removeClass("menu-items-open");
                 }
-                var elementClick = $(this).attr("href");
+                $(this).attr("href");
                 if ($(e.target).hasClass("_chapter-one")) $("#flipbook").turn("page", 3);
                 if ($(e.target).hasClass("_chapter-two")) $("#flipbook").turn("page", 4);
                 if ($(e.target).hasClass("_chapter-three")) $("#flipbook").turn("page", 5);
@@ -2526,11 +2520,6 @@
                 if ($(e.target).hasClass("_chapter-eleven")) $("#flipbook").turn("page", 13);
                 if ($(e.target).hasClass("_chapter-twelve")) $("#flipbook").turn("page", 14);
                 if ($(e.target).hasClass("_chapter-thirteen")) $("#flipbook").turn("page", 15);
-                var destination = $(elementClick).offset().top - 30;
-                jQuery("html:not(:animated),body:not(:animated)").animate({
-                    scrollTop: destination
-                }, 800);
-                return false;
             }));
         }));
     })();
