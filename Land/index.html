@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220708120653">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220709015346">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,12 +24,15 @@
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item menu__item_home menu__item_active"><a href="index.html" class="menu__link">Home</a></li>
-							<li class="menu__item menu__item_about"><a href="#" class="menu__link">About us</a></li>
-							<li class="menu__item menu__item_privacy"><a href="#" class="menu__link">Privacy Policy</a></li>
-							<li class="menu__item menu__item_cookies"><a href="#" class="menu__link">Cookies Policy</a></li>
-							<li class="menu__item menu__item_contact"><a href="#" class="menu__link">Contact us</a></li>
+							<li class="menu__item menu__item_about "><a href="about-us.html" class="menu__link">About us</a></li>
+							<li class="menu__item menu__item_privacy "><a href="privacy-policy.html" class="menu__link">Privacy Policy</a></li>
+							<li class="menu__item menu__item_cookies "><a href="cookies-policy.html" class="menu__link">Cookies Policy</a></li>
+							<li class="menu__item menu__item_contact "><a href="contact-us.html" class="menu__link">Contact us</a></li>
 						</ul>
-						<a href="#" class="header__login-button _green-button">Sign Up</a>
+						<div class="header__login-panel">
+							<a href="#" class="header__login-button _green-button" data-popup="#popup_registration">Sign Up</a>
+							<a href="#" class="header__logout-button" data-popup="#popup_registration">Sign Out</a>
+						</div>
 					</nav>
 				</div>
 			</div>
@@ -37,8 +40,8 @@
 		<main class="home">
 			<section class="home__main main-home">
 				<div class="main-home__container">
-					<h1 class="main-home__title">BEST FREE ONLINE CASINO GAMES IN NEW ZEALAND!</h1>
-					<a href="" class="main-home__link _green-button">Play Now</a>
+					<h1 class="main-home__title _page-title">BEST FREE ONLINE CASINO GAMES IN NEW ZEALAND!</h1>
+					<a href="" class="main-home__link _green-button" data-goto=".games-home" data-goto-speed="750">Play Now</a>
 				</div>
 			</section>
 
@@ -51,42 +54,42 @@
 						<div class="games-home__item">
 							<div class="games-home__image-ibg">
 								<picture><source data-srcset="img/home/games-home/book-of-dead.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/home/games-home/book-of-dead.jpg" alt="Book of dead"></picture>
-								<div class="games-home__link"><a href="#">Play Now</a></div>
+								<div class="games-home__link"><a href="game.html?name=book-of-dead">Play Now</a></div>
 							</div>
 							<h3 class="games-home__game-name">Book of Dead</h3>
 						</div>
 						<div class="games-home__item">
 							<div class="games-home__image-ibg">
 								<picture><source data-srcset="img/home/games-home/bonanza.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/home/games-home/bonanza.jpg" alt="Bonanza"></picture>
-								<div class="games-home__link"><a href="#">Play Now</a></div>
+								<div class="games-home__link"><a href="game.html?name=bonanza">Play Now</a></div>
 							</div>
 							<h3 class="games-home__game-name">Bonanza</h3>
 						</div>
 						<div class="games-home__item">
 							<div class="games-home__image-ibg">
 								<picture><source data-srcset="img/home/games-home/starburst.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/home/games-home/starburst.jpg" alt="Starburst"></picture>
-								<div class="games-home__link"><a href="#">Play Now</a></div>
+								<div class="games-home__link"><a href="game.html?name=starburst">Play Now</a></div>
 							</div>
 							<h3 class="games-home__game-name">Starburst</h3>
 						</div>
 						<div class="games-home__item">
 							<div class="games-home__image-ibg">
 								<picture><source data-srcset="img/home/games-home/book-of-oz.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/home/games-home/book-of-oz.jpg" alt="Book of Oz"></picture>
-								<div class="games-home__link"><a href="#">Play Now</a></div>
+								<div class="games-home__link"><a href="game.html?name=book-of-oz">Play Now</a></div>
 							</div>
 							<h3 class="games-home__game-name">Book of Oz</h3>
 						</div>
 						<div class="games-home__item">
 							<div class="games-home__image-ibg">
 								<picture><source data-srcset="img/home/games-home/wolf-treasure.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/home/games-home/wolf-treasure.jpg" alt="Wolf treasure"></picture>
-								<div class="games-home__link"><a href="#">Play Now</a></div>
+								<div class="games-home__link"><a href="game.html?name=wolf-treasure">Play Now</a></div>
 							</div>
 							<h3 class="games-home__game-name">Wolf treasure</h3>
 						</div>
 						<div class="games-home__item">
 							<div class="games-home__image-ibg">
 								<picture><source data-srcset="img/home/games-home/cleopatra.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/home/games-home/cleopatra.jpg" alt="Cleopatra"></picture>
-								<div class="games-home__link"><a href="#">Play Now</a></div>
+								<div class="games-home__link"><a href="game.html?name=cleopatra">Play Now</a></div>
 							</div>
 							<h3 class="games-home__game-name">Cleopatra</h3>
 						</div>
@@ -148,17 +151,37 @@
 			</div>
 		</footer>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+	<div id="popup_registration" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__body">
+					<div class="popup__text">
+						<div class="popup__inner">
+							<h2 class="popup__title">Create account</h2>
+							<form action="" class="popup__form form-popup" data-dev>
+								<div class="form-popup__item">
+									<label for="name">Username</label>
+									<input id="name" data-required autocomplete="off" type="text" name="name" placeholder="Username Example" class="form-popup__input">
+								</div>
+								<div class="form-popup__item">
+									<label for="email">Email Address</label>
+									<input id="email" data-required autocomplete="off" type="email" name="name" placeholder="example@example.com" class="form-popup__input">
+								</div>
+								<div class="form-popup__item">
+									<label for="pass">Password</label>
+									<input id="pass" data-required autocomplete="on" type="password" name="name" placeholder="******************" class="form-popup__input">
+								</div>
+								<button type="submit" class="form-popup__button">Sign up</button>
+							</form>
+						</div>
+					</div>
+					<div class="popup__image-ibg"><picture><source data-srcset="img/popup-registration/bg.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popup-registration/bg.jpg" alt="Slot image"></picture></div>
+				</div>
 			</div>
 		</div>
 	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20220708120653"></script>
+	<script src="js/app.min.js?_v=20220709015346"></script>
 </body>
 
 </html>

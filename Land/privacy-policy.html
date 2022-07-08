@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220709015346">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<a href="index.html" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item menu__item_home "><a href="index.html" class="menu__link">Home</a></li>
+							<li class="menu__item menu__item_about "><a href="about-us.html" class="menu__link">About us</a></li>
+							<li class="menu__item menu__item_privacy menu__item_active"><a href="privacy-policy.html" class="menu__link">Privacy Policy</a></li>
+							<li class="menu__item menu__item_cookies "><a href="cookies-policy.html" class="menu__link">Cookies Policy</a></li>
+							<li class="menu__item menu__item_contact "><a href="contact-us.html" class="menu__link">Contact us</a></li>
+						</ul>
+						<div class="header__login-panel">
+							<a href="#" class="header__login-button _green-button" data-popup="#popup_registration">Sign Up</a>
+							<a href="#" class="header__logout-button" data-popup="#popup_registration">Sign Out</a>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="privacy-policy">
+			<section class="privacy-policy__main-privacy-policy main-privacy-policy">
+				<div class="main-privacy-policy__container">
+					<h1 class="main-privacy-policy__title _page-title _page-title_not-home-title">PRIVACY POLICY</h1>
+					<p class="main-privacy-policy__text _privacy-and-cookies-text">This Privacy Policy explains what information is collected via the <span>Bandislots</span> website located at <span>bandislots.com</span>, why the information is collected and how it is used. <span>Bandislots</span> does not share or sell your personal information to anyone. <span>Bandislots</span> does not participate in any format of SPAM and will not send any unsolicited emails.</p>
+					<p class="main-privacy-policy__text _privacy-and-cookies-text"><span>Bandislots</span> (“Bandislots,” “we,” “us,” and “our”) respects your privacy and is committed to protecting it through compliance with this Privacy Notice (“Privacy Notice”). This Privacy Notice describes the types of Information we may collect from you when you visit our resort and/or the website at <span>bandislots.com</span> (the “Site”), and that you may provide in your communications with us. It also describes our practices for collecting, using, maintaining, protecting, and disclosing that Information. This Privacy Notice does not apply to Information collected by us offline, through any other means or by any third party. <br />
+						Please read this Privacy Notice carefully to understand our policies and practices regarding your Information and how we will handle it. If you do not agree with our policies and practices, do not use the Site. By accessing or using the Site, you agree to this Privacy Notice.<br />
+						<span>Bandislots</span> may change this Privacy Notice at any time, at its discretion. Your continued use of the Site after we make changes is deemed to be acceptance of those changes, so please check the Privacy Notice periodically for updates. Material changes will be communicated to our active credit or gaming customers.
+					</p>
+					<h2 class="main-privacy-policy__subtitle _orange-title">Your Rights in Relation to Your Information
+					</h2>
+					<p class="main-privacy-policy__text _privacy-and-cookies-text">If you contact us in relation to your rights we will do our best to accommodate your request or objection. Please note, however, that not all rights are absolute.</p>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<a href="index.html" class="footer__logo"><img src="img/logo.svg" alt="Logo"></a>
+					<p class="footer__text">The games are for adults. The games do not offer “real money gambling” or chance to win real money or prizes. Play responsibly. Bandislots offers slot machines intended for 18+ old players.</p>
+					<p class="footer__text footer__copyright">© 2022 bandislots.com All rights reserved</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup_registration" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__body">
+					<div class="popup__text">
+						<div class="popup__inner">
+							<h2 class="popup__title">Create account</h2>
+							<form action="" class="popup__form form-popup" data-dev>
+								<div class="form-popup__item">
+									<label for="name">Username</label>
+									<input id="name" data-required autocomplete="off" type="text" name="name" placeholder="Username Example" class="form-popup__input">
+								</div>
+								<div class="form-popup__item">
+									<label for="email">Email Address</label>
+									<input id="email" data-required autocomplete="off" type="email" name="name" placeholder="example@example.com" class="form-popup__input">
+								</div>
+								<div class="form-popup__item">
+									<label for="pass">Password</label>
+									<input id="pass" data-required autocomplete="on" type="password" name="name" placeholder="******************" class="form-popup__input">
+								</div>
+								<button type="submit" class="form-popup__button">Sign up</button>
+							</form>
+						</div>
+					</div>
+					<div class="popup__image-ibg"><picture><source data-srcset="img/popup-registration/bg.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popup-registration/bg.jpg" alt="Slot image"></picture></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220709015346"></script>
+</body>
+
+</html>
