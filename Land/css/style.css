@@ -1541,31 +1541,6 @@ textarea._form-error {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  display: none;
-}
-
-.game__block._book-of-dead #book-of-dead {
-  display: block;
-}
-
-.game__block._bonanza #bonanza {
-  display: block;
-}
-
-.game__block._starburst #starburst {
-  display: block;
-}
-
-.game__block._book-of-oz #book-of-oz {
-  display: block;
-}
-
-.game__block._wolf-treasure #wolf-treasure {
-  display: block;
-}
-
-.game__block._cleopatra #cleopatra {
-  display: block;
 }
 
 @media (max-width: 75em) {
