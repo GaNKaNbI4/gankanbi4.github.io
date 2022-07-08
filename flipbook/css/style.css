@@ -1284,9 +1284,9 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-transform: translate(-54%, 0);
-      -ms-transform: translate(-54%, 0);
-          transform: translate(-54%, 0);
+  -webkit-transform: translate(-54%, 0) !important;
+      -ms-transform: translate(-54%, 0) !important;
+          transform: translate(-54%, 0) !important;
   width: 66.11vw;
   height: 46.7468293042vw;
 }
