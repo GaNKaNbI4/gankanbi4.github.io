@@ -1432,6 +1432,7 @@ textarea._form-error {
 }
 
 .form-main-cookies-policy label:not(:last-child) {
+  white-space: nowrap;
   display: inline-block;
   margin-bottom: 0.3125rem;
   font-weight: 400;
@@ -1514,7 +1515,7 @@ textarea._form-error {
 
 .game__block {
   position: relative;
-  padding-bottom: 70%;
+  padding-bottom: 55%;
   width: 95%;
   margin: 0 auto;
 }
@@ -1533,7 +1534,7 @@ textarea._form-error {
   background-color: #1f003f;
 }
 
-.game__block iframe {
+.game__iframe {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1541,6 +1542,11 @@ textarea._form-error {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.game__iframe iframe {
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 75em) {
