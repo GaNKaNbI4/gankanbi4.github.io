@@ -1,5 +1,78 @@
 @charset "UTF-8";
 
+.checkbox {
+  position: relative;
+}
+
+.checkbox:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+
+.checkbox__input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.checkbox__input:checked + .checkbox__label::after {
+  -webkit-transform: scale(1) translate(0, -50%);
+      -ms-transform: scale(1) translate(0, -50%);
+          transform: scale(1) translate(0, -50%);
+}
+
+.checkbox__input._form-error + .checkbox__label:before {
+  border-color: red;
+}
+
+.checkbox__label {
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  gap: 10px;
+}
+
+.checkbox__label:before {
+  content: "";
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20px;
+          flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #a7a9ac;
+}
+
+.checkbox__label::after {
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  background: rgb(241, 201, 166);
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 50%;
+  left: 3px;
+  -webkit-transform: scale(0) translate(0, -50%);
+      -ms-transform: scale(0) translate(0, -50%);
+          transform: scale(0) translate(0, -50%);
+}
+
+.checkbox__text {
+  font-size: 0.875rem;
+  line-height: 1.1;
+}
+
 .options {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1048,7 +1121,7 @@ header {
   padding: 1.5rem 1rem;
   text-align: center;
   background-color: white;
-  z-index: 100;
+  z-index: 10;
 }
 
 header h1,
@@ -1412,7 +1485,7 @@ body {
 }
 
 .flipbook-form__block:not(:last-child) {
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 
 .flipbook-form__inputname {
@@ -1801,9 +1874,9 @@ body {
 
   #flipbook {
     left: 50%;
-    -webkit-transform: translate(-50%, 0);
-        -ms-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0) !important;
+        -ms-transform: translate(-50%, 0) !important;
+            transform: translate(-50%, 0) !important;
     width: 90vw;
     height: 63.6396103068vw;
   }
