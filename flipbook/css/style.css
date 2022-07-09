@@ -1665,7 +1665,7 @@ body {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: calc(5rem - 300px);
+    left: calc(5rem - 340px);
     margin: 0;
     max-width: 300px;
     z-index: 20;
