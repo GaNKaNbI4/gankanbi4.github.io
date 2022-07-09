@@ -1158,8 +1158,8 @@
         document.addEventListener("beforePopupOpen", (function(e) {
             document.documentElement.classList.remove("menu-open");
         }));
-        document.addEventListener("afterPopupClose", (function(e) {
-            if (document.querySelector("html.lock")) document.querySelector("html.lock").classList.remove("lock");
+        document.addEventListener("beforePopupClose", (function(e) {
+            bodyUnlock();
         }));
         const currentPage = document.location.pathname;
         if (currentPage.includes("game")) {
