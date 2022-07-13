@@ -1383,1643 +1383,2163 @@ body::after {
 }
 
 @-webkit-keyframes rotateWhiteImage_1 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 }
 
 @keyframes rotateWhiteImage_1 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 }
 
 @-webkit-keyframes rotateWhiteImage_2 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 }
 
 @keyframes rotateWhiteImage_2 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 }
 
 @-webkit-keyframes rotateWhiteImage_3 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 }
 
 @keyframes rotateWhiteImage_3 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 }
 
 @-webkit-keyframes rotateWhiteImage_4 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 }
 
 @keyframes rotateWhiteImage_4 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 }
 
 @-webkit-keyframes rotateWhiteImage_5 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 }
 
 @keyframes rotateWhiteImage_5 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-white/4.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-white/4.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-white/5.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-white/5.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-white/6.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-white/6.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-white/1.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-white/1.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-white/2.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-white/2.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-white/3.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-white/3.png");
+  }
 }
 
 @-webkit-keyframes rotateBlueImage_1 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 }
 
 @keyframes rotateBlueImage_1 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 }
 
 @-webkit-keyframes rotateBlueImage_2 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 }
 
 @keyframes rotateBlueImage_2 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 }
 
 @-webkit-keyframes rotateBlueImage_3 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 }
 
 @keyframes rotateBlueImage_3 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 }
 
 @-webkit-keyframes rotateBlueImage_4 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 }
 
 @keyframes rotateBlueImage_4 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 }
 
 @-webkit-keyframes rotateBlueImage_5 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 }
 
 @keyframes rotateBlueImage_5 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/4.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/4.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/5.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/5.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/6.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/6.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/1.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/1.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/2.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/2.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-blue/3.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-blue/3.png");
+  }
 }
 
 @-webkit-keyframes rotateGreenImage_1 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 }
 
 @keyframes rotateGreenImage_1 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 }
 
 @-webkit-keyframes rotateGreenImage_2 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 }
 
 @keyframes rotateGreenImage_2 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 }
 
 @-webkit-keyframes rotateGreenImage_3 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 }
 
 @keyframes rotateGreenImage_3 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 }
 
 @-webkit-keyframes rotateGreenImage_4 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 }
 
 @keyframes rotateGreenImage_4 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 }
 
 @-webkit-keyframes rotateGreenImage_5 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 }
 
 @keyframes rotateGreenImage_5 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-green/4.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-green/4.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-green/5.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-green/5.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-green/6.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-green/6.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-green/1.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-green/1.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-green/2.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-green/2.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-green/3.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-green/3.png");
+  }
 }
 
 @-webkit-keyframes rotatePinkImage_1 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 }
 
 @keyframes rotatePinkImage_1 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 }
 
 @-webkit-keyframes rotatePinkImage_2 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 }
 
 @keyframes rotatePinkImage_2 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 }
 
 @-webkit-keyframes rotatePinkImage_3 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 }
 
 @keyframes rotatePinkImage_3 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 }
 
 @-webkit-keyframes rotatePinkImage_4 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 }
 
 @keyframes rotatePinkImage_4 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 }
 
 @-webkit-keyframes rotatePinkImage_5 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 }
 
 @keyframes rotatePinkImage_5 {
-  .no-webp 0%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  0% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 3%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  3% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 17%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/4.png"); }
+  17% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/4.png");
+  }
 
-  .no-webp 20%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  20% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 33%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/5.png"); }
+  33% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/5.png");
+  }
 
-  .no-webp 36%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  36% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 50%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/6.png"); }
+  50% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/6.png");
+  }
 
-  .no-webp 53%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  53% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 67%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/1.png"); }
+  67% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/1.png");
+  }
 
-  .no-webp 70%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  70% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 84%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/2.png"); }
+  84% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/2.png");
+  }
 
-  .no-webp 87%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  87% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 
-  .no-webp 100%{
-    background-image: url("../img/look-and-characteristics/samsung-pink/3.png"); }
+  100% {
+    background-image: url("../img/look-and-characteristics/samsung-pink/3.png");
+  }
 }
 
 .characteristics-block {
@@ -3826,2604 +4346,4 @@ body::after {
   .menu__order:hover svg {
     fill: #fff;
   }
-}
-
-@-webkit-keyframes rotateWhiteImage_1{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_1{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_1{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_1{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_1{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_1{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_1{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_1{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_1{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_1{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_1{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_1{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_1{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@keyframes rotateWhiteImage_1{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@keyframes rotateWhiteImage_1{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@keyframes rotateWhiteImage_1{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@keyframes rotateWhiteImage_1{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@keyframes rotateWhiteImage_1{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@keyframes rotateWhiteImage_1{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@keyframes rotateWhiteImage_1{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@keyframes rotateWhiteImage_1{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@keyframes rotateWhiteImage_1{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@keyframes rotateWhiteImage_1{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@keyframes rotateWhiteImage_1{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@keyframes rotateWhiteImage_1{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@keyframes rotateWhiteImage_1{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_2{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_2{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_2{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_2{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_2{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_2{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_2{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_2{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_2{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_2{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_2{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_2{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_2{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@keyframes rotateWhiteImage_2{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@keyframes rotateWhiteImage_2{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@keyframes rotateWhiteImage_2{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@keyframes rotateWhiteImage_2{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@keyframes rotateWhiteImage_2{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@keyframes rotateWhiteImage_2{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@keyframes rotateWhiteImage_2{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@keyframes rotateWhiteImage_2{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@keyframes rotateWhiteImage_2{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@keyframes rotateWhiteImage_2{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@keyframes rotateWhiteImage_2{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@keyframes rotateWhiteImage_2{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@keyframes rotateWhiteImage_2{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_3{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_3{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_3{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_3{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_3{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_3{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_3{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_3{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_3{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_3{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_3{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_3{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_3{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@keyframes rotateWhiteImage_3{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@keyframes rotateWhiteImage_3{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@keyframes rotateWhiteImage_3{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@keyframes rotateWhiteImage_3{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@keyframes rotateWhiteImage_3{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@keyframes rotateWhiteImage_3{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@keyframes rotateWhiteImage_3{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@keyframes rotateWhiteImage_3{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@keyframes rotateWhiteImage_3{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@keyframes rotateWhiteImage_3{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@keyframes rotateWhiteImage_3{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@keyframes rotateWhiteImage_3{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@keyframes rotateWhiteImage_3{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_4{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_4{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_4{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_4{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_4{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_4{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_4{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_4{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_4{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_4{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_4{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_4{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_4{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@keyframes rotateWhiteImage_4{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@keyframes rotateWhiteImage_4{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@keyframes rotateWhiteImage_4{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@keyframes rotateWhiteImage_4{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@keyframes rotateWhiteImage_4{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@keyframes rotateWhiteImage_4{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@keyframes rotateWhiteImage_4{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@keyframes rotateWhiteImage_4{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@keyframes rotateWhiteImage_4{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@keyframes rotateWhiteImage_4{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@keyframes rotateWhiteImage_4{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@keyframes rotateWhiteImage_4{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@keyframes rotateWhiteImage_4{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_5{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_5{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_5{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_5{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_5{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_5{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_5{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_5{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_5{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_5{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_5{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_5{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@-webkit-keyframes rotateWhiteImage_5{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@keyframes rotateWhiteImage_5{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@keyframes rotateWhiteImage_5{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@keyframes rotateWhiteImage_5{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-white/4.webp); }
-}
-
-@keyframes rotateWhiteImage_5{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@keyframes rotateWhiteImage_5{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-white/5.webp); }
-}
-
-@keyframes rotateWhiteImage_5{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@keyframes rotateWhiteImage_5{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-white/6.webp); }
-}
-
-@keyframes rotateWhiteImage_5{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@keyframes rotateWhiteImage_5{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-white/1.webp); }
-}
-
-@keyframes rotateWhiteImage_5{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@keyframes rotateWhiteImage_5{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-white/2.webp); }
-}
-
-@keyframes rotateWhiteImage_5{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@keyframes rotateWhiteImage_5{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-white/3.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_1{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_1{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_1{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_1{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_1{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_1{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_1{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_1{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_1{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_1{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_1{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_1{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_1{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@keyframes rotateBlueImage_1{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@keyframes rotateBlueImage_1{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@keyframes rotateBlueImage_1{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@keyframes rotateBlueImage_1{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@keyframes rotateBlueImage_1{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@keyframes rotateBlueImage_1{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@keyframes rotateBlueImage_1{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@keyframes rotateBlueImage_1{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@keyframes rotateBlueImage_1{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@keyframes rotateBlueImage_1{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@keyframes rotateBlueImage_1{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@keyframes rotateBlueImage_1{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@keyframes rotateBlueImage_1{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_2{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_2{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_2{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_2{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_2{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_2{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_2{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_2{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_2{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_2{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_2{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_2{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_2{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@keyframes rotateBlueImage_2{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@keyframes rotateBlueImage_2{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@keyframes rotateBlueImage_2{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@keyframes rotateBlueImage_2{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@keyframes rotateBlueImage_2{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@keyframes rotateBlueImage_2{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@keyframes rotateBlueImage_2{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@keyframes rotateBlueImage_2{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@keyframes rotateBlueImage_2{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@keyframes rotateBlueImage_2{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@keyframes rotateBlueImage_2{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@keyframes rotateBlueImage_2{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@keyframes rotateBlueImage_2{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_3{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_3{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_3{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_3{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_3{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_3{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_3{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_3{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_3{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_3{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_3{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_3{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_3{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@keyframes rotateBlueImage_3{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@keyframes rotateBlueImage_3{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@keyframes rotateBlueImage_3{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@keyframes rotateBlueImage_3{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@keyframes rotateBlueImage_3{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@keyframes rotateBlueImage_3{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@keyframes rotateBlueImage_3{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@keyframes rotateBlueImage_3{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@keyframes rotateBlueImage_3{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@keyframes rotateBlueImage_3{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@keyframes rotateBlueImage_3{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@keyframes rotateBlueImage_3{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@keyframes rotateBlueImage_3{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_4{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_4{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_4{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_4{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_4{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_4{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_4{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_4{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_4{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_4{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_4{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_4{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_4{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@keyframes rotateBlueImage_4{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@keyframes rotateBlueImage_4{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@keyframes rotateBlueImage_4{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@keyframes rotateBlueImage_4{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@keyframes rotateBlueImage_4{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@keyframes rotateBlueImage_4{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@keyframes rotateBlueImage_4{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@keyframes rotateBlueImage_4{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@keyframes rotateBlueImage_4{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@keyframes rotateBlueImage_4{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@keyframes rotateBlueImage_4{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@keyframes rotateBlueImage_4{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@keyframes rotateBlueImage_4{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_5{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_5{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_5{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_5{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_5{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_5{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_5{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_5{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_5{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_5{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_5{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_5{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@-webkit-keyframes rotateBlueImage_5{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@keyframes rotateBlueImage_5{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@keyframes rotateBlueImage_5{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@keyframes rotateBlueImage_5{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-blue/4.webp); }
-}
-
-@keyframes rotateBlueImage_5{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@keyframes rotateBlueImage_5{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-blue/5.webp); }
-}
-
-@keyframes rotateBlueImage_5{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@keyframes rotateBlueImage_5{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-blue/6.webp); }
-}
-
-@keyframes rotateBlueImage_5{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@keyframes rotateBlueImage_5{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-blue/1.webp); }
-}
-
-@keyframes rotateBlueImage_5{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@keyframes rotateBlueImage_5{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-blue/2.webp); }
-}
-
-@keyframes rotateBlueImage_5{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@keyframes rotateBlueImage_5{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-blue/3.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_1{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_1{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_1{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_1{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_1{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_1{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_1{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_1{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_1{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_1{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_1{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_1{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_1{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@keyframes rotateGreenImage_1{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@keyframes rotateGreenImage_1{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@keyframes rotateGreenImage_1{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@keyframes rotateGreenImage_1{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@keyframes rotateGreenImage_1{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@keyframes rotateGreenImage_1{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@keyframes rotateGreenImage_1{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@keyframes rotateGreenImage_1{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@keyframes rotateGreenImage_1{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@keyframes rotateGreenImage_1{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@keyframes rotateGreenImage_1{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@keyframes rotateGreenImage_1{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@keyframes rotateGreenImage_1{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_2{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_2{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_2{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_2{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_2{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_2{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_2{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_2{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_2{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_2{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_2{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_2{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_2{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@keyframes rotateGreenImage_2{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@keyframes rotateGreenImage_2{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@keyframes rotateGreenImage_2{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@keyframes rotateGreenImage_2{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@keyframes rotateGreenImage_2{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@keyframes rotateGreenImage_2{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@keyframes rotateGreenImage_2{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@keyframes rotateGreenImage_2{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@keyframes rotateGreenImage_2{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@keyframes rotateGreenImage_2{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@keyframes rotateGreenImage_2{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@keyframes rotateGreenImage_2{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@keyframes rotateGreenImage_2{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_3{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_3{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_3{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_3{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_3{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_3{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_3{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_3{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_3{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_3{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_3{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_3{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_3{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@keyframes rotateGreenImage_3{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@keyframes rotateGreenImage_3{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@keyframes rotateGreenImage_3{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@keyframes rotateGreenImage_3{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@keyframes rotateGreenImage_3{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@keyframes rotateGreenImage_3{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@keyframes rotateGreenImage_3{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@keyframes rotateGreenImage_3{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@keyframes rotateGreenImage_3{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@keyframes rotateGreenImage_3{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@keyframes rotateGreenImage_3{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@keyframes rotateGreenImage_3{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@keyframes rotateGreenImage_3{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_4{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_4{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_4{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_4{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_4{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_4{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_4{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_4{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_4{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_4{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_4{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_4{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_4{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@keyframes rotateGreenImage_4{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@keyframes rotateGreenImage_4{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@keyframes rotateGreenImage_4{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@keyframes rotateGreenImage_4{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@keyframes rotateGreenImage_4{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@keyframes rotateGreenImage_4{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@keyframes rotateGreenImage_4{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@keyframes rotateGreenImage_4{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@keyframes rotateGreenImage_4{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@keyframes rotateGreenImage_4{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@keyframes rotateGreenImage_4{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@keyframes rotateGreenImage_4{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@keyframes rotateGreenImage_4{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_5{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_5{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_5{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_5{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_5{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_5{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_5{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_5{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_5{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_5{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_5{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_5{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@-webkit-keyframes rotateGreenImage_5{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@keyframes rotateGreenImage_5{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@keyframes rotateGreenImage_5{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@keyframes rotateGreenImage_5{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-green/4.webp); }
-}
-
-@keyframes rotateGreenImage_5{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@keyframes rotateGreenImage_5{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-green/5.webp); }
-}
-
-@keyframes rotateGreenImage_5{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@keyframes rotateGreenImage_5{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-green/6.webp); }
-}
-
-@keyframes rotateGreenImage_5{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@keyframes rotateGreenImage_5{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-green/1.webp); }
-}
-
-@keyframes rotateGreenImage_5{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@keyframes rotateGreenImage_5{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-green/2.webp); }
-}
-
-@keyframes rotateGreenImage_5{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@keyframes rotateGreenImage_5{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-green/3.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_1{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_1{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_1{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_1{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_1{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_1{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_1{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_1{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_1{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_1{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_1{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_1{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_1{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@keyframes rotatePinkImage_1{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@keyframes rotatePinkImage_1{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@keyframes rotatePinkImage_1{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@keyframes rotatePinkImage_1{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@keyframes rotatePinkImage_1{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@keyframes rotatePinkImage_1{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@keyframes rotatePinkImage_1{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@keyframes rotatePinkImage_1{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@keyframes rotatePinkImage_1{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@keyframes rotatePinkImage_1{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@keyframes rotatePinkImage_1{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@keyframes rotatePinkImage_1{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@keyframes rotatePinkImage_1{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_2{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_2{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_2{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_2{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_2{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_2{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_2{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_2{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_2{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_2{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_2{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_2{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_2{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@keyframes rotatePinkImage_2{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@keyframes rotatePinkImage_2{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@keyframes rotatePinkImage_2{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@keyframes rotatePinkImage_2{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@keyframes rotatePinkImage_2{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@keyframes rotatePinkImage_2{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@keyframes rotatePinkImage_2{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@keyframes rotatePinkImage_2{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@keyframes rotatePinkImage_2{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@keyframes rotatePinkImage_2{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@keyframes rotatePinkImage_2{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@keyframes rotatePinkImage_2{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@keyframes rotatePinkImage_2{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_3{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_3{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_3{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_3{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_3{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_3{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_3{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_3{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_3{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_3{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_3{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_3{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_3{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@keyframes rotatePinkImage_3{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@keyframes rotatePinkImage_3{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@keyframes rotatePinkImage_3{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@keyframes rotatePinkImage_3{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@keyframes rotatePinkImage_3{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@keyframes rotatePinkImage_3{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@keyframes rotatePinkImage_3{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@keyframes rotatePinkImage_3{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@keyframes rotatePinkImage_3{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@keyframes rotatePinkImage_3{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@keyframes rotatePinkImage_3{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@keyframes rotatePinkImage_3{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@keyframes rotatePinkImage_3{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_4{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_4{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_4{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_4{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_4{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_4{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_4{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_4{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_4{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_4{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_4{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_4{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_4{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@keyframes rotatePinkImage_4{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@keyframes rotatePinkImage_4{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@keyframes rotatePinkImage_4{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@keyframes rotatePinkImage_4{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@keyframes rotatePinkImage_4{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@keyframes rotatePinkImage_4{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@keyframes rotatePinkImage_4{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@keyframes rotatePinkImage_4{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@keyframes rotatePinkImage_4{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@keyframes rotatePinkImage_4{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@keyframes rotatePinkImage_4{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@keyframes rotatePinkImage_4{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@keyframes rotatePinkImage_4{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_5{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_5{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_5{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_5{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_5{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_5{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_5{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_5{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_5{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_5{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_5{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_5{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@-webkit-keyframes rotatePinkImage_5{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@keyframes rotatePinkImage_5{
-
-  .webp 0%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@keyframes rotatePinkImage_5{
-
-  .webp 3%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@keyframes rotatePinkImage_5{
-
-  .webp 17%{ background-image: url(../img/look-and-characteristics/samsung-pink/4.webp); }
-}
-
-@keyframes rotatePinkImage_5{
-
-  .webp 20%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@keyframes rotatePinkImage_5{
-
-  .webp 33%{ background-image: url(../img/look-and-characteristics/samsung-pink/5.webp); }
-}
-
-@keyframes rotatePinkImage_5{
-
-  .webp 36%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@keyframes rotatePinkImage_5{
-
-  .webp 50%{ background-image: url(../img/look-and-characteristics/samsung-pink/6.webp); }
-}
-
-@keyframes rotatePinkImage_5{
-
-  .webp 53%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@keyframes rotatePinkImage_5{
-
-  .webp 67%{ background-image: url(../img/look-and-characteristics/samsung-pink/1.webp); }
-}
-
-@keyframes rotatePinkImage_5{
-
-  .webp 70%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@keyframes rotatePinkImage_5{
-
-  .webp 84%{ background-image: url(../img/look-and-characteristics/samsung-pink/2.webp); }
-}
-
-@keyframes rotatePinkImage_5{
-
-  .webp 87%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
-}
-
-@keyframes rotatePinkImage_5{
-
-  .webp 100%{ background-image: url(../img/look-and-characteristics/samsung-pink/3.webp); }
 }
