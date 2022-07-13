@@ -4683,6 +4683,10 @@
                 loop: true,
                 preloadImages: false,
                 lazy: true,
+                autoplay: {
+                    delay: 3e3,
+                    disableOnInteraction: false
+                },
                 breakpoints: {
                     320: {
                         slidesPerView: 1,

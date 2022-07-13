@@ -4143,6 +4143,10 @@ body::after {
     font-size: 2rem;
   }
 
+  .main-page__order:not(:last-child) {
+    margin-bottom: 6.25rem;
+  }
+
   .camera-characteristics-page__image-ibg_contain {
     padding-bottom: 74.8299319728%;
   }
@@ -4239,6 +4243,14 @@ body::after {
             justify-content: center;
   }
 
+  .main-page__order {
+    width: 90%;
+  }
+
+  .main-page__order:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+
   .main-page__slide img {
     height: 50%;
     width: auto;
@@ -4248,6 +4260,15 @@ body::after {
   .main-page .swiper-slide-duplicate-active img {
     height: 70%;
     width: auto;
+  }
+
+  .description-device-main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1.25rem;
   }
 
   .screen-page__subtitle:not(:last-child) {
