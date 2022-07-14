@@ -1105,10 +1105,7 @@
                     easing: "easeOutQuad"
                 };
                 document.documentElement.classList.contains("menu-open") ? menuClose() : null;
-                if ("undefined" !== typeof smooth_scroll_polyfills_min) {
-                    console.log(targetBlockElement);
-                    (new smooth_scroll_polyfills_min).animateScroll(targetBlockElement, "", options);
-                } else {
+                if ("undefined" !== typeof smooth_scroll_polyfills_min) (new smooth_scroll_polyfills_min).animateScroll(targetBlockElement, "", options); else {
                     let targetBlockElementPosition = targetBlockElement.getBoundingClientRect().top + scrollY;
                     targetBlockElementPosition = headerItemHeight ? targetBlockElementPosition - headerItemHeight : targetBlockElementPosition;
                     targetBlockElementPosition = offsetTop ? targetBlockElementPosition - offsetTop : targetBlockElementPosition;
