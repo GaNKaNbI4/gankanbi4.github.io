@@ -681,9 +681,20 @@
                 const hash = getHash();
                 if (hash && hash.startsWith("tab-")) tabsActiveHash = hash.replace("tab-", "").split("-");
                 tabs.forEach(((tabsBlock, index) => {
+                    const switchTitle = document.querySelector(".characteristics-block__switch-tab");
                     tabsBlock.classList.add("_tab-init");
                     tabsBlock.setAttribute("data-tabs-index", index);
                     tabsBlock.addEventListener("click", setTabsAction);
+                    switchTitle.addEventListener("click", (e => {
+                        if (!document.querySelector(".tabs-characteristics__title").classList.contains("_tab-active") && !tabsBlock.querySelector("._slide")) {
+                            let tabActiveTitle = tabsBlock.querySelectorAll("[data-tabs-title]._tab-active");
+                            tabActiveTitle.length ? tabActiveTitle = Array.from(tabActiveTitle).filter((item => item.closest("[data-tabs]") === tabsBlock)) : null;
+                            tabActiveTitle.length ? tabActiveTitle[0].classList.remove("_tab-active") : null;
+                            document.querySelector(".tabs-characteristics__title").classList.add("_tab-active");
+                            setTabsStatus(tabsBlock);
+                        }
+                        e.preventDefault();
+                    }));
                     initTabs(tabsBlock);
                 }));
                 let mdQueriesArray = dataMediaQueries(tabs, "tabs");

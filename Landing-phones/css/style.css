@@ -499,10 +499,6 @@ body::after {
   background-color: #120181;
 }
 
-.header__container {
-  max-width: 108.75rem;
-}
-
 .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,15 +558,15 @@ body::after {
   transition: left 0.5s ease 0s;
 }
 
-@supports (gap: clamp( 1.875rem , -30.4039634146rem  +  46.9512195122vw , 25.9375rem )) {
+@supports (gap: clamp( 1.875rem , -27.34375rem  +  42.5vw , 12.5rem )) {
   .menu__body {
-    gap: clamp( 1.875rem , -30.4039634146rem  +  46.9512195122vw , 25.9375rem );
+    gap: clamp( 1.875rem , -27.34375rem  +  42.5vw , 12.5rem );
   }
 }
 
-@supports not (gap: clamp( 1.875rem , -30.4039634146rem  +  46.9512195122vw , 25.9375rem )) {
+@supports not (gap: clamp( 1.875rem , -27.34375rem  +  42.5vw , 12.5rem )) {
   .menu__body {
-    gap: calc(1.875rem + 24.0625 * (100vw - 68.75rem) / 51.25);
+    gap: calc(1.875rem + 10.625 * (100vw - 68.75rem) / 25);
   }
 }
 
@@ -3614,6 +3610,13 @@ body::after {
 .characteristics-block {
   padding: 6.25rem;
   background-color: #f7f7f7;
+}
+
+.characteristics-block__switch-tab {
+  font-weight: 300;
+  line-height: 140%;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .tabs-characteristics__navigation {
