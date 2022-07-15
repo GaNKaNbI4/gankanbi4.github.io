@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220715121026">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+				<a href="index.html" class="header__logo">ADMAR</a>
+				<div class="header__body">
+					<div data-da=".header, 767.98, last" class="header__search search-header">
+						<form action="#">
+							<input autocomplete="off" type="text" name="search" placeholder="Пошук..." class="search-header__input">
+							<button type="submit" class="search-header__button">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 10.5C2.5 6.08172 6.08173 2.5 10.5 2.5C14.9183 2.5 18.5 6.08172 18.5 10.5C18.5 14.9183 14.9183 18.5 10.5 18.5C6.08173 18.5 2.5 14.9183 2.5 10.5ZM10.5 3.5C6.63401 3.5 3.5 6.63401 3.5 10.5C3.5 14.366 6.63401 17.5 10.5 17.5C14.366 17.5 17.5 14.366 17.5 10.5C17.5 6.63401 14.366 3.5 10.5 3.5Z" />
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M15.4482 15.4456C15.6435 15.2504 15.96 15.2504 16.1553 15.4456L21.3553 20.6456C21.5506 20.8409 21.5506 21.1575 21.3553 21.3527C21.1601 21.548 20.8435 21.548 20.6482 21.3527L15.4482 16.1527C15.2529 15.9575 15.2529 15.6409 15.4482 15.4456Z" />
+								</svg>
+							</button>
+						</form>
+					</div>
+					<div class="header__menu menu-header">
+						<div class="menu-header__body">
+							<button type="button" class="menu-header__close"></button>
+							<div class="header__lang-switcher">
+								<a href="#" class="header__lang-link">Рус</a><a href="#" class="header__lang-link header__lang-link_active">Укр</a>
+							</div>
+							<nav class="menu-header__cabinet-menu cabinet-menu">
+								<p class="cabinet-menu__title">Особистий кабінет</p>
+								<ul class="cabinet-menu__list">
+									<li class="cabinet-menu__item"><a href="#" class="cabinet-menu__link">Особисті дані</a></li>
+									<li class="cabinet-menu__item"><a href="#" class="cabinet-menu__link">Замовлення</a></li>
+									<li class="cabinet-menu__item"><a href="#" class="cabinet-menu__link">Заявки на співпрацю</a></li>
+									<li class="cabinet-menu__item"><a href="#" class="cabinet-menu__link">Історія переглядів</a></li>
+									<li class="cabinet-menu__item"><a href="#" class="cabinet-menu__link">Власні пропозиції</a></li>
+									<li class="cabinet-menu__item cabinet-menu__item_logout"><a href="#" class="cabinet-menu__link cabinet-menu__link_logout">Вийти з кабінету</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="header__actions">
+						<a href="#" class="header__cart">
+							<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 3H3.17393C4.04488 3 4.8157 3.56364 5.07978 4.39359L6.02479 7.36363M6.02479 7.36363L9.28385 17.6064C9.54793 18.4364 10.3187 19 11.1897 19H21.3031C22.1991 19 22.9858 18.404 23.2284 17.5415L25.3761 9.90512C25.7349 8.6293 24.7761 7.36363 23.4508 7.36363H6.02479Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								<circle cx="11.1825" cy="24.0907" r="1.90909" stroke-width="2" />
+								<circle cx="20.6357" cy="24.0907" r="1.90909" stroke-width="2" />
+							</svg>
+						</a>
+						<a href="#" class="header__cabinet">
+							<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 4C13.4718 4 12.5049 4.36649 11.808 4.99004C11.1148 5.61032 10.75 6.42621 10.75 7.25C10.75 8.07379 11.1148 8.88968 11.808 9.50996C12.5049 10.1335 13.4718 10.5 14.5 10.5C15.5282 10.5 16.4951 10.1335 17.192 9.50996C17.8852 8.88968 18.25 8.07379 18.25 7.25C18.25 6.42621 17.8852 5.61032 17.192 4.99004C16.4951 4.36649 15.5282 4 14.5 4ZM10.4744 3.49955C11.5591 2.52905 13.0087 2 14.5 2C15.9913 2 17.4409 2.52905 18.5256 3.49955C19.6139 4.47333 20.25 5.81945 20.25 7.25C20.25 8.68055 19.6139 10.0267 18.5256 11.0004C17.4409 11.971 15.9913 12.5 14.5 12.5C13.0087 12.5 11.5591 11.971 10.4744 11.0004C9.38611 10.0267 8.75 8.68055 8.75 7.25C8.75 5.81945 9.38611 4.47333 10.4744 3.49955Z" />
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M11.3333 16.75C9.94271 16.75 8.59334 17.3425 7.58676 18.4232C6.57795 19.5064 6 20.9897 6 22.55C6 22.9366 6.3134 23.25 6.7 23.25H22.3C22.6866 23.25 23 22.9366 23 22.55C23 20.9897 22.4221 19.5064 21.4132 18.4232C20.4067 17.3425 19.0573 16.75 17.6667 16.75H11.3333ZM6.12322 17.0601C7.4921 15.5904 9.36454 14.75 11.3333 14.75H17.6667C19.6355 14.75 21.5079 15.5904 22.8768 17.0601C24.2434 18.5275 25 20.5033 25 22.55C25 24.0412 23.7912 25.25 22.3 25.25H6.7C5.20883 25.25 4 24.0412 4 22.55C4 20.5033 4.75657 18.5275 6.12322 17.0601Z" />
+							</svg>
+							<p class="header__username">Увійти</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20220715121026"></script>
+</body>
+
+</html>
