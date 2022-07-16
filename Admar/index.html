@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220715121026">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220716140020">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,7 +34,7 @@
 					</div>
 					<div class="header__menu menu-header">
 						<div class="menu-header__body">
-							<button type="button" class="menu-header__close"></button>
+							<button type="button" class="menu-header__close _menu-button-close"></button>
 							<div class="header__lang-switcher">
 								<a href="#" class="header__lang-link">Рус</a><a href="#" class="header__lang-link header__lang-link_active">Укр</a>
 							</div>
@@ -71,9 +71,210 @@
 			</div>
 		</header>
 		<main class="page">
+			<div class="page__chosen-filters chosen-filters-page">
+				<div class="chosen-filters-page__container">
+					<div class="chosen-filters-page__categories categories-filters" data-da=".menu-filters__body, 767.98, 2">
+						<h4 class="categories-filters__title">Ви обрали:</h4>
+						<ul class="categories-filters__filters-list">
+							<li class="categories-filters__filter">
+								<p>Волинська обл.</p><button type="button" class="categories-filters__filter-delete"><img src="img/svg/cross.svg" alt=""></button>
+							</li>
+							<li class="categories-filters__filter">
+								<p>Луцьк</p><button type="button" class="categories-filters__filter-delete"><img src="img/svg/cross.svg" alt=""></button>
+							</li>
+							<li class="categories-filters__filter">
+								<p>Відродження вул.</p><button type="button" class="categories-filters__filter-delete"><img src="img/svg/cross.svg" alt=""></button>
+							</li>
+							<li class="categories-filters__filter">
+								<p>3000-6000 грн</p><button type="button" class="categories-filters__filter-delete"><img src="img/svg/cross.svg" alt=""></button>
+							</li>
+						</ul>
+						<button type="button" class="categories-filters__clear-all">Очистити всі</button>
+					</div>
+					<div class="chosen-filters-page__filter-button"><button type="button" class="_button-outlined">Фільтр</button></div>
+					<div class="chosen-filters-page__sort sort-chosen-filters">
+						<p class="sort-chosen-filters__text">Сортування:</p>
+						<div data-spollers class="sort-chosen-filters__spollers spollers-sort-filter">
+							<div class="spollers-sort-filter__item">
+								<button type="button" data-spoller class="spollers-sort-filter__title">за популярністю</button>
+								<div class="spollers-sort-filter__body">
+									<ul class="spollers-sort-filter__list">
+										<li class="spollers-sort-filter__list-item"><button type="button" class="spollers-sort-filter__sort-type">за популярністю</button></li>
+										<li class="spollers-sort-filter__list-item"><button type="button" class="spollers-sort-filter__sort-type">за популярністю</button></li>
+										<li class="spollers-sort-filter__list-item"><button type="button" class="spollers-sort-filter__sort-type">за популярністю</button></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__main main-page">
+				<div class="main-page__container">
+					<div class="main-page__body">
+						<div class="main-page__filters-block filters-block-page">
+							<p class="filters-block-page__title">Фільтр</p>
+							<div class="filters-block-page__filters" data-da=".menu-filters__body, 767.98, last">
+								<form action="#" class="form-filters">
+									<input autocomplete="off" type="text" name="form[]" placeholder="123" class="form-filters__input">
+									<input autocomplete="off" type="text" name="form[]" placeholder="321" class="form-filters__input">
+								</form>
+							</div>
+						</div>
+						<div class="main-page__offers">
+							<div class="main-page__offer offer-main-page">
+								<div class="offer-main-page__body">
+									<div class="offer-main-page__image-ibg"><picture><source data-srcset="img/offers-main-page/sobornosti-43.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/offers-main-page/sobornosti-43.jpg" alt="Соборності, 43 у напрямку Пуще Водица і Кольцевої"></picture></div>
+									<p class="offer-main-page__code">Код: 6372</p>
+									<h3 class="offer-main-page__title">Соборності, 43 у напрямку Пуще Водица і Кольцевої ...</h3>
+									<div class="offer-main-page__order">
+										<div class="offer-main-page__cost"><span>7900</span>грн/місяць</div>
+										<a href="#" class="offer-main-page__order-link _button-outlined">Замовити</a>
+									</div>
+								</div>
+							</div>
+							<div class="main-page__offer offer-main-page">
+								<div class="offer-main-page__body">
+									<div class="offer-main-page__image-ibg"><picture><source data-srcset="img/offers-main-page/sobornosti-43.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/offers-main-page/sobornosti-43.jpg" alt="Соборності, 43 у напрямку Пуще Водица і Кольцевої"></picture></div>
+									<p class="offer-main-page__code">Код: 6372</p>
+									<h3 class="offer-main-page__title">Соборності, 43 у напрямку Пуще Водица і Кольцевої ...</h3>
+									<div class="offer-main-page__order">
+										<div class="offer-main-page__cost"><span>7900</span>грн/місяць</div>
+										<a href="#" class="offer-main-page__order-link _button-outlined">Замовити</a>
+									</div>
+								</div>
+							</div>
+							<div class="main-page__offer offer-main-page">
+								<div class="offer-main-page__body">
+									<div class="offer-main-page__image-ibg"><picture><source data-srcset="img/offers-main-page/sobornosti-43.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/offers-main-page/sobornosti-43.jpg" alt="Соборності, 43 у напрямку Пуще Водица і Кольцевої"></picture></div>
+									<p class="offer-main-page__code">Код: 6372</p>
+									<h3 class="offer-main-page__title">Соборності, 43 у напрямку Пуще Водица і Кольцевої ...</h3>
+									<div class="offer-main-page__order">
+										<div class="offer-main-page__cost"><span>7900</span>грн/місяць</div>
+										<a href="#" class="offer-main-page__order-link _button-outlined">Замовити</a>
+									</div>
+								</div>
+							</div>
+							<div class="main-page__offer offer-main-page">
+								<div class="offer-main-page__body">
+									<div class="offer-main-page__image-ibg"><picture><source data-srcset="img/offers-main-page/sobornosti-43.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/offers-main-page/sobornosti-43.jpg" alt="Соборності, 43 у напрямку Пуще Водица і Кольцевої"></picture></div>
+									<p class="offer-main-page__code">Код: 6372</p>
+									<h3 class="offer-main-page__title">Соборності, 43 у напрямку Пуще Водица і Кольцевої ...</h3>
+									<div class="offer-main-page__order">
+										<div class="offer-main-page__cost"><span>7900</span>грн/місяць</div>
+										<a href="#" class="offer-main-page__order-link _button-outlined">Замовити</a>
+									</div>
+								</div>
+							</div>
+							<div class="main-page__offer offer-main-page">
+								<div class="offer-main-page__body">
+									<div class="offer-main-page__image-ibg"><picture><source data-srcset="img/offers-main-page/sobornosti-43.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/offers-main-page/sobornosti-43.jpg" alt="Соборності, 43 у напрямку Пуще Водица і Кольцевої"></picture></div>
+									<p class="offer-main-page__code">Код: 6372</p>
+									<h3 class="offer-main-page__title">Соборності, 43 у напрямку Пуще Водица і Кольцевої ...</h3>
+									<div class="offer-main-page__order">
+										<div class="offer-main-page__cost"><span>7900</span>грн/місяць</div>
+										<a href="#" class="offer-main-page__order-link _button-outlined">Замовити</a>
+									</div>
+								</div>
+							</div>
+							<div class="main-page__offer offer-main-page">
+								<div class="offer-main-page__body">
+									<div class="offer-main-page__image-ibg"><picture><source data-srcset="img/offers-main-page/sobornosti-43.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/offers-main-page/sobornosti-43.jpg" alt="Соборності, 43 у напрямку Пуще Водица і Кольцевої"></picture></div>
+									<p class="offer-main-page__code">Код: 6372</p>
+									<h3 class="offer-main-page__title">Соборності, 43 у напрямку Пуще Водица і Кольцевої ...</h3>
+									<div class="offer-main-page__order">
+										<div class="offer-main-page__cost"><span>7900</span>грн/місяць</div>
+										<a href="#" class="offer-main-page__order-link _button-outlined">Замовити</a>
+									</div>
+								</div>
+							</div>
+							<div class="main-page__offer offer-main-page">
+								<div class="offer-main-page__body">
+									<div class="offer-main-page__image-ibg"><picture><source data-srcset="img/offers-main-page/sobornosti-43.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/offers-main-page/sobornosti-43.jpg" alt="Соборності, 43 у напрямку Пуще Водица і Кольцевої"></picture></div>
+									<p class="offer-main-page__code">Код: 6372</p>
+									<h3 class="offer-main-page__title">Соборності, 43 у напрямку Пуще Водица і Кольцевої ...</h3>
+									<div class="offer-main-page__order">
+										<div class="offer-main-page__cost"><span>7900</span>грн/місяць</div>
+										<a href="#" class="offer-main-page__order-link _button-outlined">Замовити</a>
+									</div>
+								</div>
+							</div>
+							<div class="main-page__offer offer-main-page">
+								<div class="offer-main-page__body">
+									<div class="offer-main-page__image-ibg"><picture><source data-srcset="img/offers-main-page/sobornosti-43.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/offers-main-page/sobornosti-43.jpg" alt="Соборності, 43 у напрямку Пуще Водица і Кольцевої"></picture></div>
+									<p class="offer-main-page__code">Код: 6372</p>
+									<h3 class="offer-main-page__title">Соборності, 43 у напрямку Пуще Водица і Кольцевої ...</h3>
+									<div class="offer-main-page__order">
+										<div class="offer-main-page__cost"><span>7900</span>грн/місяць</div>
+										<a href="#" class="offer-main-page__order-link _button-outlined">Замовити</a>
+									</div>
+								</div>
+							</div>
+							<div class="main-page__offer offer-main-page">
+								<div class="offer-main-page__body">
+									<div class="offer-main-page__image-ibg"><picture><source data-srcset="img/offers-main-page/sobornosti-43.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/offers-main-page/sobornosti-43.jpg" alt="Соборності, 43 у напрямку Пуще Водица і Кольцевої"></picture></div>
+									<p class="offer-main-page__code">Код: 6372</p>
+									<h3 class="offer-main-page__title">Соборності, 43 у напрямку Пуще Водица і Кольцевої ...</h3>
+									<div class="offer-main-page__order">
+										<div class="offer-main-page__cost"><span>7900</span>грн/місяць</div>
+										<a href="#" class="offer-main-page__order-link _button-outlined">Замовити</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main-page__pagination pagination-main-page">
+						<div class="pagination-main-page__helper"></div>
+						<div class="pagination-main-page__body">
+							<a href="#" class="pagination-main-page__arrow pagination-main-page__arrow_left">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10 4L6 8L10 12" stroke="#323C47" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</a>
+							<ul class="pagination-main-page__list">
+								<li>
+									<a href="#" class="pagination-main-page__item _active">1</a>
+								</li>
+								<li>
+									<a href="#" class="pagination-main-page__item">2</a>
+								</li>
+								<li>
+									<a href="#" class="pagination-main-page__item">3</a>
+								</li>
+								<li>
+									<a href="#" class="pagination-main-page__item">4</a>
+								</li>
+								<li>
+									<a href="#" class="pagination-main-page__item">5</a>
+								</li>
+							</ul>
+							<a href="#" class="pagination-main-page__arrow pagination-main-page__arrow_right">
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6 4L10 8L6 12" stroke="#323C47" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
-		<footer class="footer">
+		<div class="menu-filters">
+			<div class="menu-filters__body">
+				<button type="button" class="menu-filters__close _menu-button-close"></button>
+				<p class="menu-filters__title">Фільтр</p>
+			</div>
+		</div>
+		<footer class="footer" data-da=".menu-header__body, 767.98, last">
 			<div class="footer__container">
+				<nav class="footer__navigation">
+					<ul class="footer__list">
+						<li class="footer__item"><a href="#" class="footer__link">Про нас</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">Як працює сайт?</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">Стати партнером</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">Ліцензія</a></li>
+						<li class="footer__item"><a href="#" class="footer__link">Контакти</a></li>
+					</ul>
+				</nav>
 			</div>
 		</footer>
 	</div>
@@ -87,7 +288,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220715121026"></script>
+	<script src="js/app.min.js?_v=20220716140020"></script>
 </body>
 
 </html>
