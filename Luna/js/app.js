@@ -780,28 +780,12 @@
                 document.documentElement.classList.add(className);
             }));
         }
-        let isMobile = {
-            Android: function() {
-                return navigator.userAgent.match(/Android/i);
-            },
-            BlackBerry: function() {
-                return navigator.userAgent.match(/BlackBerry/i);
-            },
-            iOS: function() {
-                return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-            },
-            Opera: function() {
-                return navigator.userAgent.match(/Opera Mini/i);
-            },
-            Windows: function() {
-                return navigator.userAgent.match(/IEMobile/i);
-            },
-            any: function() {
-                return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
-            }
-        };
         function getHash() {
             if (location.hash) return location.hash.replace("#", "");
+        }
+        function setHash(hash) {
+            hash = hash ? `#${hash}` : window.location.href.split("#")[0];
+            history.pushState("", "", hash);
         }
         let _slideUp = (target, duration = 500, showmore = 0) => {
             if (!target.classList.contains("_slide")) {
@@ -990,6 +974,104 @@
                 }));
             }
         }
+        function tabs() {
+            const tabs = document.querySelectorAll("[data-tabs]");
+            let tabsActiveHash = [];
+            if (tabs.length > 0) {
+                const hash = getHash();
+                if (hash && hash.startsWith("tab-")) tabsActiveHash = hash.replace("tab-", "").split("-");
+                tabs.forEach(((tabsBlock, index) => {
+                    tabsBlock.classList.add("_tab-init");
+                    tabsBlock.setAttribute("data-tabs-index", index);
+                    tabsBlock.addEventListener("click", setTabsAction);
+                    initTabs(tabsBlock);
+                }));
+                let mdQueriesArray = dataMediaQueries(tabs, "tabs");
+                if (mdQueriesArray && mdQueriesArray.length) mdQueriesArray.forEach((mdQueriesItem => {
+                    mdQueriesItem.matchMedia.addEventListener("change", (function() {
+                        setTitlePosition(mdQueriesItem.itemsArray, mdQueriesItem.matchMedia);
+                    }));
+                    setTitlePosition(mdQueriesItem.itemsArray, mdQueriesItem.matchMedia);
+                }));
+            }
+            function setTitlePosition(tabsMediaArray, matchMedia) {
+                tabsMediaArray.forEach((tabsMediaItem => {
+                    tabsMediaItem = tabsMediaItem.item;
+                    let tabsTitles = tabsMediaItem.querySelector("[data-tabs-titles]");
+                    let tabsTitleItems = tabsMediaItem.querySelectorAll("[data-tabs-title]");
+                    let tabsContent = tabsMediaItem.querySelector("[data-tabs-body]");
+                    let tabsContentItems = tabsMediaItem.querySelectorAll("[data-tabs-item]");
+                    tabsTitleItems = Array.from(tabsTitleItems).filter((item => item.closest("[data-tabs]") === tabsMediaItem));
+                    tabsContentItems = Array.from(tabsContentItems).filter((item => item.closest("[data-tabs]") === tabsMediaItem));
+                    tabsContentItems.forEach(((tabsContentItem, index) => {
+                        if (matchMedia.matches) {
+                            tabsContent.append(tabsTitleItems[index]);
+                            tabsContent.append(tabsContentItem);
+                            tabsMediaItem.classList.add("_tab-spoller");
+                        } else {
+                            tabsTitles.append(tabsTitleItems[index]);
+                            tabsMediaItem.classList.remove("_tab-spoller");
+                        }
+                    }));
+                }));
+            }
+            function initTabs(tabsBlock) {
+                let tabsTitles = tabsBlock.querySelectorAll("[data-tabs-titles]>*");
+                let tabsContent = tabsBlock.querySelectorAll("[data-tabs-body]>*");
+                const tabsBlockIndex = tabsBlock.dataset.tabsIndex;
+                const tabsActiveHashBlock = tabsActiveHash[0] == tabsBlockIndex;
+                if (tabsActiveHashBlock) {
+                    const tabsActiveTitle = tabsBlock.querySelector("[data-tabs-titles]>._tab-active");
+                    tabsActiveTitle ? tabsActiveTitle.classList.remove("_tab-active") : null;
+                }
+                if (tabsContent.length) {
+                    tabsContent = Array.from(tabsContent).filter((item => item.closest("[data-tabs]") === tabsBlock));
+                    tabsTitles = Array.from(tabsTitles).filter((item => item.closest("[data-tabs]") === tabsBlock));
+                    tabsContent.forEach(((tabsContentItem, index) => {
+                        tabsTitles[index].setAttribute("data-tabs-title", "");
+                        tabsContentItem.setAttribute("data-tabs-item", "");
+                        if (tabsActiveHashBlock && index == tabsActiveHash[1]) tabsTitles[index].classList.add("_tab-active");
+                        tabsContentItem.hidden = !tabsTitles[index].classList.contains("_tab-active");
+                    }));
+                }
+            }
+            function setTabsStatus(tabsBlock) {
+                let tabsTitles = tabsBlock.querySelectorAll("[data-tabs-title]");
+                let tabsContent = tabsBlock.querySelectorAll("[data-tabs-item]");
+                const tabsBlockIndex = tabsBlock.dataset.tabsIndex;
+                function isTabsAnamate(tabsBlock) {
+                    if (tabsBlock.hasAttribute("data-tabs-animate")) return tabsBlock.dataset.tabsAnimate > 0 ? Number(tabsBlock.dataset.tabsAnimate) : 500;
+                }
+                const tabsBlockAnimate = isTabsAnamate(tabsBlock);
+                if (tabsContent.length > 0) {
+                    const isHash = tabsBlock.hasAttribute("data-tabs-hash");
+                    tabsContent = Array.from(tabsContent).filter((item => item.closest("[data-tabs]") === tabsBlock));
+                    tabsTitles = Array.from(tabsTitles).filter((item => item.closest("[data-tabs]") === tabsBlock));
+                    tabsContent.forEach(((tabsContentItem, index) => {
+                        if (tabsTitles[index].classList.contains("_tab-active")) {
+                            if (tabsBlockAnimate) _slideDown(tabsContentItem, tabsBlockAnimate); else tabsContentItem.hidden = false;
+                            if (isHash && !tabsContentItem.closest(".popup")) setHash(`tab-${tabsBlockIndex}-${index}`);
+                        } else if (tabsBlockAnimate) _slideUp(tabsContentItem, tabsBlockAnimate); else tabsContentItem.hidden = true;
+                    }));
+                }
+            }
+            function setTabsAction(e) {
+                const el = e.target;
+                if (el.closest("[data-tabs-title]")) {
+                    const tabTitle = el.closest("[data-tabs-title]");
+                    const tabsBlock = tabTitle.closest("[data-tabs]");
+                    if (!tabTitle.classList.contains("_tab-active") && !tabsBlock.querySelector("._slide")) {
+                        let tabActiveTitle = tabsBlock.querySelectorAll("[data-tabs-title]._tab-active");
+                        tabActiveTitle.length ? tabActiveTitle = Array.from(tabActiveTitle).filter((item => item.closest("[data-tabs]") === tabsBlock)) : null;
+                        tabActiveTitle.length ? tabActiveTitle[0].classList.remove("_tab-active") : null;
+                        tabTitle.classList.add("_tab-active");
+                        setTabsStatus(tabsBlock);
+                    }
+                    e.preventDefault();
+                    showMoreFunc();
+                }
+            }
+        }
         function menuInit() {
             if (document.querySelector(".icon-menu")) document.addEventListener("click", (function(e) {
                 if (bodyLockStatus && e.target.closest(".icon-menu")) {
@@ -1001,6 +1083,113 @@
         function menuClose() {
             bodyUnlock();
             document.documentElement.classList.remove("menu-open");
+        }
+        function showMore() {
+            window.addEventListener("load", showMoreFunc);
+        }
+        function showMoreFunc() {
+            const showMoreBlocks = document.querySelectorAll("[data-showmore]");
+            let showMoreBlocksRegular;
+            let mdQueriesArray;
+            if (showMoreBlocks.length) {
+                showMoreBlocksRegular = Array.from(showMoreBlocks).filter((function(item, index, self) {
+                    return !item.dataset.showmoreMedia;
+                }));
+                showMoreBlocksRegular.length ? initItems(showMoreBlocksRegular) : null;
+                document.addEventListener("click", showMoreActions);
+                window.addEventListener("resize", showMoreActions);
+                mdQueriesArray = dataMediaQueries(showMoreBlocks, "showmoreMedia");
+                if (mdQueriesArray && mdQueriesArray.length) {
+                    mdQueriesArray.forEach((mdQueriesItem => {
+                        mdQueriesItem.matchMedia.addEventListener("change", (function() {
+                            initItems(mdQueriesItem.itemsArray, mdQueriesItem.matchMedia);
+                        }));
+                    }));
+                    initItemsMedia(mdQueriesArray);
+                }
+            }
+            function initItemsMedia(mdQueriesArray) {
+                mdQueriesArray.forEach((mdQueriesItem => {
+                    initItems(mdQueriesItem.itemsArray, mdQueriesItem.matchMedia);
+                }));
+            }
+            function initItems(showMoreBlocks, matchMedia) {
+                showMoreBlocks.forEach((showMoreBlock => {
+                    initItem(showMoreBlock, matchMedia);
+                }));
+            }
+            function initItem(showMoreBlock, matchMedia = false) {
+                showMoreBlock = matchMedia ? showMoreBlock.item : showMoreBlock;
+                let showMoreContent = showMoreBlock.querySelectorAll("[data-showmore-content]");
+                let showMoreButton = showMoreBlock.querySelectorAll("[data-showmore-button]");
+                showMoreContent = Array.from(showMoreContent).filter((item => item.closest("[data-showmore]") === showMoreBlock))[0];
+                showMoreButton = Array.from(showMoreButton).filter((item => item.closest("[data-showmore]") === showMoreBlock))[0];
+                const hiddenHeight = getHeight(showMoreBlock, showMoreContent);
+                if (matchMedia.matches || !matchMedia) if (hiddenHeight < getOriginalHeight(showMoreContent)) {
+                    _slideUp(showMoreContent, 0, hiddenHeight);
+                    showMoreButton.hidden = false;
+                } else {
+                    _slideDown(showMoreContent, 0, hiddenHeight);
+                    showMoreButton.hidden = true;
+                } else {
+                    _slideDown(showMoreContent, 0, hiddenHeight);
+                    showMoreButton.hidden = true;
+                }
+            }
+            function getHeight(showMoreBlock, showMoreContent) {
+                let hiddenHeight = 0;
+                let gapFirstEl = document.querySelector("[data-gap-first]");
+                let gapSecondEl = document.querySelector("[data-gap-second]");
+                const showMoreType = showMoreBlock.dataset.showmore ? showMoreBlock.dataset.showmore : "size";
+                if ("items" === showMoreType) {
+                    let showMoreTypeValue = showMoreContent.dataset.showmoreContent ? showMoreContent.dataset.showmoreContent : 3;
+                    if (window.matchMedia("(max-width: 31.25rem)").matches) showMoreTypeValue = 4;
+                    const showMoreItems = showMoreContent.children;
+                    for (let index = 1; index < showMoreItems.length; index++) {
+                        const showMoreItem = showMoreItems[index - 1];
+                        let gap = gapSecondEl.getBoundingClientRect().x - gapFirstEl.getBoundingClientRect().x - gapFirstEl.offsetWidth;
+                        if (window.matchMedia("(max-width: 25rem)").matches) hiddenHeight += showMoreItem.offsetHeight + gap; else hiddenHeight += showMoreItem.offsetHeight + gap - 5;
+                        if (index == showMoreTypeValue) break;
+                    }
+                } else {
+                    const showMoreTypeValue = showMoreContent.dataset.showmoreContent ? showMoreContent.dataset.showmoreContent : 150;
+                    hiddenHeight = showMoreTypeValue;
+                }
+                return hiddenHeight;
+            }
+            function getOriginalHeight(showMoreContent) {
+                let parentHidden;
+                let hiddenHeight = showMoreContent.offsetHeight;
+                showMoreContent.style.removeProperty("height");
+                if (showMoreContent.closest(`[hidden]`)) {
+                    parentHidden = showMoreContent.closest(`[hidden]`);
+                    parentHidden.hidden = false;
+                }
+                let originalHeight = showMoreContent.offsetHeight;
+                parentHidden ? parentHidden.hidden = true : null;
+                showMoreContent.style.height = `${hiddenHeight}px`;
+                return originalHeight;
+            }
+            function showMoreActions(e) {
+                const targetEvent = e.target;
+                const targetType = e.type;
+                if ("click" === targetType) {
+                    if (targetEvent.closest("[data-showmore-button]")) {
+                        const showMoreButton = targetEvent.closest("[data-showmore-button]");
+                        const showMoreBlock = showMoreButton.closest("[data-showmore]");
+                        const showMoreContent = showMoreBlock.querySelector("[data-showmore-content]");
+                        const showMoreSpeed = showMoreBlock.dataset.showmoreButton ? showMoreBlock.dataset.showmoreButton : "500";
+                        const hiddenHeight = getHeight(showMoreBlock, showMoreContent);
+                        if (!showMoreContent.classList.contains("_slide")) {
+                            showMoreBlock.classList.contains("_showmore-active") ? _slideUp(showMoreContent, showMoreSpeed, hiddenHeight) : _slideDown(showMoreContent, showMoreSpeed, hiddenHeight);
+                            showMoreBlock.classList.toggle("_showmore-active");
+                        }
+                    }
+                } else if ("resize" === targetType) {
+                    showMoreBlocksRegular && showMoreBlocksRegular.length ? initItems(showMoreBlocksRegular) : null;
+                    mdQueriesArray && mdQueriesArray.length ? initItemsMedia(mdQueriesArray) : null;
+                }
+            }
         }
         function FLS(message) {
             setTimeout((() => {
@@ -5019,408 +5208,6 @@
             class_loaded: "_lazy-loaded",
             use_native: true
         });
-        class FullPage {
-            constructor(element, options) {
-                let config = {
-                    noEventSelector: "[data-no-event]",
-                    сlassInit: "fp-init",
-                    wrapperAnimatedClass: "fp-switching",
-                    selectorSection: "[data-fp-section]",
-                    activeClass: "active-section",
-                    previousClass: "previous-section",
-                    nextClass: "next-section",
-                    idActiveSection: 0,
-                    mode: element.dataset.fpEffect ? element.dataset.fpEffect : "slider",
-                    bullets: element.hasAttribute("data-fp-bullets") ? true : false,
-                    bulletsClass: "fp-bullets",
-                    bulletClass: "fp-bullet",
-                    bulletActiveClass: "fp-bullet-active",
-                    onInit: function() {},
-                    onSwitching: function() {},
-                    onDestroy: function() {}
-                };
-                this.options = Object.assign(config, options);
-                this.wrapper = element;
-                this.sections = this.wrapper.querySelectorAll(this.options.selectorSection);
-                this.activeSection = false;
-                this.activeSectionId = false;
-                this.previousSection = false;
-                this.previousSectionId = false;
-                this.nextSection = false;
-                this.nextSectionId = false;
-                this.bulletsWrapper = false;
-                this.stopEvent = false;
-                if (this.sections.length) this.init();
-            }
-            init() {
-                if (this.options.idActiveSection > this.sections.length - 1) return;
-                this.setId();
-                this.activeSectionId = this.options.idActiveSection;
-                this.setEffectsClasses();
-                this.setClasses();
-                this.setStyle();
-                if (this.options.bullets) {
-                    this.setBullets();
-                    this.setActiveBullet(this.activeSectionId);
-                }
-                this.events();
-                setTimeout((() => {
-                    document.documentElement.classList.add(this.options.сlassInit);
-                    this.options.onInit(this);
-                    document.dispatchEvent(new CustomEvent("fpinit", {
-                        detail: {
-                            fp: this
-                        }
-                    }));
-                }), 0);
-            }
-            destroy() {
-                this.removeEvents();
-                this.removeClasses();
-                document.documentElement.classList.remove(this.options.сlassInit);
-                this.wrapper.classList.remove(this.options.wrapperAnimatedClass);
-                this.removeEffectsClasses();
-                this.removeZIndex();
-                this.removeStyle();
-                this.removeId();
-                this.options.onDestroy(this);
-                document.dispatchEvent(new CustomEvent("fpdestroy", {
-                    detail: {
-                        fp: this
-                    }
-                }));
-            }
-            setId() {
-                for (let index = 0; index < this.sections.length; index++) {
-                    const section = this.sections[index];
-                    section.setAttribute("data-fp-id", index);
-                }
-            }
-            removeId() {
-                for (let index = 0; index < this.sections.length; index++) {
-                    const section = this.sections[index];
-                    section.removeAttribute("data-fp-id");
-                }
-            }
-            setClasses() {
-                this.previousSectionId = this.activeSectionId - 1 >= 0 ? this.activeSectionId - 1 : false;
-                this.nextSectionId = this.activeSectionId + 1 < this.sections.length ? this.activeSectionId + 1 : false;
-                this.activeSection = this.sections[this.activeSectionId];
-                this.activeSection.classList.add(this.options.activeClass);
-                if (false !== this.previousSectionId) {
-                    this.previousSection = this.sections[this.previousSectionId];
-                    this.previousSection.classList.add(this.options.previousClass);
-                } else this.previousSection = false;
-                if (false !== this.nextSectionId) {
-                    this.nextSection = this.sections[this.nextSectionId];
-                    this.nextSection.classList.add(this.options.nextClass);
-                } else this.nextSection = false;
-            }
-            removeEffectsClasses() {
-                switch (this.options.mode) {
-                  case "slider":
-                    this.wrapper.classList.remove("slider-mode");
-                    break;
-
-                  case "cards":
-                    this.wrapper.classList.remove("cards-mode");
-                    this.setZIndex();
-                    break;
-
-                  case "fade":
-                    this.wrapper.classList.remove("fade-mode");
-                    this.setZIndex();
-                    break;
-
-                  default:
-                    break;
-                }
-            }
-            setEffectsClasses() {
-                switch (this.options.mode) {
-                  case "slider":
-                    this.wrapper.classList.add("slider-mode");
-                    break;
-
-                  case "cards":
-                    this.wrapper.classList.add("cards-mode");
-                    this.setZIndex();
-                    break;
-
-                  case "fade":
-                    this.wrapper.classList.add("fade-mode");
-                    this.setZIndex();
-                    break;
-
-                  default:
-                    break;
-                }
-            }
-            setStyle() {
-                switch (this.options.mode) {
-                  case "slider":
-                    this.styleSlider();
-                    break;
-
-                  case "cards":
-                    this.styleCards();
-                    break;
-
-                  case "fade":
-                    this.styleFade();
-                    break;
-
-                  default:
-                    break;
-                }
-            }
-            styleSlider() {
-                for (let index = 0; index < this.sections.length; index++) {
-                    const section = this.sections[index];
-                    if (index === this.activeSectionId) section.style.transform = "translate3D(0,0,0)"; else if (index < this.activeSectionId) section.style.transform = "translate3D(0,-100%,0)"; else if (index > this.activeSectionId) section.style.transform = "translate3D(0,100%,0)";
-                }
-            }
-            styleCards() {
-                for (let index = 0; index < this.sections.length; index++) {
-                    const section = this.sections[index];
-                    if (index >= this.activeSectionId) section.style.transform = "translate3D(0,0,0)"; else if (index < this.activeSectionId) section.style.transform = "translate3D(0,-100%,0)";
-                }
-            }
-            styleFade() {
-                for (let index = 0; index < this.sections.length; index++) {
-                    const section = this.sections[index];
-                    if (index === this.activeSectionId) {
-                        section.style.opacity = "1";
-                        section.style.visibility = "visible";
-                    } else {
-                        section.style.opacity = "0";
-                        section.style.visibility = "hidden";
-                    }
-                }
-            }
-            removeStyle() {
-                for (let index = 0; index < this.sections.length; index++) {
-                    const section = this.sections[index];
-                    section.style.opacity = "";
-                    section.style.visibility = "";
-                    section.style.transform = "";
-                }
-            }
-            checkScroll(yCoord, element) {
-                this.goScroll = false;
-                if (!this.stopEvent && element) {
-                    this.goScroll = true;
-                    if (this.haveScroll(element)) {
-                        this.goScroll = false;
-                        const position = Math.round(element.scrollHeight - element.scrollTop);
-                        if (Math.abs(position - element.scrollHeight) < 2 && yCoord <= 0 || Math.abs(position - element.clientHeight) < 2 && yCoord >= 0) this.goScroll = true;
-                    }
-                }
-            }
-            haveScroll(element) {
-                return element.scrollHeight !== window.innerHeight;
-            }
-            removeClasses() {
-                for (let index = 0; index < this.sections.length; index++) {
-                    const section = this.sections[index];
-                    section.classList.remove(this.options.activeClass);
-                    section.classList.remove(this.options.previousClass);
-                    section.classList.remove(this.options.nextClass);
-                }
-            }
-            events() {
-                this.events = {
-                    wheel: this.wheel.bind(this),
-                    touchdown: this.touchDown.bind(this),
-                    touchup: this.touchUp.bind(this),
-                    touchmove: this.touchMove.bind(this),
-                    touchcancel: this.touchUp.bind(this),
-                    transitionEnd: this.transitionend.bind(this),
-                    click: this.clickBullets.bind(this)
-                };
-                if (isMobile.iOS()) document.addEventListener("touchmove", (e => {
-                    e.preventDefault();
-                }));
-                this.setEvents();
-            }
-            setEvents() {
-                this.wrapper.addEventListener("wheel", this.events.wheel);
-                this.wrapper.addEventListener("touchstart", this.events.touchdown);
-                if (this.options.bullets && this.bulletsWrapper) this.bulletsWrapper.addEventListener("click", this.events.click);
-            }
-            removeEvents() {
-                this.wrapper.removeEventListener("wheel", this.events.wheel);
-                this.wrapper.removeEventListener("touchdown", this.events.touchdown);
-                this.wrapper.removeEventListener("touchup", this.events.touchup);
-                this.wrapper.removeEventListener("touchcancel", this.events.touchup);
-                this.wrapper.removeEventListener("touchmove", this.events.touchmove);
-                if (this.bulletsWrapper) this.bulletsWrapper.removeEventListener("click", this.events.click);
-            }
-            clickBullets(e) {
-                const bullet = e.target.closest(`.${this.options.bulletClass}`);
-                if (bullet) {
-                    const arrayChildren = Array.from(this.bulletsWrapper.children);
-                    const idClickBullet = arrayChildren.indexOf(bullet);
-                    this.switchingSection(idClickBullet);
-                }
-            }
-            setActiveBullet(idButton) {
-                if (!this.bulletsWrapper) return;
-                const bullets = this.bulletsWrapper.children;
-                for (let index = 0; index < bullets.length; index++) {
-                    const bullet = bullets[index];
-                    if (idButton === index) bullet.classList.add(this.options.bulletActiveClass); else bullet.classList.remove(this.options.bulletActiveClass);
-                }
-            }
-            touchDown(e) {
-                this._yP = e.changedTouches[0].pageY;
-                this._eventElement = e.target.closest(`.${this.options.activeClass}`);
-                if (this._eventElement) {
-                    this._eventElement.addEventListener("touchend", this.events.touchup);
-                    this._eventElement.addEventListener("touchcancel", this.events.touchup);
-                    this._eventElement.addEventListener("touchmove", this.events.touchmove);
-                    this.clickOrTouch = true;
-                    if (isMobile.iOS()) {
-                        if (this._eventElement.scrollHeight !== this._eventElement.clientHeight) {
-                            if (0 === this._eventElement.scrollTop) this._eventElement.scrollTop = 1;
-                            if (this._eventElement.scrollTop === this._eventElement.scrollHeight - this._eventElement.clientHeight) this._eventElement.scrollTop = this._eventElement.scrollHeight - this._eventElement.clientHeight - 1;
-                        }
-                        this.allowUp = this._eventElement.scrollTop > 0;
-                        this.allowDown = this._eventElement.scrollTop < this._eventElement.scrollHeight - this._eventElement.clientHeight;
-                        this.lastY = e.changedTouches[0].pageY;
-                    }
-                }
-            }
-            touchMove(e) {
-                const targetElement = e.target.closest(`.${this.options.activeClass}`);
-                if (isMobile.iOS()) {
-                    let up = e.changedTouches[0].pageY > this.lastY;
-                    let down = !up;
-                    this.lastY = e.changedTouches[0].pageY;
-                    if (targetElement) if (up && this.allowUp || down && this.allowDown) e.stopPropagation(); else if (e.cancelable) e.preventDefault();
-                }
-                if (!this.clickOrTouch || e.target.closest(this.options.noEventSelector)) return;
-                let yCoord = this._yP - e.changedTouches[0].pageY;
-                this.checkScroll(yCoord, targetElement);
-                if (this.goScroll && Math.abs(yCoord) > 20) this.choiceOfDirection(yCoord);
-            }
-            touchUp(e) {
-                this._eventElement.removeEventListener("touchend", this.events.touchup);
-                this._eventElement.removeEventListener("touchcancel", this.events.touchup);
-                this._eventElement.removeEventListener("touchmove", this.events.touchmove);
-                return this.clickOrTouch = false;
-            }
-            transitionend(e) {
-                if (e.target.closest(this.options.selectorSection)) {
-                    this.stopEvent = false;
-                    this.wrapper.classList.remove(this.options.wrapperAnimatedClass);
-                }
-            }
-            wheel(e) {
-                if (e.target.closest(this.options.noEventSelector)) return;
-                const yCoord = e.deltaY;
-                const targetElement = e.target.closest(`.${this.options.activeClass}`);
-                this.checkScroll(yCoord, targetElement);
-                if (this.goScroll) this.choiceOfDirection(yCoord);
-            }
-            choiceOfDirection(direction) {
-                this.stopEvent = true;
-                if (0 === this.activeSectionId && direction < 0 || this.activeSectionId === this.sections.length - 1 && direction > 0) this.stopEvent = false;
-                if (direction > 0 && false !== this.nextSection) this.activeSectionId = this.activeSectionId + 1 < this.sections.length ? ++this.activeSectionId : this.activeSectionId; else if (direction < 0 && false !== this.previousSection) this.activeSectionId = this.activeSectionId - 1 >= 0 ? --this.activeSectionId : this.activeSectionId;
-                if (this.stopEvent) this.switchingSection();
-            }
-            switchingSection(idSection = this.activeSectionId) {
-                this.activeSectionId = idSection;
-                this.wrapper.classList.add(this.options.wrapperAnimatedClass);
-                this.wrapper.addEventListener("transitionend", this.events.transitionEnd);
-                this.removeClasses();
-                this.setClasses();
-                this.setStyle();
-                if (this.options.bullets) this.setActiveBullet(this.activeSectionId);
-                this.options.onSwitching(this);
-                document.dispatchEvent(new CustomEvent("fpswitching", {
-                    detail: {
-                        fp: this
-                    }
-                }));
-            }
-            setBullets() {
-                this.bulletsWrapper = document.querySelector(`.${this.options.bulletsClass}`);
-                if (!this.bulletsWrapper) {
-                    const bullets = document.createElement("div");
-                    bullets.classList.add(this.options.bulletsClass);
-                    this.wrapper.append(bullets);
-                    this.bulletsWrapper = bullets;
-                }
-                if (this.bulletsWrapper) for (let index = 0; index < this.sections.length; index++) {
-                    const span = document.createElement("span");
-                    span.classList.add(this.options.bulletClass);
-                    this.bulletsWrapper.append(span);
-                }
-            }
-            setZIndex() {
-                let zIndex = this.sections.length;
-                for (let index = 0; index < this.sections.length; index++) {
-                    const section = this.sections[index];
-                    section.style.zIndex = zIndex;
-                    --zIndex;
-                }
-            }
-            removeZIndex() {
-                for (let index = 0; index < this.sections.length; index++) {
-                    const section = this.sections[index];
-                    section.style.zIndex = "";
-                }
-            }
-        }
-        if (document.querySelector("[data-fp]")) flsModules.fullpage = new FullPage(document.querySelector("[data-fp]"), "");
-        let addWindowScrollEvent = false;
-        function pageNavigation() {
-            document.addEventListener("click", pageNavigationAction);
-            document.addEventListener("watcherCallback", pageNavigationAction);
-            function pageNavigationAction(e) {
-                if ("click" === e.type) {
-                    const targetElement = e.target;
-                    if (targetElement.closest("[data-goto]")) {
-                        const gotoLink = targetElement.closest("[data-goto]");
-                        const gotoLinkSelector = gotoLink.dataset.goto ? gotoLink.dataset.goto : "";
-                        const noHeader = gotoLink.hasAttribute("data-goto-header") ? true : false;
-                        const gotoSpeed = gotoLink.dataset.gotoSpeed ? gotoLink.dataset.gotoSpeed : 500;
-                        const offsetTop = gotoLink.dataset.gotoTop ? parseInt(gotoLink.dataset.gotoTop) : 0;
-                        gotoBlock(gotoLinkSelector, noHeader, gotoSpeed, offsetTop);
-                        e.preventDefault();
-                    }
-                } else if ("watcherCallback" === e.type && e.detail) {
-                    const entry = e.detail.entry;
-                    const targetElement = entry.target;
-                    if ("navigator" === targetElement.dataset.watch) {
-                        document.querySelector(`[data-goto]._navigator-active`);
-                        let navigatorCurrentItem;
-                        if (targetElement.id && document.querySelector(`[data-goto="#${targetElement.id}"]`)) navigatorCurrentItem = document.querySelector(`[data-goto="#${targetElement.id}"]`); else if (targetElement.classList.length) for (let index = 0; index < targetElement.classList.length; index++) {
-                            const element = targetElement.classList[index];
-                            if (document.querySelector(`[data-goto=".${element}"]`)) {
-                                navigatorCurrentItem = document.querySelector(`[data-goto=".${element}"]`);
-                                break;
-                            }
-                        }
-                        if (entry.isIntersecting) navigatorCurrentItem ? navigatorCurrentItem.classList.add("_navigator-active") : null; else navigatorCurrentItem ? navigatorCurrentItem.classList.remove("_navigator-active") : null;
-                    }
-                }
-            }
-            if (getHash()) {
-                let goToHash;
-                if (document.querySelector(`#${getHash()}`)) goToHash = `#${getHash()}`; else if (document.querySelector(`.${getHash()}`)) goToHash = `.${getHash()}`;
-                goToHash ? gotoBlock(goToHash, true, 500, 20) : null;
-            }
-        }
-        setTimeout((() => {
-            if (addWindowScrollEvent) {
-                let windowScroll = new Event("windowScroll");
-                window.addEventListener("scroll", (function(e) {
-                    document.dispatchEvent(windowScroll);
-                }));
-            }
-        }), 0);
         /*!
  * lightgallery | 2.5.0 | June 13th 2022
  * http://www.lightgalleryjs.com/
@@ -7143,7 +6930,15 @@ PERFORMANCE OF THIS SOFTWARE.
                         plugins: [ lg_thumbnail_min ],
                         licenseKey: "7EC452A9-0CFD441C-BD984C7C-17C8456E",
                         speed: 500,
-                        thumbnail: true
+                        thumbnail: true,
+                        toggleThumb: true,
+                        download: false,
+                        counter: false,
+                        getCaptionFromTitleOrAlt: false,
+                        exThumbImage: "data-external-thumb-image",
+                        mobileSettings: {
+                            controls: true
+                        }
                     })
                 });
             }));
@@ -7153,11 +6948,13 @@ PERFORMANCE OF THIS SOFTWARE.
         isWebp();
         menuInit();
         spollers();
+        tabs();
+        showMore();
         formFieldsInit({
             viewPass: false,
             autoHeight: false
         });
         formSubmit();
-        pageNavigation();
+        flsScroll.pageNavigation();
     })();
 })();
