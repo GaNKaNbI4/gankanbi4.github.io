@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220723013613">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220723155055">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,6 +56,12 @@
 									</div>
 								</div>
 							</div>
+							<div class="main-home__decor">
+								<div class="main-home__image-text main-home__image-text_left"><img src="img/home/main/decor/text.svg" alt="text">
+								</div>
+								<div class="main-home__image-text main-home__image-text_right"><img src="img/home/main/decor/text.svg" alt="text"></div>
+								<div class="main-home__image-line"><img src="img/home/main/decor/line.svg" alt="line"></div>
+							</div>
 						</div>
 					</nav>
 				</div>
@@ -88,6 +94,12 @@
 						</div>
 					</div>
 					<div class="main-home__slider-pagination _swiper-pagination"></div>
+				</div>
+				<div class="main-home__decor">
+					<div class="main-home__image-text main-home__image-text_left"><img src="img/home/main/decor/text.svg" alt="text">
+					</div>
+					<div class="main-home__image-text main-home__image-text_right"><img src="img/home/main/decor/text.svg" alt="text"></div>
+					<div class="main-home__image-line"><img src="img/home/main/decor/line.svg" alt="line"></div>
 				</div>
 			</div>
 
@@ -355,6 +367,7 @@
 										<h4 class="clients-reviews__company-name">Company Name</h4>
 										<p class="clients-reviews__describe">Contrary to popular belief, Lorem Ipsum is not simply random
 											text. It has roots in a piece of classical Latin literature from 45 BC,</p>
+										<div class="clients-reviews__text-bg"><img src="img/home/our-clients/”.svg" alt="background"></div>
 									</div>
 								</div>
 							</div>
@@ -366,6 +379,7 @@
 										<h4 class="clients-reviews__company-name">Company Name</h4>
 										<p class="clients-reviews__describe">Contrary to popular belief, Lorem Ipsum is not simply random
 											text. It has roots in a piece of classical Latin literature from 45 BC,</p>
+										<div class="clients-reviews__text-bg"><img src="img/home/our-clients/”.svg" alt="background"></div>
 									</div>
 								</div>
 							</div>
@@ -474,15 +488,18 @@
 					<div class="contact-us-home__body">
 						<div class="contact-us-home__form-block">
 							<form action="#" class="contact-us-home__form form-contact-us">
-								<input autocomplete="off" type="text" name="name" placeholder="Enter your name here..." class="form-contact-us__input">
-								<input autocomplete="off" type="email" name="email" placeholder="Enter your email..." class="form-contact-us__input">
-								<textarea autocomplete="off" name="message" placeholder="Type your message here ..." class="form-contact-us__input form-contact-us__input_textarea _margin-bottom"></textarea>
+								<input autocomplete="off" data-required type="text" name="name" placeholder="Enter your name here..." class="form-contact-us__input">
+								<input autocomplete="off" data-required="email" type="email" name="email" placeholder="Enter your email..." class="form-contact-us__input">
+								<textarea autocomplete="off" data-required name="message" placeholder="Type your message here ..." class="form-contact-us__input form-contact-us__input_textarea _margin-bottom"></textarea>
 								<button type="submit" class="form-contact-us__button _main-button">submit</button>
 							</form>
 						</div>
-						<div class="contact-us-home__image-block">
-							<div class="contact-us-home__map-ibg">
-								<picture><source data-srcset="img/home/contact-us/map.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/home/contact-us/map.jpg" alt="Map"></picture>
+						<div class="contact-us-home__map-block">
+							<div class="contact-us-home__map">
+								<div class="contact-us-home__map-iframe">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4286.528819465142!2d51.523174094806926!3d25.387173780669453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c34d1e74d62b%3A0x3936e796a7d7dc86!2sMarina%20Twin%20Towers%20B!5e0!3m2!1sen!2sua!4v1658577863349!5m2!1sen!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								</div>
+
 							</div>
 						</div>
 					</div>
@@ -630,7 +647,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220723013613"></script>
+	<script src="js/app.min.js?_v=20220723155055"></script>
 </body>
 
 </html>
