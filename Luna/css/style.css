@@ -313,7 +313,6 @@ body {
 }
 
 .menu .main-home__decor {
-  top: 25%;
   z-index: 1;
 }
 
@@ -599,6 +598,10 @@ body {
   background-color: #161616;
   -webkit-filter: blur(4.5625rem);
           filter: blur(4.5625rem);
+}
+
+.main-home__wrapper {
+  position: relative;
 }
 
 .main-home__slide.swiper-slide-active .main-home__image-ibg::before {
@@ -2856,6 +2859,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .menu__body {
     top: 5.75rem;
     height: calc(100% - 5.75rem);
+  }
+
+  .menu .main-home__decor {
+    top: 25%;
   }
 
   .footer__image-block {
