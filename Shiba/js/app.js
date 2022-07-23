@@ -4521,6 +4521,13 @@
                 }));
             }
         }), 0);
+        const upBtn = document.querySelector(".go-up");
+        window.addEventListener("scroll", (() => {
+            console.log(scrollY);
+            if (scrollY >= 450) {
+                if (!upBtn.classList.contains("_active")) upBtn.classList.add("_active");
+            } else if (upBtn.classList.contains("_active")) upBtn.classList.remove("_active");
+        }));
         window["FLS"] = false;
         isWebp();
         pageNavigation();
