@@ -7357,6 +7357,7 @@ PERFORMANCE OF THIS SOFTWARE.
         window["FLS"] = false;
         menuInit();
         tabs();
+        pageNavigation();
         window.addEventListener("load", (() => {
             setTimeout((() => {
                 spollers();
@@ -7365,7 +7366,6 @@ PERFORMANCE OF THIS SOFTWARE.
                     autoHeight: false
                 });
                 formSubmit();
-                pageNavigation();
             }), 1e3);
         }));
     })();
