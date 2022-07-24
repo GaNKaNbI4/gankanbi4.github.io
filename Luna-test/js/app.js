@@ -7326,7 +7326,7 @@ PERFORMANCE OF THIS SOFTWARE.
         }
         const lightgallery_es5 = lightGallery;
         var lg_thumbnail_min = __webpack_require__(97);
-        document.addEventListener("DOMContentLoaded", (() => {
+        window.addEventListener("load", (() => {
             const galleries = document.querySelectorAll("[data-gallery]");
             if (galleries.length) {
                 let galleyItems = [];
@@ -7355,7 +7355,7 @@ PERFORMANCE OF THIS SOFTWARE.
         window["FLS"] = false;
         menuInit();
         tabs();
-        document.addEventListener("DOMContentLoaded", (() => {
+        window.addEventListener("load", (() => {
             spollers();
             formFieldsInit({
                 viewPass: false,
