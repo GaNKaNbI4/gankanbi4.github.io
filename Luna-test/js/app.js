@@ -7327,42 +7327,46 @@ PERFORMANCE OF THIS SOFTWARE.
         const lightgallery_es5 = lightGallery;
         var lg_thumbnail_min = __webpack_require__(97);
         window.addEventListener("load", (() => {
-            const galleries = document.querySelectorAll("[data-gallery]");
-            if (galleries.length) {
-                let galleyItems = [];
-                galleries.forEach((gallery => {
-                    galleyItems.push({
-                        gallery,
-                        galleryClass: lightgallery_es5(gallery, {
-                            plugins: [ lg_thumbnail_min ],
-                            licenseKey: "7EC452A9-0CFD441C-BD984C7C-17C8456E",
-                            speed: 500,
-                            thumbnail: true,
-                            toggleThumb: true,
-                            download: false,
-                            counter: false,
-                            getCaptionFromTitleOrAlt: false,
-                            exThumbImage: "data-external-thumb-image",
-                            mobileSettings: {
-                                controls: true
-                            }
-                        })
-                    });
-                }));
-                flsModules.gallery = galleyItems;
-            }
+            setTimeout((() => {
+                const galleries = document.querySelectorAll("[data-gallery]");
+                if (galleries.length) {
+                    let galleyItems = [];
+                    galleries.forEach((gallery => {
+                        galleyItems.push({
+                            gallery,
+                            galleryClass: lightgallery_es5(gallery, {
+                                plugins: [ lg_thumbnail_min ],
+                                licenseKey: "7EC452A9-0CFD441C-BD984C7C-17C8456E",
+                                speed: 500,
+                                thumbnail: true,
+                                toggleThumb: true,
+                                download: false,
+                                counter: false,
+                                getCaptionFromTitleOrAlt: false,
+                                exThumbImage: "data-external-thumb-image",
+                                mobileSettings: {
+                                    controls: true
+                                }
+                            })
+                        });
+                    }));
+                    flsModules.gallery = galleyItems;
+                }
+            }), 2e3);
         }));
         window["FLS"] = false;
         menuInit();
         tabs();
         window.addEventListener("load", (() => {
-            spollers();
-            formFieldsInit({
-                viewPass: false,
-                autoHeight: false
-            });
-            formSubmit();
-            pageNavigation();
+            setTimeout((() => {
+                spollers();
+                formFieldsInit({
+                    viewPass: false,
+                    autoHeight: false
+                });
+                formSubmit();
+                pageNavigation();
+            }), 1e3);
         }));
     })();
 })();
