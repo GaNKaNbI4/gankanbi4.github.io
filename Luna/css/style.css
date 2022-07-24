@@ -1879,6 +1879,8 @@ section {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .items-projects-main__more {
