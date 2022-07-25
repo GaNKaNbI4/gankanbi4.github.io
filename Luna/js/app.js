@@ -5379,14 +5379,17 @@
                 this._refresh();
             }
         }
-        window.addEventListener("load", (() => {
-            if (document.querySelector(".expertise-home__slider")) new ChiefSlider(".expertise-home__slider", {
-                loop: true,
-                autoplay: true,
-                interval: 6e3,
-                swipe: false,
-                refresh: true
-            });
+        document.addEventListener("DOMContentLoaded", (() => {
+            if (document.querySelector(".expertise-home__slider")) {
+                console.log("initialized");
+                new ChiefSlider(".expertise-home__slider", {
+                    loop: true,
+                    autoplay: true,
+                    interval: 4e3,
+                    swipe: true,
+                    refresh: true
+                });
+            }
         }));
         function initSliders() {
             if (document.querySelector(".main-home__slider")) new core(".main-home__slider", {
@@ -5395,7 +5398,7 @@
                 observeParents: true,
                 slidesPerView: 1,
                 spaceBetween: 0,
-                speed: 2e3,
+                speed: 3e3,
                 effect: "fade",
                 autoplay: {
                     delay: 2e3,
