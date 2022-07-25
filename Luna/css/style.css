@@ -259,6 +259,11 @@ body {
   border-color: #fff;
 }
 
+.lg-outer .lg-thumb-item.active,
+.lg-outer .lg-thumb-item:hover {
+  border-color: #80213d !important;
+}
+
 .header {
   background-color: #000;
   position: fixed;
@@ -461,9 +466,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 1.875rem;
-     -moz-column-gap: 1.875rem;
-          column-gap: 1.875rem;
+  -webkit-column-gap: 2.5rem;
+     -moz-column-gap: 2.5rem;
+          column-gap: 2.5rem;
   row-gap: 2.8125rem;
 }
 
@@ -526,7 +531,7 @@ body {
 }
 
 .links-footer__link {
-  line-height: 90%;
+  line-height: 133%;
   font-size: 1.125rem;
   -webkit-transition: color 0.3s ease 0s;
   -o-transition: color 0.3s ease 0s;
@@ -541,7 +546,7 @@ body {
 }
 
 .address-footer__text {
-  line-height: 92%;
+  line-height: 133%;
 }
 
 .address-footer__text:not(:last-child) {
@@ -594,15 +599,6 @@ body {
   -webkit-transition: fill 0.3s ease 0s;
   -o-transition: fill 0.3s ease 0s;
   transition: fill 0.3s ease 0s;
-}
-
-[id*=-anchor] {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: -6.3125rem;
-  left: 0;
-  z-index: -1;
 }
 
 section {
@@ -698,14 +694,18 @@ section {
 
 .main-home__image-text {
   width: 9.5%;
+  padding-bottom: 9.5%;
   position: absolute;
 }
 
 .main-home__image-text img {
   width: 100%;
   height: 100%;
-  -webkit-animation: textrotate 5s linear infinite;
-          animation: textrotate 5s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: textrotate 12s linear infinite;
+          animation: textrotate 12s linear infinite;
 }
 
 .main-home__image-text_left {
@@ -1253,10 +1253,6 @@ section {
   margin-bottom: 3.75rem;
 }
 
-.clients-reviews__slide {
-  background-color: #161616;
-}
-
 .clients-reviews__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1277,20 +1273,7 @@ section {
       -ms-flex: 0 1 38.375rem;
           flex: 0 1 38.375rem;
   position: relative;
-}
-
-.clients-reviews__text-bg {
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  bottom: -1.25rem;
-  text-align: center;
-}
-
-.clients-reviews__text-bg img {
-  height: 100%;
+  background: url("../img/home/our-clients/quotes.svg") center/50% auto no-repeat;
 }
 
 .clients-reviews__name {
@@ -1595,7 +1578,7 @@ section {
   border-radius: 1.8125rem;
   font-size: 1.5rem;
   padding: 0.9375rem 1.875rem;
-  border: 0.0625rem solid #161616;
+  border: 0.125rem solid #161616;
   outline: none;
   color: #fff;
   -webkit-transition: background-color 0.3s ease 0s, border-color 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
@@ -1613,9 +1596,9 @@ section {
 }
 
 .form-contact-us__input._form-error {
-  border-color: red;
-  -webkit-box-shadow: 0 0 0.3125rem red;
-          box-shadow: 0 0 0.3125rem red;
+  border-color: #9d274b;
+  -webkit-box-shadow: 0 0 0.4375rem #9d274b;
+          box-shadow: 0 0 0.4375rem #9d274b;
 }
 
 .form-contact-us__input:not(:last-child) {
@@ -2902,6 +2885,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (max-width: 93.75em) {
+  .footer__body {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .footer__text-content {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 56.25rem;
+            flex: 0 1 56.25rem;
+  }
+}
+
 @media (max-width: 87.5em) {
   .expertise-home__slide.swiper-slide-active .expertise-home__image {
     width: 22.5rem;
@@ -3070,10 +3067,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     text-align: center;
   }
 
-  .clients-reviews__text-bg {
-    height: 80%;
-  }
-
   .clients-reviews__company-name {
     font-size: 1.25rem;
   }
@@ -3190,10 +3183,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-
-  [id*=-anchor] {
-    top: -5.75rem;
   }
 
   .home-page-line-decor-ibg_first {
@@ -3325,11 +3314,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .item-services-home p {
     font-size: 1rem;
-  }
-
-  .clients-reviews__text-bg {
-    height: 70%;
-    bottom: -0.625rem;
   }
 
   .leadership-home__item {
@@ -3466,10 +3450,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
-  }
-
-  [id*=-anchor] {
-    top: -5.125rem;
   }
 
   .main-home {

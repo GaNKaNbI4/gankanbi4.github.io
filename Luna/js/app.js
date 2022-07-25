@@ -5106,6 +5106,7 @@
                 speed: 800,
                 preloadImages: false,
                 lazy: true,
+                autoHeight: true,
                 pagination: {
                     el: ".clients-reviews__pagination",
                     clickable: true,
