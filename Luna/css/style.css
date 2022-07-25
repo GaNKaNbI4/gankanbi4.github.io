@@ -3587,6 +3587,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (max-width: 87.5em) and (min-width: 47.99875em) {
+  .about-us-home__text-block {
+    padding-left: 1.875rem;
+  }
+}
+
 @media (any-hover: hover) {
   ._main-button:hover {
     background-color: #80213d;

@@ -5049,6 +5049,7 @@
                 allowTouchMove: false,
                 centeredSlides: true,
                 loop: true,
+                loopedSlides: 7,
                 autoplay: {
                     delay: 2e3,
                     disableOnInteraction: false,
