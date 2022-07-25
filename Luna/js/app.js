@@ -5382,9 +5382,9 @@
         window.addEventListener("load", (() => {
             if (document.querySelector(".expertise-home__slider")) new ChiefSlider(".expertise-home__slider", {
                 loop: true,
-                autoplay: false,
-                interval: 5e3,
-                swipe: true,
+                autoplay: true,
+                interval: 6e3,
+                swipe: false,
                 refresh: true
             });
         }));
