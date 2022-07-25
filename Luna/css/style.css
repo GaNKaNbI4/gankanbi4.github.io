@@ -1993,6 +1993,10 @@ section {
   }
 }
 
+.main-block-projects__container {
+  padding: 0 1.875rem;
+}
+
 .tabs-main-projects__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2033,15 +2037,15 @@ section {
       flex-wrap: wrap;
 }
 
-@supports (gap: clamp( 1.25rem , -0.1030612245rem  +  4.1632653061vw , 4.4375rem )) {
+@supports (gap: clamp( 1.4375rem , -0.8504841112rem  +  4.766633565vw , 4.4375rem )) {
   .items-projects-main__list {
-    gap: clamp( 1.25rem , -0.1030612245rem  +  4.1632653061vw , 4.4375rem );
+    gap: clamp( 1.4375rem , -0.8504841112rem  +  4.766633565vw , 4.4375rem );
   }
 }
 
-@supports not (gap: clamp( 1.25rem , -0.1030612245rem  +  4.1632653061vw , 4.4375rem )) {
+@supports not (gap: clamp( 1.4375rem , -0.8504841112rem  +  4.766633565vw , 4.4375rem )) {
   .items-projects-main__list {
-    gap: calc(1.25rem + 3.1875 * (100vw - 32.5rem) / 76.5625);
+    gap: calc(1.4375rem + 3 * (100vw - 48rem) / 62.9375);
   }
 }
 
@@ -3611,6 +3615,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     padding-bottom: 105%;
   }
 
+  .main-block-projects__container {
+    padding: 0 0.9375rem;
+  }
+
   .tabs-main-projects__navigation:not(:last-child) {
     margin-bottom: 2.5rem;
   }
@@ -3631,15 +3639,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
-@media (max-width: 37.5rem) {
-  .items-projects-main__list-item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 47.5%;
-            flex: 0 0 47.5%;
-  }
-}
-
-@media (max-width: 31.25em) {
+@media (max-width: 37.5em) {
   .items-projects-main__list {
     -webkit-column-gap: 0;
        -moz-column-gap: 0;
@@ -3647,6 +3647,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .items-projects-main__list-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 47.5%;
+            flex: 0 0 47.5%;
   }
 }
 
