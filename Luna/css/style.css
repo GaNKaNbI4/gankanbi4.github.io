@@ -610,6 +610,10 @@ body {
   }
 }
 
+.footer__container {
+  padding: 0 1.875rem;
+}
+
 .footer__body {
   display: -webkit-box;
   display: -ms-flexbox;
