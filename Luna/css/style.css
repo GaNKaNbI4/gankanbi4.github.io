@@ -624,9 +624,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 2.5rem;
-     -moz-column-gap: 2.5rem;
-          column-gap: 2.5rem;
+  -webkit-column-gap: 5rem;
+     -moz-column-gap: 5rem;
+          column-gap: 5rem;
   row-gap: 2.8125rem;
 }
 
@@ -3011,6 +3011,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (min-width: 47.99875em) {
+  .about-us-home__text-block {
+    padding-left: 1.875rem;
+  }
+
   .services-home__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3128,6 +3132,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (max-width: 112.5em) {
+  .footer__body {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (max-width: 109.0625em) {
   .head-projects .main-home__decor {
     padding-bottom: 65%;
@@ -3135,12 +3147,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 93.75em) {
-  .footer__body {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
   .footer__text-content {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 56.25rem;
@@ -3149,6 +3155,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 87.5em) {
+  .footer__body {
+    -webkit-column-gap: 2.5rem;
+       -moz-column-gap: 2.5rem;
+            column-gap: 2.5rem;
+  }
+
   .expertise-home__slide.swiper-slide-active .expertise-home__image {
     width: 22.5rem;
   }
@@ -3235,9 +3247,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .footer__body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
@@ -3858,12 +3867,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: translate(-12%);
         -ms-transform: translate(-12%);
             transform: translate(-12%);
-  }
-}
-
-@media (max-width: 87.5em) and (min-width: 47.99875em) {
-  .about-us-home__text-block {
-    padding-left: 1.875rem;
   }
 }
 
