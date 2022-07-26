@@ -5380,19 +5380,117 @@
             }
         }
         document.addEventListener("DOMContentLoaded", (() => {
-            if (document.querySelector(".expertise-home__slider")) {
-                console.log("initialized");
-                new ChiefSlider(".expertise-home__slider", {
-                    loop: true,
-                    autoplay: true,
-                    interval: 4e3,
-                    swipe: true,
-                    refresh: true
-                });
-            }
+            if (document.querySelector(".expertise-home__slider")) new ChiefSlider(".expertise-home__slider", {
+                loop: true,
+                autoplay: true,
+                interval: 4e3,
+                swipe: true,
+                refresh: true
+            });
         }));
+        let mainHomeSlider, clientsMainSlider, clientsReviewsSlider, collaboratorsHomeSlider;
         function initSliders() {
-            if (document.querySelector(".main-home__slider")) new core(".main-home__slider", {
+            window.addEventListener("scroll", (() => {
+                if (!clientsMainSlider && document.querySelector(".our-clients-home__main-slider._watcher-view")) clientsMainSlider = new core(".our-clients-home__main-slider", {
+                    modules: [ Autoplay ],
+                    observer: true,
+                    observeParents: true,
+                    slidesPerView: 6.5,
+                    spaceBetween: 50,
+                    speed: 1e3,
+                    preloadImages: false,
+                    lazy: true,
+                    loop: true,
+                    autoplay: {
+                        delay: 3e3
+                    },
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 2,
+                            spaceBetween: 40
+                        },
+                        480: {
+                            slidesPerView: 2,
+                            spaceBetween: 50
+                        },
+                        768: {
+                            slidesPerView: 3,
+                            spaceBetween: 50
+                        },
+                        992: {
+                            slidesPerView: 3.5,
+                            spaceBetween: 50
+                        },
+                        1200: {
+                            slidesPerView: 4,
+                            spaceBetween: 50
+                        },
+                        1500: {
+                            slidesPerView: 6.5,
+                            spaceBetween: 50
+                        }
+                    },
+                    on: {}
+                });
+                if (!clientsReviewsSlider && document.querySelector(".our-clients-home__reviews-slider._watcher-view")) clientsReviewsSlider = new core(".our-clients-home__reviews-slider", {
+                    modules: [ Pagination ],
+                    observer: true,
+                    observeParents: true,
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                    speed: 800,
+                    preloadImages: false,
+                    lazy: true,
+                    autoHeight: true,
+                    pagination: {
+                        el: ".clients-reviews__pagination",
+                        clickable: true,
+                        type: "bullets"
+                    }
+                });
+                if (!collaboratorsHomeSlider && document.querySelector(".collaborators-home__slider._watcher-view")) collaboratorsHomeSlider = new core(".collaborators-home__slider", {
+                    modules: [ Autoplay ],
+                    observer: true,
+                    observeParents: true,
+                    slidesPerView: 5.3,
+                    spaceBetween: 50,
+                    speed: 1e3,
+                    preloadImages: false,
+                    lazy: true,
+                    loop: true,
+                    autoplay: {
+                        delay: 3e3
+                    },
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 2,
+                            spaceBetween: 40
+                        },
+                        480: {
+                            slidesPerView: 2,
+                            spaceBetween: 50
+                        },
+                        768: {
+                            slidesPerView: 3,
+                            spaceBetween: 50
+                        },
+                        992: {
+                            slidesPerView: 3.5,
+                            spaceBetween: 50
+                        },
+                        1200: {
+                            slidesPerView: 4,
+                            spaceBetween: 50
+                        },
+                        1500: {
+                            slidesPerView: 5.3,
+                            spaceBetween: 50
+                        }
+                    },
+                    on: {}
+                });
+            }));
+            if (document.querySelector(".main-home__slider")) mainHomeSlider = new core(".main-home__slider", {
                 modules: [ Pagination, EffectFade ],
                 observer: true,
                 observeParents: true,
@@ -5411,7 +5509,7 @@
                 },
                 on: {}
             });
-            if (document.querySelector(".our-clients-home__main-slider")) new core(".our-clients-home__main-slider", {
+            if (document.querySelector(".our-clients-home__main-slider._watcher-view")) clientsMainSlider = new core(".our-clients-home__main-slider", {
                 modules: [ Autoplay ],
                 observer: true,
                 observeParents: true,
@@ -5452,7 +5550,7 @@
                 },
                 on: {}
             });
-            if (document.querySelector(".our-clients-home__reviews-slider")) new core(".our-clients-home__reviews-slider", {
+            if (document.querySelector(".our-clients-home__reviews-slider._watcher-view")) clientsReviewsSlider = new core(".our-clients-home__reviews-slider", {
                 modules: [ Pagination ],
                 observer: true,
                 observeParents: true,
@@ -5468,7 +5566,7 @@
                     type: "bullets"
                 }
             });
-            if (document.querySelector(".collaborators-home__slider")) new core(".collaborators-home__slider", {
+            if (document.querySelector(".collaborators-home__slider._watcher-view")) collaboratorsHomeSlider = new core(".collaborators-home__slider", {
                 modules: [ Autoplay ],
                 observer: true,
                 observeParents: true,
@@ -5559,15 +5657,108 @@
             mediaQuery.addListener(slidersOnMobile);
             slidersOnMobile(mediaQuery);
         }
-        window.addEventListener("load", (function(e) {
-            initSliders();
-        }));
+        document.addEventListener("DOMContentLoaded", (() => {}));
+        initSliders();
         var lazyload_min = __webpack_require__(732);
         new lazyload_min({
             elements_selector: "[data-src],[data-srcset]",
             class_loaded: "_lazy-loaded",
             use_native: true
         });
+        class ScrollWatcher {
+            constructor(props) {
+                let defaultConfig = {
+                    logging: true
+                };
+                this.config = Object.assign(defaultConfig, props);
+                this.observer;
+                !document.documentElement.classList.contains("watcher") ? this.scrollWatcherRun() : null;
+            }
+            scrollWatcherUpdate() {
+                this.scrollWatcherRun();
+            }
+            scrollWatcherRun() {
+                document.documentElement.classList.add("watcher");
+                this.scrollWatcherConstructor(document.querySelectorAll("[data-watch]"));
+            }
+            scrollWatcherConstructor(items) {
+                if (items.length) {
+                    this.scrollWatcherLogging(`Проснулся, слежу за объектами (${items.length})...`);
+                    let uniqParams = uniqArray(Array.from(items).map((function(item) {
+                        return `${item.dataset.watchRoot ? item.dataset.watchRoot : null}|${item.dataset.watchMargin ? item.dataset.watchMargin : "0px"}|${item.dataset.watchThreshold ? item.dataset.watchThreshold : 0}`;
+                    })));
+                    uniqParams.forEach((uniqParam => {
+                        let uniqParamArray = uniqParam.split("|");
+                        let paramsWatch = {
+                            root: uniqParamArray[0],
+                            margin: uniqParamArray[1],
+                            threshold: uniqParamArray[2]
+                        };
+                        let groupItems = Array.from(items).filter((function(item) {
+                            let watchRoot = item.dataset.watchRoot ? item.dataset.watchRoot : null;
+                            let watchMargin = item.dataset.watchMargin ? item.dataset.watchMargin : "0px";
+                            let watchThreshold = item.dataset.watchThreshold ? item.dataset.watchThreshold : 0;
+                            if (String(watchRoot) === paramsWatch.root && String(watchMargin) === paramsWatch.margin && String(watchThreshold) === paramsWatch.threshold) return item;
+                        }));
+                        let configWatcher = this.getScrollWatcherConfig(paramsWatch);
+                        this.scrollWatcherInit(groupItems, configWatcher);
+                    }));
+                } else this.scrollWatcherLogging("Сплю, нет объектов для слежения. ZzzZZzz");
+            }
+            getScrollWatcherConfig(paramsWatch) {
+                let configWatcher = {};
+                if (document.querySelector(paramsWatch.root)) configWatcher.root = document.querySelector(paramsWatch.root); else if ("null" !== paramsWatch.root) this.scrollWatcherLogging(`Эмм... родительского объекта ${paramsWatch.root} нет на странице`);
+                configWatcher.rootMargin = paramsWatch.margin;
+                if (paramsWatch.margin.indexOf("px") < 0 && paramsWatch.margin.indexOf("%") < 0) {
+                    this.scrollWatcherLogging(`Ой ой, настройку data-watch-margin нужно задавать в PX или %`);
+                    return;
+                }
+                if ("prx" === paramsWatch.threshold) {
+                    paramsWatch.threshold = [];
+                    for (let i = 0; i <= 1; i += .005) paramsWatch.threshold.push(i);
+                } else paramsWatch.threshold = paramsWatch.threshold.split(",");
+                configWatcher.threshold = paramsWatch.threshold;
+                return configWatcher;
+            }
+            scrollWatcherCreate(configWatcher) {
+                this.observer = new IntersectionObserver(((entries, observer) => {
+                    entries.forEach((entry => {
+                        this.scrollWatcherCallback(entry, observer);
+                    }));
+                }), configWatcher);
+            }
+            scrollWatcherInit(items, configWatcher) {
+                this.scrollWatcherCreate(configWatcher);
+                items.forEach((item => this.observer.observe(item)));
+            }
+            scrollWatcherIntersecting(entry, targetElement) {
+                if (entry.isIntersecting) {
+                    !targetElement.classList.contains("_watcher-view") ? targetElement.classList.add("_watcher-view") : null;
+                    this.scrollWatcherLogging(`Я вижу ${targetElement.classList}, добавил класс _watcher-view`);
+                } else {
+                    targetElement.classList.contains("_watcher-view") ? targetElement.classList.remove("_watcher-view") : null;
+                    this.scrollWatcherLogging(`Я не вижу ${targetElement.classList}, убрал класс _watcher-view`);
+                }
+            }
+            scrollWatcherOff(targetElement, observer) {
+                observer.unobserve(targetElement);
+                this.scrollWatcherLogging(`Я перестал следить за ${targetElement.classList}`);
+            }
+            scrollWatcherLogging(message) {
+                this.config.logging ? FLS(`[Наблюдатель]: ${message}`) : null;
+            }
+            scrollWatcherCallback(entry, observer) {
+                const targetElement = entry.target;
+                this.scrollWatcherIntersecting(entry, targetElement);
+                targetElement.hasAttribute("data-watch-once") && entry.isIntersecting ? this.scrollWatcherOff(targetElement, observer) : null;
+                document.dispatchEvent(new CustomEvent("watcherCallback", {
+                    detail: {
+                        entry
+                    }
+                }));
+            }
+        }
+        flsModules.watcher = new ScrollWatcher({});
         class FullPage {
             constructor(element, options) {
                 let config = {
