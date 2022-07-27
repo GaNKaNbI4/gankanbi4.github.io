@@ -4584,7 +4584,7 @@
             images: core_images
         };
         const extendedDefaults = {};
-        class core_Swiper {
+        class Swiper {
             constructor() {
                 let el;
                 let params;
@@ -4599,7 +4599,7 @@
                         const newParams = utils_extend({}, params, {
                             el: containerEl
                         });
-                        swipers.push(new core_Swiper(newParams));
+                        swipers.push(new Swiper(newParams));
                     }));
                     return swipers;
                 }
@@ -4940,26 +4940,26 @@
                 return defaults;
             }
             static installModule(mod) {
-                if (!core_Swiper.prototype.__modules__) core_Swiper.prototype.__modules__ = [];
-                const modules = core_Swiper.prototype.__modules__;
+                if (!Swiper.prototype.__modules__) Swiper.prototype.__modules__ = [];
+                const modules = Swiper.prototype.__modules__;
                 if ("function" === typeof mod && modules.indexOf(mod) < 0) modules.push(mod);
             }
             static use(module) {
                 if (Array.isArray(module)) {
-                    module.forEach((m => core_Swiper.installModule(m)));
-                    return core_Swiper;
+                    module.forEach((m => Swiper.installModule(m)));
+                    return Swiper;
                 }
-                core_Swiper.installModule(module);
-                return core_Swiper;
+                Swiper.installModule(module);
+                return Swiper;
             }
         }
         Object.keys(prototypes).forEach((prototypeGroup => {
             Object.keys(prototypes[prototypeGroup]).forEach((protoMethod => {
-                core_Swiper.prototype[protoMethod] = prototypes[prototypeGroup][protoMethod];
+                Swiper.prototype[protoMethod] = prototypes[prototypeGroup][protoMethod];
             }));
         }));
-        core_Swiper.use([ Resize, Observer ]);
-        const core = core_Swiper;
+        Swiper.use([ Resize, Observer ]);
+        const core = Swiper;
         function create_element_if_not_defined_createElementIfNotDefined(swiper, originalParams, params, checkProps) {
             const document = ssr_window_esm_getDocument();
             if (swiper.params.createElements) Object.keys(checkProps).forEach((key => {
@@ -5890,7 +5890,7 @@
                 refresh: true
             });
         }));
-        let mainHomeSlider, clientsMainSlider, clientsReviewsSlider, collaboratorsHomeSlider;
+        let mainHomeSlider, clientsMainSlider, clientsReviewsSlider, collaboratorsHomeSlider, ourProjectsSlider;
         let servicesSlider, ourTeamSlider;
         const mediaQuery = window.matchMedia("(max-width: 47.99875rem)");
         function initSliders() {
@@ -5991,6 +5991,18 @@
                             spaceBetween: 50
                         }
                     },
+                    on: {}
+                });
+                if (!ourProjectsSlider && document.querySelector(".our-projects-home__slider._watcher-view")) ourProjectsSlider = new core(".our-projects-home__slider", {
+                    modules: [],
+                    observer: true,
+                    observeParents: true,
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                    speed: 1e3,
+                    centeredSlides: true,
+                    loop: true,
+                    loopedSlides: 6,
                     on: {}
                 });
             }));
@@ -6110,6 +6122,18 @@
                             spaceBetween: 50
                         }
                     },
+                    on: {}
+                });
+                if (document.querySelector(".our-projects-home__slider._watcher-view")) ourProjectsSlider = new core(".our-projects-home__slider", {
+                    modules: [],
+                    observer: true,
+                    observeParents: true,
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                    speed: 1e3,
+                    centeredSlides: true,
+                    loop: true,
+                    loopedSlides: 6,
                     on: {}
                 });
                 function slidersOnMobile(e) {
