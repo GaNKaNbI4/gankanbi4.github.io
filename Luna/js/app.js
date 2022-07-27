@@ -6013,13 +6013,7 @@
                 },
                 on: {}
             });
-            document.addEventListener("watcherCallback", (function(e) {
-                const entry = e.detail.entry;
-                const targetElement = entry.target;
-                console.log(targetElement);
-            }));
             window.addEventListener("load", (() => {
-                console.log("1");
                 if (document.querySelector(".our-clients-home__main-slider._watcher-view")) clientsMainSlider = new core(".our-clients-home__main-slider", {
                     modules: [ Autoplay ],
                     observer: true,
@@ -6118,54 +6112,54 @@
                     },
                     on: {}
                 });
-            }));
-            function slidersOnMobile(e) {
-                if (e.matches) {
-                    if (document.querySelector(".services-home__slider")) servicesSlider = new core(".services-home__slider", {
-                        modules: [ Pagination ],
-                        observer: true,
-                        observeParents: true,
-                        slidesPerView: 1,
-                        spaceBetween: 40,
-                        speed: 800,
-                        preloadImages: false,
-                        lazy: true,
-                        pagination: {
-                            el: ".services-home__slider-pagination",
-                            clickable: true,
-                            type: "bullets"
-                        },
-                        on: {}
-                    });
-                    if (document.querySelector(".our-team-home__slider")) ourTeamSlider = new core(".our-team-home__slider", {
-                        modules: [ Pagination ],
-                        observer: true,
-                        observeParents: true,
-                        slidesPerView: 2,
-                        spaceBetween: 40,
-                        speed: 800,
-                        preloadImages: false,
-                        lazy: true,
-                        pagination: {
-                            el: ".our-team-home__slider-pagination",
-                            clickable: true,
-                            type: "bullets"
-                        },
-                        breakpoints: {
-                            480: {
-                                slidesPerView: 2,
-                                spaceBetween: 30
-                            }
-                        },
-                        on: {}
-                    });
-                } else if (!e.matches) {
-                    if (servicesSlider) servicesSlider.destroy(false);
-                    if (ourTeamSlider) ourTeamSlider.destroy(false);
+                function slidersOnMobile(e) {
+                    if (e.matches) {
+                        if (document.querySelector(".services-home__slider")) servicesSlider = new core(".services-home__slider", {
+                            modules: [ Pagination ],
+                            observer: true,
+                            observeParents: true,
+                            slidesPerView: 1,
+                            spaceBetween: 40,
+                            speed: 800,
+                            preloadImages: false,
+                            lazy: true,
+                            pagination: {
+                                el: ".services-home__slider-pagination",
+                                clickable: true,
+                                type: "bullets"
+                            },
+                            on: {}
+                        });
+                        if (document.querySelector(".our-team-home__slider")) ourTeamSlider = new core(".our-team-home__slider", {
+                            modules: [ Pagination ],
+                            observer: true,
+                            observeParents: true,
+                            slidesPerView: 2,
+                            spaceBetween: 40,
+                            speed: 800,
+                            preloadImages: false,
+                            lazy: true,
+                            pagination: {
+                                el: ".our-team-home__slider-pagination",
+                                clickable: true,
+                                type: "bullets"
+                            },
+                            breakpoints: {
+                                480: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 30
+                                }
+                            },
+                            on: {}
+                        });
+                    } else if (!e.matches) {
+                        if (servicesSlider) servicesSlider.destroy(false);
+                        if (ourTeamSlider) ourTeamSlider.destroy(false);
+                    }
                 }
-            }
-            mediaQuery.addListener(slidersOnMobile);
-            slidersOnMobile(mediaQuery);
+                mediaQuery.addListener(slidersOnMobile);
+                slidersOnMobile(mediaQuery);
+            }));
         }
         initSliders();
         /*!
