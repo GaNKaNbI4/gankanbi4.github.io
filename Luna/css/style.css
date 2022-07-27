@@ -1373,6 +1373,10 @@ section {
   margin-bottom: 1.1666666667em;
 }
 
+.our-clients-home__main-slider {
+  max-height: 6.25rem;
+}
+
 .our-clients-home__main-slider:not(:last-child) {
   margin-bottom: 5rem;
 }
@@ -1407,8 +1411,16 @@ section {
   margin: 0 auto;
 }
 
+.clients-reviews._watcher-view .clients-reviews__slide {
+  display: block;
+}
+
 .clients-reviews__wrapper:not(:last-child) {
   margin-bottom: 3.75rem;
+}
+
+.clients-reviews__slide:not(:first-child) {
+  display: none;
 }
 
 .clients-reviews__item {
@@ -2172,6 +2184,17 @@ iframe.lg-object {
 
 .swiper {
   overflow: hidden;
+}
+
+.swiper-on-scroll {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+
+.swiper-on-scroll._watcher-view {
+  opacity: 1;
 }
 
 .swiper-wrapper {
