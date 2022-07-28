@@ -5993,18 +5993,6 @@
                     },
                     on: {}
                 });
-                if (!ourProjectsSlider && document.querySelector(".our-projects-home__slider._watcher-view")) ourProjectsSlider = new core(".our-projects-home__slider", {
-                    modules: [],
-                    observer: true,
-                    observeParents: true,
-                    slidesPerView: 4,
-                    spaceBetween: 50,
-                    speed: 1e3,
-                    centeredSlides: true,
-                    loop: true,
-                    loopedSlides: 6,
-                    on: {}
-                });
             }));
             if (document.querySelector(".main-home__slider")) mainHomeSlider = new core(".main-home__slider", {
                 modules: [ Pagination, EffectFade ],
@@ -6022,6 +6010,47 @@
                     el: ".main-home__slider-pagination",
                     clickable: true,
                     type: "bullets"
+                },
+                on: {
+                    slideChangeTransitionStart: () => {
+                        const awardImage = document.querySelector(".main-home__image-award");
+                        const awardTitle = document.querySelector(".main-home__slider-title");
+                        const activeSlide = document.querySelector(".main-home__slide.swiper-slide-active");
+                        if (0 == activeSlide.dataset.slideIndex) setTimeout((() => {
+                            awardImage.classList.add("_active");
+                            awardTitle.classList.add("_active");
+                        }), 700); else {
+                            if (awardImage.classList.contains("_active")) awardImage.classList.remove("_active");
+                            if (awardTitle.classList.contains("_active")) awardTitle.classList.remove("_active");
+                        }
+                    }
+                }
+            });
+            if (document.querySelector(".our-projects-home__slider")) ourProjectsSlider = new core(".our-projects-home__slider", {
+                modules: [],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 4,
+                spaceBetween: 50,
+                speed: 1e3,
+                centeredSlides: true,
+                loop: true,
+                loopedSlides: 6,
+                slideToClickedSlide: true,
+                autoHeight: false,
+                breakpoints: {
+                    320: {
+                        slidesPerView: 4,
+                        spaceBetween: 15
+                    },
+                    480: {
+                        slidesPerView: 4,
+                        spaceBetween: 30
+                    },
+                    767.98: {
+                        slidesPerView: 4.5,
+                        spaceBetween: 50
+                    }
                 },
                 on: {}
             });
@@ -6122,18 +6151,6 @@
                             spaceBetween: 50
                         }
                     },
-                    on: {}
-                });
-                if (document.querySelector(".our-projects-home__slider._watcher-view")) ourProjectsSlider = new core(".our-projects-home__slider", {
-                    modules: [],
-                    observer: true,
-                    observeParents: true,
-                    slidesPerView: 4,
-                    spaceBetween: 50,
-                    speed: 1e3,
-                    centeredSlides: true,
-                    loop: true,
-                    loopedSlides: 6,
                     on: {}
                 });
                 function slidersOnMobile(e) {

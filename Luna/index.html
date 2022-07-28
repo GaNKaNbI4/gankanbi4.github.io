@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220727215014">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220728182204">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,6 +69,11 @@
 		</header>
 		<main class="home">
 			<div class="home__main main-home">
+				<h2 class="main-home__slider-title _active">Awards<br />
+					Winner</h2>
+				<div class="main-home__image-award _active">
+					<img src="img/home/main/award.png" alt="Award">
+				</div>
 				<div class="main-home__slider swiper">
 					<div class="main-home__wrapper swiper-wrapper">
 						<div class="main-home__decor">
@@ -77,16 +82,18 @@
 							<div class="main-home__image-text main-home__image-text_right"><img src="img/home/main/decor/text.svg" alt="text"></div>
 							<div class="main-home__image-line"><img src="img/home/main/decor/line.svg" alt="line"></div>
 						</div>
-						<div class="main-home__slide swiper-slide">
-							<div class="main-home__image-ibg"><img src="img/home/main/1/1.jpg" alt="1"></div>
+						<div class="main-home__slide swiper-slide main-home__slide_first" data-slide-index="0">
+							<div class="main-home__image-ibg">
+								<img src="img/home/main/1/1.jpg" alt="1">
+							</div>
 						</div>
-						<div class="main-home__slide swiper-slide">
+						<div class="main-home__slide swiper-slide" data-slide-index="1">
 							<div class="main-home__image-ibg"><img src='img/1x1.jpg' data-src="img/home/our-expertise/1.jpg" alt="1"></div>
 						</div>
-						<div class="main-home__slide swiper-slide">
+						<div class="main-home__slide swiper-slide" data-slide-index="2">
 							<div class="main-home__image-ibg"><img src='img/1x1.jpg' data-src="img/home/our-expertise/5.jpg" alt="5"></div>
 						</div>
-						<div class="main-home__slide swiper-slide">
+						<div class="main-home__slide swiper-slide" data-slide-index="3">
 							<div class="main-home__image-ibg"><img src='img/1x1.jpg' data-src="img/home/our-expertise/7.jpg" alt="7"></div>
 						</div>
 					</div>
@@ -148,95 +155,151 @@
 				<div class="home-page-line-decor-ibg_contain home-page-line-decor-ibg_first"><img src='img/1x1.jpg' data-src="img/svg/line-decor-main_1.svg" alt="line"></div>
 				<div class="our-projects-home__container">
 					<h2 class="our-projects-home__title _section-title">Our Projects<br />360”</h2>
-					<!-- <div class="our-projects-home__body">
-						<div class="our-projects-home__item our-projects-home__item_last">
-							<div class="our-projects-home__image-ibg">
-								<img src='img/1x1.jpg' data-src="img/home/our-projects/FORMAL-MAJLIS-1.png" alt="Formal Majlis 1">
-								<div class="our-projects-home__text-block">
-									<div class="our-projects-home__number">01</div>
-									<div class="our-projects-home__name">Interior Name Interior Name</div>
-									<div class="our-projects-home__client">Client. 2021</div>
-								</div>
-							</div>
-						</div>
-						<div class="our-projects-home__item our-projects-home__item_middle">
-							<div class="our-projects-home__image-ibg">
-								<img src='img/1x1.jpg' data-src="img/home/our-projects/7-5.jpg" alt="7 5">
-								<div class="our-projects-home__text-block">
-									<div class="our-projects-home__number">02</div>
-									<div class="our-projects-home__name">Interior Name Interior Name</div>
-									<div class="our-projects-home__client">Client. 2021</div>
-								</div>
-							</div>
-						</div>
-						<div class="our-projects-home__item our-projects-home__item_center">
-							<div class="our-projects-home__image-ibg">
-								<img src='img/1x1.jpg' data-src="img/home/our-projects/coleccion-alexandra_01.jpg"
-									alt="Coleccion Alexandra 01">
-								<div class="our-projects-home__text-block">
-									<div class="our-projects-home__number">03</div>
-									<div class="our-projects-home__name">Interior Name</div>
-									<div class="our-projects-home__client">Client. 2021</div>
-								</div>
-							</div>
-						</div>
-						<div class="our-projects-home__item our-projects-home__item_middle">
-							<div class="our-projects-home__image-ibg">
-								<img src='img/1x1.jpg' data-src="img/home/our-projects/Signorini-Coco_01.jpg" alt="Signorini Coco 01">
-								<div class="our-projects-home__text-block">
-									<div class="our-projects-home__number">04</div>
-									<div class="our-projects-home__name">Interior Name</div>
-									<div class="our-projects-home__client">Client. 2021</div>
-								</div>
-							</div>
-						</div>
-						<div class="our-projects-home__item our-projects-home__item_last">
-							<div class="our-projects-home__image-ibg">
-								<img src='img/1x1.jpg' data-src="img/home/our-projects/Longhi_01.jpg" alt="Longhi 01">
-								<div class="our-projects-home__text-block">
-									<div class="our-projects-home__number">05</div>
-									<div class="our-projects-home__name">Interior Name</div>
-									<div class="our-projects-home__client">Client. 2021</div>
-								</div>
-							</div>
-						</div>
-					</div> -->
 					<div class="our-projects-home__body">
-						<div class="our-projects-home__slider swiper" data-watch data-watch-once>
+						<div class="our-projects-home__slider swiper">
 							<div class="our-projects-home__wrapper swiper-wrapper">
 								<div class="our-projects-home__slide swiper-slide">
-									<div class="our-projects-home__content">
-										<div class="our-projects-home__image-ibg"><img data-src="img/home/our-projects/7-5.jpg" alt="">
+									<div class="our-projects-home__content" data-gallery>
+										<div data-src="https://kuula.co/share/NXDcC?logo=1&info=1&fs=1&vr=0&sd=1&autorotate=0.95&thumbs=1&margin=30" data-iframe="true" class="our-projects-home__image-ibg">
+											<img src='img/1x1.jpg' data-src="img/home/our-projects/Majlis.jpg" alt="Majlis">
+											<div class="our-projects-home__text-block">
+												<div class="our-projects-home__number">03</div>
+												<div class="our-projects-home__name">Majlis</div>
+												<div class="our-projects-home__client">Client. 2021</div>
+											</div>
 										</div>
 									</div>
 								</div>
 								<div class="our-projects-home__slide swiper-slide">
-									<div class="our-projects-home__content">
-										<div class="our-projects-home__image-ibg"><img data-src="img/home/our-projects/7-5.jpg" alt="">
+									<div class="our-projects-home__content" data-gallery>
+										<div data-src="https://kuula.co/share/NX13N?logo=1&info=1&fs=1&vr=0&sd=1&autorotate=0.95&thumbs=1&margin=30" data-iframe="true" class="our-projects-home__image-ibg">
+											<img src='img/1x1.jpg' data-src="img/home/our-projects/Dining-04.jpg" alt="Dining-04">
+											<div class="our-projects-home__text-block">
+												<div class="our-projects-home__number">04</div>
+												<div class="our-projects-home__name">Dining</div>
+												<div class="our-projects-home__client">Client. 2021</div>
+											</div>
 										</div>
 									</div>
 								</div>
 								<div class="our-projects-home__slide swiper-slide">
-									<div class="our-projects-home__content">
-										<div class="our-projects-home__image-ibg"><img data-src="img/home/our-projects/7-5.jpg" alt="">
+									<div class="our-projects-home__content" data-gallery>
+										<div data-src="https://kuula.co/share/NX1w8?logo=1&info=1&fs=1&vr=0&sd=1&autorotate=0.95&thumbs=1&margin=30" data-iframe="true" class="our-projects-home__image-ibg">
+											<img src='img/1x1.jpg' data-src="img/home/our-projects/Dining-05.jpg" alt="Dining-05">
+											<div class="our-projects-home__text-block">
+												<div class="our-projects-home__number">05</div>
+												<div class="our-projects-home__name">Dining</div>
+												<div class="our-projects-home__client">Client. 2021</div>
+											</div>
 										</div>
 									</div>
 								</div>
 								<div class="our-projects-home__slide swiper-slide">
-									<div class="our-projects-home__content">
-										<div class="our-projects-home__image-ibg"><img data-src="img/home/our-projects/7-5.jpg" alt="">
+									<div class="our-projects-home__content" data-gallery>
+										<div data-src="https://kuula.co/share/NXdbw?logo=1&info=1&fs=1&vr=0&sd=1&autorotate=0.95&thumbs=1&margin=30" data-iframe="true" class="our-projects-home__image-ibg">
+											<img src='img/1x1.jpg' data-src="img/home/our-projects/Family-living-area.jpg" alt="Family living area">
+											<div class="our-projects-home__text-block">
+												<div class="our-projects-home__number">06</div>
+												<div class="our-projects-home__name">Family living area</div>
+												<div class="our-projects-home__client">Client. 2021</div>
+											</div>
 										</div>
 									</div>
 								</div>
 								<div class="our-projects-home__slide swiper-slide">
-									<div class="our-projects-home__content">
-										<div class="our-projects-home__image-ibg"><img data-src="img/home/our-projects/7-5.jpg" alt="">
+									<div class="our-projects-home__content" data-gallery>
+										<div data-src="https://kuula.co/share/NX13N?logo=1&info=1&fs=1&vr=0&sd=1&autorotate=0.95&thumbs=1&margin=30" data-iframe="true" class="our-projects-home__image-ibg">
+											<img src='img/1x1.jpg' data-src="img/home/our-projects/Family-dining-and-kitchen.jpg" alt="Family dining and kitchen">
+											<div class="our-projects-home__text-block">
+												<div class="our-projects-home__number">07</div>
+												<div class="our-projects-home__name">Family dining and kitchen</div>
+												<div class="our-projects-home__client">Client. 2021</div>
+											</div>
 										</div>
 									</div>
 								</div>
 								<div class="our-projects-home__slide swiper-slide">
-									<div class="our-projects-home__content">
-										<div class="our-projects-home__image-ibg"><img data-src="img/home/our-projects/7-5.jpg" alt="">
+									<div class="our-projects-home__content" data-gallery>
+										<div data-src="https://kuula.co/share/NXDcC?logo=1&info=1&fs=1&vr=0&sd=1&autorotate=0.95&thumbs=1&margin=30" data-iframe="true" class="our-projects-home__image-ibg">
+											<img src='img/1x1.jpg' data-src="img/home/our-projects/Library.jpg" alt="Library">
+											<div class="our-projects-home__text-block">
+												<div class="our-projects-home__number">08</div>
+												<div class="our-projects-home__name">Library</div>
+												<div class="our-projects-home__client">Client. 2021</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="our-projects-home__slide swiper-slide">
+									<div class="our-projects-home__content" data-gallery>
+										<div data-src="https://kuula.co/share/NX1w8?logo=1&info=1&fs=1&vr=0&sd=1&autorotate=0.95&thumbs=1&margin=30" data-iframe="true" class="our-projects-home__image-ibg">
+											<img src='img/1x1.jpg' data-src="img/home/our-projects/Kitchen.jpg" alt="Kitchen">
+											<div class="our-projects-home__text-block">
+												<div class="our-projects-home__number">09</div>
+												<div class="our-projects-home__name">Kitchen</div>
+												<div class="our-projects-home__client">Client. 2021</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="our-projects-home__slide swiper-slide">
+									<div class="our-projects-home__content" data-gallery>
+										<div data-src="https://kuula.co/share/NXdbw?logo=1&info=1&fs=1&vr=0&sd=1&autorotate=0.95&thumbs=1&margin=30" data-iframe="true" class="our-projects-home__image-ibg">
+											<img src='img/1x1.jpg' data-src="img/home/our-projects/Lulua-Palace.jpg" alt="Lulua Palace">
+											<div class="our-projects-home__text-block">
+												<div class="our-projects-home__number">10</div>
+												<div class="our-projects-home__name">Lulua Palace</div>
+												<div class="our-projects-home__client">Client. 2021</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="our-projects-home__slide swiper-slide">
+									<div class="our-projects-home__content" data-gallery>
+										<div data-src="https://kuula.co/share/NX13N?logo=1&info=1&fs=1&vr=0&sd=1&autorotate=0.95&thumbs=1&margin=30" data-iframe="true" class="our-projects-home__image-ibg">
+											<img src='img/1x1.jpg' data-src="img/home/our-projects/Fayrouz-villa.jpg" alt="Fayrouz villa">
+											<div class="our-projects-home__text-block">
+												<div class="our-projects-home__number">11</div>
+												<div class="our-projects-home__name">Fayrouz villa</div>
+												<div class="our-projects-home__client">Client. 2021</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="our-projects-home__slide swiper-slide">
+									<div class="our-projects-home__content" data-gallery>
+										<div data-src="https://kuula.co/share/NXDcC?logo=1&info=1&fs=1&vr=0&sd=1&autorotate=0.95&thumbs=1&margin=30" data-iframe="true" class="our-projects-home__image-ibg">
+											<img src='img/1x1.jpg' data-src="img/home/our-projects/Saeed-villa.jpg" alt="Saeed villa">
+											<div class="our-projects-home__text-block">
+												<div class="our-projects-home__number">12</div>
+												<div class="our-projects-home__name">Saeed villa</div>
+												<div class="our-projects-home__client">Client. 2021</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="our-projects-home__slide swiper-slide">
+									<div class="our-projects-home__content" data-gallery>
+										<div data-src="https://kuula.co/share/NX1w8?logo=1&info=1&fs=1&vr=0&sd=1&autorotate=0.95&thumbs=1&margin=30
+											" data-iframe="true" class="our-projects-home__image-ibg">
+											<img src='img/1x1.jpg' data-src="img/home/our-projects/Wesam-villa.jpg" alt="Wesam villa">
+											<div class="our-projects-home__text-block">
+												<div class="our-projects-home__number">01</div>
+												<div class="our-projects-home__name">Wesam villa</div>
+												<div class="our-projects-home__client">Client. 2021</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="our-projects-home__slide swiper-slide">
+									<div class="our-projects-home__content" data-gallery>
+										<div data-src="https://kuula.co/share/NXdbw?logo=1&info=1&fs=1&vr=0&sd=1&autorotate=0.95&thumbs=1&margin=30" data-iframe="true" class="our-projects-home__image-ibg">
+											<img src='img/1x1.jpg' data-src="img/home/our-projects/Majed-Villa.jpg" alt="Majed Villa">
+											<div class="our-projects-home__text-block">
+												<div class="our-projects-home__number">02</div>
+												<div class="our-projects-home__name">Majed Villa</div>
+												<div class="our-projects-home__client">Client. 2021</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -488,54 +551,55 @@
 						<div class="our-team-home__body swiper-wrapper">
 							<div class="our-team-home__item swiper-slide">
 								<div class="our-team-home__image-ibg"><img src='img/1x1.jpg' data-src="img/home/our-team/safa-albayati.png" alt="Safa Albayati"></div>
-								<p class="our-team-home__role">DESIGN MANAGER</p>
+								<p class="our-team-home__role">design manager</p>
 								<h3 class="our-team-home__name">Safa Albayati</h3>
 							</div>
 							<div class="our-team-home__item swiper-slide">
 								<div class="our-team-home__image-ibg"><img src='img/1x1.jpg' data-src="img/home/our-team/safa-albayati.png" alt="Safa Albayati"></div>
-								<p class="our-team-home__role">DESIGN MANAGER</p>
+								<p class="our-team-home__role">design manager</p>
 								<h3 class="our-team-home__name">Safa Albayati</h3>
 							</div>
 							<div class="our-team-home__item swiper-slide">
 								<div class="our-team-home__image-ibg"><img src='img/1x1.jpg' data-src="img/home/our-team/safa-albayati.png" alt="Safa Albayati"></div>
-								<p class="our-team-home__role">DESIGN MANAGER</p>
+								<p class="our-team-home__role">design manager</p>
 								<h3 class="our-team-home__name">Safa Albayati</h3>
 							</div>
 							<div class="our-team-home__item swiper-slide">
 								<div class="our-team-home__image-ibg"><img src='img/1x1.jpg' data-src="img/home/our-team/safa-albayati.png" alt="Safa Albayati"></div>
-								<p class="our-team-home__role">DESIGN MANAGER</p>
+								<p class="our-team-home__role">design manager</p>
 								<h3 class="our-team-home__name">Safa Albayati</h3>
 							</div>
 							<div class="our-team-home__item swiper-slide">
 								<div class="our-team-home__image-ibg"><img src='img/1x1.jpg' data-src="img/home/our-team/safa-albayati.png" alt="Safa Albayati"></div>
-								<p class="our-team-home__role">DESIGN MANAGER</p>
+								<p class="our-team-home__role">design manager</p>
 								<h3 class="our-team-home__name">Safa Albayati</h3>
 							</div>
 							<div class="our-team-home__item swiper-slide">
 								<div class="our-team-home__image-ibg"><img src='img/1x1.jpg' data-src="img/home/our-team/safa-albayati.png" alt="Safa Albayati"></div>
-								<p class="our-team-home__role">DESIGN MANAGER</p>
+								<p class="our-team-home__role">design manager</p>
 								<h3 class="our-team-home__name">Safa Albayati</h3>
 							</div>
 							<div class="our-team-home__item swiper-slide">
 								<div class="our-team-home__image-ibg"><img src='img/1x1.jpg' data-src="img/home/our-team/safa-albayati.png" alt="Safa Albayati"></div>
-								<p class="our-team-home__role">DESIGN MANAGER</p>
+								<p class="our-team-home__role">design manager</p>
 								<h3 class="our-team-home__name">Safa Albayati</h3>
 							</div>
 							<div class="our-team-home__item swiper-slide">
 								<div class="our-team-home__image-ibg"><img src='img/1x1.jpg' data-src="img/home/our-team/safa-albayati.png" alt="Safa Albayati"></div>
-								<p class="our-team-home__role">DESIGN MANAGER</p>
+								<p class="our-team-home__role">design manager</p>
 								<h3 class="our-team-home__name">Safa Albayati</h3>
 							</div>
 							<div class="our-team-home__item swiper-slide">
 								<div class="our-team-home__image-ibg"><img src='img/1x1.jpg' data-src="img/home/our-team/safa-albayati.png" alt="Safa Albayati"></div>
-								<p class="our-team-home__role">DESIGN MANAGER</p>
+								<p class="our-team-home__role">design manager</p>
 								<h3 class="our-team-home__name">Safa Albayati</h3>
 							</div>
 							<div class="our-team-home__item swiper-slide">
 								<div class="our-team-home__image-ibg"><img src='img/1x1.jpg' data-src="img/home/our-team/safa-albayati.png" alt="Safa Albayati"></div>
-								<p class="our-team-home__role">DESIGN MANAGER</p>
+								<p class="our-team-home__role">design manager</p>
 								<h3 class="our-team-home__name">Safa Albayati</h3>
 							</div>
+
 						</div>
 					</div>
 					<div class="our-team-home__slider-pagination _swiper-pagination"></div>
@@ -699,8 +763,8 @@
 			</div>
 		</footer>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220727215014" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script src="js/app.min.js?_v=20220727215014"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220728182204" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20220728182204"></script>
 </body>
 
 </html>
