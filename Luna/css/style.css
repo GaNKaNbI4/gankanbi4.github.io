@@ -679,10 +679,26 @@ body {
 }
 
 .footer__copyright {
-  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.625rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-size: 1rem;
-  line-height: 90%;
   letter-spacing: 0.05em;
+  font-family: "Krylon";
+  font-style: normal;
+  font-weight: 400;
+}
+
+.footer__copyright img {
+  width: 1.6875rem;
+  height: 1.375rem;
 }
 
 .links-footer__list-item:not(:last-child) {
@@ -690,6 +706,9 @@ body {
 }
 
 .links-footer__link {
+  font-family: "Krylon";
+  font-style: normal;
+  font-weight: 400;
   line-height: 133%;
   font-size: 1.125rem;
   -webkit-transition: color 0.3s ease 0s;
@@ -706,6 +725,9 @@ body {
 
 .address-footer__text {
   line-height: 133%;
+  font-family: "Krylon";
+  font-style: normal;
+  font-weight: 400;
 }
 
 .address-footer__text:not(:last-child) {
@@ -724,6 +746,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Krylon";
+  font-style: normal;
+  font-weight: 400;
   gap: 0.9375rem;
   -webkit-transition: color 0.3s ease 0s;
   -o-transition: color 0.3s ease 0s;
@@ -818,6 +843,14 @@ section {
   left: 0;
   background-color: rgba(22, 22, 22, 0.59);
   z-index: 2;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease 0s;
+  -o-transition: opacity 1s ease 0s;
+  transition: opacity 1s ease 0s;
+}
+
+.main-home__slide_first._active::before {
+  opacity: 1;
 }
 
 .main-home__slider-title {
@@ -3468,7 +3501,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .footer__copyright {
-    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .socials-footer__body {
@@ -3744,6 +3779,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
+  }
+
+  .footer__copyright {
+    font-size: 0.875rem;
   }
 
   .main-home {
