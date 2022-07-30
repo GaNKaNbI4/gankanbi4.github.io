@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Game</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220730194755">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<a href="index.html" class="header__logo header__logo_top"><img src="img/svg/logo.svg" alt="Logo"></a>
+					<nav class="menu__body">
+						<ul class="menu__list menu__list_first">
+							<li class="menu__item menu__item_home"><a href="index.html" class="menu__link">Home</a></li>
+							<li class="menu__item menu__item_about-us"><a href="about-us.html" class="menu__link">About Us</a></li>
+							<li class="menu__item menu__item_contact-us"><a href="contact-us.html" class="menu__link">Contact Us</a>
+							</li>
+						</ul>
+						<a href="index.html" class="header__logo"><img src="img/svg/logo.svg" alt="Logo"></a>
+						<ul class="menu__list">
+							<li class="menu__item menu__item_privacy-policy" data-da=".menu__list_first, 1150, last"><a href="privacy-policy.html" class="menu__link ">Privacy
+									Policy</a></li>
+							<li class="menu__item menu__item_cookies-policy" data-da=".menu__list_first, 1150, last"><a href="cookies-policy.html" class="menu__link ">Cookies <span>policy</span></a></li>
+						</ul>
+						<div class="menu__login-panel" data-da=".menu__list_first, 1150, last">
+							<button type="button" class="menu__login-button _main-button" data-popup="#popup">sign up</button>
+							<button type="button" class="menu__logout-button _main-button">sign
+								out</button>
+						</div>
+
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="game">
+			<div class="game__wrapper">
+				<div class="game__container">
+					<div class="game__block">
+						<div class="game__iframe">
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<a href="index.html" class="footer__logo"><img src="img/1x1.jpg" data-src="img/svg/footer-logo.svg" alt="Footer Logo"></a>
+					<p class="footer__copyright footer__text">© 2022 shinebrightslot.com All rights reserved</p>
+					<p class="footer__text">We give you the opportunity to play social online casino games for free. No real money can
+						be spent and won. Shinebrightslot Social Online Casino is free for all users. Our games are intended for an
+						adult audience over 18 years. Playing brings no future luck on real casino sites.</p>
+				</div>
+			</div>
+			<div class="footer__gold-image">
+				<img src="img/1x1.jpg" data-src="img/footer/gold.png" alt="Gold">
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__body">
+					<button data-close type="button" class="popup__close"></button>
+					<div class="popup__image-ibg"><img src="img/1x1.jpg" data-src="img/reg/reg.jpg" alt="Man with lightning">
+					</div>
+					<div class="popup__text-content">
+						<h3 class="popup__title">Sign Up</h3>
+						<div class="popup__form-block">
+							<form action="#" class="popup__form form-popup" data-dev>
+								<div class="form-popup__block">
+									<label for="email">Email</label>
+									<input autocomplete="off" data-required="email" type="email" name="email" id="email" data-error="*incorrect email address" placeholder="Enter your email" class="form-popup__input">
+								</div>
+								<div class="form-popup__block _margin-bottom">
+									<label for="password">Password</label>
+									<input data-required autocomplete="off" id="password" type="password" name="password" data-error="*you must input password" placeholder="Enter password" class="form-popup__input">
+								</div>
+								<div class="checkbox">
+									<input id="c_1" data-required class="form-popup__checkbox checkbox__input" type="checkbox" value="1" name="checkbox">
+									<label for="c_1" class="checkbox__label">
+										<span class="checkbox__box">
+											<svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1 4.76087L4.22392 7.31197C4.35476 7.41551 4.54496 7.39238 4.64718 7.26051L9.5 1" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+											</svg>
+										</span>
+										<span class="checkbox__text">I am 18 years old and I accept the
+											<a href="privacy-policy.html">Privacy Policy</a></span></label>
+								</div>
+								<button type="submit" class="form-popup__button _main-button">Sign up</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220730194755"></script>
+</body>
+
+</html>
