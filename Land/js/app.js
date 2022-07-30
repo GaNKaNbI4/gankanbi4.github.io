@@ -1631,10 +1631,20 @@
         };
         const da = new DynamicAdapt("max");
         da.init();
+        const isLogged = localStorage.getItem("login");
+        if (isLogged) document.querySelector(".menu__login-panel").classList.add("_user-logged"); else if (document.querySelector(".menu__login-panel._user-logged")) document.querySelector(".menu__login-panel").classList.remove("_user-logged");
         document.addEventListener("formSent", (function(e) {
             const currentForm = e.detail.form;
             if (currentForm.classList.contains("form-contact-us")) alert("Thank you! Your message has been sent!");
-            if (currentForm.classList.contains("form-popup")) location = "index.html";
+            if (currentForm.classList.contains("form-popup")) {
+                location = "index.html";
+                localStorage.setItem("login", true);
+            }
+        }));
+        const logoutButton = document.querySelector(".menu__logout-button");
+        logoutButton.addEventListener("click", (() => {
+            localStorage.removeItem("login");
+            location = "index.html";
         }));
         document.addEventListener("click", (e => {
             if (e.target.closest(".item-slots-home__slot-ibg")) {
@@ -1652,7 +1662,7 @@
         if (currentPage.includes("game")) {
             let params = new URL(document.location).searchParams;
             const nameParam = params.get("name");
-            if ("lucky-lady-moon-megaways" == nameParam) document.querySelector(".game__iframe").innerHTML = `<iframe id="lucky-lady-moon-megaways" src='https://bgaming-network.com/play/LuckyLadyMoonMegaways/FUN?server=demo'></iframe>`; else if ("mega-moolah" == nameParam) document.querySelector(".game__iframe").innerHTML = `<iframe id="mega-moolah" src="https://quickfire3.gameassists.co.uk/quickfireen/?gameid=MegaMoolah&amp;sext1=demo&amp;csid=1866&amp;bc=config-quickfire--en--MIT-Demo&amp;sext2=demo" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>`; else if ("mustang-gold" == nameParam) document.querySelector(".game__iframe").innerHTML = `<iframe id="mustang-gold" src="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?lang=en&amp;cur=EUR&amp;gameSymbol=vs25mustang&amp;websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&amp;lobbyURL=https%3A%2F%2Fwww.pragmaticplay.com"></iframe>`; else if ("thunderstruck-2" == nameParam) document.querySelector(".game__iframe").innerHTML = `<iframe id="thunderstruck-2" src="https://redirector3.valueactive.eu/Casino/Default.aspx?applicationid=1023&amp;theme=quickfiressl&amp;usertype=5&amp;sext1=demo&amp;sext2=demo&amp;csid=1867&amp;serverid=1867&amp;variant=MAL-Demo&amp;gameid=thunderstruckIIMegaMoolahDesktop&amp;ul=en&amp;allowmixedMode=1&amp;bypassFlashPrompt=1&amp;preferexternal=1&amp;callback=cms.widget.Game.externalEventHandler&amp;lobbyURL/en/slots/Thunderstruck-II-Mega-Moolah"></iframe>`; else if ("wolf-run" == nameParam) document.querySelector(".game__iframe").innerHTML = `<iframe id="wolf-run" src="https://platform.ac.rgsgames.com/skb/gateway?landing=ogs&amp;nscode=GNUG&amp;skincode=GNT2&amp;currencycode=FPY&amp;softwareid=200-1196-001&amp;technology=HTML&amp;channel=MOB&amp;presenttype=STD&amp;language=en&amp;securetoken=Free%3Adcdm1sekokekq3o1sai1nonnnlh" frameborder="0" scrolling="no"></iframe>`; else if ("zeus-3" == nameParam) document.querySelector(".game__iframe").innerHTML = `<iframe id="zeus-3" frameborder="0" scrolling="no" src="https://acy-resource.wimobile.casinarena.com/resource-service/game.html?game=zeus3_prt&amp;locale=en_GB&amp;partnercode=mockpartner&amp;realmoney=false&amp;demo=true&amp;gaffing=true"></iframe>`;
+            if ("lucky-lady-moon-megaways" == nameParam) document.querySelector(".game__iframe").innerHTML = `<iframe id="lucky-lady-moon-megaways" src='https://bgaming-network.com/play/LuckyLadyMoonMegaways/FUN?server=demo'></iframe>`; else if ("mega-moolah" == nameParam) document.querySelector(".game__iframe").innerHTML = `<iframe id="mega-moolah" src="https://redirector3.valueactive.eu/Casino/Default.aspx?applicationid=1023&amp;theme=quickfiressl&amp;usertype=5&amp;sext1=demo&amp;sext2=demo&amp;csid=1867&amp;serverid=1867&amp;variant=MAL-Demo&amp;gameid=jungleMegaMoolahDesktop&amp;ul=en&amp;allowmixedMode=1&amp;bypassFlashPrompt=1&amp;preferexternal=1&amp;callback=cms.widget.Game.externalEventHandler" frameborder="0" allowfullscreen=""></iframe>`; else if ("mustang-gold" == nameParam) document.querySelector(".game__iframe").innerHTML = `<iframe id="mustang-gold" src="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?lang=en&amp;cur=EUR&amp;gameSymbol=vs25mustang&amp;websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&amp;lobbyURL=https%3A%2F%2Fwww.pragmaticplay.com"></iframe>`; else if ("thunderstruck-2" == nameParam) document.querySelector(".game__iframe").innerHTML = `<iframe id="thunderstruck-2" src="https://redirector3.valueactive.eu/Casino/Default.aspx?applicationid=1023&amp;theme=quickfiressl&amp;usertype=5&amp;sext1=demo&amp;sext2=demo&amp;csid=1867&amp;serverid=1867&amp;variant=MAL-Demo&amp;gameid=thunderstruckIIMegaMoolahDesktop&amp;ul=en&amp;allowmixedMode=1&amp;bypassFlashPrompt=1&amp;preferexternal=1&amp;callback=cms.widget.Game.externalEventHandler&amp;lobbyURL/en/slots/Thunderstruck-II-Mega-Moolah"></iframe>`; else if ("wolf-run" == nameParam) document.querySelector(".game__iframe").innerHTML = `<iframe id="wolf-run" src="https://ogs-gl-usnj.nyxop.net/game/?nogsoperatorid=107&amp;nogsgameid=960327&amp;nogsmode=demo&amp;nogslang=EN_EN&amp;nogscurrency=USD&amp;clienttype=flash" frameborder="0" noscroll="noscroll" scrolling="no" style="overflow:hidden"></iframe>`; else if ("zeus-3" == nameParam) document.querySelector(".game__iframe").innerHTML = `<iframe id="zeus-3" frameborder="0" scrolling="no" src="https://acy-resource.wimobile.casinarena.com/resource-service/game.html?game=zeus3_prt&amp;locale=en_GB&amp;partnercode=mockpartner&amp;realmoney=false&amp;demo=true&amp;gaffing=true"></iframe>`;
         }
         window["FLS"] = false;
         isWebp();
