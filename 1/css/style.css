@@ -590,7 +590,7 @@ h6 {
 }
 
 .no-webp .main-home{
-  background: url("../img/home/main/background.jpg") center/cover no-repeat; }
+  background: url("../img/home/main/background.jpg") center bottom/cover no-repeat; }
 
 .main-home__container {
   position: relative;
@@ -1620,7 +1620,7 @@ h6 {
   }
 }
 
-.webp .main-home{ background: url(../img/home/main/background.webp) center/cover no-repeat; }
+.webp .main-home{ background: url(../img/home/main/background.webp) center bottom/cover no-repeat; }
 
 .webp .how-it-works-home{ background: url(../img/home/how-it-works/background.webp) center/cover no-repeat; }
 
