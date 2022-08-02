@@ -3954,7 +3954,7 @@
                 destroy
             });
         }
-        const mediaQuery = window.matchMedia("(max-width: 68.75rem)");
+        const mediaQuery = window.matchMedia("(max-width: 74.99875rem)");
         let howItWorksSliderFirst, howItWorksSliderSecond, howItWorksSliderThird;
         function initSliders() {
             if (document.querySelector(".clients-review-home__slider")) new core(".clients-review-home__slider", {
