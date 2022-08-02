@@ -1713,6 +1713,10 @@ h6 {
 }
 
 @media (any-hover: hover) {
+  ._slider-pagination .swiper-pagination-bullet:not(.swiper-pagination-bullet-active):hover {
+    cursor: pointer;
+  }
+
   .menu__link:hover:not(.menu__link_active) {
     color: #0871b8;
   }
