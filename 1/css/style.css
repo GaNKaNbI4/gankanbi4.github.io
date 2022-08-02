@@ -589,8 +589,9 @@ h6 {
   font-weight: 400;
 }
 
-.no-webp .main-home{
-  background: url("../img/home/main/background.jpg") center bottom/cover no-repeat; }
+.main-home {
+  background: url("../img/home/main/background.jpg") center bottom/cover no-repeat;
+}
 
 .main-home__container {
   position: relative;
@@ -755,14 +756,13 @@ h6 {
   width: 100%;
 }
 
-.no-webp .how-it-works-home{
-  background: url("../img/home/how-it-works/background.jpg") center/cover no-repeat; }
-
 .how-it-works-home {
   padding-top: 2.5rem;
+  background: url("../img/home/how-it-works/background.jpg") center/cover no-repeat;
 }
 
 .how-it-works-home__container_big {
+  position: relative;
   max-width: 97.1875rem;
 }
 
@@ -843,6 +843,8 @@ h6 {
 .how-it-works-home__text-content {
   max-width: 75rem;
   margin: 0 auto 0 0;
+  position: relative;
+  z-index: 5;
 }
 
 .how-it-works-home__photo {
@@ -874,6 +876,41 @@ h6 {
   line-height: 1.1666666667;
   max-width: 33.75rem;
   margin-right: 3.4375rem;
+}
+
+.how-it-works-home__sky-decor-ibg {
+  position: absolute;
+  z-index: 1;
+  width: 34.8264984227%;
+  padding-bottom: 18.738170347%;
+}
+
+@supports (bottom: clamp( -4.6875rem , 21.3537145622rem  +  -21.7010121352vw , 10.9375rem )) {
+  .how-it-works-home__sky-decor-ibg {
+    bottom: clamp( -4.6875rem , 21.3537145622rem  +  -21.7010121352vw , 10.9375rem );
+  }
+}
+
+@supports not (bottom: clamp( -4.6875rem , 21.3537145622rem  +  -21.7010121352vw , 10.9375rem )) {
+  .how-it-works-home__sky-decor-ibg {
+    bottom: calc(10.9375rem + -15.625 * (100vw - 47.99875rem) / 72.00125);
+  }
+}
+
+@supports (left: clamp( -3.125rem , 9.8057558027rem  +  -10.7756298356vw , 3.125rem )) {
+  .how-it-works-home__sky-decor-ibg {
+    left: clamp( -3.125rem , 9.8057558027rem  +  -10.7756298356vw , 3.125rem );
+  }
+}
+
+@supports not (left: clamp( -3.125rem , 9.8057558027rem  +  -10.7756298356vw , 3.125rem )) {
+  .how-it-works-home__sky-decor-ibg {
+    left: calc(3.125rem + -6.25 * (100vw - 61.99875rem) / 58.00125);
+  }
+}
+
+.how-it-works-home__sky-decor-ibg ._decor-mobile {
+  display: none;
 }
 
 .how-it-works-home__cars-decor-ibg {
@@ -1023,7 +1060,7 @@ h6 {
   font-weight: 400;
 }
 
-.item-how-home__pagination {
+.item-how-home__pagination:not(.item-how-home__pagination_third) {
   margin-bottom: 1.875rem;
 }
 
@@ -1156,11 +1193,21 @@ h6 {
   .main-home__ground-decor-ibg {
     margin-top: -0.5%;
   }
+
+  .how-it-works-home {
+    background: url("../img/home/how-it-works/background.jpg") center top/auto 103% no-repeat;
+  }
 }
 
 @media (max-width: 100em) {
   .menu__link_blog {
     margin-right: 0;
+  }
+}
+
+@media (max-width: 103.125em) {
+  .how-it-works-home {
+    background-size: auto 107%;
   }
 }
 
@@ -1192,6 +1239,12 @@ h6 {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
+  }
+}
+
+@media (max-width: 90.625em) {
+  .how-it-works-home {
+    background-size: auto 110%;
   }
 }
 
@@ -1361,6 +1414,14 @@ h6 {
 }
 
 @media (max-width: 68.75em) {
+  .how-it-works-home {
+    background: url("../img/home/how-it-works/background.jpg") center top/auto 125% no-repeat;
+  }
+
+  .how-it-works-home__calculator {
+    bottom: -12%;
+  }
+
   .item-how-home__describe {
     max-width: 25rem;
     margin: 0 auto;
@@ -1460,8 +1521,21 @@ h6 {
        object-position: 45%;
   }
 
-  .no-webp .how-it-works-home{
-    background-image: url("../img/home/how-it-works/background_mobile.jpg"); }
+  .how-it-works-home {
+    background: url("../img/home/how-it-works/background_mobile.jpg") center/cover no-repeat;
+  }
+
+@supports (margin-bottom: clamp( 0.625rem , 8.9586950483rem  +  -17.3623168276vw , 3.75rem )) {
+    .how-it-works-home__container_big:not(:last-child) {
+      margin-bottom: clamp( 0.625rem , 8.9586950483rem  +  -17.3623168276vw , 3.75rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 0.625rem , 8.9586950483rem  +  -17.3623168276vw , 3.75rem )) {
+    .how-it-works-home__container_big:not(:last-child) {
+      margin-bottom: calc(3.75rem + -3.125 * (100vw - 30rem) / 17.99875);
+    }
+}
 
   .how-it-works-home__calculator {
     -webkit-transform: translate(-50%);
@@ -1491,6 +1565,35 @@ h6 {
     margin: 0 auto;
   }
 
+  .how-it-works-home__sky-decor-ibg {
+    width: 75%;
+    padding-bottom: 26.5%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
+  }
+
+  .how-it-works-home__sky-decor-ibg ._decor-mobile {
+    display: block;
+  }
+
+  .how-it-works-home__sky-decor-ibg ._main-decor {
+    display: none;
+  }
+
+@supports (bottom: clamp( 6.25rem , 24.4646245368rem  +  -37.948122684vw , 16.875rem )) {
+    .how-it-works-home__sky-decor-ibg {
+      bottom: clamp( 6.25rem , 24.4646245368rem  +  -37.948122684vw , 16.875rem );
+    }
+}
+
+@supports not (bottom: clamp( 6.25rem , 24.4646245368rem  +  -37.948122684vw , 16.875rem )) {
+    .how-it-works-home__sky-decor-ibg {
+      bottom: calc(16.875rem + -10.625 * (100vw - 20rem) / 27.99875);
+    }
+}
+
   .how-it-works-home__cars-decor-ibg ._cars {
     display: none;
   }
@@ -1500,7 +1603,7 @@ h6 {
   }
 
   .how-it-works-home-tabs:not(:last-child) {
-    margin-bottom: 9.375rem;
+    margin-bottom: 10.625rem;
   }
 
   .how-it-works-home-tabs__title {
@@ -1514,6 +1617,11 @@ h6 {
 
   .item-how-home {
     padding: 1.25rem 0 2.5rem 0;
+  }
+
+  .clients-review-home {
+    padding-top: 3.75rem;
+    margin-top: -3.90625%;
   }
 }
 
@@ -1571,6 +1679,11 @@ h6 {
     padding: 0.9375rem 1.25rem;
   }
 
+  .how-it-works-home__sky-decor-ibg {
+    width: 90%;
+    padding-bottom: 32%;
+  }
+
   .how-it-works-home-tabs__title {
     width: 90%;
   }
@@ -1595,6 +1708,7 @@ h6 {
 
   .how-it-works-home__calculator {
     gap: 0.9375rem;
+    font-size: 1.0625rem;
   }
 }
 
@@ -1618,13 +1732,4 @@ h6 {
   .info-block-footer__link:hover svg {
     fill: #0871b8;
   }
-}
-
-.webp .main-home{ background: url(../img/home/main/background.webp) center bottom/cover no-repeat; }
-
-.webp .how-it-works-home{ background: url(../img/home/how-it-works/background.webp) center/cover no-repeat; }
-
-@media (max-width: 47.99875em){
-
-  .webp .how-it-works-home{ background-image: url(../img/home/how-it-works/background_mobile.webp); }
 }

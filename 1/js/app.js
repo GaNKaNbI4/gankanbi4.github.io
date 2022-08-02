@@ -3995,7 +3995,7 @@
                         observer: true,
                         observeParents: true,
                         slidesPerView: 1,
-                        spaceBetween: 0,
+                        spaceBetween: 30,
                         speed: 1e3,
                         pagination: {
                             el: ".item-how-home__pagination_first",
@@ -4008,7 +4008,7 @@
                         observer: true,
                         observeParents: true,
                         slidesPerView: 1,
-                        spaceBetween: 0,
+                        spaceBetween: 30,
                         speed: 1e3,
                         pagination: {
                             el: ".item-how-home__pagination_second",
@@ -4021,7 +4021,7 @@
                         observer: true,
                         observeParents: true,
                         slidesPerView: 1,
-                        spaceBetween: 0,
+                        spaceBetween: 30,
                         speed: 1e3,
                         pagination: {
                             el: ".item-how-home__pagination_third",
