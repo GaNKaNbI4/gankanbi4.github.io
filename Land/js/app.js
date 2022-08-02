@@ -1631,19 +1631,19 @@
         };
         const da = new DynamicAdapt("max");
         da.init();
-        const isLogged = localStorage.getItem("login");
+        const isLogged = localStorage.getItem("shineBrightSlotLogin");
         if (isLogged) document.querySelector(".menu__login-panel").classList.add("_user-logged"); else if (document.querySelector(".menu__login-panel._user-logged")) document.querySelector(".menu__login-panel").classList.remove("_user-logged");
         document.addEventListener("formSent", (function(e) {
             const currentForm = e.detail.form;
             if (currentForm.classList.contains("form-contact-us")) alert("Thank you! Your message has been sent!");
             if (currentForm.classList.contains("form-popup")) {
                 location = "index.html";
-                localStorage.setItem("login", true);
+                localStorage.setItem("shineBrightSlotLogin", true);
             }
         }));
         const logoutButton = document.querySelector(".menu__logout-button");
         logoutButton.addEventListener("click", (() => {
-            localStorage.removeItem("login");
+            localStorage.removeItem("shineBrightSlotLogin");
             location = "index.html";
         }));
         document.addEventListener("click", (e => {
