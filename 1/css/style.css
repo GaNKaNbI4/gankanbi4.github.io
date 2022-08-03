@@ -2080,7 +2080,8 @@ h6 {
 
 @media (max-width: 47.99875em) {
   [class*=__container] {
-    padding: 0 0.9375rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 
   .footer__body {
