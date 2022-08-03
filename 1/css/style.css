@@ -1305,10 +1305,28 @@ h6 {
   padding-bottom: 56.0975609756%;
 }
 
+.contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .no-webp .contact-us__main{
   background: url("../img/contact-us/background.jpg") center/cover no-repeat; }
 
+.contact-us__main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .contact-us__container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   position: relative;
 }
 
