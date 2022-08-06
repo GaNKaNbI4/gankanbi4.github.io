@@ -752,6 +752,7 @@ h6 {
 }
 
 .recommendations-home__item {
+  display: block;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 31.5%;
           flex: 0 0 31.5%;
@@ -901,6 +902,10 @@ h6 {
 
 .recommendations-month-home__wrapper:not(:last-child) {
   margin-bottom: 2.1875rem;
+}
+
+.recommendations-month-home__link {
+  display: block;
 }
 
 .recommendations-month-home__image-ibg {
