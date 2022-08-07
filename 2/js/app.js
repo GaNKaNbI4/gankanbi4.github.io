@@ -4229,8 +4229,7 @@
                 navigation: {
                     prevEl: ".main-home__prev",
                     nextEl: ".main-home__next"
-                },
-                on: {}
+                }
             });
             if (document.querySelector(".recommendations-month-home__slider")) new core(".recommendations-month-home__slider", {
                 modules: [ Pagination ],
@@ -4263,6 +4262,24 @@
                     }
                 },
                 on: {}
+            });
+            if (document.querySelector(".main-second-page__slider")) new core(".main-second-page__slider", {
+                modules: [ Navigation, Pagination, EffectFade ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                autoHeight: false,
+                speed: 3e3,
+                effect: "fade",
+                autoplay: {
+                    delay: 3e3,
+                    disableOnInteraction: false
+                },
+                pagination: {
+                    el: ".main-second-page__pagination",
+                    clickable: true
+                }
             });
         }
         window.addEventListener("load", (function(e) {
