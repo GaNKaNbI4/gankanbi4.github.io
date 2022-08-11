@@ -1491,6 +1491,9 @@ h6 {
   padding: 0.75rem 0.9375rem;
   background-color: #000;
   display: inline-block;
+  -webkit-transition: background-color 0.3s ease 0s;
+  -o-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
 }
 
 .about-us-fourth-page__slider-block {
@@ -2866,5 +2869,13 @@ h6 {
   .gallery-third-page__link a:hover::after {
     -webkit-animation: twoArrowsLeftAnim 1.15s;
             animation: twoArrowsLeftAnim 1.15s;
+  }
+
+  .gallery-media-fourth-page__thumbs-image-ibg:hover {
+    cursor: pointer;
+  }
+
+  .about-us-fourth-page__link:hover {
+    background-color: rgb(56, 56, 56);
   }
 }

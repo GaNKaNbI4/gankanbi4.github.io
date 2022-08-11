@@ -4877,6 +4877,7 @@
                 spaceBetween: 10,
                 autoHeight: false,
                 speed: 1200,
+                grabCursor: true,
                 freeMode: {
                     enabled: true,
                     momentum: false
