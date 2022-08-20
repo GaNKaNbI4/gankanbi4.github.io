@@ -5684,7 +5684,9 @@
                 spaceBetween: 32,
                 centeredSlides: true,
                 loop: true,
-                on: {}
+                on: {
+                    slideChange: () => {}
+                }
             });
             if (document.querySelector(".our-projects-home__slider")) ourProjectsSlider = new core(".our-projects-home__slider", {
                 modules: [],
