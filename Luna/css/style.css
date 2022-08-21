@@ -903,6 +903,8 @@ section {
 
 .expertise-home__slider {
   padding-bottom: 10%;
+  overflow-y: visible !important;
+  overflow-x: clip !important;
 }
 
 .expertise-home__slider .slick-track {
@@ -3250,10 +3252,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     padding-bottom: 47.22%;
   }
 
-  .expertise-home__slider {
-    padding-bottom: 12%;
-  }
-
   .our-projects-home__slide.swiper-slide-active .our-projects-home__content,
   .our-projects-home__slide.swiper-slide-duplicate-active .our-projects-home__content {
     width: 100%;
@@ -3485,10 +3483,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     margin-bottom: 1em;
   }
 
-  .expertise-home__slider {
-    padding-bottom: 16%;
-  }
-
   .expertise-home__wrapper {
     height: 32.44vw !important;
     max-height: none;
@@ -3715,10 +3709,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .main-home {
     margin-top: 5.125rem;
-  }
-
-  .expertise-home__slider {
-    padding-bottom: 22%;
   }
 
   .expertise-home__wrapper {
