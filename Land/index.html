@@ -6,10 +6,12 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220730210411">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220821221309">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
 </head>
 
 <body>
@@ -17,162 +19,139 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__menu menu">
-					<button type="button" class="menu__icon icon-menu"><span></span></button>
-					<a href="index.html" class="header__logo header__logo_top"><img src="img/svg/logo.svg" alt="Logo"></a>
 					<nav class="menu__body">
-						<ul class="menu__list menu__list_first">
-							<li class="menu__item menu__item_home"><a href="index.html" class="menu__link">Home</a></li>
-							<li class="menu__item menu__item_about-us"><a href="about-us.html" class="menu__link">About Us</a></li>
-							<li class="menu__item menu__item_contact-us"><a href="contact-us.html" class="menu__link">Contact Us</a>
-							</li>
-						</ul>
-						<a href="index.html" class="header__logo"><img src="img/svg/logo.svg" alt="Logo"></a>
 						<ul class="menu__list">
-							<li class="menu__item menu__item_privacy-policy" data-da=".menu__list_first, 1150, last"><a href="privacy-policy.html" class="menu__link ">Privacy
+							<li class="menu__item"><a href="index.html" class="menu__link menu__link_home _active">Home</a></li>
+							<li class="menu__item"><a href="about-us.html" class="menu__link menu__link_about ">About us</a></li>
+							<li class="menu__item"><a href="privacy-policy.html" class="menu__link menu__link_privacy ">Privacy
 									Policy</a></li>
-							<li class="menu__item menu__item_cookies-policy" data-da=".menu__list_first, 1150, last"><a href="cookies-policy.html" class="menu__link ">Cookies <span>policy</span></a></li>
+							<li class="menu__item"><a href="cookies.html" class="menu__link menu__link_cookies ">Cookies</a></li>
 						</ul>
-						<div class="menu__login-panel" data-da=".menu__list_first, 1150, last">
-							<button type="button" class="menu__login-button _main-button" data-popup="#popup">sign up</button>
-							<button type="button" class="menu__logout-button _main-button">sign
-								out</button>
+						<div class="menu__buttons menu__login-panel _user-logged">
+							<button data-popup="#popup__login" class="menu__button menu__button_login"><span>login</span></button>
+							<button data-popup="#popup__reg" class="menu__button menu__button_signup"><span>sign up</span></button>
+							<button class="menu__button menu__button_logout"><span>sign out</span></button>
 						</div>
-
 					</nav>
+					<a href="index.html" class="menu__logo">
+						<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Logo"></picture>
+					</a>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
 				</div>
 			</div>
 		</header>
 		<main class="home">
 			<section class="home__main main-home">
-				<div class="main-home__background-images">
-					<div class="main-home__image-ibg main-home__image-ibg_man"><img src="img/1x1.jpg" data-src="img/home/main/man.png" alt="Man with thunder"></div>
-					<div class="main-home__image-ibg main-home__image-ibg_woman"><img src="img/1x1.jpg" data-src="img/home/main/woman.png" alt="Woman"></div>
-				</div>
 				<div class="main-home__container">
-					<h1 class="main-home__title _page-title">Welcome to
-						ShineBrightSlot</h1>
-					<h2 class="main-home__subtitle _section-title">The Best Free Social Online Pokies</h2>
-					<a href="#" data-goto=".slots-home" data-goto-speed="800" class="main-home__play-now _main-button _main-button_bordered">
-						<p>Play Now</p>
-					</a>
+					<div class="main-home__text-content">
+						<h1 class="main-home__title">AUSTRALIAN BEST FREE ONLINE CASINO</h1>
+						<a href="#" data-goto=".slots-home" data-goto-speed="800" class="main-home__link"><span>play now</span></a>
+					</div>
 				</div>
-				<a href="#" data-goto=".slots-home" data-goto-speed="800" class="main-home__go-down">
-					<img src="img/1x1.jpg" data-src="img/home/main/arrow-down.svg" alt="arrow-down">
-				</a>
 			</section>
+
+			<div class="home__four-icons four-icons-home">
+				<div class="four-icons-home__container">
+					<div class="four-icons-home__body">
+						<div class="four-icons-home__item">
+							<div class="four-icons-home__image-ibg_contain"><picture><source data-srcset="img/home/four-icons/huge-selection.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/home/four-icons/huge-selection.png" alt="First icon"></picture></div>
+							<h3 class="four-icons-home__item-title">Huge selection of free online casino slots games</h3>
+						</div>
+						<div class="four-icons-home__item">
+							<div class="four-icons-home__image-ibg_contain"><img data-src="img/home/four-icons/free-spins.svg" alt="Second icon"></div>
+							<h3 class="four-icons-home__item-title">Free spins to try your favorite online casino games</h3>
+						</div>
+						<div class="four-icons-home__item">
+							<div class="four-icons-home__image-ibg_contain"><img data-src="img/home/four-icons/games.svg" alt="Third icon"></div>
+							<h3 class="four-icons-home__item-title">New free online casino
+								games every month</h3>
+						</div>
+						<div class="four-icons-home__item">
+							<div class="four-icons-home__image-ibg_contain"><img data-src="img/home/four-icons/skills.svg" alt="Fourth icon"></div>
+							<h3 class="four-icons-home__item-title">Great way to practice
+								your skills</h3>
+						</div>
+					</div>
+					<div class="four-icons-home__decor-ibg"><picture><source data-srcset="img/home/four-icons/decor.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/home/four-icons/decor.png" alt="Decor image"></picture>
+					</div>
+				</div>
+			</div>
 
 			<section class="home__slots slots-home">
-				<div class="slots-home__main-background-ibg">
-					<img src="img/1x1.jpg" data-src="img/home/slots/sky.jpg" alt="Sky">
-				</div>
-				<div class="slots-home__lightning-background-ibg">
-					<img src="img/1x1.jpg" data-src="img/home/slots/lightning.png" alt="Lightning">
-				</div>
-				<div class="slots-home__lines-background-ibg">
-					<img src="img/1x1.jpg" data-src="img/home/slots/lines-bg.svg" alt="Lines">
-				</div>
 				<div class="slots-home__container">
-					<div class="slots-home__title _section-title">
-						<img src="img/1x1.jpg" data-src="img/svg/gem.svg" alt="Gem">
-						<p>ShineBrightSlot - home to the best free online slots in
-							Australia.</p>
-						<img src="img/1x1.jpg" data-src="img/svg/gem.svg" alt="Gem">
-					</div>
-					<div class="slots-home__describe">
-						<div class="slots-home__border-top"><img src="img/1x1.jpg" data-src="img/home/slots/border-top.svg" alt="Border top"></div>
-						<h3 class="_main-text">We offer a lot of top free online casino slots to our players including free
-							online pokies and no real money slots where our Australian players can enjoy games for fun.</h3>
-					</div>
-				</div>
-				<div class="slots-home__container slots-home__container_big">
-					<div class="slots-home__block">
-						<div class="slots-home__body">
-							<div class="slots-home__item item-slots-home">
-								<div class="item-slots-home__slot-ibg">
-									<img src="img/1x1.jpg" data-src="img/home/slots/slots-items/Lucky-Lady-Moon-Megaways.jpg" alt="Lucky Lady Moon Megaways">
-									<a href="game.html?name=lucky-lady-moon-megaways" class="item-slots-home__play-button _main-button _main-button_bordered">
-										<p>Play Now</p>
-									</a>
-								</div>
-								<h4 class="item-slots-home__name">Lucky Lady Moon Megaways</h4>
+					<h2 class="slots-home__title _activity-title">FREE ONLINE CASINO SLOTS</h2>
+					<div class="slots-home__body">
+						<div class="slots-home__item">
+							<div class="slots-home__image-ibg">
+								<picture><source data-srcset="img/home/slots/gates-of-olympus.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/home/slots/gates-of-olympus.jpg" alt="gates of olympus"></picture>
+								<a href="game.html?name=gates-of-olympus" class="slots-home__play-button">
+									<p>Play Now</p>
+								</a>
 							</div>
-							<div class="slots-home__item item-slots-home">
-								<div class="item-slots-home__slot-ibg">
-									<img src="img/1x1.jpg" data-src="img/home/slots/slots-items/Mega-Moolah.jpg" alt="Mega Moolah">
-									<a href="game.html?name=mega-moolah" class="item-slots-home__play-button _main-button _main-button_bordered">
-										<p>Play Now</p>
-									</a>
-								</div>
-								<h4 class="item-slots-home__name">Mega Moolah</h4>
+							<h3 class="slots-home__game-title">gates of olympus</h3>
+						</div>
+						<div class="slots-home__item">
+							<div class="slots-home__image-ibg">
+								<picture><source data-srcset="img/home/slots/reactoonz.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/home/slots/reactoonz.jpg" alt="reactoonz"></picture>
+								<a href="game.html?name=reactoonz" class="slots-home__play-button">
+									<p>Play Now</p>
+								</a>
 							</div>
-							<div class="slots-home__item item-slots-home">
-								<div class="item-slots-home__slot-ibg">
-									<img src="img/1x1.jpg" data-src="img/home/slots/slots-items/Mustang-Gold.jpg" alt="Mustang Gold">
-									<a href="game.html?name=mustang-gold" class="item-slots-home__play-button _main-button _main-button_bordered">
-										<p>Play Now</p>
-									</a>
-								</div>
-								<h4 class="item-slots-home__name">Mustang Gold</h4>
+							<h3 class="slots-home__game-title">reactoonz</h3>
+						</div>
+						<div class="slots-home__item">
+							<div class="slots-home__image-ibg">
+								<picture><source data-srcset="img/home/slots/the-dog-house.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/home/slots/the-dog-house.jpg" alt="the dog house"></picture>
+								<a href="game.html?name=the-dog-house" class="slots-home__play-button">
+									<p>Play Now</p>
+								</a>
 							</div>
-							<div class="slots-home__item item-slots-home">
-								<div class="item-slots-home__slot-ibg">
-									<img src="img/1x1.jpg" data-src="img/home/slots/slots-items/Thunderstruck-2.jpg" alt="Thunderstruck II">
-									<a href="game.html?name=thunderstruck-2" class="item-slots-home__play-button _main-button _main-button_bordered">
-										<p>Play Now</p>
-									</a>
-								</div>
-								<h4 class="item-slots-home__name">Thunderstruck II</h4>
+							<h3 class="slots-home__game-title">the dog house</h3>
+						</div>
+						<div class="slots-home__item">
+							<div class="slots-home__image-ibg">
+								<picture><source data-srcset="img/home/slots/book-of-gods.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/home/slots/book-of-gods.jpg" alt="book of gods"></picture>
+								<a href="game.html?name=book-of-gods" class="slots-home__play-button">
+									<p>Play Now</p>
+								</a>
 							</div>
-							<div class="slots-home__item item-slots-home">
-								<div class="item-slots-home__slot-ibg">
-									<img src="img/1x1.jpg" data-src="img/home/slots/slots-items/Wolf-Run.jpg" alt="Wolf Run">
-									<a href="game.html?name=wolf-run" class="item-slots-home__play-button _main-button _main-button_bordered">
-										<p>Play Now</p>
-									</a>
-								</div>
-								<h4 class="item-slots-home__name">Wolf Run</h4>
+							<h3 class="slots-home__game-title">book of gods</h3>
+						</div>
+						<div class="slots-home__item">
+							<div class="slots-home__image-ibg">
+								<picture><source data-srcset="img/home/slots/elvis-frog-in-vegas.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/home/slots/elvis-frog-in-vegas.jpg" alt="elvis frog in vegas"></picture>
+								<a href="game.html?name=elvis-frog-in-vegas" class="slots-home__play-button">
+									<p>Play Now</p>
+								</a>
 							</div>
-							<div class="slots-home__item item-slots-home">
-								<div class="item-slots-home__slot-ibg">
-									<img src="img/1x1.jpg" data-src="img/home/slots/slots-items/Zeus-3.jpg" alt="Zeus III">
-									<a href="game.html?name=zeus-3" class="item-slots-home__play-button _main-button _main-button_bordered">
-										<p>Play Now</p>
-									</a>
-								</div>
-								<h4 class="item-slots-home__name">Zeus III</h4>
+							<h3 class="slots-home__game-title">elvis frog in vegas</h3>
+						</div>
+						<div class="slots-home__item">
+							<div class="slots-home__image-ibg">
+								<picture><source data-srcset="img/home/slots/book-of-aztec.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/home/slots/book-of-aztec.jpg" alt="book of aztec"></picture>
+								<a href="game.html?name=book-of-aztec" class="slots-home__play-button">
+									<p>Play Now</p>
+								</a>
 							</div>
+							<h3 class="slots-home__game-title">book of aztec</h3>
 						</div>
 					</div>
-
 				</div>
 			</section>
 
-			<div class="home__advantages advantages-home">
-				<div class="advantages-home__container">
-					<div class="advantages-home__body">
-						<div class="advantages-home__item item-advantages-home">
-							<div class="item-advantages-home__content">
-								<div class="item-advantages-home__image-ibg_contain"><img src="img/1x1.jpg" data-src="img/home/advantages/14-Money.svg" alt="Money"></div>
-								<p class="item-advantages-home__text _main-text">Test as many free online pokies as you like without
-									committing or
-									spending money</p>
-							</div>
-						</div>
-						<div class="advantages-home__item item-advantages-home">
-							<div class="item-advantages-home__content">
-								<div class="item-advantages-home__image-ibg_contain"><img src="img/1x1.jpg" data-src="img/home/advantages/09-jackpot.svg" alt="Jackpot"></div>
-								<p class="item-advantages-home__text _main-text">Constantly explore new free pokies online and discover
-									games and
-									features</p>
-							</div>
-						</div>
-						<div class="advantages-home__item item-advantages-home">
-							<div class="item-advantages-home__content">
-								<div class="item-advantages-home__image-ibg_contain"><img src="img/1x1.jpg" data-src="img/home/advantages/10-Casino-chip.svg" alt="Casino chip"></div>
-								<p class="item-advantages-home__text _main-text">Practice your knowledge and skills, develop a winning
-									pokies
-									strategy for free</p>
-							</div>
+			<div class="home__annotation annotation-home">
+				<div class="annotation-home__container">
+					<div class="annotation-home__body">
+						<div class="annotation-home__image-ibg"><picture><source data-srcset="img/home/annotation/image.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/home/annotation/image.png" alt="Image"></picture></div>
+						<div class="annotation-home__text-block _main-text-first">
+							<p><span>Luckykiwis</span> is a free social online casino with popular free online casino games. Here you
+								can spin
+								slots not for real money.</p>
+							<p>Choose your favorite slots and start playing on your phone or desktop. You don't have to spend real
+								money on slots to realize that this slot isn't right for you.</p>
+							<p>If you've never played in a real online casino, then <span>Luckykiwis</span> for you. Especially for
+								people from
+								Australia, absolutely free social online casino.</p>
 						</div>
 					</div>
 				</div>
@@ -181,49 +160,73 @@
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__body">
-					<a href="index.html" class="footer__logo"><img src="img/1x1.jpg" data-src="img/svg/footer-logo.svg" alt="Footer Logo"></a>
-					<p class="footer__copyright footer__text">© 2022 shinebrightslot.com All rights reserved</p>
-					<p class="footer__text">We give you the opportunity to play social online casino games for free. No real money can
-						be spent and won. Shinebrightslot Social Online Casino is free for all users. Our games are intended for an
-						adult audience over 18 years. Playing brings no future luck on real casino sites.</p>
+					<a href="index.html" class="footer__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Logo"></picture></a>
+					<p class="footer__copyright _main-text-second">© 2022 luckykiwis.com All rights reserved</p>
+					<p class="footer__text _main-text-second">The free social online casino is designed specifically for adult
+						audiences. Our free social online casino is not for real money. You cannot make deposits and you cannot win real
+						money or prizes here. Our free social online casino is 100% free and requires no real money.</p>
 				</div>
-			</div>
-			<div class="footer__gold-image">
-				<img src="img/1x1.jpg" data-src="img/footer/gold.png" alt="Gold">
 			</div>
 		</footer>
 	</div>
-	<div id="popup" aria-hidden="true" class="popup">
+	<div id="popup__reg" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
 				<div class="popup__body">
-					<button data-close type="button" class="popup__close"></button>
-					<div class="popup__image-ibg"><img src="img/1x1.jpg" data-src="img/reg/reg.jpg" alt="Man with lightning">
-					</div>
 					<div class="popup__text-content">
-						<h3 class="popup__title">Sign Up</h3>
+						<h2 class="popup__title _activity-title">Create Account</h2>
 						<div class="popup__form-block">
-							<form action="#" class="popup__form form-popup" data-dev>
-								<div class="form-popup__block">
-									<label for="email">Email</label>
-									<input autocomplete="off" data-required="email" type="email" name="email" id="email" data-error="*incorrect email address" placeholder="Enter your email" class="form-popup__input">
+							<form action="#" class="popup__form" data-dev>
+								<div class="popup__input-wrapper popup__input-wrapper_user">
+									<input autocomplete="off" data-required type="text" name="reg" placeholder="Username" class="popup__input">
 								</div>
-								<div class="form-popup__block _margin-bottom">
-									<label for="password">Password</label>
-									<input data-required autocomplete="off" id="password" type="password" name="password" data-error="*you must input password" placeholder="Enter password" class="form-popup__input">
+								<div class="popup__input-wrapper popup__input-wrapper_email">
+									<input autocomplete="off" data-required="email" type="email" name="reg" placeholder="Email" class="popup__input">
+								</div>
+								<div class="popup__input-wrapper popup__input-wrapper_pass">
+									<input autocomplete="off" data-required type="password" name="reg" placeholder="Password" class="popup__input">
 								</div>
 								<div class="checkbox">
-									<input id="c_1" data-required class="form-popup__checkbox checkbox__input" type="checkbox" value="1" name="checkbox">
-									<label for="c_1" class="checkbox__label">
-										<span class="checkbox__box">
-											<svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M1 4.76087L4.22392 7.31197C4.35476 7.41551 4.54496 7.39238 4.64718 7.26051L9.5 1" stroke="white" stroke-width="1.5" stroke-linecap="round" />
-											</svg>
-										</span>
-										<span class="checkbox__text">I am 18 years old and I accept the
-											<a href="privacy-policy.html">Privacy Policy</a></span></label>
+									<input id="c_1" class="checkbox__input" data-required type="checkbox" value="1" name="reg">
+									<label for="c_1" class="checkbox__label"><span class="_bg"></span><span class="checkbox__text">I agree
+											to all statements included
+											in <a href="privacy-policy.html">Privacy Policy</a></span></label>
 								</div>
-								<button type="submit" class="form-popup__button _main-button">Sign up</button>
+								<button type="submit" class="popup__button"><span>sign up</span></button>
+							</form>
+						</div>
+					</div>
+
+					<div class="popup__decor">
+						<div class="popup__decor-first">
+							<picture><source data-srcset="img/popup/decor_1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popup/decor_1.png" alt="Decor image"></picture>
+						</div>
+						<div class="popup__decor-second">
+							<picture><source data-srcset="img/popup/decor_2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popup/decor_2.png" alt="Decor image"></picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup__login" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__body">
+					<div class="popup__text-content">
+						<h2 class="popup__title _activity-title">Login</h2>
+						<div class="popup__form-block">
+							<form action="#" class="popup__form" data-dev>
+								<div class="popup__input-wrapper popup__input-wrapper_email">
+									<input autocomplete="off" data-required="email" type="email" name="reg" placeholder="Email" class="popup__input">
+								</div>
+								<div class="popup__input-wrapper popup__input-wrapper_pass">
+									<input autocomplete="off" data-required type="password" name="reg" placeholder="Password" class="popup__input">
+								</div>
+								<button type="submit" class="popup__button"><span>Login</span></button>
 							</form>
 						</div>
 					</div>
@@ -231,7 +234,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220730210411"></script>
+	<script src="js/app.min.js?_v=20220821221309"></script>
 </body>
 
 </html>

@@ -6,10 +6,12 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220730210411">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220821221309">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
 </head>
 
 <body>
@@ -17,138 +19,165 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__menu menu">
-					<button type="button" class="menu__icon icon-menu"><span></span></button>
-					<a href="index.html" class="header__logo header__logo_top"><img src="img/svg/logo.svg" alt="Logo"></a>
 					<nav class="menu__body">
-						<ul class="menu__list menu__list_first">
-							<li class="menu__item menu__item_home"><a href="index.html" class="menu__link">Home</a></li>
-							<li class="menu__item menu__item_about-us"><a href="about-us.html" class="menu__link">About Us</a></li>
-							<li class="menu__item menu__item_contact-us"><a href="contact-us.html" class="menu__link">Contact Us</a>
-							</li>
-						</ul>
-						<a href="index.html" class="header__logo"><img src="img/svg/logo.svg" alt="Logo"></a>
 						<ul class="menu__list">
-							<li class="menu__item menu__item_privacy-policy" data-da=".menu__list_first, 1150, last"><a href="privacy-policy.html" class="menu__link ">Privacy
+							<li class="menu__item"><a href="index.html" class="menu__link menu__link_home ">Home</a></li>
+							<li class="menu__item"><a href="about-us.html" class="menu__link menu__link_about ">About us</a></li>
+							<li class="menu__item"><a href="privacy-policy.html" class="menu__link menu__link_privacy _active">Privacy
 									Policy</a></li>
-							<li class="menu__item menu__item_cookies-policy" data-da=".menu__list_first, 1150, last"><a href="cookies-policy.html" class="menu__link ">Cookies <span>policy</span></a></li>
+							<li class="menu__item"><a href="cookies.html" class="menu__link menu__link_cookies ">Cookies</a></li>
 						</ul>
-						<div class="menu__login-panel" data-da=".menu__list_first, 1150, last">
-							<button type="button" class="menu__login-button _main-button" data-popup="#popup">sign up</button>
-							<button type="button" class="menu__logout-button _main-button">sign
-								out</button>
+						<div class="menu__buttons menu__login-panel _user-logged">
+							<button data-popup="#popup__login" class="menu__button menu__button_login"><span>login</span></button>
+							<button data-popup="#popup__reg" class="menu__button menu__button_signup"><span>sign up</span></button>
+							<button class="menu__button menu__button_logout"><span>sign out</span></button>
 						</div>
-
 					</nav>
+					<a href="index.html" class="menu__logo">
+						<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Logo"></picture>
+					</a>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
 				</div>
 			</div>
 		</header>
-		<main class="privacy-policy">
-			<section class="privacy-policy__main">
-				<div class="_page-background-sky-ibg">
-					<img src="img/1x1.jpg" data-src="img/common/sky.jpg" alt="Sky">
+		<main class="privacy">
+			<section class="privacy__main main-privacy">
+				<div class="main-privacy__title _page-title">
+					<div class="_page-title__container">
+						<h1>Privacy Policy</h1>
+					</div>
 				</div>
-				<div class="_page-background-lightning-ibg">
-					<img src="img/1x1.jpg" data-src="img/common/lightning.png" alt="Ligntning">
-				</div>
-				<div class="privacy-policy__container">
-					<h1 class="privacy-policy__title _page-title">Policy Privacy</h1>
-					<div class="privacy-policy__text-block">
-						<p class="privacy-policy__text _main-text"> This Privacy Policy applies to information, including contact
-							information, collected about you by the Shinebrightslot Website. Please review this Privacy Policy
-							carefully. The Privacy Policy describes, among other things, the types of information collected about you
-							when you visit the Website; how your information may be used and when it may be disclosed; how you can
-							control the use and disclosure of your information; and how your information is protected. In addition,
-							please review Terms of Use which governs your use of this Website.</p>
-						<h2 class="privacy-policy__subtitle _policy-subtitle">Information Collected</h2>
-						<p class="privacy-policy__text _main-text">Information you provide directly to the Website. You are not
-							required to provide information about yourself when you visit a Website. Shinebrightslot may ask you for
-							different types of information only when you log in or directly contact the Shinebrightslot such as
-							contact information (full name and email address) or provide feedback, comments or ask questions about
-							Website.</p>
-						<p class="privacy-policy__text _main-text">Information we collect automatically on Websites. Also Website
-							may collect some information automatically, such as:</p>
-						<ul class="privacy-policy__list">
-							<li class="privacy-policy__list-item _main-text">Your device type and settings, software used and browser
-								type and operating system;
+
+				<div class="main-privacy__container">
+					<div class="main-privacy__body _main-text-second">
+						<p>Your privacy is important to <span>luckykiwis.com</span> (“luckykiwis”, “we” “us” or “our”). Therefore,
+							luckykiwis is committed to respecting your privacy and the confidentiality of your personal data, traffic
+							data and communications content. The privacy policy below details the measures taken by luckykiwis to
+							protect your privacy in connection with your use of <span>luckykiwis.com</span> and other sites owned and
+							operated by
+							luckykiwis (the “Sites”) and certain applications, services or software, and content including games for
+							use
+							therewith, either at no charge or for a fee (such applications, services, software and any related content
+							provided by luckykiwis or its licensors is referred to herein collectively as “Applications”). luckykiwis
+							does not intend to collect any personal information from children under 13 unless luckykiwis believes such
+							collection to be permitted by law.</p>
+						<p>The key points of our privacy policy are:
+						</p>
+						<ul class="main-privacy__list _text-page-list">
+							<li class="main-privacy__list-item _text-page-list__item">We give you choices about the personally
+								identifiable information you
+								share with us and other Luckykiwis users.
 							</li>
-							<li class="privacy-policy__list-item _main-text">Your Internet Protocol (IP) address, which is the number
-								automatically assigned to your computer whenever you access the Internet and that can sometimes be used
-								to derive your general geographic area;
-							</li>
-							<li class="privacy-policy__list-item _main-text">Websites or other services you visited before and after
-								visiting a Website;</li>
-							<li class="privacy-policy__list-item _main-text">Web pages and advertisements you view and links you click
-								on within Website;</li>
-							<li class="privacy-policy__list-item _main-text">Unique identifiers and connection information, including
-								mobile device identification numbers and internet connection means that can identify the physical
-								location of such devices in accordance with applicable law;</li>
-							<li class="privacy-policy__list-item _main-text">Information collected through cookies, web beacons, and
-								other similar technologies;</li>
-							<li class="privacy-policy__list-item _main-text">Standard server log information.</li>
+							<li class="main-privacy__list-item _text-page-list__item">You can end your membership at any time.</li>
+							<li class="main-privacy__list-item _text-page-list__item">We only disclose information from which you may
+								be personally
+								identifiable to selected third parties in accordance with this privacy policy.</li>
+							<li class="main-privacy__list-item _text-page-list__item">We do not spam.</li>
+							<li class="main-privacy__list-item _text-page-list__item">By accessing the Site, you agree to this privacy
+								policy.</li>
 						</ul>
-						<p class="privacy-policy__text _main-text">This Privacy Policy does not cover actions of the third parties,
-							including those who disclose information to Shinebrightslot.</p>
-						<p class="privacy-policy__text _main-text">Combining Information. Please note that all of the information we
-							collect about you may be combined, including to help us prolong our communications with you, provide
-							online advertising based on your interests, and to develop rich online content on our Website. Your
-							consent will be obtained where it is required.</p>
-						<h2 class="privacy-policy__subtitle _policy-subtitle">Use of Information</h2>
-						<p class="privacy-policy__text _main-text">shinebrightslot.com may use your personal information to let you
-							know about news, bonus programs or other things we think may be interesting to you. If we decide to use
-							your personal information for direct marketing purposes, we will give you the opportunity to opt out of
-							receiving any marketing material. We may share the personal information that you have given to us with
-							associates and affiliates. We may also use your personal information for related purposes that you would
-							reasonably expect. We take particular care with any sensitive information that we may have (if any).</p>
+						<h2 class="main-privacy__subtitle _text-page-subtitle">Information Collected by the Site</h2>
+						<p>We collect the following types of information about you when you use the Site:</p>
+						<ul class="main-privacy__list _text-page-list">
+							<li class="main-privacy__list-item _text-page-list__item">Information provided by you. We collect
+								personally identifiable
+								information, such as your name and email address, when you register to become a member and if otherwise
+								requested by the Site or an Application. As part of your personal profile, you may choose to submit or
+								incorporate additional information, as well as other content. We also collect all postings, messages,
+								user
+								feedback, data, comments, suggestions, information, text, data, software, files and other materials of
+								any
+								nature that you submit to the Site and any correspondence between you and luckykiwis.
+							</li>
+							<li class="main-privacy__list-item _text-page-list__item">Information collected automatically. luckykiwis
+								receives and stores
+								information which is transmitted automatically from your computer when you use the Site. This
+								information
+								includes information from cookies, your IP address and browser type. Your IP address is the unique
+								address
+								of your computer which is automatically provided to other computers when your web browser or email
+								application requests a web page or email from those computers on the Internet. We also collect
+								information
+								about how you use the Site.</li>
+							<li class="main-privacy__list-item _text-page-list__item">Information about you as a member may be
+								supplemented with additional
+								information, including publicly-available information and information from other companies.</li>
+						</ul>
 					</div>
 				</div>
 			</section>
+
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__body">
-					<a href="index.html" class="footer__logo"><img src="img/1x1.jpg" data-src="img/svg/footer-logo.svg" alt="Footer Logo"></a>
-					<p class="footer__copyright footer__text">© 2022 shinebrightslot.com All rights reserved</p>
-					<p class="footer__text">We give you the opportunity to play social online casino games for free. No real money can
-						be spent and won. Shinebrightslot Social Online Casino is free for all users. Our games are intended for an
-						adult audience over 18 years. Playing brings no future luck on real casino sites.</p>
+					<a href="index.html" class="footer__logo"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="Logo"></picture></a>
+					<p class="footer__copyright _main-text-second">© 2022 luckykiwis.com All rights reserved</p>
+					<p class="footer__text _main-text-second">The free social online casino is designed specifically for adult
+						audiences. Our free social online casino is not for real money. You cannot make deposits and you cannot win real
+						money or prizes here. Our free social online casino is 100% free and requires no real money.</p>
 				</div>
-			</div>
-			<div class="footer__gold-image">
-				<img src="img/1x1.jpg" data-src="img/footer/gold.png" alt="Gold">
 			</div>
 		</footer>
 	</div>
-	<div id="popup" aria-hidden="true" class="popup">
+	<div id="popup__reg" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
 				<div class="popup__body">
-					<button data-close type="button" class="popup__close"></button>
-					<div class="popup__image-ibg"><img src="img/1x1.jpg" data-src="img/reg/reg.jpg" alt="Man with lightning">
-					</div>
 					<div class="popup__text-content">
-						<h3 class="popup__title">Sign Up</h3>
+						<h2 class="popup__title _activity-title">Create Account</h2>
 						<div class="popup__form-block">
-							<form action="#" class="popup__form form-popup" data-dev>
-								<div class="form-popup__block">
-									<label for="email">Email</label>
-									<input autocomplete="off" data-required="email" type="email" name="email" id="email" data-error="*incorrect email address" placeholder="Enter your email" class="form-popup__input">
+							<form action="#" class="popup__form" data-dev>
+								<div class="popup__input-wrapper popup__input-wrapper_user">
+									<input autocomplete="off" data-required type="text" name="reg" placeholder="Username" class="popup__input">
 								</div>
-								<div class="form-popup__block _margin-bottom">
-									<label for="password">Password</label>
-									<input data-required autocomplete="off" id="password" type="password" name="password" data-error="*you must input password" placeholder="Enter password" class="form-popup__input">
+								<div class="popup__input-wrapper popup__input-wrapper_email">
+									<input autocomplete="off" data-required="email" type="email" name="reg" placeholder="Email" class="popup__input">
+								</div>
+								<div class="popup__input-wrapper popup__input-wrapper_pass">
+									<input autocomplete="off" data-required type="password" name="reg" placeholder="Password" class="popup__input">
 								</div>
 								<div class="checkbox">
-									<input id="c_1" data-required class="form-popup__checkbox checkbox__input" type="checkbox" value="1" name="checkbox">
-									<label for="c_1" class="checkbox__label">
-										<span class="checkbox__box">
-											<svg width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M1 4.76087L4.22392 7.31197C4.35476 7.41551 4.54496 7.39238 4.64718 7.26051L9.5 1" stroke="white" stroke-width="1.5" stroke-linecap="round" />
-											</svg>
-										</span>
-										<span class="checkbox__text">I am 18 years old and I accept the
-											<a href="privacy-policy.html">Privacy Policy</a></span></label>
+									<input id="c_1" class="checkbox__input" data-required type="checkbox" value="1" name="reg">
+									<label for="c_1" class="checkbox__label"><span class="_bg"></span><span class="checkbox__text">I agree
+											to all statements included
+											in <a href="privacy-policy.html">Privacy Policy</a></span></label>
 								</div>
-								<button type="submit" class="form-popup__button _main-button">Sign up</button>
+								<button type="submit" class="popup__button"><span>sign up</span></button>
+							</form>
+						</div>
+					</div>
+
+					<div class="popup__decor">
+						<div class="popup__decor-first">
+							<picture><source data-srcset="img/popup/decor_1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popup/decor_1.png" alt="Decor image"></picture>
+						</div>
+						<div class="popup__decor-second">
+							<picture><source data-srcset="img/popup/decor_2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popup/decor_2.png" alt="Decor image"></picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup__login" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__body">
+					<div class="popup__text-content">
+						<h2 class="popup__title _activity-title">Login</h2>
+						<div class="popup__form-block">
+							<form action="#" class="popup__form" data-dev>
+								<div class="popup__input-wrapper popup__input-wrapper_email">
+									<input autocomplete="off" data-required="email" type="email" name="reg" placeholder="Email" class="popup__input">
+								</div>
+								<div class="popup__input-wrapper popup__input-wrapper_pass">
+									<input autocomplete="off" data-required type="password" name="reg" placeholder="Password" class="popup__input">
+								</div>
+								<button type="submit" class="popup__button"><span>Login</span></button>
 							</form>
 						</div>
 					</div>
@@ -156,7 +185,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220730210411"></script>
+	<script src="js/app.min.js?_v=20220821221309"></script>
 </body>
 
 </html>
