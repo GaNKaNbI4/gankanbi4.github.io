@@ -902,7 +902,7 @@ section {
 }
 
 .expertise-home__slider {
-  padding-bottom: 7%;
+  padding-bottom: 10%;
 }
 
 .expertise-home__slider .slick-track {
@@ -935,23 +935,14 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-height: 26.75rem;
   height: 22.3vw !important;
+  max-height: 26.75rem;
 }
 
 .expertise-home__slide {
   width: 27.5%;
-  height: 17.7vw;
   max-height: 21.25rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 17.7vw;
   position: relative;
   -webkit-transition: -webkit-transform 0.5s ease 0s;
   transition: -webkit-transform 0.5s ease 0s;
@@ -965,11 +956,6 @@ section {
   -webkit-transform: scale(1, 1.24);
       -ms-transform: scale(1, 1.24);
           transform: scale(1, 1.24);
-  -webkit-transition: -webkit-transform 0.5s ease 0s;
-  transition: -webkit-transform 0.5s ease 0s;
-  -o-transition: transform 0.5s ease 0s;
-  transition: transform 0.5s ease 0s;
-  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
 }
 
 .expertise-home__slide.swiper-slide-active .expertise-home__image,
@@ -3264,6 +3250,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     padding-bottom: 47.22%;
   }
 
+  .expertise-home__slider {
+    padding-bottom: 12%;
+  }
+
   .our-projects-home__slide.swiper-slide-active .our-projects-home__content,
   .our-projects-home__slide.swiper-slide-duplicate-active .our-projects-home__content {
     width: 100%;
@@ -3496,7 +3486,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .expertise-home__slider {
-    padding-bottom: 10%;
+    padding-bottom: 16%;
   }
 
   .expertise-home__wrapper {
@@ -3728,7 +3718,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .expertise-home__slider {
-    padding-bottom: 13%;
+    padding-bottom: 22%;
   }
 
   .expertise-home__wrapper {
