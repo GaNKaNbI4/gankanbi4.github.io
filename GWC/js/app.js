@@ -4918,6 +4918,30 @@
                 },
                 on: {}
             });
+            if (document.querySelector(".liner-representation-home__slider")) new core(".liner-representation-home__slider", {
+                modules: [],
+                initialSlide: 2,
+                observer: true,
+                observeParents: true,
+                slidesPerView: "auto",
+                spaceBetween: 62,
+                speed: 800,
+                breakpoints: {
+                    320: {
+                        spaceBetween: 25
+                    },
+                    480: {
+                        spaceBetween: 35
+                    },
+                    768: {
+                        spaceBetween: 45
+                    },
+                    992: {
+                        spaceBetween: 62
+                    }
+                },
+                on: {}
+            });
         }
         window.addEventListener("load", (function(e) {
             initSliders();
@@ -4988,19 +5012,23 @@
         document.querySelector(".qatar-ports-home__map");
         document.querySelector(".qatar-ports-home__buttons-list");
         mapActionsElements.forEach((element => {
-            element.addEventListener("click", (() => {
-                if (!element.classList.contains("_active")) {
-                    if (document.querySelector("[data-map-click]._active")) {
-                        let activeElems = allMapElements.querySelectorAll("._active");
-                        activeElems.forEach((el => {
-                            el.classList.remove("_active");
-                        }));
-                    }
-                    let elClass = element.classList[0];
-                    document.querySelectorAll(`.${elClass}`).forEach((el => {
-                        el.classList.add("_active");
+            element.addEventListener("mouseenter", (() => {
+                if (!element.classList.contains("_active")) if (document.querySelector("[data-map-click]._active")) {
+                    let activeElems = allMapElements.querySelectorAll("._active");
+                    activeElems.forEach((el => {
+                        el.classList.remove("_active");
                     }));
                 }
+                let elClass = element.classList[0];
+                document.querySelectorAll(`.${elClass}`).forEach((el => {
+                    el.classList.add("_active");
+                }));
+            }));
+            element.addEventListener("mouseleave", (() => {
+                let activeElems = allMapElements.querySelectorAll("._active");
+                activeElems.forEach((el => {
+                    el.classList.remove("_active");
+                }));
             }));
         }));
         window["FLS"] = false;

@@ -1277,6 +1277,176 @@ body {
   height: 1.125rem;
 }
 
+.liner-representation-home__title {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.21875;
+  text-align: center;
+}
+
+.liner-representation-home__title:not(:last-child) {
+  margin-bottom: 2.625rem;
+}
+
+.liner-representation-home__slider {
+  padding: 2rem 0;
+  background-color: #fff;
+}
+
+.liner-representation-home__wrapper {
+  padding: 0 0 0 0.9375rem;
+}
+
+.liner-representation-home__image {
+  height: 3rem;
+}
+
+.liner-representation-home__image img {
+  height: 100%;
+}
+
+.gwc-group-home__title {
+  text-align: center;
+}
+
+.gwc-group-home__title:not(:last-child) {
+  margin-bottom: 7.75rem;
+}
+
+._gwc-group-title {
+  font-weight: 700;
+  line-height: 1.21875;
+  text-align: center;
+}
+
+._gwc-group-title:not(:last-child) {
+  margin-bottom: 4.25rem;
+}
+
+.logos-gwc-group {
+  position: relative;
+}
+
+.logos-gwc-group::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate(0, 50%);
+      -ms-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+  padding-bottom: 1.3492063492%;
+  background: url("../img/svg/div-line.svg") center/cover no-repeat;
+}
+
+.logos-gwc-group__body {
+  padding: 0 4.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logos-gwc-group__fifa-block {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 68.9285714286%;
+          flex: 0 0 68.9285714286%;
+}
+
+.logos-gwc-group__fifa-images {
+  width: 100%;
+}
+
+.logos-gwc-group__fifa-images img {
+  width: 100%;
+}
+
+.logos-gwc-group__fifa-images:not(:last-child),
+.logos-gwc-group__ups-image:not(:last-child) {
+  margin-bottom: 2.625rem;
+}
+
+.logos-gwc-group__text {
+  font-weight: 600;
+  line-height: 1.2222222222;
+  color: #fff;
+  text-align: center;
+}
+
+.logos-gwc-group__ups-block {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20.3571428571%;
+          flex: 0 0 20.3571428571%;
+  position: relative;
+}
+
+.logos-gwc-group__ups-block::before {
+  content: "";
+  position: absolute;
+  width: 0.125rem;
+  height: 100%;
+  top: 0;
+  left: -25%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.logos-gwc-group__ups-image {
+  width: 60.0877192982%;
+  margin: 0 auto;
+}
+
+.logos-gwc-group__ups-image img {
+  width: 100%;
+}
+
+.numbers-gwc-group__first-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.numbers-gwc-group__first-block:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.numbers-gwc-group__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 22.619047619%;
+          flex: 0 0 22.619047619%;
+  text-align: center;
+}
+
+.numbers-gwc-group__number {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 1.2222222222;
+  color: #ffffff;
+}
+
+.numbers-gwc-group__number:not(:last-child) {
+  margin-bottom: 0.375rem;
+}
+
+.numbers-gwc-group__second-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2.5rem;
+}
+
 .callback-home__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1553,6 +1723,38 @@ body {
     padding-bottom: 3.875rem;
   }
 
+  .liner-representation-home {
+    padding-top: 3.875rem;
+  }
+
+  .liner-representation-home {
+    padding-bottom: 3.875rem;
+  }
+
+  .gwc-group-home {
+    padding-top: 3.875rem;
+  }
+
+  .gwc-group-home {
+    padding-bottom: 3.875rem;
+  }
+
+  ._gwc-group-title {
+    font-size: 2rem;
+  }
+
+  .logos-gwc-group {
+    padding-bottom: 7.75rem;
+  }
+
+  .logos-gwc-group__text {
+    font-size: 1.125rem;
+  }
+
+  .numbers-gwc-group {
+    padding-top: 7.75rem;
+  }
+
   .callback-home {
     padding-top: 3.875rem;
   }
@@ -1609,6 +1811,38 @@ body {
 
   .qatar-ports-home {
     padding-bottom: 2rem;
+  }
+
+  .liner-representation-home {
+    padding-top: 2.125rem;
+  }
+
+  .liner-representation-home {
+    padding-bottom: 1.3125rem;
+  }
+
+  .gwc-group-home {
+    padding-top: 2.625rem;
+  }
+
+  .gwc-group-home {
+    padding-bottom: 2.625rem;
+  }
+
+  ._gwc-group-title {
+    font-size: 1rem;
+  }
+
+  .logos-gwc-group {
+    padding-bottom: 2.625rem;
+  }
+
+  .logos-gwc-group__text {
+    font-size: 0.3125rem;
+  }
+
+  .numbers-gwc-group {
+    padding-top: 2.625rem;
   }
 
   .callback-home {
@@ -1820,6 +2054,43 @@ body {
 
   .our-services-home__service-title {
     font-size: 1.625rem;
+  }
+
+  .liner-representation-home__title {
+    font-size: 1.625rem;
+  }
+
+  .liner-representation-home__slider {
+    padding: 1.5rem 0;
+  }
+
+  .liner-representation-home__image {
+    height: 2.5rem;
+  }
+
+  .gwc-group-home__title:not(:last-child) {
+    margin-bottom: 5.625rem;
+  }
+
+  .logos-gwc-group__body {
+    padding: 0 3.125rem;
+  }
+
+  .logos-gwc-group__fifa-images:not(:last-child),
+  .logos-gwc-group__ups-image:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+
+  .numbers-gwc-group__first-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .numbers-gwc-group__number {
+    font-size: 1.875rem;
   }
 
   .callback-home__form-block {
@@ -2059,6 +2330,67 @@ body {
     color: #fff;
   }
 
+  .liner-representation-home__title:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+
+  .liner-representation-home__title {
+    font-size: 1.25rem;
+  }
+
+  .liner-representation-home__slider {
+    padding: 1.125rem 0;
+  }
+
+  .liner-representation-home__image {
+    height: 1.875rem;
+  }
+
+  .gwc-group-home__title:not(:last-child) {
+    margin-bottom: 3.75rem;
+  }
+
+  ._gwc-group-title:not(:last-child) {
+    margin-bottom: 3.625rem;
+  }
+
+  .logos-gwc-group__body {
+    padding: 0 2.1875rem;
+  }
+
+  .logos-gwc-group__fifa-images:not(:last-child),
+  .logos-gwc-group__ups-image:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  .logos-gwc-group__ups-block::before {
+    width: 0.0625rem;
+  }
+
+  .numbers-gwc-group__first-block {
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+  }
+
+  .numbers-gwc-group__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 17.8125rem;
+            flex: 0 1 17.8125rem;
+  }
+
+  .numbers-gwc-group__number {
+    font-size: 1.5rem;
+  }
+
+  .numbers-gwc-group__second-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+  }
+
   .callback-home__body {
     -ms-flex-wrap: wrap-reverse;
         flex-wrap: wrap-reverse;
@@ -2262,6 +2594,43 @@ body {
     display: block;
   }
 
+  .liner-representation-home__title:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  .liner-representation-home__title {
+    font-size: 1rem;
+  }
+
+  .liner-representation-home__slider {
+    padding: 0.75rem 0;
+  }
+
+  .liner-representation-home__image {
+    height: 1.25rem;
+  }
+
+  .gwc-group-home__title:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+
+  ._gwc-group-title:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  .logos-gwc-group__body {
+    padding: 0 0.9375rem;
+  }
+
+  .logos-gwc-group__fifa-images:not(:last-child),
+  .logos-gwc-group__ups-image:not(:last-child) {
+    margin-bottom: 0.625rem;
+  }
+
+  .numbers-gwc-group__number {
+    font-size: 1.125rem;
+  }
+
   .callback-home__body {
     gap: 1.125rem;
   }
@@ -2446,6 +2815,118 @@ body {
     .qatar-ports-home {
       padding-bottom: calc(
         2rem + 1.875 * (100vw - 20rem) / 62.5
+      );
+    }
+}
+
+@supports (padding-top: clamp( 2.125rem , 1.565rem  +  2.8vw , 3.875rem )) {
+    .liner-representation-home {
+      padding-top: clamp( 2.125rem , 1.565rem  +  2.8vw , 3.875rem );
+    }
+}
+
+@supports not (padding-top: clamp( 2.125rem , 1.565rem  +  2.8vw , 3.875rem )) {
+    .liner-representation-home {
+      padding-top: calc(
+        2.125rem + 1.75 * (100vw - 20rem) / 62.5
+      );
+    }
+}
+
+@supports (padding-bottom: clamp( 1.3125rem , 0.4925rem  +  4.1vw , 3.875rem )) {
+    .liner-representation-home {
+      padding-bottom: clamp( 1.3125rem , 0.4925rem  +  4.1vw , 3.875rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 1.3125rem , 0.4925rem  +  4.1vw , 3.875rem )) {
+    .liner-representation-home {
+      padding-bottom: calc(
+        1.3125rem + 2.5625 * (100vw - 20rem) / 62.5
+      );
+    }
+}
+
+@supports (padding-top: clamp( 2.625rem , 2.225rem  +  2vw , 3.875rem )) {
+    .gwc-group-home {
+      padding-top: clamp( 2.625rem , 2.225rem  +  2vw , 3.875rem );
+    }
+}
+
+@supports not (padding-top: clamp( 2.625rem , 2.225rem  +  2vw , 3.875rem )) {
+    .gwc-group-home {
+      padding-top: calc(
+        2.625rem + 1.25 * (100vw - 20rem) / 62.5
+      );
+    }
+}
+
+@supports (padding-bottom: clamp( 2.625rem , 2.225rem  +  2vw , 3.875rem )) {
+    .gwc-group-home {
+      padding-bottom: clamp( 2.625rem , 2.225rem  +  2vw , 3.875rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 2.625rem , 2.225rem  +  2vw , 3.875rem )) {
+    .gwc-group-home {
+      padding-bottom: calc(
+        2.625rem + 1.25 * (100vw - 20rem) / 62.5
+      );
+    }
+}
+
+@supports (font-size: clamp( 1rem , 0.68rem  +  1.6vw , 2rem )) {
+    ._gwc-group-title {
+      font-size: clamp( 1rem , 0.68rem  +  1.6vw , 2rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.68rem  +  1.6vw , 2rem )) {
+    ._gwc-group-title {
+      font-size: calc(
+        1rem + 1 * (100vw - 20rem) / 62.5
+      );
+    }
+}
+
+@supports (padding-bottom: clamp( 2.625rem , 0.985rem  +  8.2vw , 7.75rem )) {
+    .logos-gwc-group {
+      padding-bottom: clamp( 2.625rem , 0.985rem  +  8.2vw , 7.75rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 2.625rem , 0.985rem  +  8.2vw , 7.75rem )) {
+    .logos-gwc-group {
+      padding-bottom: calc(
+        2.625rem + 5.125 * (100vw - 20rem) / 62.5
+      );
+    }
+}
+
+@supports (font-size: clamp( 0.3125rem , 0.0525rem  +  1.3vw , 1.125rem )) {
+    .logos-gwc-group__text {
+      font-size: clamp( 0.3125rem , 0.0525rem  +  1.3vw , 1.125rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.3125rem , 0.0525rem  +  1.3vw , 1.125rem )) {
+    .logos-gwc-group__text {
+      font-size: calc(
+        0.3125rem + 0.8125 * (100vw - 20rem) / 62.5
+      );
+    }
+}
+
+@supports (padding-top: clamp( 2.625rem , 0.985rem  +  8.2vw , 7.75rem )) {
+    .numbers-gwc-group {
+      padding-top: clamp( 2.625rem , 0.985rem  +  8.2vw , 7.75rem );
+    }
+}
+
+@supports not (padding-top: clamp( 2.625rem , 0.985rem  +  8.2vw , 7.75rem )) {
+    .numbers-gwc-group {
+      padding-top: calc(
+        2.625rem + 5.125 * (100vw - 20rem) / 62.5
       );
     }
 }
