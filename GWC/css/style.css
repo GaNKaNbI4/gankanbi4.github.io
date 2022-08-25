@@ -972,12 +972,19 @@ body {
   padding-bottom: 63.2291666667%;
   top: 50%;
   right: -55.6770833333%;
+  -webkit-transform: translate(0, -50%) translateZ(0) rotate(-150deg);
+          transform: translate(0, -50%) translateZ(0) rotate(-150deg);
+  z-index: 1;
+}
+
+.about-home__decor-image-ibg img {
   -webkit-filter: blur(22.125rem);
           filter: blur(22.125rem);
-  -webkit-transform: translate(0, -50%) rotate(-150deg);
-      -ms-transform: translate(0, -50%) rotate(-150deg);
-          transform: translate(0, -50%) rotate(-150deg);
-  z-index: -1;
+}
+
+.about-home__container {
+  position: relative;
+  z-index: 2;
 }
 
 .ceo-about-home:not(:last-child) {
@@ -1240,9 +1247,8 @@ body {
   left: -53.0208333333%;
   -webkit-filter: blur(14.375rem);
           filter: blur(14.375rem);
-  -webkit-transform: translate(0, -67.5%) rotate(75deg);
-      -ms-transform: translate(0, -67.5%) rotate(75deg);
-          transform: translate(0, -67.5%) rotate(75deg);
+  -webkit-transform: translate(0, -67.5%) translateZ(0) rotate(75deg);
+          transform: translate(0, -67.5%) translateZ(0) rotate(75deg);
   z-index: -1;
 }
 
@@ -1377,10 +1383,8 @@ body {
   right: -54.1666666667%;
   -webkit-filter: blur(22.125rem);
           filter: blur(22.125rem);
-  -webkit-transform: translate(0, -50%) rotate(-165deg);
-      -ms-transform: translate(0, -50%) rotate(-165deg);
-          transform: translate(0, -50%) rotate(-165deg);
-  z-index: -1;
+  -webkit-transform: translate(0, -50%) translateZ(0) rotate(-165deg);
+          transform: translate(0, -50%) translateZ(0) rotate(-165deg);
 }
 
 .qatar-ports-home__title {
@@ -1525,10 +1529,8 @@ body {
   left: -48.5416666667%;
   -webkit-filter: blur(22.125rem);
           filter: blur(22.125rem);
-  -webkit-transform: rotate(-165deg);
-      -ms-transform: rotate(-165deg);
-          transform: rotate(-165deg);
-  z-index: -1;
+  -webkit-transform: rotate(-165deg) translateZ(0);
+          transform: rotate(-165deg) translateZ(0);
 }
 
 .gwc-group-home__decor-image-ibg_2 {
@@ -1538,10 +1540,8 @@ body {
   right: -55.625%;
   -webkit-filter: blur(22.125rem);
           filter: blur(22.125rem);
-  -webkit-transform: translate(0, 25%) rotate(-135deg);
-      -ms-transform: translate(0, 25%) rotate(-135deg);
-          transform: translate(0, 25%) rotate(-135deg);
-  z-index: -1;
+  -webkit-transform: translate(0, 25%) translateZ(0) rotate(-135deg);
+          transform: translate(0, 25%) translateZ(0) rotate(-135deg);
 }
 
 .gwc-group-home__decor-map-ibg {
@@ -2569,7 +2569,7 @@ body {
 }
 
 @media (max-width: 78.125em) {
-  .about-home__decor-image-ibg {
+  .about-home__decor-image-ibg img {
     -webkit-filter: blur(17.5rem);
             filter: blur(17.5rem);
   }
@@ -2766,7 +2766,7 @@ body {
     margin-bottom: 2.625rem;
   }
 
-  .about-home__decor-image-ibg {
+  .about-home__decor-image-ibg img {
     -webkit-filter: blur(13.75rem);
             filter: blur(13.75rem);
   }
@@ -3055,10 +3055,13 @@ body {
   .about-home__decor-image-ibg {
     width: 166.25%;
     padding-bottom: 158.125%;
-    right: -172.5%;
-    -webkit-filter: blur(11.25rem);
-            filter: blur(11.25rem);
+    right: -166.25%;
     top: 70%;
+  }
+
+  .about-home__decor-image-ibg img {
+    -webkit-filter: blur(10rem);
+            filter: blur(10rem);
   }
 
   .ceo-about-home:not(:last-child) {
@@ -3493,8 +3496,11 @@ body {
 
   .about-home__decor-image-ibg {
     top: 50%;
-    -webkit-filter: blur(8.75rem);
-            filter: blur(8.75rem);
+  }
+
+  .about-home__decor-image-ibg img {
+    -webkit-filter: blur(7.5rem);
+            filter: blur(7.5rem);
   }
 
   .ceo-about-home:not(:last-child) {
