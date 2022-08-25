@@ -1317,6 +1317,11 @@ body {
   margin-bottom: 4rem;
 }
 
+.our-services-home__text-content {
+  height: 7.8125rem;
+  overflow: hidden;
+}
+
 .our-services-home__service-title {
   font-weight: 600;
   font-size: 2rem;
@@ -1347,11 +1352,11 @@ body {
   display: none;
 }
 
-._showmore-active .our-services-home__more-button span {
+.our-services-home__more-button._showmore-active span {
   display: none;
 }
 
-._showmore-active .our-services-home__more-button span:last-child {
+.our-services-home__more-button._showmore-active span:last-child {
   display: block;
 }
 
