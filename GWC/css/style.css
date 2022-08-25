@@ -1328,16 +1328,36 @@ body {
   margin-bottom: 1em;
 }
 
-.our-services-home__describe:not(:last-child) {
-  margin-bottom: 0.875rem;
+.our-services-home__list li::before {
+  content: "• ";
 }
 
-.our-services-home__link {
+.our-services-home__more-button {
+  margin-top: 0.875rem;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.4);
+  color: #fff;
   -webkit-transition: color 0.3s ease 0s;
   -o-transition: color 0.3s ease 0s;
   transition: color 0.3s ease 0s;
+  pointer-events: auto;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.our-services-home__more-button span:last-child {
+  display: none;
+}
+
+._showmore-active .our-services-home__more-button span {
+  display: none;
+}
+
+._showmore-active .our-services-home__more-button span:last-child {
+  display: block;
+}
+
+.our-services-home__more-button._less-info {
+  color: rgba(255, 255, 255, 0.4);
+  pointer-events: none;
 }
 
 .qatar-ports-home {
@@ -2912,6 +2932,14 @@ body {
             flex: 0 0 5.625rem;
   }
 
+  .menu__list {
+    gap: 1.25rem;
+  }
+
+  .menu__div-line {
+    top: -2.5rem;
+  }
+
   .footer {
     padding-bottom: 3rem;
   }
@@ -3159,10 +3187,6 @@ body {
     font-size: 1.375rem;
   }
 
-  .our-services-home__link {
-    color: #fff;
-  }
-
   .qatar-ports-home__decor-image-ibg {
     width: 166.25%;
     padding-bottom: 158.125%;
@@ -3372,6 +3396,10 @@ body {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 4.6875rem;
             flex: 0 0 4.6875rem;
+  }
+
+  .spollers-menu__list-item:not(:last-child) {
+    margin-bottom: 0.4375rem;
   }
 
   .footer__bottom-section {
@@ -4256,10 +4284,6 @@ body {
 
   .main-home__social:hover svg {
     fill: #fff;
-  }
-
-  .our-services-home__link:hover {
-    color: #fff;
   }
 
   .qatar-ports-home__map svg path:hover:not(.qatar-ports-home__map svg path:hover._active) {
