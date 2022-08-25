@@ -2592,6 +2592,8 @@ body {
   .gwc-group-home__decor-image-ibg_2 {
     -webkit-filter: blur(17.5rem);
             filter: blur(17.5rem);
+    top: auto;
+    left: auto;
   }
 }
 
@@ -2830,6 +2832,8 @@ body {
   .gwc-group-home__decor-image-ibg_2 {
     -webkit-filter: blur(13.75rem);
             filter: blur(13.75rem);
+    top: auto;
+    left: auto;
   }
 
   .gwc-group-home__title:not(:last-child) {
@@ -3232,6 +3236,8 @@ body {
     right: -150%;
     -webkit-filter: blur(11.25rem);
             filter: blur(11.25rem);
+    top: auto;
+    left: auto;
   }
 
   .gwc-group-home__container::after {
@@ -3645,6 +3651,8 @@ body {
     -webkit-filter: blur(10rem);
             filter: blur(10rem);
     bottom: -2%;
+    top: auto;
+    left: auto;
   }
 
   .gwc-group-home__decor-map-ibg {
