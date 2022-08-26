@@ -5642,33 +5642,12 @@
                     type: "bullets"
                 },
                 on: {
-                    slideChangeTransitionStart: () => {
-                        const awardImage = document.querySelector(".main-home__image-award");
-                        const awardTitle = document.querySelector(".main-home__slider-title");
-                        const firstSlide = document.querySelector(".main-home__slide_first");
-                        const activeSlide = document.querySelector(".main-home__slide.swiper-slide-active");
-                        if (0 == activeSlide.dataset.slideIndex) setTimeout((() => {
-                            awardImage.classList.add("_active");
-                            awardTitle.classList.add("_active");
-                            firstSlide.classList.add("_active");
-                            setTimeout((() => {
-                                awardImage.classList.remove("_active");
-                                awardTitle.classList.remove("_active");
-                                firstSlide.classList.remove("_active");
-                            }), 3e3);
-                        }), 700); else {
-                            if (awardImage.classList.contains("_active")) awardImage.classList.remove("_active");
-                            if (awardTitle.classList.contains("_active")) awardTitle.classList.remove("_active");
-                            if (firstSlide.classList.contains("_active")) firstSlide.classList.remove("_active");
-                        }
-                    },
                     init: () => {
-                        const awardImage = document.querySelector(".main-home__image-award");
+                        document.querySelector(".main-home__image-award");
                         const awardTitle = document.querySelector(".main-home__slider-title");
                         const firstSlide = document.querySelector(".main-home__slide_first");
                         document.querySelector(".main-home__slide.swiper-slide-active");
                         setTimeout((() => {
-                            awardImage.classList.remove("_active");
                             awardTitle.classList.remove("_active");
                             firstSlide.classList.remove("_active");
                         }), 4e3);
