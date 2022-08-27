@@ -459,7 +459,7 @@ body {
   width: 100%;
 }
 
-.menu__list {
+.menu__list > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2642,12 +2642,15 @@ body {
   }
 
   .menu__list {
+    position: relative;
+  }
+
+  .menu__list > ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 1.5rem;
-    position: relative;
   }
 
   .menu__link {
@@ -2942,7 +2945,7 @@ body {
             flex: 0 0 5.625rem;
   }
 
-  .menu__list {
+  .menu__list > ul {
     gap: 1.25rem;
   }
 

@@ -5341,33 +5341,50 @@
         const allMapElements = document.querySelector(".qatar-ports-home__body");
         document.querySelector(".qatar-ports-home__map");
         document.querySelector(".qatar-ports-home__buttons-list");
-        mapActionsElements.forEach((element => {
-            element.addEventListener("mouseenter", (() => {
-                if (!element.classList.contains("_active")) if (document.querySelector("[data-map-click]._active")) {
-                    let activeElems = allMapElements.querySelectorAll("._active");
-                    activeElems.forEach((el => {
-                        el.classList.remove("_active");
-                    }));
-                }
-                let elClass = element.classList;
-                elClass.forEach((classel => {
-                    document.querySelectorAll(`.${classel}`).forEach((el => {
-                        if (classel.includes("_qat")) el.classList.add("_active");
-                    }));
-                }));
-            }));
-            element.addEventListener("mouseleave", (() => {
+        function mapAddClasses(e) {
+            if (!e.target.classList.contains("_active")) if (document.querySelector("[data-map-click]._active")) {
                 let activeElems = allMapElements.querySelectorAll("._active");
                 activeElems.forEach((el => {
                     el.classList.remove("_active");
                 }));
+            }
+            let elClass = e.target.classList;
+            elClass.forEach((classel => {
+                document.querySelectorAll(`.${classel}`).forEach((el => {
+                    if (classel.includes("_qat")) el.classList.add("_active");
+                }));
             }));
-        }));
+        }
+        function mapRemoveClasses(e) {
+            let activeElems = allMapElements.querySelectorAll("._active");
+            activeElems.forEach((el => {
+                el.classList.remove("_active");
+            }));
+        }
+        function mapClick(e) {
+            if (e.target.closest("[data-map-click]")) mapAddClasses(e); else mapRemoveClasses(e);
+        }
+        const mediaQueryMobile = window.matchMedia("(max-width: 991.98px)");
+        mapMedia(mediaQueryMobile);
+        function mapMedia(e) {
+            if (e.matches) {
+                mapActionsElements.forEach((element => {
+                    element.removeEventListener("mouseenter", mapAddClasses);
+                    element.removeEventListener("mouseleave", mapRemoveClasses);
+                }));
+                document.addEventListener("click", mapClick);
+            } else {
+                mapActionsElements.forEach((element => {
+                    element.addEventListener("mouseenter", mapAddClasses);
+                    element.addEventListener("mouseleave", mapRemoveClasses);
+                }));
+                document.removeEventListener("click", mapClick);
+            }
+        }
         window.addEventListener("load", (() => {
             const showmoreList = document.querySelectorAll("[data-showmore-button]");
             showmoreList.forEach((button => {
                 const content = button.parentElement.querySelector("[data-showmore-content]");
-                console.log(content.scrollHeight);
                 if (content.scrollHeight <= 125) button.classList.add("_less-info");
                 button.addEventListener("click", (() => {
                     button.classList.toggle("_showmore-active");
