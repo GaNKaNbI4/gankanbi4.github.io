@@ -5341,19 +5341,35 @@
         const allMapElements = document.querySelector(".qatar-ports-home__body");
         document.querySelector(".qatar-ports-home__map");
         document.querySelector(".qatar-ports-home__buttons-list");
+        let mapClickFlag = 0;
         function mapAddClasses(e) {
-            if (!e.target.classList.contains("_active")) if (document.querySelector("[data-map-click]._active")) {
-                let activeElems = allMapElements.querySelectorAll("._active");
-                activeElems.forEach((el => {
-                    el.classList.remove("_active");
+            if (mapClickFlag) {
+                if (!e.classList.contains("_active")) if (document.querySelector("[data-map-click]._active")) {
+                    let activeElems = allMapElements.querySelectorAll("._active");
+                    activeElems.forEach((el => {
+                        el.classList.remove("_active");
+                    }));
+                }
+                let elClass = e.classList;
+                elClass.forEach((classel => {
+                    document.querySelectorAll(`.${classel}`).forEach((el => {
+                        if (classel.includes("_qat")) el.classList.add("_active");
+                    }));
+                }));
+            } else {
+                if (!e.target.classList.contains("_active")) if (document.querySelector("[data-map-click]._active")) {
+                    let activeElems = allMapElements.querySelectorAll("._active");
+                    activeElems.forEach((el => {
+                        el.classList.remove("_active");
+                    }));
+                }
+                let elClass = e.target.classList;
+                elClass.forEach((classel => {
+                    document.querySelectorAll(`.${classel}`).forEach((el => {
+                        if (classel.includes("_qat")) el.classList.add("_active");
+                    }));
                 }));
             }
-            let elClass = e.target.classList;
-            elClass.forEach((classel => {
-                document.querySelectorAll(`.${classel}`).forEach((el => {
-                    if (classel.includes("_qat")) el.classList.add("_active");
-                }));
-            }));
         }
         function mapRemoveClasses(e) {
             let activeElems = allMapElements.querySelectorAll("._active");
@@ -5362,7 +5378,16 @@
             }));
         }
         function mapClick(e) {
-            if (e.target.closest("[data-map-click]")) mapAddClasses(e); else mapRemoveClasses(e);
+            if (e.target.closest("path[data-map-click]")) {
+                mapClickFlag = 0;
+                mapAddClasses(e);
+            } else if (e.target.closest("button[data-map-click]")) if (e.target.querySelector("span")) {
+                mapClickFlag = 0;
+                mapAddClasses(e);
+            } else {
+                mapClickFlag = 1;
+                mapAddClasses(e.path[1]);
+            } else mapRemoveClasses(e);
         }
         const mediaQueryMobile = window.matchMedia("(max-width: 991.98px)");
         mapMedia(mediaQueryMobile);
