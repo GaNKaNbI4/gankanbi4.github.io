@@ -5410,7 +5410,19 @@
             const showmoreList = document.querySelectorAll("[data-showmore-button]");
             showmoreList.forEach((button => {
                 const content = button.parentElement.querySelector("[data-showmore-content]");
-                if (content.scrollHeight <= 125) button.classList.add("_less-info");
+                if (content.scrollHeight <= content.clientHeight + 1) {
+                    console.log(content.clientHeight + " / " + content.scrollHeight);
+                    button.classList.add("_less-info");
+                }
+                window.addEventListener("resize", (() => {
+                    console.log(content.scrollHeight);
+                    console.log(content.clientHeight + 1);
+                    button.classList.remove("_less-info");
+                    if (content.scrollHeight <= content.clientHeight + 1) {
+                        console.log(content.clientHeight + " / " + content.scrollHeight);
+                        button.classList.add("_less-info");
+                    }
+                }));
                 button.addEventListener("click", (() => {
                     button.classList.toggle("_showmore-active");
                     if (content.style.height) content.style.removeProperty("height"); else content.style.height = `${content.scrollHeight}px`;

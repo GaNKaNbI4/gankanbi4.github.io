@@ -1323,20 +1323,23 @@ body {
 .our-services-home__text-content {
   height: 7.8125rem;
   overflow: hidden;
+  line-height: 1.4444444444;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
-.our-services-home__service-title {
+.our-services-home__text-content h3 {
   font-weight: 600;
   font-size: 2rem;
   line-height: 1.21875;
   color: #fff;
 }
 
-.our-services-home__service-title:not(:last-child) {
+.our-services-home__text-content h3:not(:last-child) {
   margin-bottom: 1em;
 }
 
-.our-services-home__list li::before {
+.our-services-home__text-content ul li::before {
   content: "• ";
 }
 
@@ -2283,6 +2286,10 @@ body {
     padding-bottom: 3.875rem;
   }
 
+  .our-services-home__text-content {
+    font-size: 1.125rem;
+  }
+
   .qatar-ports-home {
     padding-top: 3.875rem;
   }
@@ -2453,6 +2460,10 @@ body {
 
   .our-services-home {
     padding-bottom: 2rem;
+  }
+
+  .our-services-home__text-content {
+    font-size: 0.75rem;
   }
 
   .qatar-ports-home {
@@ -2802,7 +2813,7 @@ body {
     padding-bottom: 60%;
   }
 
-  .our-services-home__service-title {
+  .our-services-home__text-content h3 {
     font-size: 1.625rem;
   }
 
@@ -3196,7 +3207,11 @@ body {
     margin-bottom: 1.5625rem;
   }
 
-  .our-services-home__service-title {
+  .our-services-home__text-content {
+    height: 5.625rem;
+  }
+
+  .our-services-home__text-content h3 {
     font-size: 1.375rem;
   }
 
@@ -3568,7 +3583,11 @@ body {
     margin-bottom: 1.125rem;
   }
 
-  .our-services-home__service-title {
+  .our-services-home__text-content {
+    height: 4.6875rem;
+  }
+
+  .our-services-home__text-content h3 {
     font-size: 1rem;
   }
 
@@ -3983,6 +4002,20 @@ body {
     .our-services-home {
       padding-bottom: calc(
         2rem + 1.875 * (100vw - 20rem) / 62.5
+      );
+    }
+}
+
+@supports (font-size: clamp( 0.75rem , 0.63rem  +  0.6vw , 1.125rem )) {
+    .our-services-home__text-content {
+      font-size: clamp( 0.75rem , 0.63rem  +  0.6vw , 1.125rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.63rem  +  0.6vw , 1.125rem )) {
+    .our-services-home__text-content {
+      font-size: calc(
+        0.75rem + 0.375 * (100vw - 20rem) / 62.5
       );
     }
 }
