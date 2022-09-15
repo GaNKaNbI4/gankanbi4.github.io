@@ -87,6 +87,10 @@ h6 {
   font-size: inherit;
 }
 
+body {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 .lock body {
   overflow: hidden;
   -ms-touch-action: none;
@@ -379,6 +383,45 @@ h6 {
   cursor: url("../img/game/cursor.png") 15 10, default;
 }
 
+.main-game-home__start-message {
+  position: absolute;
+  max-width: 38.4375rem;
+  padding: 0 0.9375rem;
+  width: 100%;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "LOCKDOWN";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.36;
+  text-align: center;
+  color: #ffffff;
+  opacity: 1;
+  pointer-events: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-stroke: 0.1875rem rgb(58, 5, 109);
+}
+
+.main-game-home__start-message span {
+  text-transform: uppercase;
+  color: rgb(203, 0, 85);
+}
+
+.main-game-home__start-message._hide {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+
 .main-game-home__field {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -504,6 +547,12 @@ h6 {
   }
 }
 
+@media (min-width: 73.125em) {
+  .main-game-home__start-message {
+    font-size: 4.6875rem;
+  }
+}
+
 @media (max-width: 64em) {
   .header__logo {
     position: relative;
@@ -511,6 +560,12 @@ h6 {
     -webkit-transform: translate(-50%);
         -ms-transform: translate(-50%);
             transform: translate(-50%);
+  }
+}
+
+@media (max-width: 20em) {
+  .main-game-home__start-message {
+    font-size: 2.125rem;
   }
 }
 
@@ -581,4 +636,20 @@ h6 {
     width: 3.75rem;
     height: 3.75rem;
   }
+}
+
+@media (min-width: 20em) and (max-width: 73.125em) {
+@supports (font-size: clamp( 2.125rem , 1.1602941176rem  +  4.8235294118vw , 4.6875rem )) {
+    .main-game-home__start-message {
+      font-size: clamp( 2.125rem , 1.1602941176rem  +  4.8235294118vw , 4.6875rem );
+    }
+}
+
+@supports not (font-size: clamp( 2.125rem , 1.1602941176rem  +  4.8235294118vw , 4.6875rem )) {
+    .main-game-home__start-message {
+      font-size: calc(
+        2.125rem + 2.5625 * (100vw - 20rem) / 53.125
+      );
+    }
+}
 }

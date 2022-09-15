@@ -1023,6 +1023,8 @@
         let scratchField7 = "img/game/icons/christmas-tree.png";
         let scratchField8 = "img/game/icons/christmas-sock.png";
         let scratchField9 = "img/game/icons/christmas-sock.png";
+        let timeoutSecond = 1e3 * timeout;
+        let timeToRedirectSecond = 1e3 * timeToRedirect;
         document.addEventListener("DOMContentLoaded", (() => {
             const scContainer = document.querySelector(".main-game-home__game-wrapper");
             const sc = new scratchcard_min.ScratchCard(".main-game-home__game-wrapper", {
@@ -1039,33 +1041,32 @@
                     document.querySelector(".final-message-game").classList.add("_active");
                     setTimeout((() => {
                         document.location.href = redirectURL;
-                    }), 2e3);
+                    }), timeToRedirectSecond);
                 }
             });
             sc.init().then((() => {
-                let isTimerStarted = false;
-                let isTimeout = false;
-                let timeoutSecond = 1e3 * timeout;
-                let timeToRedirectSecond = 1e3 * timeToRedirect;
+                let isGameStarted = false;
                 sc.canvas.addEventListener("scratch.move", (function() {
                     let percent = sc.getPercent();
-                    if (percent > 0 && !isTimerStarted) {
+                    if (percent > 0 && !isGameStarted) {
                         console.log(sc.getPercent());
-                        isTimerStarted = true;
-                        setTimeout((() => {
-                            isTimeout = true;
-                        }), timeoutSecond);
-                    }
-                    if (isTimeout) {
-                        console.log("timeout");
-                        document.querySelector(".final-message-game").classList.add("_active");
-                        setTimeout((() => {
-                            document.location.href = redirectURL;
-                        }), timeToRedirectSecond);
+                        isGameStarted = true;
+                        document.querySelector(".main-game-home__start-message").classList.add("_hide");
                     }
                 }));
             })).catch((error => {}));
         }));
+        function timeoutFunc() {
+            console.log("started");
+            setTimeout((() => {
+                console.log("timeout");
+                document.querySelector(".final-message-game").classList.add("_active");
+                setTimeout((() => {
+                    document.location.href = redirectURL;
+                }), timeToRedirectSecond);
+            }), timeoutSecond);
+        }
+        window.addEventListener("load", timeoutFunc);
         window["FLS"] = false;
     })();
 })();
