@@ -1011,7 +1011,7 @@
         "use strict";
         var scratchcard_min = __webpack_require__(265);
         let redirectURL = "https://google.com";
-        let timeout = 12;
+        let timeout = 120;
         let timeToRedirect = 2;
         let imageOverFields = "img/game/scratchcard.png";
         let scratchField1 = "img/game/icons/santa-claus.png";
