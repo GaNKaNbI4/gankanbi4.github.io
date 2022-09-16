@@ -1010,19 +1010,24 @@
     (() => {
         "use strict";
         var scratchcard_min = __webpack_require__(265);
-        let redirectURL = "https://google.com";
-        let timeout = 120;
-        let timeToRedirect = 2;
-        let imageOverFields = "img/game/scratchcard.png";
-        let scratchField1 = "img/game/icons/santa-claus.png";
-        let scratchField2 = "img/game/icons/gift.png";
-        let scratchField3 = "img/game/icons/christmas-tree.png";
-        let scratchField4 = "img/game/icons/star.png";
-        let scratchField5 = "img/game/icons/christmas-tree.png";
-        let scratchField6 = "img/game/icons/santa-claus.png";
-        let scratchField7 = "img/game/icons/christmas-tree.png";
-        let scratchField8 = "img/game/icons/christmas-sock.png";
-        let scratchField9 = "img/game/icons/christmas-sock.png";
+        let redirectURL = "https://google.com"; // URL where redirect to
+        let timeout = 120; // Time to finish the game in seconds
+        let timeToRedirect = 2; // Time to redirect after finishing the game in seconds
+        let imageOverFieldsPC = "img/game/scratchcard.png"; // Mian image, that will be scratched (PC)
+        let imageOverFieldsMobile = "img/game/scratchcard_mobile.png"; // Mian image, that will be scratched (MOBILE)
+        let scratchField1 = "img/game/icons/santa-claus.png"; // 1 field image
+        let scratchField2 = "img/game/icons/gift.png"; // 2 field image
+        let scratchField3 = "img/game/icons/christmas-tree.png"; // 3 field image
+        let scratchField4 = "img/game/icons/star.png"; // 4 field image
+        let scratchField5 = "img/game/icons/christmas-tree.png"; // 5 field image
+        let scratchField6 = "img/game/icons/santa-claus.png"; // 6 field image
+        let scratchField7 = "img/game/icons/christmas-tree.png"; // 7 field image
+        let scratchField8 = "img/game/icons/christmas-sock.png"; // 8 field image
+        let scratchField9 = "img/game/icons/christmas-sock.png"; // 9 field image
+		
+		// Main game logic
+        let imageOverFields;
+        if (window.matchMedia("(max-width: 500px)").matches) imageOverFields = imageOverFieldsMobile; else imageOverFields = imageOverFieldsPC;
         let timeoutSecond = 1e3 * timeout;
         let timeToRedirectSecond = 1e3 * timeToRedirect;
         document.addEventListener("DOMContentLoaded", (() => {
@@ -1035,8 +1040,8 @@
                 imageBackgroundSrc: "",
                 brushSrc: "img/game/brush.png",
                 htmlBackground: `\n      <ul class="main-game-home__field">\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField1}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField2}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField3}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField4}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField5}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField6}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField7}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField8}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField9}" alt="Gift">\n          </div>\n        </li>\n      </ul>\n    `,
-                clearZoneRadius: 10,
-                percentToFinish: 99.5,
+                clearZoneRadius: 0,
+                percentToFinish: 80, // Percent of scratch, that will finish the game
                 callback: function() {
                     document.querySelector(".final-message-game").classList.add("_active");
                     setTimeout((() => {
@@ -1057,9 +1062,7 @@
             })).catch((error => {}));
         }));
         function timeoutFunc() {
-            console.log("started");
             setTimeout((() => {
-                console.log("timeout");
                 document.querySelector(".final-message-game").classList.add("_active");
                 setTimeout((() => {
                     document.location.href = redirectURL;
