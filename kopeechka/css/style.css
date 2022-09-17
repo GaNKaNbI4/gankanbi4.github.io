@@ -15,7 +15,6 @@
 
 html,
 body {
-  height: 100%;
   min-width: 320px;
 }
 
@@ -76,7 +75,7 @@ h6 {
 }
 
 body {
-  background: url("../img/bgbody.jpg") fixed;
+  background: url("../img/bgbody.jpg") center/cover no-repeat;
 }
 
 .lock body {
@@ -117,7 +116,7 @@ body {
 */
 
 [class*=__container] {
-  max-width: 73.125rem;
+  max-width: 90rem;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   margin: 0 auto;
@@ -216,6 +215,473 @@ body {
   max-width: 20.625rem;
   padding: 0.9375rem;
   margin: auto;
+}
+
+.main-home__form-block:not(:last-child) {
+  margin-bottom: 1.875rem;
+}
+
+.main-home__container {
+  position: relative;
+  padding-bottom: 1.875rem;
+  height: 100%;
+  min-height: calc(100vh - 1.875rem);
+}
+
+.main-home__banner {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.main-home__banner:not(:last-child) {
+  margin-bottom: 1.875rem;
+}
+
+.main-home__banner img {
+  width: 100%;
+}
+
+.main-home__dude-ibg_contain {
+  position: absolute;
+  width: 23.8095238095%;
+  padding-bottom: 23.8095238095%;
+  bottom: -100%;
+  left: 2%;
+  z-index: 2;
+  -webkit-animation: dudeAnimate 35s infinite;
+          animation: dudeAnimate 35s infinite;
+}
+
+@-webkit-keyframes dudeAnimate {
+  0% {
+    bottom: -100%;
+    left: 2%;
+    right: auto;
+  }
+
+  10% {
+    bottom: 0;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+
+  15% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+
+  16% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+
+  17% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+
+  18% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+
+  19% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    bottom: 0;
+  }
+
+  23% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    bottom: 0;
+  }
+
+  40% {
+    bottom: -100%;
+    right: auto;
+    left: 2%;
+  }
+
+  50% {
+    right: 2%;
+    left: auto;
+    bottom: -100%;
+  }
+
+  60% {
+    bottom: 0;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+
+  65% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+
+  66% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+
+  67% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+
+  68% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+
+  69% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    bottom: 0;
+  }
+
+  73% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    bottom: 0;
+  }
+
+  90% {
+    bottom: -100%;
+    right: 2%;
+    left: auto;
+  }
+
+  100% {
+    bottom: -100%;
+    left: 2%;
+    right: auto;
+  }
+}
+
+@keyframes dudeAnimate {
+  0% {
+    bottom: -100%;
+    left: 2%;
+    right: auto;
+  }
+
+  10% {
+    bottom: 0;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+
+  15% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+
+  16% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+
+  17% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+
+  18% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+
+  19% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    bottom: 0;
+  }
+
+  23% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    bottom: 0;
+  }
+
+  40% {
+    bottom: -100%;
+    right: auto;
+    left: 2%;
+  }
+
+  50% {
+    right: 2%;
+    left: auto;
+    bottom: -100%;
+  }
+
+  60% {
+    bottom: 0;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+
+  65% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+
+  66% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+
+  67% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+
+  68% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+
+  69% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    bottom: 0;
+  }
+
+  73% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    bottom: 0;
+  }
+
+  90% {
+    bottom: -100%;
+    right: 2%;
+    left: auto;
+  }
+
+  100% {
+    bottom: -100%;
+    left: 2%;
+    right: auto;
+  }
+}
+
+@-webkit-keyframes dudeAnimateMobile {
+  0% {
+    bottom: -100%;
+    left: 2%;
+    right: auto;
+  }
+
+  10% {
+    bottom: 10%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+
+  15% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+
+  16% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+
+  17% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+
+  18% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+
+  19% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    bottom: 10%;
+  }
+
+  23% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    bottom: 10%;
+  }
+
+  40% {
+    bottom: -100%;
+    right: auto;
+    left: 2%;
+  }
+
+  50% {
+    right: 2%;
+    left: auto;
+    bottom: -100%;
+  }
+
+  60% {
+    bottom: 10%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+
+  65% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+
+  66% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+
+  67% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+
+  68% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+
+  69% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    bottom: 10%;
+  }
+
+  73% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    bottom: 10%;
+  }
+
+  90% {
+    bottom: -100%;
+    right: 2%;
+    left: auto;
+  }
+
+  100% {
+    bottom: -100%;
+    left: 2%;
+    right: auto;
+  }
+}
+
+@keyframes dudeAnimateMobile {
+  0% {
+    bottom: -100%;
+    left: 2%;
+    right: auto;
+  }
+
+  10% {
+    bottom: 10%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+
+  15% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+
+  16% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+
+  17% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+
+  18% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+
+  19% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    bottom: 10%;
+  }
+
+  23% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    bottom: 10%;
+  }
+
+  40% {
+    bottom: -100%;
+    right: auto;
+    left: 2%;
+  }
+
+  50% {
+    right: 2%;
+    left: auto;
+    bottom: -100%;
+  }
+
+  60% {
+    bottom: 10%;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+
+  65% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+
+  66% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+
+  67% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+
+  68% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+
+  69% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    bottom: 10%;
+  }
+
+  73% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    bottom: 10%;
+  }
+
+  90% {
+    bottom: -100%;
+    right: 2%;
+    left: auto;
+  }
+
+  100% {
+    bottom: -100%;
+    left: 2%;
+    right: auto;
+  }
 }
 
 @-webkit-keyframes formError {
@@ -420,7 +886,7 @@ body {
 }
 
 .form-main-home__copyright {
-  color: #6c757d;
+  color: #fff;
   margin-top: 3rem;
   margin-bottom: 1rem;
   text-decoration: none;
@@ -433,6 +899,34 @@ body {
 
 .main-home__response-block-wrapper {
   display: inline-block;
+}
+
+@media (max-width: 61.99875em) {
+  .main-home__dude-ibg_contain {
+    width: 27.2108843537%;
+    padding-bottom: 27.2108843537%;
+  }
+}
+
+@media (max-width: 47.99875em) {
+  .main-home__dude-ibg_contain {
+    width: 34.0136054422%;
+    padding-bottom: 34.0136054422%;
+    -webkit-animation: dudeAnimateMobile 35s infinite;
+            animation: dudeAnimateMobile 35s infinite;
+  }
+
+  .main-home__dude-ibg_contain._opened {
+    -webkit-animation: dudeAnimate 35s infinite;
+            animation: dudeAnimate 35s infinite;
+  }
+}
+
+@media (max-width: 29.99875em) {
+  .main-home__dude-ibg_contain {
+    width: 44.2176870748%;
+    padding-bottom: 44.2176870748%;
+  }
 }
 
 @media (any-hover: hover) {

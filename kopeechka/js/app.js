@@ -16,7 +16,7 @@
         });
         const firstRequestResponseResult = await firstRequestResponse.json();
         if (firstRequestResponse.ok) if ("OK" === firstRequestResponseResult.status) {
-            alert("E-mail получен");
+            alert("Ожидание SMS");
             const id = firstRequestResponseResult.id;
             const secondRequestURL = `https://api.kopeechka.store/mailbox-get-message?full=1&id=${id}&token=b721c490ae84a5b9588ffdb88d160213&type=json&api=2.0`;
             let responseTimer = setInterval((async () => {
@@ -29,12 +29,13 @@
                     document.querySelector(".main-home__response-block-wrapper").innerHTML = finalResponse;
                     clearInterval(responseTimer);
                     clearInterval(errorTimeout);
+                    document.querySelector(".main-home__dude-ibg_contain").classList.add("_opened");
                 }
-            }), 2e3);
+            }), 5e3);
             let errorTimeout = setTimeout((() => {
                 clearInterval(responseTimer);
                 alert("SMS код не доставлен, попробуйте еще раз");
-            }), 2e4);
+            }), 12e4);
         } else e.target.classList.add("_email-error");
     }
     window["FLS"] = false;
