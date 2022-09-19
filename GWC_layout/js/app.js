@@ -5289,24 +5289,12 @@
             var box = elem.getBoundingClientRect();
             return box.top + pageYOffset;
         }
-        function getDefaultFontSize(pa) {
-            pa = pa || document.body;
-            var who = document.createElement("span");
-            who.style.cssText = "display:inline-block; padding:0; line-height:1; position:absolute; visibility:hidden; font-size:1em";
-            who.appendChild(document.createTextNode("M"));
-            pa.appendChild(who);
-            var fs = [ who.offsetWidth, who.offsetHeight ];
-            pa.removeChild(who);
-            return fs;
-        }
-        const fontSize = getDefaultFontSize()[0];
-        console.log(fontSize);
         function headerMouseEnter(e) {
             const header = document.querySelector(".header");
             const currentList = e.target.querySelector(".spollers-menu__list");
-            const bottomOffset = 500 / fontSize - (currentList.offsetTop + getCoords(e.target) + e.target.offsetHeight + currentList.clientHeight) / fontSize;
+            const bottomOffset = 500 - (currentList.offsetTop + getCoords(e.target) + e.target.offsetHeight + currentList.clientHeight);
             console.log(bottomOffset);
-            if (bottomOffset >= 2.5) header.style.height = 31.25 + "rem"; else header.style.height = 31.25 + (2.5 - bottomOffset) + "rem";
+            if (bottomOffset >= 40) header.style.height = 500 + "px"; else header.style.height = 500 + (40 - bottomOffset) + "px";
             setTimeout((() => {
                 header.classList.add("_active");
                 e.target.classList.add("_active");
@@ -5315,6 +5303,7 @@
         function headerMouseLeave(e) {
             document.querySelector(".header").classList.remove("_active");
             e.target.classList.remove("_active");
+            document.querySelector(".header").style.height = "";
         }
         function headerTitleClick(e) {
             if (document.querySelector(".header").classList.contains("_active") && !e.target.parentElement.parentElement.classList.contains("_active")) {
