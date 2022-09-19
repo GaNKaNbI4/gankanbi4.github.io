@@ -5285,9 +5285,30 @@
         };
         const da = new DynamicAdapt("max");
         da.init();
+        function getCoords(elem) {
+            var box = elem.getBoundingClientRect();
+            return box.top + pageYOffset;
+        }
+        function getDefaultFontSize(pa) {
+            pa = pa || document.body;
+            var who = document.createElement("span");
+            who.style.cssText = "display:inline-block; padding:0; line-height:1; position:absolute; visibility:hidden; font-size:1em";
+            who.appendChild(document.createTextNode("M"));
+            pa.appendChild(who);
+            var fs = [ who.offsetWidth, who.offsetHeight ];
+            pa.removeChild(who);
+            return fs;
+        }
+        const fontSize = getDefaultFontSize()[0];
+        console.log(fontSize);
         function headerMouseEnter(e) {
+            const header = document.querySelector(".header");
+            const currentList = e.target.querySelector(".spollers-menu__list");
+            const bottomOffset = 500 / fontSize - (currentList.offsetTop + getCoords(e.target) + e.target.offsetHeight + currentList.clientHeight) / fontSize;
+            console.log(bottomOffset);
+            if (bottomOffset >= 2.5) header.style.height = 31.25 + "rem"; else header.style.height = 31.25 + (2.5 - bottomOffset) + "rem";
             setTimeout((() => {
-                document.querySelector(".header").classList.add("_active");
+                header.classList.add("_active");
                 e.target.classList.add("_active");
             }), 50);
         }
