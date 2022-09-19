@@ -5109,11 +5109,11 @@
                 observeParents: true,
                 slidesPerView: "auto",
                 spaceBetween: 62,
-                speed: 1e3,
+                speed: 2e3,
                 grabCursor: true,
                 loop: true,
                 autoplay: {
-                    delay: 3e3,
+                    delay: 0,
                     disableOnInteraction: false
                 },
                 breakpoints: {
@@ -5131,6 +5131,19 @@
                     }
                 },
                 on: {}
+            });
+            if (document.querySelector(".gwc-group-home__slider")) new core(".gwc-group-home__slider", {
+                modules: [ Navigation ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: 1,
+                spaceBetween: 80,
+                speed: 1e3,
+                autoHeight: true,
+                navigation: {
+                    prevEl: ".gwc-group-home__prev",
+                    nextEl: ".gwc-group-home__next"
+                }
             });
         }
         window.addEventListener("load", (function(e) {
@@ -5285,6 +5298,9 @@
         };
         const da = new DynamicAdapt("max");
         da.init();
+        document.addEventListener("DOMContentLoaded", (() => {
+            document.querySelector(".menu__logo").classList.add("_loaded");
+        }));
         function getCoords(elem) {
             var box = elem.getBoundingClientRect();
             return box.top + pageYOffset;
@@ -5420,24 +5436,21 @@
                 i++;
                 if (i == mapButtons.length) i = 0;
                 mapButtons[i].dispatchEvent(new Event("mouseenter"));
-            }), 3e3);
+            }), timeToSwitch);
         }
+        mapAnimation(0);
         const mediaQueryMobile = window.matchMedia("(max-width: 61.99875rem)");
         mediaQueryMobile.addListener(mapMedia);
         mapMedia(mediaQueryMobile);
         function mapMedia(e) {
             if (e.matches) {
-                console.log("less");
-                clearInterval(mapTimer);
                 mapActionsElements.forEach((element => {
-                    element.removeEventListener("mouseenter", mapAddClasses);
-                    element.removeEventListener("mouseleave", mapRemoveClasses);
+                    element.addEventListener("mouseenter", mapAddClasses);
+                    element.addEventListener("mouseleave", mapRemoveClasses);
                 }));
                 document.addEventListener("click", mapClick);
             } else {
-                console.log("more");
                 mapClickFlag = 0;
-                mapAnimation(0);
                 mapActionsElements.forEach((element => {
                     element.addEventListener("mouseenter", mapAddClasses);
                     element.addEventListener("mouseleave", mapRemoveClasses);
@@ -5460,6 +5473,76 @@
                 }));
             }));
         }));
+        const script_$ = {};
+        script_$.PI = Math.PI;
+        script_$.TAU = 2 * script_$.PI;
+        script_$.rand = function(min, max) {
+            if (!max) {
+                max = min;
+                min = 0;
+            }
+            return Math.random() * (max - min) + min;
+        };
+        script_$.init = () => {
+            script_$.c = document.querySelector("canvas");
+            script_$.ctx = script_$.c.getContext("2d");
+            script_$.simplex = new SimplexNoise;
+            script_$.events();
+            script_$.reset();
+            script_$.loop();
+        };
+        script_$.reset = () => {
+            script_$.dpr = window.devicePixelRatio;
+            script_$.w = script_$.c.offsetWidth;
+            script_$.h = script_$.c.offsetHeight;
+            script_$.cx = script_$.w / 2;
+            script_$.cy = script_$.h / 2;
+            script_$.c.width = script_$.w * script_$.dpr;
+            script_$.c.height = script_$.h * script_$.dpr;
+            script_$.c.style.width = `${script_$.w}px`;
+            script_$.c.style.height = `${script_$.h}px`;
+            script_$.ctx.scale(script_$.dpr, script_$.dpr);
+            script_$.count = Math.floor(script_$.w / 50);
+            script_$.xoff = 0;
+            script_$.xinc = .05;
+            script_$.yoff = 0;
+            script_$.yinc = .003;
+            script_$.goff = 0;
+            script_$.ginc = .003;
+            script_$.y = .66 * script_$.h;
+            script_$.length = script_$.w + 10;
+            script_$.amp = 40;
+        };
+        script_$.events = () => {
+            window.addEventListener("resize", script_$.reset.bind(void 0));
+        };
+        script_$.wave = () => {
+            script_$.ctx.beginPath();
+            let sway = script_$.simplex.noise2D(script_$.goff, 0) * script_$.amp;
+            for (let i = 0; i <= script_$.count; i++) {
+                script_$.xoff += script_$.xinc;
+                let x = script_$.cx - script_$.length / 2 + script_$.length / script_$.count * i;
+                let y = script_$.y + script_$.simplex.noise2D(script_$.xoff, script_$.yoff) * script_$.amp + sway;
+                script_$.ctx[0 === i ? "moveTo" : "lineTo"](x, y);
+            }
+            script_$.ctx.lineTo(script_$.w, script_$.h);
+            script_$.ctx.lineTo(0, script_$.h);
+            script_$.ctx.closePath();
+            script_$.ctx.fillStyle = "#00171f26";
+            script_$.ctx.fill();
+        };
+        script_$.loop = () => {
+            requestAnimationFrame(script_$.loop);
+            script_$.ctx.clearRect(0, 0, script_$.w, script_$.h);
+            script_$.xoff = 0;
+            script_$.wave();
+            script_$.wave();
+            script_$.wave();
+            script_$.wave();
+            script_$.yoff += script_$.yinc;
+            script_$.goff += script_$.ginc;
+        };
+        script_$.init();
         window["FLS"] = false;
         isWebp();
         menuInit();
