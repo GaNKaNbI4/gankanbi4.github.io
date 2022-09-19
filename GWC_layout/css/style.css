@@ -3284,6 +3284,14 @@ body {
     width: 0.0625rem;
   }
 
+  .numbers-gwc-group__first-block {
+    gap: 1.875rem;
+  }
+
+  .numbers-gwc-group__first-block:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+
   .numbers-gwc-group__item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
@@ -3292,6 +3300,10 @@ body {
 
   .numbers-gwc-group__number {
     font-size: 1.5rem;
+  }
+
+  .numbers-gwc-group__second-block {
+    gap: 1.875rem;
   }
 
   .affilated-liners-group__body {

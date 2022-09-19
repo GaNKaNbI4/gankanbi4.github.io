@@ -5111,6 +5111,7 @@
                 spaceBetween: 62,
                 speed: 1e3,
                 grabCursor: true,
+                loop: true,
                 autoplay: {
                     delay: 3e3,
                     disableOnInteraction: false
@@ -5340,9 +5341,14 @@
         const mapActionsElements = document.querySelectorAll("[data-map-click]");
         const allMapElements = document.querySelector(".qatar-ports-home__body");
         document.querySelector(".qatar-ports-home__map");
-        document.querySelector(".qatar-ports-home__buttons-list");
+        const mapButtons = document.querySelectorAll(".qatar-ports-home__buttons-list .qatar-ports-home__button");
+        const mapPieces = document.querySelectorAll("path[data-map-click]");
+        mapPieces.forEach((map => {
+            map.onclick = () => {};
+        }));
         let mapClickFlag = 0;
         function mapAddClasses(e) {
+            if (e.isTrusted) clearInterval(mapTimer);
             if (mapClickFlag) {
                 if (!e.classList.contains("_active")) if (document.querySelector("[data-map-click]._active")) {
                     let activeElems = allMapElements.querySelectorAll("._active");
@@ -5376,6 +5382,14 @@
             activeElems.forEach((el => {
                 el.classList.remove("_active");
             }));
+            if ("mouseleave" === e.type) if (e.target.classList.contains("qatar-ports-home__button")) {
+                const currentIndex = Array.from(mapButtons).indexOf(e.target);
+                mapAnimation(currentIndex);
+            } else {
+                const classList = e.target.classList.value;
+                classList.slice(classList.indexOf("_qat"), classList.indexOf("_qat") + 5);
+                mapAnimation(classList[4] - 1);
+            }
         }
         function mapClick(e) {
             if (e.target.closest("path[data-map-click]")) {
@@ -5389,16 +5403,31 @@
                 mapAddClasses(e.path[1]);
             } else mapRemoveClasses(e);
         }
-        const mediaQueryMobile = window.matchMedia("(max-width: 991.98px)");
+        let mapTimer;
+        function mapAnimation(i) {
+            mapButtons[i].dispatchEvent(new Event("mouseenter"));
+            mapTimer = setInterval((() => {
+                i++;
+                if (i == mapButtons.length) i = 0;
+                mapButtons[i].dispatchEvent(new Event("mouseenter"));
+            }), 3e3);
+        }
+        const mediaQueryMobile = window.matchMedia("(max-width: 61.99875rem)");
+        mediaQueryMobile.addListener(mapMedia);
         mapMedia(mediaQueryMobile);
         function mapMedia(e) {
             if (e.matches) {
+                console.log("less");
+                clearInterval(mapTimer);
                 mapActionsElements.forEach((element => {
                     element.removeEventListener("mouseenter", mapAddClasses);
                     element.removeEventListener("mouseleave", mapRemoveClasses);
                 }));
                 document.addEventListener("click", mapClick);
             } else {
+                console.log("more");
+                mapClickFlag = 0;
+                mapAnimation(0);
                 mapActionsElements.forEach((element => {
                     element.addEventListener("mouseenter", mapAddClasses);
                     element.addEventListener("mouseleave", mapRemoveClasses);
@@ -5410,18 +5439,10 @@
             const showmoreList = document.querySelectorAll("[data-showmore-button]");
             showmoreList.forEach((button => {
                 const content = button.parentElement.querySelector("[data-showmore-content]");
-                if (content.scrollHeight <= content.clientHeight + 1) {
-                    console.log(content.clientHeight + " / " + content.scrollHeight);
-                    button.classList.add("_less-info");
-                }
+                if (content.scrollHeight <= content.clientHeight + 1) button.classList.add("_less-info");
                 window.addEventListener("resize", (() => {
-                    console.log(content.scrollHeight);
-                    console.log(content.clientHeight + 1);
                     button.classList.remove("_less-info");
-                    if (content.scrollHeight <= content.clientHeight + 1) {
-                        console.log(content.clientHeight + " / " + content.scrollHeight);
-                        button.classList.add("_less-info");
-                    }
+                    if (content.scrollHeight <= content.clientHeight + 1) button.classList.add("_less-info");
                 }));
                 button.addEventListener("click", (() => {
                     button.classList.toggle("_showmore-active");
