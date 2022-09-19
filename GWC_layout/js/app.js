@@ -5279,7 +5279,6 @@
             const header = document.querySelector(".header");
             const currentList = e.target.querySelector(".spollers-menu__list");
             const bottomOffset = 500 - (currentList.offsetTop + getCoords(e.target) + e.target.offsetHeight + currentList.clientHeight);
-            console.log(bottomOffset);
             if (bottomOffset >= 40) header.style.height = 500 + "px"; else header.style.height = 500 + (40 - bottomOffset) + "px";
             setTimeout((() => {
                 header.classList.add("_active");
@@ -5518,28 +5517,21 @@
         document.querySelector(".liner-representation-home__marquee-block._second");
         let oneBlockWidth = firstMarqueeBlock.offsetWidth;
         let marqueeGap = marqueeWrapper.scrollWidth - 2 * oneBlockWidth;
-        console.log("all width = " + marqueeWrapper.scrollWidth);
-        console.log("oneBlockWidth = " + oneBlockWidth);
-        console.log("marqueeGap = " + marqueeGap);
-        console.log("scroll = " + (oneBlockWidth + marqueeGap));
         window.addEventListener("resize", (() => {
             oneBlockWidth = firstMarqueeBlock.offsetWidth;
             marqueeGap = marqueeWrapper.scrollWidth - 2 * oneBlockWidth;
         }));
         function marqueeAnimate() {
-            marqueeWrapper.style.transition = "transform 15s linear 0s";
+            marqueeWrapper.style.transition = "transform 30s linear 0s";
             marqueeWrapper.style.transform = `translate(-${oneBlockWidth + marqueeGap}px)`;
-            console.log("trans start");
             setInterval((() => {
-                console.log("trans 0");
                 marqueeWrapper.style.transition = "";
                 marqueeWrapper.style.transform = `translate(0)`;
                 setTimeout((() => {
-                    console.log("trans start");
-                    marqueeWrapper.style.transition = "transform 15s linear 0s";
+                    marqueeWrapper.style.transition = "transform 30s linear 0s";
                     marqueeWrapper.style.transform = `translate(-${oneBlockWidth + marqueeGap}px)`;
                 }), 10);
-            }), 14990);
+            }), 29990);
         }
         marqueeAnimate();
         window["FLS"] = false;

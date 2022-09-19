@@ -1568,8 +1568,7 @@ body {
 }
 
 .liner-representation-home__marquee {
-  padding: 2rem 0;
-  padding: 0 1.875rem;
+  padding: 2rem 1.875rem;
   background-color: #fff;
 }
 
