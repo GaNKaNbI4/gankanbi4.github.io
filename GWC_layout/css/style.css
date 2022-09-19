@@ -477,6 +477,27 @@ body {
   width: 100%;
 }
 
+.menu__lang-switcher {
+  position: relative;
+  color: #fff;
+}
+
+.menu__lang-switcher__body {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  top: 100%;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+  background-color: #00171f;
+  padding: 0.9375rem;
+}
+
 .menu__link {
   font-weight: 600;
   line-height: 1.2222222222;
@@ -2094,6 +2115,10 @@ body {
   margin-bottom: 1.3333333333em;
 }
 
+.contact-us-home__phone-links-block:not(:last-child) {
+  margin-bottom: 1.7777777778em;
+}
+
 .contact-us-home__phone-link {
   color: #fff;
   display: -webkit-box;
@@ -2109,14 +2134,23 @@ body {
 }
 
 .contact-us-home__phone-link:not(:last-child) {
-  margin-bottom: 1.7777777778em;
+  margin-bottom: 0.625rem;
 }
 
 .contact-us-home__phone-link::before {
   content: "";
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1.5rem;
+          flex: 0 0 1.5rem;
   width: 1.5rem;
   height: 1.5rem;
-  background: url("../img/svg/phone-telephone.svg") 0 0/cover no-repeat;
+  background: url("../img/svg/phone-telephone.svg") 0 0/contain no-repeat;
+}
+
+.contact-us-home__phone-link._fax-icon::before {
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url("../img/svg/fax-machine.svg") 0.125rem 0/contain no-repeat;
 }
 
 .contact-us-home__socials {
@@ -4322,6 +4356,14 @@ body {
   ._main-button:hover {
     color: #fff;
     background-color: #074058;
+  }
+
+  .menu__lang-switcher:hover .menu__lang-switcher__body {
+    opacity: 1;
+  }
+
+  .menu__lang-switcher__body a:hover {
+    text-decoration: underline;
   }
 
   .menu__link:hover {

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220919171037">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220919175141">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -93,6 +93,12 @@
 								<li class="menu__item"><a href="#" data-goto=".callback-home" data-goto-speed="1300" class="menu__link">Get
 										in
 										touch</a></li>
+								<li class="menu__lang-switcher">
+									<span>EN</span>
+									<div class="menu__lang-switcher__body">
+										<a href="#">UA</a>
+									</div>
+								</li>
 							</ul>
 						</div>
 					</nav>
@@ -733,7 +739,11 @@
 							<p class="contact-us-home__text _main-text">For more information, please contact us through our details
 								below:
 							</p>
-							<a href="tel:+97444023606" class="contact-us-home__phone-link _main-text">+ 974 4402 3606</a>
+							<div class="contact-us-home__phone-links-block">
+								<a href="tel:+97444023606" class="contact-us-home__phone-link _main-text">+ 974 4402 3606</a>
+								<a href="tel:+97444023606" class="contact-us-home__phone-link _main-text _fax-icon">+ 974 4402 3606</a>
+							</div>
+
 							<div class="contact-us-home__socials">
 								<a href="#" class="contact-us-home__social">
 									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -768,18 +778,19 @@
 
 
 					<div class="footer__links-block">
-						<h2 class="footer__title">Home page</h2>
-						<ul class="footer__links">
-							<li class="footer__item"><a href="#" class="footer__link">About us</a></li>
-							<li class="footer__item"><a href="#" class="footer__link">Our expertise</a></li>
-							<li class="footer__item"><a href="#" class="footer__link">Qatar Ports & Information</a></li>
-							<li class="footer__item"><a href="#" class="footer__link">Get in touch</a></li>
-						</ul>
+						<div class="footer__links">
+							<h2 class="footer__title">Home page</h2>
+							<ul>
+								<li class="footer__item"><a href="#" class="footer__link">About us</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">Our expertise</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">Qatar Ports & Information</a></li>
+								<li class="footer__item"><a href="#" class="footer__link">Get in touch</a></li>
+							</ul>
+						</div>
 
 						<div class="footer__find-us">
 							<h2 class="footer__title">Find us at</h2>
-							<p class="footer__item">90 D-Ring Road, 1 st Floor,
-								Doha, Qatar</p>
+							<p class="footer__item" style="white-space: nowrap;">90 D-Ring Road, 1 st Floor, Doha, Qatar</p>
 							<p class="footer__item">7G4W+65 Doha, Qatar</p>
 						</div>
 
@@ -819,7 +830,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220919171037"></script>
+	<script src="js/app.min.js?_v=20220919175141"></script>
 </body>
 
 </html>
