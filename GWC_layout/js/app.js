@@ -5268,7 +5268,7 @@
                 slidesPerView: "auto",
                 centeredSlides: true,
                 spaceBetween: 62,
-                speed: 3e4,
+                speed: 55e3,
                 onlyExternal: true,
                 allowTouchMove: false,
                 loop: true,
