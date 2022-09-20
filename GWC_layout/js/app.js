@@ -5102,6 +5102,36 @@
                 },
                 on: {}
             });
+            if (document.querySelector(".liner-representation-home__marquee")) new core(".liner-representation-home__marquee", {
+                modules: [ Autoplay ],
+                observer: true,
+                observeParents: true,
+                slidesPerView: "auto",
+                centeredSlides: true,
+                spaceBetween: 62,
+                speed: 3e4,
+                grabCursor: true,
+                loop: true,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false
+                },
+                breakpoints: {
+                    320: {
+                        spaceBetween: 25
+                    },
+                    480: {
+                        spaceBetween: 35
+                    },
+                    768: {
+                        spaceBetween: 45
+                    },
+                    992: {
+                        spaceBetween: 62
+                    }
+                },
+                on: {}
+            });
             if (document.querySelector(".gwc-group-home__slider")) new core(".gwc-group-home__slider", {
                 modules: [ Navigation ],
                 observer: true,
@@ -5512,28 +5542,6 @@
             script_$.goff += script_$.ginc;
         };
         script_$.init();
-        const marqueeWrapper = document.querySelector(".liner-representation-home__marquee-wrapper");
-        const firstMarqueeBlock = document.querySelector(".liner-representation-home__marquee-block._first");
-        document.querySelector(".liner-representation-home__marquee-block._second");
-        let oneBlockWidth = firstMarqueeBlock.offsetWidth;
-        let marqueeGap = marqueeWrapper.scrollWidth - 2 * oneBlockWidth;
-        window.addEventListener("resize", (() => {
-            oneBlockWidth = firstMarqueeBlock.offsetWidth;
-            marqueeGap = marqueeWrapper.scrollWidth - 2 * oneBlockWidth;
-        }));
-        function marqueeAnimate() {
-            marqueeWrapper.style.transition = "transform 30s linear 0s";
-            marqueeWrapper.style.transform = `translate(-${oneBlockWidth + marqueeGap}px)`;
-            setInterval((() => {
-                marqueeWrapper.style.transition = "";
-                marqueeWrapper.style.transform = `translate(0)`;
-                setTimeout((() => {
-                    marqueeWrapper.style.transition = "transform 30s linear 0s";
-                    marqueeWrapper.style.transform = `translate(-${oneBlockWidth + marqueeGap}px)`;
-                }), 10);
-            }), 29990);
-        }
-        marqueeAnimate();
         window["FLS"] = false;
         isWebp();
         menuInit();
