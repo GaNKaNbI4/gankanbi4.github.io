@@ -1010,22 +1010,6 @@
     (() => {
         "use strict";
         var scratchcard_min = __webpack_require__(265);
-        let redirectURL = "https://google.com"; // URL where redirect to
-        let timeout = 120; // Time to finish the game in seconds
-        let timeToRedirect = 2; // Time to redirect after finishing the game in seconds
-        let imageOverFieldsPC = "img/game/scratchcard.png"; // Mian image, that will be scratched (PC)
-        let imageOverFieldsMobile = "img/game/scratchcard_mobile.png"; // Mian image, that will be scratched (MOBILE)
-        let scratchField1 = "img/game/icons/santa-claus.png"; // 1 field image
-        let scratchField2 = "img/game/icons/gift.png"; // 2 field image
-        let scratchField3 = "img/game/icons/christmas-tree.png"; // 3 field image
-        let scratchField4 = "img/game/icons/star.png"; // 4 field image
-        let scratchField5 = "img/game/icons/christmas-tree.png"; // 5 field image
-        let scratchField6 = "img/game/icons/santa-claus.png"; // 6 field image
-        let scratchField7 = "img/game/icons/christmas-tree.png"; // 7 field image
-        let scratchField8 = "img/game/icons/christmas-sock.png"; // 8 field image
-        let scratchField9 = "img/game/icons/christmas-sock.png"; // 9 field image
-		
-		// Main game logic
         let imageOverFields;
         if (window.matchMedia("(max-width: 500px)").matches) imageOverFields = imageOverFieldsMobile; else imageOverFields = imageOverFieldsPC;
         let timeoutSecond = 1e3 * timeout;
@@ -1041,7 +1025,7 @@
                 brushSrc: "img/game/brush.png",
                 htmlBackground: `\n      <ul class="main-game-home__field">\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField1}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField2}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField3}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField4}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField5}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField6}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField7}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField8}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField9}" alt="Gift">\n          </div>\n        </li>\n      </ul>\n    `,
                 clearZoneRadius: 0,
-                percentToFinish: 80, // Percent of scratch, that will finish the game
+                percentToFinish: 80,
                 callback: function() {
                     document.querySelector(".final-message-game").classList.add("_active");
                     setTimeout((() => {
@@ -1054,10 +1038,10 @@
                 sc.canvas.addEventListener("scratch.move", (function() {
                     let percent = sc.getPercent();
                     if (percent > 0 && !isGameStarted) {
-                        console.log(sc.getPercent());
                         isGameStarted = true;
                         document.querySelector(".main-game-home__start-message").classList.add("_hide");
                     }
+                    if (percent >= 80) sc.finish();
                 }));
             })).catch((error => {}));
         }));
