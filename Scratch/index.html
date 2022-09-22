@@ -6,7 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220920151535">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/scratch-game.css"> <!-- Styles for scratch game -->
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -72,10 +73,10 @@
 									</div>
 								</div>
 								<div class="main-game-home__game-wrapper">
-									<h1 class="main-game-home__start-message">Scratch 3 alike and <span>WIN</span></h1>
+									<h1 class="main-game-home__start-message"></h1>
 									<div class="main-game-home__final-message final-message-game">
 										<div class="final-message-game__body">
-											<p class="final-message-game__text">Congrats, you won 25 kr.</p>
+											<p class="final-message-game__text"></p>
 										</div>
 									</div>
 								</div>
@@ -109,6 +110,8 @@
 		</footer>
 	</div>
 	<script>
+		let startMessage = `Scratch 3 alike and <span>WIN</span>`;
+		let finalMessage = "Congrats, you won 25 kr.";
 		let redirectURL = "https://google.com"; // URL where redirect to
 		let timeout = 120; // Time to finish the game in seconds
 		let timeToRedirect = 2; // Time to redirect after finishing the game in seconds
@@ -123,8 +126,10 @@
 		let scratchField7 = "img/game/icons/christmas-tree.png"; // 7 filed with image
 		let scratchField8 = "img/game/icons/christmas-sock.png"; // 8 filed with image
 		let scratchField9 = "img/game/icons/christmas-sock.png"; // 9 filed with image
+		let percentToFinish = 80; // Percent needed to finish the game
+		let timeBeforeFinalMessage = 2; // Time before initializing finish message
 	</script>
-	<script src="js/app.min.js?_v=20220920151535"></script>
+	<script src="js/app.min.js?_v=20220923023740"></script>
 </body>
 
 </html>

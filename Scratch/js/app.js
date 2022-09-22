@@ -1012,9 +1012,12 @@
         var scratchcard_min = __webpack_require__(265);
         let imageOverFields;
         if (window.matchMedia("(max-width: 500px)").matches) imageOverFields = imageOverFieldsMobile; else imageOverFields = imageOverFieldsPC;
-        let timeoutSecond = 1e3 * timeout;
-        let timeToRedirectSecond = 1e3 * timeToRedirect;
+        const timeoutSecond = 1e3 * timeout;
+        const timeToRedirectSecond = 1e3 * timeToRedirect;
+        const timeBeforeFinalMessageSecond = 1e3 * timeBeforeFinalMessage;
         document.addEventListener("DOMContentLoaded", (() => {
+            document.querySelector(".main-game-home__start-message").innerHTML = startMessage;
+            document.querySelector(".final-message-game__text").innerHTML = finalMessage;
             const scContainer = document.querySelector(".main-game-home__game-wrapper");
             const sc = new scratchcard_min.ScratchCard(".main-game-home__game-wrapper", {
                 scratchType: scratchcard_min.SCRATCH_TYPE.BRUSH,
@@ -1025,12 +1028,16 @@
                 brushSrc: "img/game/brush.png",
                 htmlBackground: `\n      <ul class="main-game-home__field">\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField1}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField2}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField3}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField4}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField5}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField6}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField7}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField8}" alt="Gift">\n          </div>\n        </li>\n        <li class="main-game-home__item">\n          <div class="main-game-home__image-ibg">\n            <img class="game-image-first" src="${scratchField9}" alt="Gift">\n          </div>\n        </li>\n      </ul>\n    `,
                 clearZoneRadius: 0,
-                percentToFinish: 80,
+                percentToFinish,
                 callback: function() {
-                    document.querySelector(".final-message-game").classList.add("_active");
-                    setTimeout((() => {
+                    if (!finalMessage) setTimeout((() => {
                         document.location.href = redirectURL;
-                    }), timeToRedirectSecond);
+                    }), timeToRedirectSecond); else setTimeout((() => {
+                        document.querySelector(".final-message-game").classList.add("_active");
+                        setTimeout((() => {
+                            document.location.href = redirectURL;
+                        }), timeToRedirectSecond);
+                    }), timeBeforeFinalMessageSecond);
                 }
             });
             sc.init().then((() => {
@@ -1041,7 +1048,7 @@
                         isGameStarted = true;
                         document.querySelector(".main-game-home__start-message").classList.add("_hide");
                     }
-                    if (percent >= 80) sc.finish();
+                    if (percent >= percentToFinish) sc.finish();
                 }));
             })).catch((error => {}));
         }));
