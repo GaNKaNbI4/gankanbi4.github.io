@@ -7659,6 +7659,7 @@ PERFORMANCE OF THIS SOFTWARE.
                         toggleThumb: true,
                         download: false,
                         counter: false,
+                        subHtmlSelectorRelative: true,
                         getCaptionFromTitleOrAlt: false,
                         exThumbImage: "data-external-thumb-image",
                         mobileSettings: {
@@ -7666,6 +7667,22 @@ PERFORMANCE OF THIS SOFTWARE.
                         }
                     })
                 });
+                if (document.querySelector("body#projects-body")) {
+                    let insertHTML;
+                    let galleryOverlay;
+                    gallery.addEventListener("lgAfterOpen", (e => {
+                        const currGallery = galleyItems.find((gal => gal.gallery == gallery));
+                        galleryOverlay = currGallery.galleryClass.outer.selector;
+                        insertHTML = document.createElement("div");
+                        insertHTML.classList.add("lg-custom-content");
+                        insertHTML.innerHTML = `\n        <div class="lg-custom-content__body">\n          <h2 class="lg-custom-content__title">Title</h2>\n          <p class="lg-custom-content__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto neque doloribus, mollitia possimus cumque est itaque, earum autem ipsa repellat, illo atque tempora maxime sequi in dolore praesentium. Voluptates consequuntur repellendus placeat hic ipsa cupiditate omnis ex doloremque inventore. Debitis obcaecati aperiam expedita molestiae animi corrupti perspiciatis atque itaque dicta excepturi! Non delectus officiis excepturi quis tempore corrupti sequi consequuntur.</p>\n        </div>\n        `;
+                        galleryOverlay.appendChild(insertHTML);
+                        console.log(currGallery);
+                    }));
+                    gallery.addEventListener("lgAfterClose", (e => {
+                        galleryOverlay.removeChild(insertHTML);
+                    }));
+                }
             }));
             flsModules.gallery = galleyItems;
         }
