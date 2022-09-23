@@ -1275,6 +1275,16 @@ section {
   margin-bottom: 3.125rem;
 }
 
+.our-projects-home__slider {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.our-projects-home__wrapper {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
 .our-projects-home__slide {
   display: -webkit-box;
   display: -ms-flexbox;

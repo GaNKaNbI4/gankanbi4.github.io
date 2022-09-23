@@ -5741,9 +5741,11 @@
                 modules: [ EffectCoverflow ],
                 effect: "coverflow",
                 coverflowEffect: {
-                    rotate: 20,
-                    slideShadows: false,
-                    scale: .95
+                    rotate: -10,
+                    slideShadows: true,
+                    scale: .95,
+                    depth: 50,
+                    modifier: 1
                 },
                 observer: true,
                 observeParents: true,
@@ -5759,27 +5761,52 @@
                         slidesPerView: 4,
                         spaceBetween: 15,
                         coverflowEffect: {
-                            rotate: 25,
-                            slideShadows: false,
-                            scale: .92
+                            rotate: -25,
+                            slideShadows: true,
+                            scale: .92,
+                            depth: 40,
+                            modifier: 1,
+                            stretch: 0,
+                            depth: 50,
+                            modifier: 1,
+                            slideShadows: true
                         }
                     },
                     480: {
                         slidesPerView: 4,
-                        spaceBetween: 30
+                        spaceBetween: 50,
+                        coverflowEffect: {
+                            rotate: -20,
+                            scale: .92,
+                            stretch: 0,
+                            depth: 50,
+                            modifier: 1,
+                            slideShadows: true
+                        }
                     },
                     767.98: {
                         slidesPerView: 4.5,
                         spaceBetween: 40,
                         coverflowEffect: {
-                            rotate: 20,
-                            slideShadows: false,
-                            scale: .92
+                            rotate: -15,
+                            scale: .92,
+                            stretch: 0,
+                            depth: 50,
+                            modifier: 1,
+                            slideShadows: true
                         }
                     },
                     992: {
-                        slidesPerView: 5,
-                        spaceBetween: 50
+                        spaceBetween: 100,
+                        slidesPerView: 4.5,
+                        coverflowEffect: {
+                            rotate: -10,
+                            stretch: 0,
+                            depth: 50,
+                            modifier: 1,
+                            slideShadows: true,
+                            scale: .95
+                        }
                     }
                 },
                 on: {}
