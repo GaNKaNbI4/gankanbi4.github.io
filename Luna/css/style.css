@@ -3285,7 +3285,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    row-gap: 3.125rem;
+    row-gap: 3.125rem !important;
   }
 
   .main-home::after {
