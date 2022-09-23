@@ -5520,6 +5520,88 @@
                 })
             });
         }
+        function create_shadow_createShadow(params, $slideEl, side) {
+            const shadowClass = `swiper-slide-shadow${side ? `-${side}` : ""}`;
+            const $shadowContainer = params.transformEl ? $slideEl.find(params.transformEl) : $slideEl;
+            let $shadowEl = $shadowContainer.children(`.${shadowClass}`);
+            if (!$shadowEl.length) {
+                $shadowEl = dom(`<div class="swiper-slide-shadow${side ? `-${side}` : ""}"></div>`);
+                $shadowContainer.append($shadowEl);
+            }
+            return $shadowEl;
+        }
+        function EffectCoverflow(_ref) {
+            let {swiper, extendParams, on} = _ref;
+            extendParams({
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    scale: 1,
+                    modifier: 1,
+                    slideShadows: true,
+                    transformEl: null
+                }
+            });
+            const setTranslate = () => {
+                const {width: swiperWidth, height: swiperHeight, slides, slidesSizesGrid} = swiper;
+                const params = swiper.params.coverflowEffect;
+                const isHorizontal = swiper.isHorizontal();
+                const transform = swiper.translate;
+                const center = isHorizontal ? -transform + swiperWidth / 2 : -transform + swiperHeight / 2;
+                const rotate = isHorizontal ? params.rotate : -params.rotate;
+                const translate = params.depth;
+                for (let i = 0, length = slides.length; i < length; i += 1) {
+                    const $slideEl = slides.eq(i);
+                    const slideSize = slidesSizesGrid[i];
+                    const slideOffset = $slideEl[0].swiperSlideOffset;
+                    const centerOffset = (center - slideOffset - slideSize / 2) / slideSize;
+                    const offsetMultiplier = "function" === typeof params.modifier ? params.modifier(centerOffset) : centerOffset * params.modifier;
+                    let rotateY = isHorizontal ? rotate * offsetMultiplier : 0;
+                    let rotateX = isHorizontal ? 0 : rotate * offsetMultiplier;
+                    let translateZ = -translate * Math.abs(offsetMultiplier);
+                    let stretch = params.stretch;
+                    if ("string" === typeof stretch && -1 !== stretch.indexOf("%")) stretch = parseFloat(params.stretch) / 100 * slideSize;
+                    let translateY = isHorizontal ? 0 : stretch * offsetMultiplier;
+                    let translateX = isHorizontal ? stretch * offsetMultiplier : 0;
+                    let scale = 1 - (1 - params.scale) * Math.abs(offsetMultiplier);
+                    if (Math.abs(translateX) < .001) translateX = 0;
+                    if (Math.abs(translateY) < .001) translateY = 0;
+                    if (Math.abs(translateZ) < .001) translateZ = 0;
+                    if (Math.abs(rotateY) < .001) rotateY = 0;
+                    if (Math.abs(rotateX) < .001) rotateX = 0;
+                    if (Math.abs(scale) < .001) scale = 0;
+                    const slideTransform = `translate3d(${translateX}px,${translateY}px,${translateZ}px)  rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(${scale})`;
+                    const $targetEl = effect_target_effectTarget(params, $slideEl);
+                    $targetEl.transform(slideTransform);
+                    $slideEl[0].style.zIndex = -Math.abs(Math.round(offsetMultiplier)) + 1;
+                    if (params.slideShadows) {
+                        let $shadowBeforeEl = isHorizontal ? $slideEl.find(".swiper-slide-shadow-left") : $slideEl.find(".swiper-slide-shadow-top");
+                        let $shadowAfterEl = isHorizontal ? $slideEl.find(".swiper-slide-shadow-right") : $slideEl.find(".swiper-slide-shadow-bottom");
+                        if (0 === $shadowBeforeEl.length) $shadowBeforeEl = create_shadow_createShadow(params, $slideEl, isHorizontal ? "left" : "top");
+                        if (0 === $shadowAfterEl.length) $shadowAfterEl = create_shadow_createShadow(params, $slideEl, isHorizontal ? "right" : "bottom");
+                        if ($shadowBeforeEl.length) $shadowBeforeEl[0].style.opacity = offsetMultiplier > 0 ? offsetMultiplier : 0;
+                        if ($shadowAfterEl.length) $shadowAfterEl[0].style.opacity = -offsetMultiplier > 0 ? -offsetMultiplier : 0;
+                    }
+                }
+            };
+            const setTransition = duration => {
+                const {transformEl} = swiper.params.coverflowEffect;
+                const $transitionElements = transformEl ? swiper.slides.find(transformEl) : swiper.slides;
+                $transitionElements.transition(duration).find(".swiper-slide-shadow-top, .swiper-slide-shadow-right, .swiper-slide-shadow-bottom, .swiper-slide-shadow-left").transition(duration);
+            };
+            effect_init_effectInit({
+                effect: "coverflow",
+                swiper,
+                on,
+                setTranslate,
+                setTransition,
+                perspective: () => true,
+                overwriteParams: () => ({
+                    watchSlidesProgress: true
+                })
+            });
+        }
         let mainHomeSlider, clientsMainSlider, clientsReviewsSlider, collaboratorsHomeSlider, ourProjectsSlider, ourExpertiseSlider;
         let servicesSlider, ourTeamSlider;
         const mediaQuery = window.matchMedia("(max-width: 47.99875rem)");
@@ -5565,22 +5647,6 @@
                         }
                     },
                     on: {}
-                });
-                if (!clientsReviewsSlider && document.querySelector(".our-clients-home__reviews-slider._watcher-view")) clientsReviewsSlider = new core(".our-clients-home__reviews-slider", {
-                    modules: [ Pagination ],
-                    observer: true,
-                    observeParents: true,
-                    slidesPerView: 1,
-                    spaceBetween: 40,
-                    speed: 800,
-                    preloadImages: false,
-                    lazy: true,
-                    autoHeight: true,
-                    pagination: {
-                        el: ".clients-reviews__pagination",
-                        clickable: true,
-                        type: "bullets"
-                    }
                 });
                 if (!collaboratorsHomeSlider && document.querySelector(".collaborators-home__slider._watcher-view")) collaboratorsHomeSlider = new core(".collaborators-home__slider", {
                     modules: [ Autoplay ],
@@ -5643,10 +5709,13 @@
                 },
                 on: {
                     init: () => {
-                        document.querySelector(".main-home__image-award");
+                        const awardImage = document.querySelector(".main-home__image-award");
                         const awardTitle = document.querySelector(".main-home__slider-title");
                         const firstSlide = document.querySelector(".main-home__slide_first");
                         document.querySelector(".main-home__slide.swiper-slide-active");
+                        setTimeout((() => {
+                            awardImage.classList.add("_active");
+                        }), 1e3);
                         setTimeout((() => {
                             awardTitle.classList.remove("_active");
                             firstSlide.classList.remove("_active");
@@ -5663,26 +5732,37 @@
                 spaceBetween: 32,
                 centeredSlides: true,
                 loop: true,
+                autoHeight: false,
                 on: {
                     slideChange: () => {}
                 }
             });
             if (document.querySelector(".our-projects-home__slider")) ourProjectsSlider = new core(".our-projects-home__slider", {
-                modules: [],
+                modules: [ EffectCoverflow ],
+                effect: "coverflow",
+                coverflowEffect: {
+                    rotate: 20,
+                    slideShadows: false,
+                    scale: .95
+                },
                 observer: true,
                 observeParents: true,
-                slidesPerView: 4,
-                spaceBetween: 50,
+                slidesPerView: 5,
+                spaceBetween: 30,
                 speed: 1e3,
                 centeredSlides: true,
                 loop: true,
-                loopedSlides: 6,
                 slideToClickedSlide: true,
                 autoHeight: false,
                 breakpoints: {
                     320: {
                         slidesPerView: 4,
-                        spaceBetween: 15
+                        spaceBetween: 15,
+                        coverflowEffect: {
+                            rotate: 25,
+                            slideShadows: false,
+                            scale: .92
+                        }
                     },
                     480: {
                         slidesPerView: 4,
@@ -5690,6 +5770,15 @@
                     },
                     767.98: {
                         slidesPerView: 4.5,
+                        spaceBetween: 40,
+                        coverflowEffect: {
+                            rotate: 20,
+                            slideShadows: false,
+                            scale: .92
+                        }
+                    },
+                    992: {
+                        slidesPerView: 5,
                         spaceBetween: 50
                     }
                 },
