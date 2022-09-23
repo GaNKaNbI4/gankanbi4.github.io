@@ -7689,6 +7689,7 @@ PERFORMANCE OF THIS SOFTWARE.
                         subHtmlSelectorRelative: true,
                         getCaptionFromTitleOrAlt: false,
                         exThumbImage: "data-external-thumb-image",
+                        swipeToClose: false,
                         mobileSettings: {
                             controls: true
                         }
@@ -7698,15 +7699,16 @@ PERFORMANCE OF THIS SOFTWARE.
                     let insertHTML;
                     let galleryOverlay;
                     gallery.addEventListener("lgAfterOpen", (e => {
+                        bodyLock();
                         const currGallery = galleyItems.find((gal => gal.gallery == gallery));
                         galleryOverlay = currGallery.galleryClass.outer.selector;
                         insertHTML = document.createElement("div");
                         insertHTML.classList.add("lg-custom-content");
-                        insertHTML.innerHTML = `\n        <div class="lg-custom-content__body">\n          <h2 class="lg-custom-content__title">Title</h2>\n          <p class="lg-custom-content__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto neque doloribus, mollitia possimus cumque est itaque, earum autem ipsa repellat, illo atque tempora maxime sequi in dolore praesentium. Voluptates consequuntur repellendus placeat hic ipsa cupiditate omnis ex doloremque inventore. Debitis obcaecati aperiam expedita molestiae animi corrupti perspiciatis atque itaque dicta excepturi! Non delectus officiis excepturi quis tempore corrupti sequi consequuntur.</p>\n        </div>\n        `;
+                        insertHTML.innerHTML = `\n        <div class="lg-custom-content__body">\n          <h2 class="lg-custom-content__title">4-Star Hotel</h2>\n          <div class="lg-custom-content__info">\n            <p>645 sq.m</p>\n            <p>Al Muntazah, Doha, Qatar</p>\n            <p>2017</p>\n            <p>Interior Design</p>\n          </div>\n          <div class="lg-custom-content__text">\n            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto neque doloribus, mollitia possimus cumque est itaque, earum autem ipsa repellat, illo atque tempora maxime sequi in dolore praesentium. Voluptates consequuntur repellendus placeat hic ipsa cupiditate omnis ex doloremque inventore. Debitis obcaecati aperiam expedita molestiae animi corrupti perspiciatis atque itaque dicta excepturi! Non delectus officiis excepturi quis tempore corrupti sequi consequuntur.</p>\n            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto neque doloribus, mollitia possimus cumque est itaque, earum autem ipsa repellat, illo atque tempora maxime sequi in dolore praesentium. Voluptates consequuntur repellendus placeat hic ipsa cupiditate omnis ex doloremque inventore. Debitis obcaecati aperiam expedita molestiae animi corrupti perspiciatis atque itaque dicta excepturi! Non delectus officiis excepturi quis tempore corrupti sequi consequuntur.</p>\n          </div>\n        </div>\n        `;
                         galleryOverlay.appendChild(insertHTML);
-                        console.log(currGallery);
                     }));
                     gallery.addEventListener("lgAfterClose", (e => {
+                        bodyUnlock();
                         galleryOverlay.removeChild(insertHTML);
                     }));
                 }
